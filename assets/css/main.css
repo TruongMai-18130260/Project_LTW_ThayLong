@@ -3634,6 +3634,7 @@ age-container #owl-main .owl-next {
 .filters-container .nav-tabs.nav-tab-box {
   border: medium none;
   margin-top: 3px;
+  margin-right: -50px;
 }
 .filters-container .nav-tabs.nav-tab-box li {
   margin-right: 5px;
@@ -5903,3 +5904,7 @@ z-index:10000
   margin: 10px 30px;
   padding: 10px;
 }
+
+
+
+  
