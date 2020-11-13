@@ -5904,7 +5904,16 @@ z-index:10000
   margin: 10px 30px;
   padding: 10px;
 }
-
+.title-bold {
+  font-size: 37px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 51px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 51px;
+  color: #000;
+}
 
 
   
