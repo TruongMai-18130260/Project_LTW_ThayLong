@@ -357,7 +357,7 @@
 		<div class="breadcrumb-inner">
 			<ul class="list-inline list-unstyled">
 				<li><a href="home.html">Trang chủ</a></li>
-				<li class='active'>Đăng nhập</li>
+				<li class='active' style="width: 150px !important;">Tài khoản của tôi</li>
 			</ul>
 		</div><!-- /.breadcrumb-inner -->
 	</div><!-- /.container -->
@@ -367,70 +367,66 @@
 	<div class="container">
 		<div class="sign-in-page">
 			<div class="row signin-up">
-				<!-- Sign-in -->		
-				<div class="col-md-3 col-sm-3"></div>	
-<div class="col-md-6 col-sm-6 sign-in show">
-	<h4 class="">Đăng nhập</h4>
-	<p class="">Chào mừng bạn đế với Baya</p>
-	<div class="social-sign-in outer-top-xs">
-		<a href="#" class="facebook-sign-in"><i class="fa fa-facebook"></i> Đăng nhập với Facebook</a>
-		<a href="#" class="twitter-sign-in"><i class="fa fa-twitter"></i> Đăng nhập với Twitter</a>
-	</div>
-	<form class="register-form outer-top-xs" role="form">
-		<div class="form-group">
-		    <label class="info-title" for="exampleInputEmail1">Email <span>*</span></label>
-		    <input type="email" class="form-control unicase-form-control text-input" id="exampleInputEmail1">
-		</div>
-	  	<div class="form-group">
-		    <label class="info-title" for="exampleInputPassword1">Mật khẩu <span>*</span></label>
-		    <input type="password" class="form-control unicase-form-control text-input" id="exampleInputPassword1">
-		</div>
-		<div class="radio outer-xs">
-		  	<label>
-		    	<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Lưu mật khẩu
-		  	</label>
-			  <a href="forgotpassword.html" class="forgot-password pull-right">Quên mật khẩu</a>
-			  <br />
-			  <a class="forgot-password pull-right pointer" id="chooseSignUp">Đăng kí</a>
-		</div>
-	  	<button type="submit" class="btn-upper btn btn-primary checkout-page-button">Đăng nhâp</button>
-	</form>					
-</div>
-<!-- Sign-in -->
-
-<!-- create a new account -->
-<div class="col-md-12 col-sm-12 create-new-account hidden sign-up">
-	<h4 class="checkout-subtitle">Đăng kí</h4>
-	<p class="text title-tag-line">Tạo tài khoản cho riêng bạn.</p>
-	<form class="register-form outer-top-xs" role="form">
-		<div class="form-group">
-	    	<label class="info-title" for="exampleInputEmail2">Email <span>*</span></label>
-	    	<input type="email" class="form-control unicase-form-control text-input" id="exampleInputEmail2">
-	  	</div>
-        <div class="form-group">
-		    <label class="info-title" for="exampleInputEmail1">Họ và Tên<span>*</span></label>
-		    <input type="email" class="form-control unicase-form-control text-input" id="exampleInputEmail1">
-		</div>
-        <div class="form-group">
-		    <label class="info-title" for="exampleInputEmail1">Số Điện Thoại <span>*</span></label>
-		    <input type="email" class="form-control unicase-form-control text-input" id="exampleInputEmail1">
-		</div>
-        <div class="form-group">
-		    <label class="info-title" for="exampleInputEmail1">Mật khẩu <span>*</span></label>
-		    <input type="email" class="form-control unicase-form-control text-input" id="exampleInputEmail1">
-		</div>
-         <div class="form-group">
-		    <label class="info-title" for="exampleInputEmail1">Nhập lại mật khẩu <span>*</span></label>
-		    <input type="email" class="form-control unicase-form-control text-input" id="exampleInputEmail1">
-		</div>
-		<a class="forgot-password pull-right pointer" id="chooseSignIn">Đăng nhập</a>
-	  	<button type="submit" class="btn-upper btn btn-primary checkout-page-button">Đăng Kí</button>
-	</form>
-	
-	
-</div>	
-<div class="col-md-3 col-sm-3"></div>
-<!-- create a new account -->			</div><!-- /.row -->
+						<div class="col-md-3 col-sm-3 account-sidebar">
+							<div class="option-container">
+								<div class="title">
+									<p>Tài khoản của</p>
+									<p style="font-size: 18px; font-weight: bold;">Mai Truong</p>
+								</div>
+								<div class="content">
+									<ul class="nav-menu">
+										<li class="nav-item"><a href>Thông tin tài khoản</a></li>
+										<li class="nav-item"><a href>Thông báo của tôi</a></li>
+										<li class="nav-item"><a href>Quản lý đơn hàng</a></li>
+										<li class="nav-item"><a href>Số địa chỉ</a></li>
+										<li class="nav-item"><a href>Thông tin thanh toán</a></li>
+										<li class="nav-item"><a href>Nhận xét sản phẩm đã mua</a></li>
+										<li class="nav-item"><a href>Sản phẩm bạn đã xem</a></li>
+										<li class="nav-item"><a href>Sản phẩm yêu thích</a></li>
+										<li class="nav-item"><a href>Sản phẩm mua sau</a></li>
+										<li class="nav-item"><a href>Nhận xét của tôi</a></li>
+										<li class="nav-item"><a href>Hỏi đáp</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-9 col-sm-9 my-account">
+							<h2>Thông tin tài khoản</h2>
+							<div class="account-info">
+								<form action="">
+									<div class="form-group">
+										<label class="info-title" for="name">Họ tên </label>
+										<input type="" class="form-control unicase-form-control text-input my-account-input" id="name" value="Be Lam Mai Truong">
+									</div>
+									<div class="form-group">
+										<label class="info-title" for="phone">Số điện thoại </label>
+										<input type="" class="form-control unicase-form-control text-input my-account-input" id="phone" value="0934308706">
+									</div>
+									<div class="form-group">
+										<label class="info-title" for="code">Mã xác thực </label>
+										<input type="" class="form-control unicase-form-control text-input my-account-input" id="code" placeholder="Nhập mã xác thực gửi tới số điện thoại">
+									</div>
+									<div class="form-group">
+										<label class="info-title" for="email">Email </label>
+										<input type="" class="form-control unicase-form-control text-input my-account-input" id="email" value="harimon21@gmail.com" disabled>
+									</div>
+									<div class="form-group">
+										<label class="info-title" for="email">Giới tính </label>
+										<input type="radio" id="male" name="gender" value="male">
+										<label for="male" class="radio-gender">Nam</label>
+										<input type="radio" id="female" name="gender" value="female">
+										<label for="female" class="radio-gender">Nữ</label>
+									</div>
+									<div class="form-group">
+										<label class="info-title" for="email" style="position: relative; top: 7px;">Ngày sinh <br/><span>(không bắt buộc)</span> </label>
+										<input type="date" name="date" id="" style="width: 50%;">
+									</div>
+									<br/>
+									<button type="submit" class="btn-upper btn btn-primary checkout-page-button">Cập nhật</button>
+								</form>
+							</div>
+						</div>
+			</div><!-- /.row -->
 		</div><!-- /.sigin-in-->
 		<!-- ============================================== BRANDS CAROUSEL ============================================== -->
 <div id="brands-carousel" class="logo-slider wow fadeInUp">
