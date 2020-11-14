@@ -5957,6 +5957,32 @@ z-index:10000
   margin-bottom: 51px;
   color: #000;
 }
+.checkout-email{
+  display: inline-block;
+  width: 70%;
+  margin-left: 5px;
+}
+.checkout-password{
+  display: inline-block;
+  width: 70%;
+  margin-left: 5px;
+}
+.checkout .form-group label{
+  min-width: 70px;
+}
+.checkout-container .a *{
+  padding: 15px 0;
+  margin: 10px 5px;
+}
+table{
+  width: 100%;
+}
+table tr{
+  margin: 5px 2px;
+}
+table th:nth-of-type(2), table td:nth-of-type(2){
+  text-align: right;
+}
 
 
   
