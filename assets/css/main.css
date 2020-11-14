@@ -30,6 +30,17 @@ Text Domain:  Flipmart
 /*===================================================================================*/
 /*  Body
 /*===================================================================================*/
+.hidden{
+  display: none;
+}
+.show{
+  display: block;
+}
+.pointer{
+  cursor: pointer;
+}
+
+
 .drop-height{
   min-height: 24rem;
 }
@@ -5773,6 +5784,7 @@ age-container #owl-main .owl-next {
 /*  Signup and login
 /*===================================================================================*/
 
+
 .sign-in-page {
     background-color: #fff;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.08);
@@ -5903,6 +5915,37 @@ z-index:10000
   line-height: 30px;
   margin: 10px 30px;
   padding: 10px;
+}
+
+/* my acount */
+
+.body-content .nav-item{
+  margin-right: 5px;
+}
+
+.body-content .nav-item a:hover{
+  background-color: darkgray;
+}
+
+.body-content .nav-item a{
+  padding: 6px 4px;
+  display: block;
+}
+
+.body-content .my-account-input{
+  display: inline-block;
+  width: 70%;
+  margin-left: 5px;
+}
+.body-content .account-info label{
+  width: 13%;
+}
+.radio-gender{
+  width: 10% !important;
+}
+.body-content .account-info .form-group span{
+  font-size: 10px;
+  color: darkgrey !important;
 }
 .title-bold {
   font-size: 37px;
