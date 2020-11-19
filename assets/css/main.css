@@ -5992,6 +5992,15 @@ table tr{
 table th:nth-of-type(2), table td:nth-of-type(2){
   text-align: right;
 }
+.cart-infor p{
+  display: inline-block;
+}
+.cart-infor .title{
+  width: 200px;
+}
+.cart-infor .content{
+  
+}
 
 
   
