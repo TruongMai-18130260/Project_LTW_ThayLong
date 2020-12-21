@@ -28,10 +28,10 @@ public class Login extends HttpServlet {
             ResultSet rs = ps.executeQuery();
             if (rs.next()){
                 //rs.getString(1)
-                User user = new User();
+                User user = new User(rs.getString(1),rs.getString(2),rs.getString(3),rs.getInt(4));
                 HttpSession session = request.getSession();
                 session.setAttribute("user",user);
-                response.sendRedirect("test1.jsp");
+                response.sendRedirect("home.jsp");
             } else response.sendRedirect("dangnhap.jsp");
         } catch (SQLException | ClassNotFoundException e){
             e.printStackTrace();

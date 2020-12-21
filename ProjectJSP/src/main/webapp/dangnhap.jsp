@@ -72,7 +72,7 @@
 		<a href="#" class="facebook-sign-in"><i class="fa fa-facebook"></i> Đăng nhập với Facebook</a>
 		<a href="#" class="twitter-sign-in"><i class="fa fa-twitter"></i> Đăng nhập với Twitter</a>
 	</div>
-	<form class="register-form outer-top-xs" role="form" action="UserController" method="post">
+	<form class="register-form outer-top-xs" role="form" action="Login" method="post">
 		<div class="form-group">
 		    <label class="info-title" for="exampleInputEmail1">Email <span>*</span></label>
 		    <input type="email" class="form-control unicase-form-control text-input" id="exampleInputEmail1" name="email">

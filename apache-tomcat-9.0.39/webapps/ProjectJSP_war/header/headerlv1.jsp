@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fnt" uri="http://java.sun.com/jsp/jstl/functions" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,11 +16,24 @@
       <div class="header-top-inner">
         <div class="cnt-account">
           <ul class="list-unstyled">
-            <li><a href="myaccount.html"><i class="icon fa fa-user"></i>Tài khoản của tôi</a></li>
+
+
+            <c:choose>
+              <c:when test="${sessionScope.user == null}">
+                <li><a href="dangnhap.jsp"><i class="icon fa fa-user"></i>Tài khoản của tôi</a></li>
+              </c:when>
+              <c:when test="${sessionScope.user != null}">
+                <li><a href="dangnhap.jsp"><i class="icon fa fa-user"></i>${sessionScope.user.email}</a></li>
+              </c:when>
+              <c:otherwise>
+
+              </c:otherwise>
+            </c:choose>
+
             <li><a href="my-wishlist.html"><i class="icon fa fa-heart"></i>Yêu thích</a></li>
             <li><a href="shopping-cart.html"><i class="icon fa fa-shopping-cart"></i>Giỏ hàng</a></li>
             <li><a href="checkout.html"><i class="icon fa fa-check"></i>Thanh toán</a></li>
-            <li><a href="sign-in.html"><i class="icon fa fa-lock"></i>Đăng nhập</a></li>
+            <li><a href="dangnhap.jsp"><i class="icon fa fa-lock"></i>Đăng nhập</a></li>
           </ul>
         </div>
         <!-- /.cnt-account -->
