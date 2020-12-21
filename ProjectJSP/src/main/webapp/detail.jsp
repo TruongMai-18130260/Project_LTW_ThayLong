@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fnt" uri="http://java.sun.com/jsp/jstl/functions" %>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -11,7 +15,7 @@
 	    <meta name="keywords" content="MediaCenter, Template, eCommerce">
 	    <meta name="robots" content="all">
 
-	    <title>Flipmart premium HTML5 & CSS3 Template</title>
+	    <title>${requestScope.product.name}</title>
 
 	    <!-- Bootstrap Core CSS -->
 	    <link rel="stylesheet" href="assets\css\bootstrap.min.css">
@@ -51,7 +55,7 @@
 			<ul class="list-inline list-unstyled">
 				<li><a href="#">Trang chủ</a></li>
 				<li style="width: 130px;"><a href="#" >Chi tiết sản phẩm</a></li>
-				<li class='active' style="width: 130px;">Bộ bàn ghế Soraka</li>
+				<li class='active' style="width: 130px;">${requestScope.product.name}</li>
 			</ul>
 		</div><!-- /.breadcrumb-inner -->
 	</div><!-- /.container -->
@@ -379,7 +383,7 @@
 </div><!-- /.gallery-holder -->        			
 					<div class='col-sm-6 col-md-7 product-info-block'>
 						<div class="product-info">
-							<h1 class="name">Bộ bàn ghé Soraka</h1>
+							<h1 class="name">${requestScope.product.name}</h1>
 							
 							<div class="rating-reviews m-t-20">
 								<div class="row">
@@ -403,14 +407,26 @@
 									</div>
 									<div class="col-sm-9">
 										<div class="stock-box">
-											<span class="value">Còn hàng</span>
+
+											<c:choose>
+												<c:when test="${requestScope.product.status == 0}">
+													<span class="value">Còn hàng</span>
+												</c:when>
+												<c:when test="${requestScope.product.status == 1}">
+													<span class="value">Hết hàng</span>
+												</c:when>
+												<c:otherwise>
+
+												</c:otherwise>
+											</c:choose>
+
 										</div>	
 									</div>
 								</div><!-- /.row -->	
 							</div><!-- /.stock-container -->
 
 							<div class="description-container m-t-20">
-								Bộ bàn ghế gỗ luxury phù hợp với phong cách sáng trọng, thẩm mỹ, thích hợp với không gian sân vườn của mọi gia đình.
+								${requestScope.product.description}
 							</div><!-- /.description-container -->
 
 							<div class="price-container info-container m-t-20">
@@ -419,8 +435,8 @@
 
 									<div class="col-sm-6">
 										<div class="price-box">
-											<span class="price">25,000,000đ</span>
-											<span class="price-strike">27,000,000đ</span>
+											<span class="price">${requestScope.product.salePrice}đ</span>
+											<span class="price-strike">${requestScope.product.price}đ</span>
 										</div>
 									</div>
 
@@ -494,8 +510,7 @@
 								
 								<div id="description" class="tab-pane in active">
 									<div class="product-tab">
-										<p class="text">Bộ bàn ghế gỗ luxury phù hợp với phong cách sáng trọng, thẩm mỹ, thích hợp với không gian sân vườn của mọi gia đình.
-										</p>
+										<p class="text">${requestScope.product.description}</p>
 									</div>	
 								</div><!-- /.tab-pane -->
 

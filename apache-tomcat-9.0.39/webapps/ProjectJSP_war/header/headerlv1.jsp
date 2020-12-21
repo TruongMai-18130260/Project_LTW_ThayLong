@@ -23,7 +23,7 @@
                 <li><a href="dangnhap.jsp"><i class="icon fa fa-user"></i>Tài khoản của tôi</a></li>
               </c:when>
               <c:when test="${sessionScope.user != null}">
-                <li><a href="dangnhap.jsp"><i class="icon fa fa-user"></i>${sessionScope.user.email}</a></li>
+                <li><a href="taikhoancuatoi.jsp"><i class="icon fa fa-user"></i>${sessionScope.user.email}</a></li>
               </c:when>
               <c:otherwise>
 
@@ -34,6 +34,19 @@
             <li><a href="shopping-cart.html"><i class="icon fa fa-shopping-cart"></i>Giỏ hàng</a></li>
             <li><a href="checkout.html"><i class="icon fa fa-check"></i>Thanh toán</a></li>
             <li><a href="dangnhap.jsp"><i class="icon fa fa-lock"></i>Đăng nhập</a></li>
+
+              <c:choose>
+                  <c:when test="${sessionScope.user == null}">
+                      <li><a href="dangnhap.jsp"><i class="icon fa fa-lock"></i>Đăng nhập</a></li>
+                  </c:when>
+                  <c:when test="${sessionScope.user != null}">
+                      <li><a href="Logout"><i class="icon fa fa-user"></i>Đăng xuất</a></li>
+                  </c:when>
+                  <c:otherwise>
+
+                  </c:otherwise>
+              </c:choose>
+
           </ul>
         </div>
         <!-- /.cnt-account -->
