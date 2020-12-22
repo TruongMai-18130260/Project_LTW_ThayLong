@@ -98,26 +98,26 @@
 <div class="col-md-12 col-sm-12 create-new-account hidden sign-up">
 	<h4 class="checkout-subtitle">Đăng kí</h4>
 	<p class="text title-tag-line">Tạo tài khoản cho riêng bạn.</p>
-	<form class="register-form outer-top-xs" role="form">
+	<form class="register-form outer-top-xs" role="form" action="SignUp" method="post">
 		<div class="form-group">
 	    	<label class="info-title" for="exampleInputEmail2">Email <span>*</span></label>
-	    	<input type="email" class="form-control unicase-form-control text-input" id="exampleInputEmail2">
+	    	<input type="email" class="form-control unicase-form-control text-input" id="exampleInputEmail2" name="email">
 	  	</div>
         <div class="form-group">
 		    <label class="info-title" for="exampleInputEmail3">Họ và Tên<span>*</span></label>
-		    <input type="email" class="form-control unicase-form-control text-input" id="exampleInputEmail3">
+		    <input type="text" class="form-control unicase-form-control text-input" id="exampleInputEmail3" name="name">
 		</div>
         <div class="form-group">
 		    <label class="info-title" for="exampleInputEmail4">Số Điện Thoại <span>*</span></label>
-		    <input type="email" class="form-control unicase-form-control text-input" id="exampleInputEmail4">
+		    <input type="name" class="form-control unicase-form-control text-input" id="exampleInputEmail4" name="phone">
 		</div>
         <div class="form-group">
 		    <label class="info-title" for="exampleInputEmail5">Mật khẩu <span>*</span></label>
-		    <input type="email" class="form-control unicase-form-control text-input" id="exampleInputEmail5">
+		    <input type="password" class="form-control unicase-form-control text-input" id="exampleInputEmail5" name="password">
 		</div>
          <div class="form-group">
 		    <label class="info-title" for="exampleInputEmail6">Nhập lại mật khẩu <span>*</span></label>
-		    <input type="email" class="form-control unicase-form-control text-input" id="exampleInputEmail6">
+		    <input type="password" class="form-control unicase-form-control text-input" id="exampleInputEmail6" name="retypepassword">
 		</div>
 		<a class="forgot-password pull-right pointer" id="chooseSignIn">Đăng nhập</a>
 	  	<button type="submit" class="btn-upper btn btn-primary checkout-page-button">Đăng Kí</button>

@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fnt" uri="http://java.sun.com/jsp/jstl/functions" %>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -66,7 +69,7 @@
 							<div class="option-container">
 								<div class="title">
 									<p>Tài khoản của</p>
-									<p style="font-size: 18px; font-weight: bold;">Mai Truong</p>
+									<p style="font-size: 18px; font-weight: bold;">${sessionScope.user.name}</p>
 								</div>
 								<div class="content">
 									<ul class="nav-menu">
@@ -91,43 +94,68 @@
 								<form action="">
 									<div class="form-group">
 										<label class="info-title" for="name">Họ tên </label>
-										<input type="" class="form-control unicase-form-control text-input my-account-input" id="name" value="Be Lam Mai Truong">
+										<input type="" class="form-control unicase-form-control text-input my-account-input" id="name" value="${sessionScope.user.name}">
 									</div>
 									<div class="form-group">
 										<label class="info-title" for="phone">Số điện thoại </label>
-										<input type="" class="form-control unicase-form-control text-input my-account-input" id="phone" value="0934308706">
+										<input type="" class="form-control unicase-form-control text-input my-account-input" id="phone" value="${sessionScope.user.phone}">
 									</div>
 									<div class="form-group">
 										<label class="info-title" for="code">Mã xác thực </label>
 										<input type="text" class="form-control unicase-form-control text-input my-account-input" id="code" placeholder="Nhập mã xác thực gửi tới số điện thoại" style="width: 50%;">
-                    <button type="submit" class="btn-upper btn btn-primary checkout-page-button" style="height: 40px; margin-bottom: 3px;">Gửi mã xác nhận</button>
-                  </div>
+                    					<button type="submit" class="btn-upper btn btn-primary checkout-page-button" style="height: 40px; margin-bottom: 3px;">Gửi mã xác nhận</button>
+                  					</div>
 									<div class="form-group">
 										<label class="info-title" for="email">Email </label>
-										<input type="" class="form-control unicase-form-control text-input my-account-input" id="email" value="harimon21@gmail.com" disabled>
+										<input type="" class="form-control unicase-form-control text-input my-account-input" id="email" value="${sessionScope.user.email}" disabled>
 									</div>
 									<div class="form-group">
-										<label class="info-title" for="email">Giới tính </label>
-										<input type="radio" id="male" name="gender" value="male">
-										<label for="male" class="radio-gender">Nam</label>
-										<input type="radio" id="female" name="gender" value="female">
-										<label for="female" class="radio-gender">Nữ</label>
+<%--										<label class="info-title" for="email">Giới tính </label>--%>
+<%--										<input type="radio" id="male" name="gender" value="male">--%>
+<%--										<label for="male" class="radio-gender">Nam</label>--%>
+<%--										<input type="radio" id="female" name="gender" value="female">--%>
+<%--										<label for="female" class="radio-gender">Nữ</label>--%>
+
+										<c:choose>
+											<c:when test='${sessionScope.user.gender == "male"}'>
+												<label class="info-title" for="email">Giới tính </label>
+												<input type="radio" id="male" name="gender" value="male" checked>
+												<label for="male" class="radio-gender" >Nam</label>
+												<input type="radio" id="female" name="gender" value="female">
+												<label for="female" class="radio-gender">Nữ</label>
+											</c:when>
+											<c:when test="${sessionScope.user == 'female'}">
+												<label class="info-title" for="email">Giới tính </label>
+												<input type="radio" id="male" name="gender" value="male">
+												<label for="male" class="radio-gender" >Nam</label>
+												<input type="radio" id="female" name="gender" value="female" checked>
+												<label for="female" class="radio-gender">Nữ</label>
+											</c:when>
+											<c:otherwise>
+												<label class="info-title" for="email">Giới tính </label>
+												<input type="radio" id="male" name="gender" value="male">
+												<label for="male" class="radio-gender" >Nam</label>
+												<input type="radio" id="female" name="gender" value="female">
+												<label for="female" class="radio-gender">Nữ</label>
+											</c:otherwise>
+										</c:choose>
+
 									</div>
 									<div class="form-group">
 										<label class="info-title" for="email" style="position: relative; top: 7px;">Ngày sinh <br/><span>(không bắt buộc)</span> </label>
-										<input type="date" name="date" id="" style="width: 50%;">
+										<input type="date" name="date" id="" style="width: 50%;" value="${sessionScope.user.dob}">
                   </div>
                   <div class="form-group">
                     <label class="info-title" for="exampleInputEmail1">Mật khẩu cũ</label>
                     <input type="password" class="form-control unicase-form-control text-input my-account-input" id="exampleInputEmail1">
                   </div>
                   <div class="form-group">
-                    <label class="info-title" for="exampleInputEmail1">Mật khẩu mới</label>
-                    <input type="password" class="form-control unicase-form-control text-input my-account-input" id="exampleInputEmail1">
+                    <label class="info-title" for="exampleInputEmail2">Mật khẩu mới</label>
+                    <input type="password" class="form-control unicase-form-control text-input my-account-input" id="exampleInputEmail2">
                   </div>
                       <div class="form-group">
-                      <label class="info-title" for="exampleInputEmail1">Nhập lại mật khẩu</label>
-                      <input type="password" class="form-control unicase-form-control text-input my-account-input" id="exampleInputEmail1">
+                      <label class="info-title" for="exampleInputEmail3">Nhập lại mật khẩu</label>
+                      <input type="password" class="form-control unicase-form-control text-input my-account-input" id="exampleInputEmail3">
                   </div>
 
 									<br/>

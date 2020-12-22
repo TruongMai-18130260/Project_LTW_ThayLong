@@ -11,32 +11,36 @@ public class User implements Serializable {
     private String name;
     private String password;
     private int role;
+    private String gender;
+    private Date dob;
     private String phone;
     private String address;
-    private Date dob;
     private String card;
-    private ArrayList<Product> wishList;
+    private WishList wishList;
     private Cart cart;
     private Order order;
 
     public User(){}
-    public User(String id,String email,String name,String password,int role,String phone,String address,Date dob,String card,Cart cart,Order order){
+    public User(String id,String email,String name,String password,int role,String gender,String phone,String address,Date dob,String card,WishList wishList,Cart cart,Order order){
         this.id = id;
         this.email = email;
         this.name = name;
         this.password = password;
         this.role = role;
+        this.gender = gender;
         this.phone = phone;
         this.address = address;
         this.dob = dob;
         this.card = card;
-        //this.wishList = wishList;
+        this.wishList = wishList;
         this.cart = cart;
         this.order = order;
     }
 
-    public User(String email,String password){
+    public User(String email,String name,String phone,String password){
         this.email = email;
+        this.name = name;
+        this.phone = phone;
         this.password = password;
     }
 
@@ -45,6 +49,10 @@ public class User implements Serializable {
         this.email = email;
         this.password = password;
         this.role = role;
+    }
+
+    public String getGender() {
+        return gender;
     }
 
     public String getName() {
@@ -91,7 +99,7 @@ public class User implements Serializable {
         return order;
     }
 
-    public ArrayList<Product> getWishList() {
+    public WishList getWishList() {
         return wishList;
     }
 
@@ -139,7 +147,11 @@ public class User implements Serializable {
         this.role = role;
     }
 
-    public void setWishList(ArrayList<Product> wishList) {
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public void setWishList(WishList wishList) {
         this.wishList = wishList;
     }
 }

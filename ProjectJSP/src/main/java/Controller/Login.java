@@ -1,6 +1,9 @@
 package Controller;
 
+import Bean.Cart;
+import Bean.Order;
 import Bean.User;
+import Bean.WishList;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -10,6 +13,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Date;
 
 @WebServlet(name = "/Login", urlPatterns = "/Login")
 public class Login extends HttpServlet {
@@ -28,7 +32,15 @@ public class Login extends HttpServlet {
             ResultSet rs = ps.executeQuery();
             if (rs.next()){
                 //rs.getString(1)
-                User user = new User(rs.getString(1),rs.getString(2),rs.getString(3),rs.getInt(4));
+                WishList wishList = new WishList(rs.getString(11),null);
+                Cart cart = new Cart(rs.getString(12),null);
+                Order order = new Order();
+                //User user = new User(rs.getString(1),rs.getString(2),rs.getString(4),rs.getInt(5));
+                User user = new User(rs.getString(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getInt(5),
+                        rs.getString(6),rs.getString(8),rs.getString(9), rs.getDate(7),
+                        rs.getString(10),wishList,cart,order);
+//                user.setName(rs.getString(3));
+//                user.setDob(rs.getDate(7));
                 HttpSession session = request.getSession();
                 session.setAttribute("user",user);
                 response.sendRedirect("home.jsp");
