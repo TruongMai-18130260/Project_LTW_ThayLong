@@ -5,13 +5,30 @@ import java.io.Serializable;
 public class Product implements Serializable {
     private String id;
     private String name;
-    private double price;
-    private double salePrice;
+    private String imgURL;
+    private int price;
+    private int salePrice;
     private String description;
+    private int status;
+    private String company;
+    private String tag;
+
 
     public Product(){}
 
-    public Product(String name,double price,double salePrice,String description){
+    public Product(String id,String name,String imgURL,int price,int salePrice,String description,int status,String company,String tag){
+        this.id = id;
+        this.name = name;
+        this.imgURL = imgURL;
+        this.price = price;
+        this.salePrice = salePrice;
+        this.description = description;
+        this.status = status;
+        this.company = company;
+        this.status = status;
+    }
+
+    public Product(String name,int price,int salePrice,String description){
         this.name = name;
         this.price = price;
         this.salePrice = salePrice;
@@ -22,20 +39,36 @@ public class Product implements Serializable {
         return id;
     }
 
+    public String getImgURL() {
+        return imgURL;
+    }
+
     public String getName() {
         return name;
     }
 
-    public double getPrice() {
+    public int getPrice() {
         return price;
     }
 
-    public double getSalePrice() {
+    public int getSalePrice() {
         return salePrice;
     }
 
     public String getDescription() {
         return description;
+    }
+
+    public int getStatus() {
+        return status;
+    }
+
+    public String getCompany() {
+        return company;
+    }
+
+    public String getTag() {
+        return tag;
     }
 
     public void setId(String id) {
@@ -50,10 +83,27 @@ public class Product implements Serializable {
         this.description = description;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(int price) {
         this.price = price;
     }
 
-    public void setSalePrice(double salePrice) {
+    public void setSalePrice(int salePrice) {
         this.salePrice = salePrice;
-    }}
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
+    }
+
+    public void setCompany(String company) {
+        this.company = company;
+    }
+
+    public void setImgURL(String imgURL) {
+        this.imgURL = imgURL;
+    }
+
+    public void setTag(String tag) {
+        this.tag = tag;
+    }
+}

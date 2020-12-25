@@ -43,7 +43,7 @@ public class Login extends HttpServlet {
 //                user.setDob(rs.getDate(7));
                 HttpSession session = request.getSession();
                 session.setAttribute("user",user);
-                response.sendRedirect("home.jsp");
+                request.getRequestDispatcher("home.jsp").forward(request,response);
             } else response.sendRedirect("dangnhap.jsp");
         } catch (SQLException | ClassNotFoundException e){
             e.printStackTrace();

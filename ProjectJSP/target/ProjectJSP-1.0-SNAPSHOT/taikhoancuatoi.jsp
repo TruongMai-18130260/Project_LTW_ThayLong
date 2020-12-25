@@ -91,23 +91,22 @@
 						<div class="col-md-9 col-sm-9 my-account">
 							<h2>Thông tin tài khoản</h2>
 							<div class="account-info">
-								<form action="">
+								<form action="UpdateUser" method="post">
 									<div class="form-group">
 										<label class="info-title" for="name">Họ tên </label>
-										<input type="" class="form-control unicase-form-control text-input my-account-input" id="name" value="${sessionScope.user.name}">
+										<input type="" class="form-control unicase-form-control text-input my-account-input" id="name" name="name" value="${sessionScope.user.name}">
 									</div>
 									<div class="form-group">
 										<label class="info-title" for="phone">Số điện thoại </label>
-										<input type="" class="form-control unicase-form-control text-input my-account-input" id="phone" value="${sessionScope.user.phone}">
+										<input type="" class="form-control unicase-form-control text-input my-account-input" id="phone" name="phone" value="${sessionScope.user.phone}">
 									</div>
-									<div class="form-group">
-										<label class="info-title" for="code">Mã xác thực </label>
-										<input type="text" class="form-control unicase-form-control text-input my-account-input" id="code" placeholder="Nhập mã xác thực gửi tới số điện thoại" style="width: 50%;">
-                    					<button type="submit" class="btn-upper btn btn-primary checkout-page-button" style="height: 40px; margin-bottom: 3px;">Gửi mã xác nhận</button>
-                  					</div>
+                                    <div class="form-group">
+                                        <label class="info-title" for="address">Địa chỉ </label>
+                                        <input type="" class="form-control unicase-form-control text-input my-account-input" id="address" name="address" value="${sessionScope.user.address}">
+                                    </div>
 									<div class="form-group">
 										<label class="info-title" for="email">Email </label>
-										<input type="" class="form-control unicase-form-control text-input my-account-input" id="email" value="${sessionScope.user.email}" disabled>
+										<input type="" class="form-control unicase-form-control text-input my-account-input" id="email" name="email" value="${sessionScope.user.email}" disabled>
 									</div>
 									<div class="form-group">
 <%--										<label class="info-title" for="email">Giới tính </label>--%>
@@ -124,7 +123,7 @@
 												<input type="radio" id="female" name="gender" value="female">
 												<label for="female" class="radio-gender">Nữ</label>
 											</c:when>
-											<c:when test="${sessionScope.user != 'female'}">
+											<c:when test="${sessionScope.user == 'female'}">
 												<label class="info-title" for="email">Giới tính </label>
 												<input type="radio" id="male" name="gender" value="male">
 												<label for="male" class="radio-gender" >Nam</label>
@@ -132,7 +131,11 @@
 												<label for="female" class="radio-gender">Nữ</label>
 											</c:when>
 											<c:otherwise>
-
+												<label class="info-title" for="email">Giới tính </label>
+												<input type="radio" id="male" name="gender" value="male">
+												<label for="male" class="radio-gender" >Nam</label>
+												<input type="radio" id="female" name="gender" value="female">
+												<label for="female" class="radio-gender">Nữ</label>
 											</c:otherwise>
 										</c:choose>
 
@@ -140,7 +143,7 @@
 									<div class="form-group">
 										<label class="info-title" for="email" style="position: relative; top: 7px;">Ngày sinh <br/><span>(không bắt buộc)</span> </label>
 										<input type="date" name="date" id="" style="width: 50%;" value="${sessionScope.user.dob}">
-                  </div>
+                  					</div>
                   <div class="form-group">
                     <label class="info-title" for="exampleInputEmail1">Mật khẩu cũ</label>
                     <input type="password" class="form-control unicase-form-control text-input my-account-input" id="exampleInputEmail1">
