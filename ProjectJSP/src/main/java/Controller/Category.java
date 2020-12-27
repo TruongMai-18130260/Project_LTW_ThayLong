@@ -21,8 +21,10 @@ public class Category extends HttpServlet {
         String category = request.getParameter("category");
 
         request.setAttribute("category",category);
+        request.setAttribute("pages",1);
 
-//        request.getRequestDispatcher("PaginationProduct").forward(request,response);
+        request.getRequestDispatcher("PaginationProduct").forward(request,response);
+//        response.sendRedirect("PaginationProduct");
     }
 
 }

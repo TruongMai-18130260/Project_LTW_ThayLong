@@ -20,9 +20,9 @@ public class PaginationProduct extends HttpServlet {
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         try {
-            int page = Integer.parseInt(request.getParameter("pages"));
+            int page = (int) request.getAttribute("pages");
 
-            String category = request.getParameter("category");
+            String category = (String) request.getAttribute("category");
             System.out.println("cate: " + category);
             String sql = "SELECT * FROM product WHERE id LIKE CONCAT(?,'%') LIMIT ?,?";
             request.setAttribute("maxPage",Pagination.getPage(sql,category,9,page));
