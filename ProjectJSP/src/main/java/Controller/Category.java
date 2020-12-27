@@ -22,7 +22,7 @@ public class Category extends HttpServlet {
 
         request.setAttribute("category",category);
 
-        request.getRequestDispatcher("PaginationProduct").forward(request,response);
+//        request.getRequestDispatcher("PaginationProduct").forward(request,response);
     }
 
 }
