@@ -939,18 +939,12 @@
                 <div class="lbl-cnt"> <span class="lbl">Hiển thị </span>
                   <div class="fld inline">
                     <div class="dropdown dropdown-small dropdown-med dropdown-white inline">
-                      <button data-toggle="dropdown" type="button" class="btn dropdown-toggle"> 1 <span class="caret"></span> </button>
+                      <button data-toggle="dropdown" type="button" class="btn dropdown-toggle"> 3 <span class="caret"></span> </button>
                       <ul role="menu" class="dropdown-menu">
-                        <li role="presentation"><a href="#">1</a></li>
-                        <li role="presentation"><a href="#">2</a></li>
                         <li role="presentation"><a href="#">3</a></li>
-                        <li role="presentation"><a href="#">4</a></li>
-                        <li role="presentation"><a href="#">5</a></li>
                         <li role="presentation"><a href="#">6</a></li>
-                        <li role="presentation"><a href="#">7</a></li>
-                        <li role="presentation"><a href="#">8</a></li>
                         <li role="presentation"><a href="#">9</a></li>
-                        <li role="presentation"><a href="#">10</a></li>
+                        <li role="presentation"><a href="#">12</a></li>
                       </ul>
                     </div>
                   </div>
@@ -965,12 +959,8 @@
               <div class="pagination-container">
                 <ul class="list-inline list-unstyled">
                   <li style="width: 30px;" class="prev"><a href="#"><i class="fa fa-angle-left"></i></a></li>
-<%--                  <li style="width: 30px;"><a href="http://localhost:8080/ProjectJSP_war/PaginationProduct?page=1">1</a></li>--%>
-<%--                  <li style="width: 30px;" class="active"><a href="#">2</a></li>--%>
-<%--                  <li style="width: 30px;" ><a href="#">3</a></li>--%>
-<%--                  <li style="width: 30px;" ><a href="#">4</a></li>--%>
                   <c:forEach begin="1" end="${requestScope.maxPage}" step="1" var="a">
-                    <li style="width: 30px;"><a href="http://localhost:8080/ProjectJSP_war/PaginationProduct?pages=${a}">${a}</a></li>
+                    <li style="width: 30px;"><a href="http://localhost:8080/ProjectJSP/PaginationProduct?pages=${a}">${a}</a></li>
                   </c:forEach>
                   <li style="width: 30px;" class="next"><a href="#"><i class="fa fa-angle-right"></i></a></li>
                 </ul>
@@ -1613,13 +1603,12 @@
             <div class="text-right">
               <div class="pagination-container">
                 <ul class="list-inline list-unstyled">
-                  <li class="prev"><a href="#"><i class="fa fa-angle-left"></i></a></li>
-                  <li><a href="#">1</a></li>
-                  <li class="active"><a href="#">2</a></li>
-                  <li><a href="#">3</a></li>
-                  <li><a href="#">4</a></li>
-                  <li class="next"><a href="#"><i class="fa fa-angle-right"></i></a></li>
-                </ul>
+                <li style="width: 30px;" class="prev"><a href="#"><i class="fa fa-angle-left"></i></a></li>
+                <c:forEach begin="1" end="${requestScope.maxPage}" step="1" var="a">
+                  <li style="width: 30px;"><a href="http://localhost:8080/ProjectJSP/PaginationProduct?pages=${a}">${a}</a></li>
+                </c:forEach>
+                <li style="width: 30px;" class="next"><a href="#"><i class="fa fa-angle-right"></i></a></li>
+              </ul>
                 <!-- /.list-inline --> 
               </div>
               <!-- /.pagination-container --> </div>
