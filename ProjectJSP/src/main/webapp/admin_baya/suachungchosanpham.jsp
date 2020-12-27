@@ -395,19 +395,19 @@
                                                         <li class="nav-item">
                                                             <a href="#account-2" data-toggle="tab" class="nav-link">
                                                                 <span class="number">1.</span>
-                                                                <span class="d-none d-sm-inline">General</span>
+                                                                <span class="d-none d-sm-inline">Thông tin chi tiết</span>
                                                             </a>
                                                         </li>
                                                         <li class="nav-item">
                                                             <a href="#profile-tab-2" data-toggle="tab" class="nav-link">
                                                                 <span class="number">2.</span>
-                                                                <span class="d-none d-sm-inline">Product Images</span>
+                                                                <span class="d-none d-sm-inline">Ảnh sản phẩm</span>
                                                             </a>
                                                         </li>
                                                         <li class="nav-item">
                                                             <a href="#finish-2" data-toggle="tab" class="nav-link active">
                                                                 <span class="number">3.</span>
-                                                                <span class="d-none d-sm-inline">Finish</span>
+                                                                <span class="d-none d-sm-inline">Hoàn tất</span>
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -421,21 +421,21 @@
                                                         <div class="tab-pane" id="account-2">
                                                             <div class="row">
                                                                 <div class="col-12">
-                                                                    <h4 class="header-title">General Information</h4>
-                                                                    <p class="sub-header">Fill all information below</p>
+                                                                    <h4 class="header-title">Thêm thông tin sản phẩm</h4>
+                                                                    <p class="sub-header">Điền đầy đủ thông tin bên dưới</p>
                                                                     <div>
                                                                                 
                                                                         <div class="row">
                                                                             <div class="col-lg-6">
                                                                                 <div class="form-group mb-3">
-                                                                                    <label for="product-name">Product Name <span class="text-danger">*</span></label>
-                                                                                    <input type="text" id="product-name" class="form-control" placeholder="e.g : Apple iMac">
+                                                                                    <label for="product-name">Tên sản phẩm <span class="text-danger">*</span></label>
+                                                                                    <input type="text" id="product-name" class="form-control" placeholder="e.g : Bàn ghế Baya">
                                                                                 </div>
                                                                             </div>
                                                                             
                                                                         </div>
                                                                         <div class="form-group mb-3">
-                                                                            <label for="product-description">Product Description <span class="text-danger">*</span></label>
+                                                                            <label for="product-description">Mô tả sản phẩm <span class="text-danger">*</span></label>
                                                                             
                                                                                            
                                                     
@@ -450,64 +450,54 @@
                                                                         <div class="row">
                                                                             <div class="col-lg-6">
                                                                                 <div class="form-group mb-3">
-                                                                                    <label for="product-summary">Product Summary</label>
-                                                                                    <textarea class="form-control" id="product-summary" rows="5" placeholder="Please enter summary"></textarea>
+                                                                                    <label for="product-price">Price <span class="text-danger">*</span></label>
+                                                                                    <input type="text" class="form-control" id="product-price" placeholder="Enter amount">
+                                                                                </div>
+                                                                                <div class="form-group mb-3">
+                                                                                    <label for="product-price">Sale Price <span class="text-danger">*</span></label>
+                                                                                    <input type="text" class="form-control" id="product-saleprice" placeholder="Enter amount">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-lg-6">
                                                                                 <div class="form-group mb-3">
-                                                                                    <label for="product-category">Categories <span class="text-danger">*</span></label>
+                                                                                    <label for="product-category">Danh mục <span class="text-danger">*</span></label>
                                                                                     <select class="form-control select2 select2-hidden-accessible" id="product-category" data-select2-id="product-category" tabindex="-1" aria-hidden="true">
                                                                                         
-                                                                                        <optgroup label="Shopping">
-                                                                                            <option value="SH1">Shopping 1</option>
-                                                                                            <option value="SH2">Shopping 2</option>
-                                                                                            <option value="SH3">Shopping 3</option>
-                                                                                            <option value="SH4">Shopping 4</option>
-                                                                                        </optgroup>
-                                                                                        <optgroup label="CRM">
-                                                                                            <option value="CRM1">Crm 1</option>
-                                                                                            <option value="CRM2">Crm 2</option>
-                                                                                            <option value="CRM3">Crm 3</option>
-                                                                                            <option value="CRM4">Crm 4</option>
-                                                                                        </optgroup>
-                                                                                        <optgroup label="eCommerce">
-                                                                                            <option value="E1">eCommerce 1</option>
-                                                                                            <option value="E2">eCommerce 2</option>
-                                                                                            <option value="E3">eCommerce 3</option>
-                                                                                            <option value="E4">eCommerce 4</option>
+                                                                                        <optgroup label="Phòng">
+                                                                                            <option value="PK">Phòng Khách</option>
+                                                                                            <option value="PA">Phòng Ăn & Bếp</option>
+                                                                                            <option value="PN">Phòng Ngủ</option>
+                                                                                            <option value="PLV">Phòng Làm Việc</option>
+                                                                                            <option value="KGN">Không Gian Ngoài Trời</option>
+                                                                                            <option value="PT">Phòng Tắm</option>
+                                                                                            <option value="PTE">Phòng Trẻ Em </option>
+                                                                                        
                                                                                         </optgroup>
                                             
                                                                                     </select>
                                                                                 </div>
                                                                                 <div class="form-group mb-3">
-                                                                                    <label for="product-price">Price <span class="text-danger">*</span></label>
-                                                                                    <input type="text" class="form-control" id="product-price" placeholder="Enter amount">
+                                                                                    <label class="mb-2">Trạng Thái <span class="text-danger">*</span></label>
+                                                                                    <br>
+                                                                                    <div class="radio form-check-inline">
+                                                                                        <input type="radio" id="inlineRadio1" value="option1" name="radioInline" checked="">
+                                                                                        <label for="inlineRadio1">Còn hàng </label>
+                                                                                    </div>
+                                                                                    <div class="radio form-check-inline">
+                                                                                        <input type="radio" id="inlineRadio2" value="option2" name="radioInline">
+                                                                                        <label for="inlineRadio2">Hết hàng </label>
+                                                                                    </div>
+                                                                                    
                                                                                 </div>
                                                                             </div>
                                                                         </div>
                         
-                                                                        <div class="form-group mb-3">
-                                                                            <label class="mb-2">Status <span class="text-danger">*</span></label>
-                                                                            <br>
-                                                                            <div class="radio form-check-inline">
-                                                                                <input type="radio" id="inlineRadio1" value="option1" name="radioInline" checked="">
-                                                                                <label for="inlineRadio1"> Online </label>
-                                                                            </div>
-                                                                            <div class="radio form-check-inline">
-                                                                                <input type="radio" id="inlineRadio2" value="option2" name="radioInline">
-                                                                                <label for="inlineRadio2"> Offline </label>
-                                                                            </div>
-                                                                            <div class="radio form-check-inline">
-                                                                                <input type="radio" id="inlineRadio3" value="option3" name="radioInline">
-                                                                                <label for="inlineRadio3"> Draft </label>
-                                                                            </div>
-                                                                        </div>
+                                                                       
                                     
-                                                                        <div class="form-group mb-0">
+                                                                        <!-- <div class="form-group mb-0">
                                                                             <label>Comment</label>
                                                                             <textarea class="form-control" rows="3" placeholder="Please enter comment"></textarea>
-                                                                        </div>
+                                                                        </div> -->
                                                                         
                                                                         
                                                                     </div>  
@@ -522,9 +512,9 @@
                                                                     <div class="col-12">
                                                                         <div class="card">
                                                                             <div class="card-body">
-                                                                                <h4 class="header-title m-t-0">Product Images</h4>
+                                                                                <h4 class="header-title m-t-0">Ảnh Sản Phẩm</h4>
                                                                                 <p class="text-muted font-13 m-b-30">
-                                                                                    Upload product image
+                                                                                    Upload ảnh sản phẩm
                                                                                 </p>
                                             
                                                                                 <form action="/" method="post" class="dropzone" id="myAwesomeDropzone" data-plugin="dropzone" data-previews-container="#file-previews" data-upload-preview-template="#uploadPreviewTemplate">
@@ -534,9 +524,9 @@
                                             
                                                                                     <div class="dz-message needsclick">
                                                                                         <p class="h1 text-muted"><i class="mdi mdi-cloud-upload"></i></p>
-                                                                                        <h3>Drop files here or click to upload.</h3>
-                                                                                        <span class="text-muted font-13">(This is just a demo dropzone. Selected files are
-                                                                                            <strong>not</strong> actually uploaded.)</span>
+                                                                                        <h3>Kéo thả tệp hoặc click để upload ảnh.</h3>
+                                                                                        <!-- <span class="text-muted font-13">(This is just a demo dropzone. Selected files are
+                                                                                            <strong>not</strong> actually uploaded.)</span> -->
                                                                                     </div>
                                                                                 </form>
                                             
@@ -561,9 +551,9 @@
                                                                 <div class="col-12">
                                                                     <div class="text-center">
                                                                         <h2 class="mt-0"><i class="mdi mdi-check-all"></i></h2>
-                                                                        <h3 class="mt-0">Completed !</h3>
+                                                                        <h3 class="mt-0">Hoàn tất !</h3>
         
-                                                                        <p class="w-75 mb-2 mx-auto">Product will be available soon in store.</p>
+                                                                        <p class="w-75 mb-2 mx-auto">Sản phẩm sớm sẽ được thêm vào cửa hàng.</p>
         
                                                                        
                                                                     </div>
