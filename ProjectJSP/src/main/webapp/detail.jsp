@@ -383,7 +383,7 @@
 </div><!-- /.gallery-holder -->        			
 					<div class='col-sm-6 col-md-7 product-info-block'>
 						<div class="product-info">
-							<h1 class="name">${requestScope.product.name}</h1>
+							<h1 class="name"><a href="Detail">${requestScope.product.name}</a></h1>
 							
 							<div class="rating-reviews m-t-20">
 								<div class="row">
@@ -648,11 +648,12 @@
 				<section class="section featured-product wow fadeInUp">
 					<h3 class="section-title">Sản phẩm yêu thích</h3>
 					<div class="owl-carousel home-owl-carousel custom-carousel owl-theme outer-top-xs">
-					  <div class="item item-carousel">
+					  <c:forEach items="${requestScope.data}" var="s">
+						<div class="item item-carousel">
 						<div class="products">
 						  <div class="product">
 							<div class="product-image">
-							  <div class="image"> <a href="detail.html"><img src="assets/images/furnitures/shelf/1.jpg" alt=""></a> </div>
+							  <div class="image"> <a href="Detail"><img src="${s.imgURL}" alt=""></a> </div>
 							  <!-- /.image -->
 							  
 							  <div class="tag hot"><span>hot</span></div>
@@ -660,10 +661,12 @@
 							<!-- /.product-image -->
 							
 							<div class="product-info text-left">
-							  <h3 class="name"><a href="detail.html">Kệ sách BABILON</a></h3>
+							  <h3 class="name"><a href="Detail">${s.name}</a></h3>
 							  <div class="rating rateit-small"></div>
 							  <div class="description"></div>
-							  <div class="product-price"> <span class="price"> 2.000.000đ </span> <span class="price-before-discount">3.000.000đ</span> </div>
+							  <div class="product-price">
+								  <span class="price"> ${s.price}đ </span>
+								  <span class="price-before-discount">${s.pricesale}đ</span> </div>
 							  <!-- /.product-price --> 
 							  
 							</div>
@@ -675,8 +678,8 @@
 									<button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
 									<button class="btn btn-primary cart-btn" type="button">Thêm vào giỏ hàng</button>
 								  </li>
-								  <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-								  <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
+								  <li class="lnk wishlist"> <a class="add-to-cart" href="detail.jsp" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
+								  <li class="lnk"> <a class="add-to-cart" href="detail.jsp" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
 								</ul>
 							  </div>
 							  <!-- /.action --> 
@@ -688,217 +691,9 @@
 						</div>
 						<!-- /.products --> 
 					  </div>
+					  </c:forEach>
 					  <!-- /.item -->
-					  
-					  <div class="item item-carousel">
-						<div class="products">
-						  <div class="product">
-							<div class="product-image">
-							  <div class="image"> <a href="detail.html"><img src="assets/images/furnitures/table/4.jpg" alt=""></a> </div>
-							  <!-- /.image -->
-							  
-							  <div class="tag new"><span>new</span></div>
-							</div>
-							<!-- /.product-image -->
-							
-							<div class="product-info text-left">
-							  <h3 class="name"><a href="detail.html">Bàn Base</a></h3>
-							  <div class="rating rateit-small"></div>
-							  <div class="description"></div>
-							  <div class="product-price"> <span class="price"> 8.300.000đ </span> <span class="price-before-discount">10.000.000đ</span> </div>
-							  <!-- /.product-price --> 
-							  
-							</div>
-							<!-- /.product-info -->
-							<div class="cart clearfix animate-effect">
-							  <div class="action">
-								<ul class="list-unstyled">
-								  <li class="add-cart-button btn-group">
-									<button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-									<button class="btn btn-primary cart-btn" type="button">Thêm vào giỏ hàng</button>
-								  </li>
-								  <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-								  <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
-								</ul>
-							  </div>
-							  <!-- /.action --> 
-							</div>
-							<!-- /.cart --> 
-						  </div>
-						  <!-- /.product --> 
-						  
-						</div>
-						<!-- /.products --> 
-					  </div>
-					  <!-- /.item -->
-					  
-					  <div class="item item-carousel">
-						<div class="products">
-						  <div class="product">
-							<div class="product-image">
-							  <div class="image"> <a href="detail.html"><img src="assets/images/furnitures/light/3.jpg" data-echo="assets/images/furnitures/light/3.jpg" alt=""></a> </div>
-							  <!-- /.image -->
-							  
-							  <div class="tag sale"><span>sale</span></div>
-							</div>
-							<!-- /.product-image -->
-							
-							<div class="product-info text-left">
-							  <h3 class="name"><a href="detail.html">Đèn PARKER </a></h3>
-							  <div class="rating rateit-small"></div>
-							  <div class="description"></div>
-							  <div class="product-price"> <span class="price"> 400.000đ </span> <span class="price-before-discount">450.000đ</span> </div>
-							  <!-- /.product-price --> 
-							  
-							</div>
-							<!-- /.product-info -->
-							<div class="cart clearfix animate-effect">
-							  <div class="action">
-								<ul class="list-unstyled">
-								  <li class="add-cart-button btn-group">
-									<button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-									<button class="btn btn-primary cart-btn" type="button">Thêm vào giỏ hàng</button>
-								  </li>
-								  <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-								  <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
-								</ul>
-							  </div>
-							  <!-- /.action --> 
-							</div>
-							<!-- /.cart --> 
-						  </div>
-						  <!-- /.product --> 
-						  
-						</div>
-						<!-- /.products --> 
-					  </div>
-					  <!-- /.item -->
-					  
-					  <div class="item item-carousel">
-						<div class="products">
-						  <div class="product">
-							<div class="product-image">
-							  <div class="image"> <a href="detail.html"><img src="assets/images/furnitures/hook/1.jpg" alt=""></a> </div>
-							  <!-- /.image -->
-							  
-							  <div class="tag hot"><span>hot</span></div>
-							</div>
-							<!-- /.product-image -->
-							
-							<div class="product-info text-left">
-							  <h3 class="name"><a href="detail.html">Giá treo đồ</a></h3>
-							  <div class="rating rateit-small"></div>
-							  <div class="description"></div>
-							  <div class="product-price"> <span class="price"> 300.000đ </span> <span class="price-before-discount">380.000đ</span> </div>
-							  <!-- /.product-price --> 
-							  
-							</div>
-							<!-- /.product-info -->
-							<div class="cart clearfix animate-effect">
-							  <div class="action">
-								<ul class="list-unstyled">
-								  <li class="add-cart-button btn-group">
-									<button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-									<button class="btn btn-primary cart-btn" type="button">Thêm vào giỏ hàng</button>
-								  </li>
-								  <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-								  <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
-								</ul>
-							  </div>
-							  <!-- /.action --> 
-							</div>
-							<!-- /.cart --> 
-						  </div>
-						  <!-- /.product --> 
-						  
-						</div>
-						<!-- /.products --> 
-					  </div>
-					  <!-- /.item -->
-					  
-					  <div class="item item-carousel">
-						<div class="products">
-						  <div class="product">
-							<div class="product-image">
-							  <div class="image"> <a href="detail.html"><img src="assets/images/furnitures/combo/1.jpg" alt=""></a> </div>
-							  <!-- /.image -->
-							  
-							  <div class="tag new"><span>new</span></div>
-							</div>
-							<!-- /.product-image -->
-							
-							<div class="product-info text-left">
-							  <h3 class="name"><a href="detail.html">Bộ bàn 4 ghế ATLANTA</a></h3>
-							  <div class="rating rateit-small"></div>
-							  <div class="description"></div>
-							  <div class="product-price"> <span class="price"> 23.000.000đ </span> <span class="price-before-discount">25.000.000đ</span> </div>
-							  <!-- /.product-price --> 
-							  
-							</div>
-							<!-- /.product-info -->
-							<div class="cart clearfix animate-effect">
-							  <div class="action">
-								<ul class="list-unstyled">
-								  <li class="add-cart-button btn-group">
-									<button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-									<button class="btn btn-primary cart-btn" type="button">Thêm vào giỏ hàng</button>
-								  </li>
-								  <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-								  <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
-								</ul>
-							  </div>
-							  <!-- /.action --> 
-							</div>
-							<!-- /.cart --> 
-						  </div>
-						  <!-- /.product --> 
-						  
-						</div>
-						<!-- /.products --> 
-					  </div>
-					  <!-- /.item -->
-					  
-					  <div class="item item-carousel">
-						<div class="products">
-						  <div class="product">
-							<div class="product-image">
-							  <div class="image"> <a href="detail.html"><img src="assets/images/furnitures/table/1.jpg" alt=""></a> </div>
-							  <!-- /.image -->
-							  
-							  <div class="tag sale"><span>sale</span></div>
-							</div>
-							<!-- /.product-image -->
-							
-							<div class="product-info text-left">
-							  <h3 class="name"><a href="detail.html">Bàn Trà Gỗ 549T</a></h3>
-							  <div class="rating rateit-small"></div>
-							  <div class="description"></div>
-							  <div class="product-price"> <span class="price"> 2.900.000đ</span> <span class="price-before-discount">3.500.000đ</span> </div>
-							  <!-- /.product-price --> 
-							  
-							</div>
-							<!-- /.product-info -->
-							<div class="cart clearfix animate-effect">
-							  <div class="action">
-								<ul class="list-unstyled">
-								  <li class="add-cart-button btn-group">
-									<button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-									<button class="btn btn-primary cart-btn" type="button">Thêm vào giỏ hàng</button>
-								  </li>
-								  <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-								  <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
-								</ul>
-							  </div>
-							  <!-- /.action --> 
-							</div>
-							<!-- /.cart --> 
-						  </div>
-						  <!-- /.product --> 
-						  
-						</div>
-						<!-- /.products --> 
-					  </div>
-					  <!-- /.item --> 
+
 					</div>
 					<!-- /.home-owl-carousel --> 
 				  </section><!-- /.section -->
