@@ -14,7 +14,10 @@ public class Page extends HttpServlet {
     }
 
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        int page = Integer.parseInt(request.getParameter("pages"));
 
+        request.setAttribute("pages",page);
+        request.getRequestDispatcher("PaginationProduct").forward(request,response);
     }
 
 }

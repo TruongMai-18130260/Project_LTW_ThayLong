@@ -20,17 +20,24 @@ public class PaginationProduct extends HttpServlet {
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         try {
-            int page = (int) request.getAttribute("pages");
+            HttpSession session = request.getSession();
+//            int a = Integer.parseInt(request.getParameter("a"));
+//            System.out.println("a = " + a);
+            int page = (int) session.getAttribute("pages1");
+            int maxitem = (int) session.getAttribute("maxitem1");
 
-            String category = (String) request.getAttribute("category");
+            String category = (String) session.getAttribute("category1");
             System.out.println("cate: " + category);
             String sql = "SELECT * FROM product WHERE id LIKE CONCAT(?,'%') LIMIT ?,?";
-            request.setAttribute("maxPage",Pagination.getPage(sql,category,9,page));
-            ArrayList<Product> listProducts = Pagination.pagination(sql,category,9,page);
+            System.out.println(page);
+
+            session.setAttribute("maxPage",Pagination.getPage(sql,category,maxitem,page));
+            ArrayList<Product> listProducts = Pagination.pagination(sql,category,maxitem,page);
 
             request.setAttribute("listProducts",listProducts);
 
             request.getRequestDispatcher("phonglamviec.jsp").forward(request,response);
+
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }

@@ -28,6 +28,27 @@ public class Pagination {
 
         return maxPage;
     }
+
+    public static int getPageAdmin(int maxItem) throws ClassNotFoundException, SQLException{
+        ConnectionDB.connect();
+        String countSQL = "SELECT count(*) FROM product";
+
+        int total = 0;
+        PreparedStatement ps = ConnectionDB.con.prepareStatement(countSQL);
+        ResultSet rs = ps.executeQuery();
+        while (rs.next()) {
+            total = Integer.parseInt(rs.getString(1));
+            System.out.println(total);
+        }
+        int maxPage = total/maxItem;
+        int surplusItem = total%maxItem;
+        if (surplusItem != 0){
+            maxPage++;
+        }
+
+        return maxPage;
+    }
+
     public static ArrayList<Product> pagination(String query,String head,int maxItem,int page) throws ClassNotFoundException, SQLException {
         pagedProduct = new ArrayList<>();
         ConnectionDB.connect();

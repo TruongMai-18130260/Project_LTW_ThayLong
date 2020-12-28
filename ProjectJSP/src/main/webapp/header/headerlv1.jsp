@@ -215,8 +215,8 @@
                           <div class="col-xs-12 col-sm-6 col-md-2 col-menu  drop-height">
                             <h2 class="title">Phòng làm việc</h2>
                             <ul class="links">
-                              <li><a href='http://localhost:8080/ProjectJSP/Category?category=plv'> Bàn làm việc</a></li>
-                              <li><a href='http://localhost:8080/ProjectJSP/PaginationProduct?pages=1&category=plv'>Ghế văn phòng</a></li>
+                              <li><a href='Category?category=plv'> Bàn làm việc</a></li>
+                              <li><a href='http://localhost:8080/ProjectJSP/Category?category=plv'>Ghế văn phòng</a></li>
                               <li><a href='http://localhost:8080/ProjectJSP/PaginationProduct?pages=1&category=plv'>Kệ sách</a></li>
                               <li><a href='http://localhost:8080/ProjectJSP/PaginationProduct?pages=1&category=plv'>Đèn</a></li>
                               <li><a href='http://localhost:8080/ProjectJSP/PaginationProduct?pages=1&category=plv'> Đồ dùng văn phòng</a></li>

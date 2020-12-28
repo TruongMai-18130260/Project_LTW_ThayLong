@@ -15,6 +15,9 @@
 <body>
     <p>Dang nhap thanh cong</p>
     <c:out value="${sessionScope.user.role}"/>
+    <c:out value="${sessionScope.category1}"/>
+    <p>page </p><c:out value="${sessionScope.pages1}"/>
+    <p>max </p><c:out value="${sessionScope.maxitem1}"/>
 
 </body>
 </html>
