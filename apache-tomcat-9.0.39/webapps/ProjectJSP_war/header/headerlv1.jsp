@@ -215,14 +215,14 @@
                           <div class="col-xs-12 col-sm-6 col-md-2 col-menu  drop-height">
                             <h2 class="title">Phòng làm việc</h2>
                             <ul class="links">
-                              <li><a href="phonglamviec.html"> Bàn làm việc</a></li>
-                              <li><a href="phonglamviec.html">Ghế văn phòng</a></li>
-                              <li><a href="phonglamviec.html">Kệ sách</a></li>
-                              <li><a href="phonglamviec.html">Đèn</a></li>
-                              <li><a href="phonglamviec.html"> Đồ dùng văn phòng</a></li>
-                              <li><a href="phonglamviec.html"> Thùng rác</a></li>
-                              <li><a href="phonglamviec.html">Sản phẩm treo tường</a></li>
-                              <li><a href="phonglamviec.html">Tinh dầu & túi thơm</a></li>
+                              <li><a href='http://localhost:8080/ProjectJSP/Category?category=plv'> Bàn làm việc</a></li>
+                              <li><a href='http://localhost:8080/ProjectJSP/PaginationProduct?pages=1&category=plv'>Ghế văn phòng</a></li>
+                              <li><a href='http://localhost:8080/ProjectJSP/PaginationProduct?pages=1&category=plv'>Kệ sách</a></li>
+                              <li><a href='http://localhost:8080/ProjectJSP/PaginationProduct?pages=1&category=plv'>Đèn</a></li>
+                              <li><a href='http://localhost:8080/ProjectJSP/PaginationProduct?pages=1&category=plv'> Đồ dùng văn phòng</a></li>
+                              <li><a href='http://localhost:8080/ProjectJSP/PaginationProduct?pages=1&category=plv'> Thùng rác</a></li>
+                              <li><a href='http://localhost:8080/ProjectJSP/PaginationProduct?pages=1&category=plv'>Sản phẩm treo tường</a></li>
+                              <li><a href='http://localhost:8080/ProjectJSP/PaginationProduct?pages=1&category=plv'>Tinh dầu & túi thơm</a></li>
 
                             </ul>
                           </div>
@@ -266,9 +266,9 @@
                           <div class="col-xs-12 col-sm-6 col-md-2 col-menu  drop-height">
                             <h2 class="title">Phòng trẻ em</h2>
                             <ul class="links">
-                              <li><a href="phongtreem.html">Ghế trẻ em </a></li>
-                              <li><a href="phongtreem.html">Bàn trẻ em</a></li>
-                              <li><a href="phongtreem.html">Thú bông </a></li>
+                              <li><a href='http://localhost:8080/ProjectJSP/PaginationProduct?pages=1&category=pte'>Ghế trẻ em </a></li>
+                              <li><a href='http://localhost:8080/ProjectJSP/PaginationProduct?pages=1&category=pte'>Bàn trẻ em</a></li>
+                              <li><a href='http://localhost:8080/ProjectJSP/PaginationProduct?pages=1&category=pte'>Thú bông </a></li>
                             </ul>
                           </div>
                           <!-- /.col -->
