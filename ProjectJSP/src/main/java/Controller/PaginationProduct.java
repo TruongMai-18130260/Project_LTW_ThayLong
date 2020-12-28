@@ -31,6 +31,7 @@ public class PaginationProduct extends HttpServlet {
             request.setAttribute("listProducts",listProducts);
 
             request.getRequestDispatcher("phonglamviec.jsp").forward(request,response);
+
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }
