@@ -55,7 +55,7 @@
 			<ul class="list-inline list-unstyled">
 				<li><a href="#">Trang chủ</a></li>
 				<li style="width: 130px;"><a href="#" >Chi tiết sản phẩm</a></li>
-				<li class='active' style="width: 130px;">${requestScope.product.name}</li>
+				<li class='active' style="width: 130px;">${sessionScope.product.name}</li>
 			</ul>
 		</div><!-- /.breadcrumb-inner -->
 	</div><!-- /.container -->
@@ -383,7 +383,7 @@
 </div><!-- /.gallery-holder -->        			
 					<div class='col-sm-6 col-md-7 product-info-block'>
 						<div class="product-info">
-							<h1 class="name"><a href="Detail">${requestScope.product.name}</a></h1>
+							<h1 class="name"><a href="Detail">${sessionScope.product.name}</a></h1>
 							
 							<div class="rating-reviews m-t-20">
 								<div class="row">
@@ -409,10 +409,10 @@
 										<div class="stock-box">
 
 											<c:choose>
-												<c:when test="${requestScope.product.status == 0}">
+												<c:when test="${sessionScope.product.status == 0}">
 													<span class="value">Còn hàng</span>
 												</c:when>
-												<c:when test="${requestScope.product.status == 1}">
+												<c:when test="${sessionScope.product.status == 1}">
 													<span class="value">Hết hàng</span>
 												</c:when>
 												<c:otherwise>
@@ -426,7 +426,7 @@
 							</div><!-- /.stock-container -->
 
 							<div class="description-container m-t-20">
-								${requestScope.product.description}
+								${sessionScope.product.description}
 							</div><!-- /.description-container -->
 
 							<div class="price-container info-container m-t-20">
@@ -435,8 +435,8 @@
 
 									<div class="col-sm-6">
 										<div class="price-box">
-											<span class="price">${requestScope.product.salePrice}đ</span>
-											<span class="price-strike">${requestScope.product.price}đ</span>
+											<span class="price">${sessionScope.product.salePrice}đ</span>
+											<span class="price-strike">${sessionScope.product.price}đ</span>
 										</div>
 									</div>
 
@@ -510,7 +510,7 @@
 								
 								<div id="description" class="tab-pane in active">
 									<div class="product-tab">
-										<p class="text">${requestScope.product.description}</p>
+										<p class="text">${sessionScope.product.description}</p>
 									</div>	
 								</div><!-- /.tab-pane -->
 

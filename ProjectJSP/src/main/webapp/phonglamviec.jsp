@@ -873,9 +873,10 @@
                     <div class="dropdown dropdown-small dropdown-med dropdown-white inline">
                       <button data-toggle="dropdown" type="button" class="btn dropdown-toggle"> Mặc định <span class="caret"></span> </button>
                       <ul role="menu" class="dropdown-menu">
-                        <li role="presentation"><a href="#">Gía: Thấp nhất</a></li>
-                        <li role="presentation"><a href="#">Gía: Cao nhất</a></li>
-                        <li role="presentation"><a href="#">Tên sản phẩm:A đến Z</a></li>
+                        <li role="presentation"><a href="Category?category=${sessionScope.category1}&maxitem=${sessionScope.maxitem1}&sort=lowprice">Gía: Thấp nhất</a></li>
+                        <li role="presentation"><a href="Category?category=${sessionScope.category1}&maxitem=${sessionScope.maxitem1}&sort=highprice">Gía: Cao nhất</a></li>
+                        <li role="presentation"><a href="Category?category=${sessionScope.category1}&maxitem=${sessionScope.maxitem1}&sort=lowalpha">Tên sản phẩm:A đến Z</a></li>
+                        <li role="presentation"><a href="Category?category=${sessionScope.category1}&maxitem=${sessionScope.maxitem1}&sort=highalpha">Tên sản phẩm:Z đến A</a></li>
                       </ul>
                     </div>
                   </div>
@@ -938,7 +939,7 @@
                       <div class="products">
                         <div class="product">
                           <div class="product-image">
-                            <div class="image"> <a href="detail.jsp"><img src="${item.imgURL}" alt=""></a> </div>
+                            <div class="image"> <a href="Detail?id=${item.id}"><img src="${item.imgURL}" alt=""></a> </div>
                             <!-- /.image -->
 
                             <div class="tag new"><span>new</span></div>

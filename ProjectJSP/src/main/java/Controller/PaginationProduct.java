@@ -28,7 +28,8 @@ public class PaginationProduct extends HttpServlet {
 
             String category = (String) session.getAttribute("category1");
             System.out.println("cate: " + category);
-            String sql = "SELECT * FROM product WHERE id LIKE CONCAT(?,'%') LIMIT ?,?";
+            String sql = (String) session.getAttribute("sql");
+//            String sql = "SELECT * FROM product WHERE id LIKE CONCAT(?,'%') LIMIT ?,?";
             System.out.println(page);
 
             session.setAttribute("maxPage",Pagination.getPage(sql,category,maxitem,page));

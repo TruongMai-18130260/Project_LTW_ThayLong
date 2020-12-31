@@ -17,11 +17,10 @@ public class Category extends HttpServlet {
         HttpSession session = request.getSession();
         int page;
         int maxitem;
-        int maxitem2;
+        String sort1 = "aaaaaaaaaaaaaaaaaaaaa";
+        String sql;
         String category = request.getParameter("category");
-//        maxitem = request.getParameter("maxitem");
-//        page = request.getParameter("pages");
-
+        //try maxitem
         try {
             maxitem = Integer.parseInt(request.getParameter("maxitem"));
         } catch (NumberFormatException e){
@@ -31,11 +30,46 @@ public class Category extends HttpServlet {
                 maxitem = 9;
             }
         }
+        //try page
         try {
             page = Integer.parseInt(request.getParameter("pages"));
         } catch (NumberFormatException e){
             page = 1;
         }
+        //try sort
+        if (request.getParameter("sort") == null){
+            if ((String) session.getAttribute("sort2") == null){
+                sort1 = "none";
+            } else {
+                sort1 = (String) session.getAttribute("sort2");
+            }
+
+        } else {
+            sort1 = request.getParameter("sort");
+        }
+        System.out.println("sql: " + sort1);
+       switch (sort1){
+           case "lowprice":
+                sql = "SELECT * FROM product WHERE id LIKE CONCAT(?,'%') ORDER BY price ASC LIMIT ?,?";
+               session.setAttribute("sql",sql);
+               break;
+           case "highprice":
+               sql = "SELECT * FROM product WHERE id LIKE CONCAT(?,'%') ORDER BY price DESC LIMIT ?,?";
+               session.setAttribute("sql",sql);
+               break;
+           case "lowalpha":
+               sql = "SELECT * FROM product WHERE id LIKE CONCAT(?,'%') ORDER BY name ASC LIMIT ?,?";
+               session.setAttribute("sql",sql);
+               break;
+           case "highalpha":
+               sql = "SELECT * FROM product WHERE id LIKE CONCAT(?,'%') ORDER BY name DESC LIMIT ?,?";
+               session.setAttribute("sql",sql);
+               break;
+           case "none":
+               sql = "SELECT * FROM product WHERE id LIKE CONCAT(?,'%') LIMIT ?,?";
+               session.setAttribute("sql",sql);
+               break;
+       }
 
         System.out.println("Category: " + category);
         System.out.println("page: " + page);
@@ -47,11 +81,13 @@ public class Category extends HttpServlet {
         session.setAttribute("pages1",page);
         session.setAttribute("maxitem1",maxitem);
         session.setAttribute("maxitem2",maxitem);
+        session.setAttribute("sort2",sort1);
 
         System.out.println("S-Category: " + session.getAttribute("category1"));
         System.out.println("S-page: " + session.getAttribute("pages1"));
         System.out.println("S-maxitem: " + session.getAttribute("maxitem1"));
-//        response.sendRedirect("PaginationProduct");
+        System.out.println("S-sort: " + session.getAttribute("sort2"));
+
         request.getRequestDispatcher("PaginationProduct").forward(request,response);
     }
 
