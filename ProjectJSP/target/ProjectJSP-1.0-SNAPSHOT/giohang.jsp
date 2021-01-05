@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -69,9 +70,8 @@
 					<th class="cart-romove item">Xóa</th>
 					<th class="cart-description item">Ảnh</th>
 					<th class="cart-product-name item">Tên sản phẩm</th>
-					<th class="cart-edit item">Chỉnh sửa</th>
 					<th class="cart-qty item">Số lượng</th>
-					<th class="cart-sub-total item">Tổng phụ</th>
+					<th class="cart-sub-total item">Đơn giá</th>
 					<th class="cart-total last-item">Tổng cộng</th>
 				</tr>
 			</thead><!-- /thead -->
@@ -80,7 +80,7 @@
 					<td colspan="7">
 						<div class="shopping-cart-btn">
 							<span class="">
-								<a href="home.html" class="btn btn-upper btn-primary outer-left-xs">Tiếp tục mua hàng</a>
+								<a href="Home" class="btn btn-upper btn-primary outer-left-xs">Tiếp tục mua hàng</a>
 								<a href="#" class="btn btn-upper btn-primary pull-right outer-right-xs">Cập nhật giỏ hàng</a>
 							</span>
 						</div><!-- /.shopping-cart-btn -->
@@ -88,80 +88,42 @@
 				</tr>
 			</tfoot>
 			<tbody>
-				<tr>
-					<td class="romove-item"><a href="#" title="cancel" class="icon"><i class="fa fa-trash-o"></i></a></td>
-					<td class="cart-image">
-						<a class="entry-thumbnail" href="detail.html">
-						    <img src="assets/images/furnitures/combo/2.jpg" alt="">
-						</a>
-					</td>
-					<td class="cart-product-name-info">
-						<h4 class='cart-product-description'><a href="detail.html">Bộ bàn ghế Soraka</a></h4>
-						<div class="row">
-							<div class="col-sm-4">
-								<div class="rating rateit-small"></div>
-							</div>
-							<div class="col-sm-8">
-								<div class="reviews">
-									(06 Nhận xét)
+				<c:forEach var="item" items="${sessionScope.cart.list}">
+					<tr>
+						<td class="romove-item"><a href="CartController?remove=${item.id}" title="cancel" class="icon"><i class="fa fa-trash-o"></i></a></td>
+						<td class="cart-image">
+							<a class="entry-thumbnail" href="Detail">
+								<img src="${item.product.imgURL}" alt="">
+							</a>
+						</td>
+						<td class="cart-product-name-info">
+							<h4 class='cart-product-description'><a href="Detail?id=${item.product.id}">${item.product.name}</a></h4>
+							<div class="row">
+								<div class="col-sm-4">
+									<div class="rating rateit-small"></div>
 								</div>
-							</div>
-						</div><!-- /.row -->
-						<div class="cart-product-info">
-											<span class="product-color">Màu:<span>Xanh</span></span>
-						</div>
-					</td>
-					<td class="cart-product-edit"><a href="#" class="product-edit">Chỉnh sửa</a></td>
-					<td class="cart-product-quantity">
-						<div class="quant-input">
-				                <div class="arrows">
-				                  <div class="arrow plus gradient"><span class="ir"><i class="icon fa fa-sort-asc"></i></span></div>
-				                  <div class="arrow minus gradient"><span class="ir"><i class="icon fa fa-sort-desc"></i></span></div>
-				                </div>
-				                <input type="text" value="1">
-			              </div>
-		            </td>
-					<td class="cart-product-sub-total"><span class="cart-sub-total-price">2,500,000đ</span></td>
-					<td class="cart-product-grand-total"><span class="cart-grand-total-price">2,500,000đ</span></td>
-				</tr>
-				<tr>
-					<td class="romove-item"><a href="#" title="cancel" class="icon"><i class="fa fa-trash-o"></i></a></td>
-					<td class="cart-image">
-						<a class="entry-thumbnail" href="detail.html">
-						    <img src="assets/images/furnitures/table/3.jpg" alt="">
-						</a>
-					</td>
-					<td class="cart-product-name-info">
-						<h4 class='cart-product-description'><a href="detail.html">Bàn Annie</a></h4>
-						<div class="row">
-							<div class="col-sm-4">
-								<div class="rating rateit-small"></div>
-							</div>
-							<div class="col-sm-8">
-								<div class="reviews">
-									(06 nhận xét)
+								<div class="col-sm-8">
+									<div class="reviews">
+										(06 Nhận xét)
+									</div>
 								</div>
-							</div>
-						</div><!-- /.row -->
-						<div class="cart-product-info">
-						<span class="product-color">Màu:<span>Hồng</span></span>
-						</div>
-					</td>
-					<td class="cart-product-edit"><a href="#" class="product-edit">Chỉnh sửa</a></td>
-					<td class="cart-product-quantity">
-						<div class="cart-quantity">
+							</div><!-- /.row -->
+
+						</td>
+						<td class="cart-product-quantity">
 							<div class="quant-input">
-				                <div class="arrows">
-				                  <div class="arrow plus gradient"><span class="ir"><i class="icon fa fa-sort-asc"></i></span></div>
-				                  <div class="arrow minus gradient"><span class="ir"><i class="icon fa fa-sort-desc"></i></span></div>
-				                </div>
-				                <input type="text" value="1">
-			              </div>
-			            </div>
-		            </td>
-					<td class="cart-product-sub-total"><span class="cart-sub-total-price">3,500,000đ</span></td>
-					<td class="cart-product-grand-total"><span class="cart-grand-total-price">3,500,000đ</span></td>
-				</tr>
+								<div class="arrows">
+									<div class="arrow plus gradient"><span class="ir"><i class="icon fa fa-sort-asc"></i></span></div>
+									<div class="arrow minus gradient"><span class="ir"><i class="icon fa fa-sort-desc"></i></span></div>
+								</div>
+								<input type="text" value="${item.quantity}">
+							</div>
+						</td>
+						<td class="cart-product-sub-total"><span class="cart-sub-total-price">${item.product.salePrice}đ</span></td>
+						<td class="cart-product-grand-total"><span class="cart-grand-total-price">${item.price}đ</span></td>
+					</tr>
+				</c:forEach>
+
 			</tbody><!-- /tbody -->
 		</table><!-- /table -->
 	</div>
@@ -244,10 +206,10 @@
 			<tr>
 				<th>
 					<div class="cart-sub-total">
-						Tổng phụ<span class="inner-left-md">12,500,000đ</span>
+						Tổng phụ<span class="inner-left-md">${sessionScope.cart.totalPrice}đ</span>
 					</div>
 					<div class="cart-grand-total">
-						Tổng cộng<span class="inner-left-md">12,500,000đ</span>
+						Tổng cộng<span class="inner-left-md">${sessionScope.cart.totalPrice}đ</span>
 					</div>
 				</th>
 			</tr>

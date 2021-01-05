@@ -1,9 +1,6 @@
 package Controller;
 
-import Bean.Cart;
-import Bean.Order;
-import Bean.User;
-import Bean.WishList;
+import Bean.*;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -33,7 +30,8 @@ public class Login extends HttpServlet {
             if (rs.next()){
                 //rs.getString(1)
                 WishList wishList = new WishList(rs.getString(11),null);
-                Cart cart = new Cart(rs.getString(12),null);
+                CartBean cart = new CartBean(rs.getString(12));
+                cart.setList(FindProduct.initCart(cart.getCartId()));
                 Order order = new Order();
                 //User user = new User(rs.getString(1),rs.getString(2),rs.getString(4),rs.getInt(5));
                 User user = new User(rs.getString(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getInt(5),

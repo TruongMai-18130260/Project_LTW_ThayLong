@@ -17,11 +17,11 @@ public class User implements Serializable {
     private String address;
     private String card;
     private WishList wishList;
-    private Cart cart;
+    private CartBean cart;
     private Order order;
 
     public User(){}
-    public User(String id,String email,String name,String password,int role,String gender,String phone,String address,Date dob,String card,WishList wishList,Cart cart,Order order){
+    public User(String id,String email,String name,String password,int role,String gender,String phone,String address,Date dob,String card,WishList wishList,CartBean cart,Order order){
         this.id = id;
         this.email = email;
         this.name = name;
@@ -91,7 +91,7 @@ public class User implements Serializable {
         return phone;
     }
 
-    public Cart getCart() {
+    public CartBean getCart() {
         return cart;
     }
 
@@ -123,7 +123,7 @@ public class User implements Serializable {
         this.dob = dob;
     }
 
-    public void setCart(Cart cart) {
+    public void setCart(CartBean cart) {
         this.cart = cart;
     }
 

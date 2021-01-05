@@ -7,7 +7,9 @@ public class WishList implements Serializable {
     private String wishListID;
     private ArrayList<Product> productList;
     public WishList(){}
-    public WishList(String wishListID, ArrayList<Product> productList){
+
+
+    public WishList(String wishListID, ArrayList<Product> productList) {
         this.wishListID = wishListID;
         this.productList = productList;
     }

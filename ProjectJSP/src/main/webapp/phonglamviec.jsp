@@ -1,3 +1,4 @@
+<%@ page import="java.util.ArrayList" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -639,199 +640,195 @@
         </div>
         <!-- /.side-menu --> 
         <!-- ================================== TOP NAVIGATION : END ================================== -->
-        <div class="sidebar-module-container">
-          <div class="sidebar-filter">
-            <!-- ============================================== SIDEBAR CATEGORY ============================================== -->
-            <div class="sidebar-widget wow fadeInUp">
-              <h3 class="section-title">Sắp xếp theo</h3>
-              <div class="widget-header">
-                <h4 class="widget-title">Danh mục</h4>
+          <div class="sidebar-module-container">
+              <div class="sidebar-filter">
+                  <!-- ============================================== SIDEBAR CATEGORY ============================================== -->
+                  <div class="sidebar-widget wow fadeInUp">
+                      <h3 class="section-title">Bộ lọc</h3>
+                      <div class="widget-header">
+                          <h4 class="widget-title">Danh mục</h4>
+                      </div>
+                      <div class="sidebar-widget-body">
+                          <form action="Category" method="post">
+                              <div class="accordion">
+                                  <div class="accordion-group">
+                                      <div class="accordion-heading"> <a href="#collapseOne" data-toggle="collapse" class="accordion-toggle collapsed"> Loại hình </a> </div>
+                                      <!-- /.accordion-heading -->
+                                      <div class="accordion-body collapse" id="collapseOne" style="height: 0px;">
+                                          <div class="accordion-inner">
+                                              <li><a href="Category?category=${sessionScope.category1}&filters=ban"> Bàn </a></li>
+                                              <li><a href="Category?category=${sessionScope.category1}&filters=ghe"> Ghế </a></li>
+                                              <li><a href="Category?category=${sessionScope.category1}&filters=giuong"> Giường </a></li>
+                                              <li><a href="Category?category=${sessionScope.category1}&filters=tu"> Tủ </a></li>
+                                              <li><a href="Category?category=${sessionScope.category1}&filters=gantuong"> Sản phẩm gắn tường </a></li>
+                                              <li><a href="Category?category=${sessionScope.category1}&filters=den"> Đèn </a></li>
+                                              <li><a href="Category?category=${sessionScope.category1}&filters=guong"> Gương </a></li>
+                                          </div>
+                                          <!-- /.accordion-inner -->
+                                      </div>
+                                      <!-- /.accordion-body -->
+                                  </div>
+                                  <!-- /.accordion-group -->
+
+                                  <div class="accordion-group">
+                                      <div class="accordion-heading"> <a href="#collapseTwo" data-toggle="collapse" class="accordion-toggle collapsed"> Giá </a> </div>
+                                      <!-- /.accordion-heading -->
+                                      <div class="accordion-body collapse" id="collapseTwo" style="height: 0px;">
+                                          <div class="accordion-inner">
+                                              <ul>
+                                                  <li><a href="Category?category=${sessionScope.category1}&filters=price_a"> &lt; 500000 </a></li>
+                                                  <li><a href="Category?category=${sessionScope.category1}&filters=price_b">500000 - 1000000 </a></li>
+                                                  <li><a href="Category?category=${sessionScope.category1}&filters=price_c">100000 - 2000000 </a></li>
+                                                  <li><a href="Category?category=${sessionScope.category1}&filters=price_d"> &gt; 2000000 </a></li>
+                                              </ul>
+                                          </div>
+                                          <!-- /.accordion-inner -->
+                                      </div>
+                                      <!-- /.accordion-body -->
+                                  </div>
+                                  <!-- /.accordion-group -->
+
+                                  <div class="accordion-group">
+                                      <div class="accordion-heading"> <a href="#collapseThree" data-toggle="collapse" class="accordion-toggle collapsed"> Thương hiệu </a> </div>
+                                      <!-- /.accordion-heading -->
+                                      <div class="accordion-body collapse" id="collapseThree" style="height: 0px;">
+                                          <div class="accordion-inner">
+                                              <ul>
+                                                  <li><a href=Category?category=${sessionScope.category1}&filters=brand_baya">BAYA</a></li>
+                                                  <li><a href=Category?category=${sessionScope.category1}&filters=brand_oem">OEM</a></li>
+                                                  <li><a href=Category?category=${sessionScope.category1}&filters=brand_sande">SANDE</a></li>
+                                                  <li><a href=Category?category=${sessionScope.category1}&filters=brand_yokohama">YOKOHAMA</a></li>
+                                              </ul>
+                                          </div>
+                                          <!-- /.accordion-inner -->
+                                      </div>
+                                      <!-- /.accordion-body -->
+                                  </div>
+                                  <!-- /.accordion-group -->
+                              </div>
+                              <!-- /.accordion -->
+                              <button type="submit" class="lnk btn btn-primary"> Làm mới  </button>
+                          </form>
+                      </div>
+                      <!-- /.sidebar-widget-body -->
+                  </div>
+                  <!-- /.sidebar-widget -->
+                  <!-- ============================================== SIDEBAR CATEGORY : END ============================================== -->
+
+                  <!-- ============================================== PRICE SILDER============================================== -->
+                  <div class="sidebar-widget wow fadeInUp">
+                      <div class="widget-header">
+                          <h4 class="widget-title">Price Slider</h4>
+                      </div>
+                      <div class="sidebar-widget-body m-t-10">
+                          <div class="price-range-holder"> <span class="min-max"> <span class="pull-left">$200.00</span> <span class="pull-right">$800.00</span> </span>
+                              <input type="text" id="amount" style="border:0; color:#666666; font-weight:bold;text-align:center;">
+                              <input type="text" class="price-slider" value="">
+                          </div>
+                          <!-- /.price-range-holder -->
+                          <a href="#" class="lnk btn btn-primary">Show Now</a> </div>
+                      <!-- /.sidebar-widget-body -->
+                  </div>
+                  <!-- /.sidebar-widget -->
+                  <!-- ============================================== PRICE SILDER : END ============================================== -->
+                  <!-- ============================================== MANUFACTURES============================================== -->
+                  <div class="sidebar-widget wow fadeInUp">
+                      <div class="widget-header">
+                          <h4 class="widget-title">Manufactures</h4>
+                      </div>
+                      <div class="sidebar-widget-body">
+                          <ul class="list">
+                              <li><a href="#">Forever 18</a></li>
+                              <li><a href="#">Nike</a></li>
+                              <li><a href="#">Dolce & Gabbana</a></li>
+                              <li><a href="#">Alluare</a></li>
+                              <li><a href="#">Chanel</a></li>
+                              <li><a href="#">Other Brand</a></li>
+                          </ul>
+                          <!--<a href="#" class="lnk btn btn-primary">Show Now</a>-->
+                      </div>
+                      <!-- /.sidebar-widget-body -->
+                  </div>
+                  <!-- /.sidebar-widget -->
+                  <!-- ============================================== MANUFACTURES: END ============================================== -->
+                  <!-- ============================================== COLOR============================================== -->
+                  <div class="sidebar-widget wow fadeInUp">
+                      <div class="widget-header">
+                          <h4 class="widget-title">Colors</h4>
+                      </div>
+                      <div class="sidebar-widget-body">
+                          <ul class="list">
+                              <li><a href="#">Red</a></li>
+                              <li><a href="#">Blue</a></li>
+                              <li><a href="#">Yellow</a></li>
+                              <li><a href="#">Pink</a></li>
+                              <li><a href="#">Brown</a></li>
+                              <li><a href="#">Teal</a></li>
+                          </ul>
+                      </div>
+                      <!-- /.sidebar-widget-body -->
+                  </div>
+                  <!-- /.sidebar-widget -->
+                  <!-- ============================================== COLOR: END ============================================== -->
+                  <!-- ============================================== COMPARE============================================== -->
+                  <div class="sidebar-widget wow fadeInUp outer-top-vs">
+                      <h3 class="section-title">Compare products</h3>
+                      <div class="sidebar-widget-body">
+                          <div class="compare-report">
+                              <p>You have no <span>item(s)</span> to compare</p>
+                          </div>
+                          <!-- /.compare-report -->
+                      </div>
+                      <!-- /.sidebar-widget-body -->
+                  </div>
+                  <!-- /.sidebar-widget -->
+                  <!-- ============================================== COMPARE: END ============================================== -->
+                  <!-- ============================================== PRODUCT TAGS ============================================== -->
+                  <div class="sidebar-widget product-tag wow fadeInUp outer-top-vs">
+                      <h3 class="section-title">Product tags</h3>
+                      <div class="sidebar-widget-body outer-top-xs">
+                          <div class="tag-list"> <a class="item" title="Phone" href="category.html">Phone</a> <a class="item active" title="Vest" href="category.html">Vest</a> <a class="item" title="Smartphone" href="category.html">Smartphone</a> <a class="item" title="Furniture" href="category.html">Furniture</a> <a class="item" title="T-shirt" href="category.html">T-shirt</a> <a class="item" title="Sweatpants" href="category.html">Sweatpants</a> <a class="item" title="Sneaker" href="category.html">Sneaker</a> <a class="item" title="Toys" href="category.html">Toys</a> <a class="item" title="Rose" href="category.html">Rose</a> </div>
+                          <!-- /.tag-list -->
+                      </div>
+                      <!-- /.sidebar-widget-body -->
+                  </div>
+                  <!-- /.sidebar-widget -->
+                  <!----------- Testimonials------------->
+                  <div class="sidebar-widget  wow fadeInUp outer-top-vs ">
+                      <div id="advertisement" class="advertisement">
+                          <div class="item">
+                              <div class="avatar"><img src="assets\images\testimonials\member1.png" alt="Image"></div>
+                              <div class="testimonials"><em>"</em> Vtae sodales aliq uam morbi non sem lacus port mollis. Nunc condime tum metus eud molest sed consectetuer.<em>"</em></div>
+                              <div class="clients_author">John Doe <span>Abc Company</span> </div>
+                              <!-- /.container-fluid -->
+                          </div>
+                          <!-- /.item -->
+
+                          <div class="item">
+                              <div class="avatar"><img src="assets\images\testimonials\member3.png" alt="Image"></div>
+                              <div class="testimonials"><em>"</em>Vtae sodales aliq uam morbi non sem lacus port mollis. Nunc condime tum metus eud molest sed consectetuer.<em>"</em></div>
+                              <div class="clients_author">Stephen Doe <span>Xperia Designs</span> </div>
+                          </div>
+                          <!-- /.item -->
+
+                          <div class="item">
+                              <div class="avatar"><img src="assets\images\testimonials\member2.png" alt="Image"></div>
+                              <div class="testimonials"><em>"</em> Vtae sodales aliq uam morbi non sem lacus port mollis. Nunc condime tum metus eud molest sed consectetuer.<em>"</em></div>
+                              <div class="clients_author">Saraha Smith <span>Datsun &amp; Co</span> </div>
+                              <!-- /.container-fluid -->
+                          </div>
+                          <!-- /.item -->
+
+                      </div>
+                      <!-- /.owl-carousel -->
+                  </div>
+
+                  <!-- ============================================== Testimonials: END ============================================== -->
+
+                  <div class="home-banner"> <img src="assets\images\banners\LHS-banner.jpg" alt="Image"> </div>
               </div>
-              <div class="sidebar-widget-body">
-                <div class="accordion">
-                  <div class="accordion-group">
-                    <div class="accordion-heading"> <a href="#collapseOne" data-toggle="collapse" class="accordion-toggle collapsed"> Nội thất gỗ </a> </div>
-                    <!-- /.accordion-heading -->
-                    <div class="accordion-body collapse" id="collapseOne" style="height: 0px;">
-                      <div class="accordion-inner">
-                        <ul>
-                          <li><a href="#">Bàn</a></li>
-                          <li><a href="#">Bộ bàn ăn</a></li>
-                          <li><a href="#">Giường</a></li>
-                          <li><a href="#">Ghế</a></li>
-                          <li><a href="#">Tủ, kệ</a></li>
-                          <li><a href="#">Sản phẩm gắn tường</a></li>
-                          <li><a href="#">Gương</a></li>
-                          <li><a href="#">Nội thất cho bé</a></li>
-                        </ul>
-                      </div>
-                      <!-- /.accordion-inner -->
-                    </div>
-                    <!-- /.accordion-body -->
-                  </div>
-                  <!-- /.accordion-group -->
-
-                  <div class="accordion-group">
-                    <div class="accordion-heading"> <a href="#collapseTwo" data-toggle="collapse" class="accordion-toggle collapsed"> Sofa, Ghế thư giãn & Nệm </a> </div>
-                    <!-- /.accordion-heading -->
-                    <div class="accordion-body collapse" id="collapseTwo" style="height: 0px;">
-                      <div class="accordion-inner">
-                        <ul>
-                          <li><a href="#">Sofa</a></li>
-                          <li><a href="#">Ghế phòng khách</a></li>
-                          <li><a href="#">Nệm</a></li>
-                        </ul>
-                      </div>
-                      <!-- /.accordion-inner -->
-                    </div>
-                    <!-- /.accordion-body -->
-                  </div>
-                  <!-- /.accordion-group -->
-
-                  <div class="accordion-group">
-                    <div class="accordion-heading"> <a href="#collapseThree" data-toggle="collapse" class="accordion-toggle collapsed"> Đồ trang trí </a> </div>
-                    <!-- /.accordion-heading -->
-                    <div class="accordion-body collapse" id="collapseThree" style="height: 0px;">
-                      <div class="accordion-inner">
-                        <ul>
-                          <li><a href="#"> Đèn </a></li>
-                          <li><a href="#"> Tinh dầu & Túi thơm </a></li>
-                          <li><a href="#"> Khung & tranh ảnh </a></li>
-                          <li><a href="#"> Hoa và lọ hoa </a></li>
-                          <li><a href="#"> Nến & chân nến </a></li>
-                          <li><a href="#"> Đồng hồ </a></li>
-                          <li><a href="#"> Vật trang trí </a></li>
-                          <li><a href="#"> Thú bông </a></li>
-
-
-
-                        </ul>
-                      </div>
-                      <!-- /.accordion-inner -->
-                    </div>
-                    <!-- /.accordion-body -->
-                  </div>
-                  <!-- /.accordion-group -->
-
-                  <div class="accordion-group">
-                    <div class="accordion-heading"> <a href="#collapseFour" data-toggle="collapse" class="accordion-toggle collapsed"> Đồ dùng vải </a> </div>
-                    <!-- /.accordion-heading -->
-                    <div class="accordion-body collapse" id="collapseFour" style="height: 0px;">
-                      <div class="accordion-inner">
-                        <ul>
-                          <li><a href="#">Chăn ga gối</a></li>
-                          <li><a href="#">Gối lười % đệm sàn</a></li>
-                          <li><a href="#">Gối trang trí</a></li>
-                          <li><a href="#">Đồ dùng vải cho bếp</a></li>
-                          <li><a href="#">Khăn trải bàn </a></li>
-                          <li><a href="#">Thảm</a></li>
-                          <li><a href="#">Rèm</a></li>
-                          <li><a href="#">Khăn</a></li>
-                        </ul>
-                      </div>
-                      <!-- /.accordion-inner -->
-                    </div>
-                    <!-- /.accordion-body -->
-                  </div>
-                  <!-- /.accordion-group -->
-
-                  <div class="accordion-group">
-                    <div class="accordion-heading"> <a href="#collapseFive" data-toggle="collapse" class="accordion-toggle collapsed"> Dụng cụ nhà bếp </a> </div>
-                    <!-- /.accordion-heading -->
-                    <div class="accordion-body collapse" id="collapseFive" style="height: 0px;">
-                      <div class="accordion-inner">
-                        <ul>
-                          <li><a href="#">Dụng cụ làm bếp</a></li>
-                          <li><a href="#">Cốc, tách & ấm trà</a></li>
-                          <li><a href="#">Bảo quản thực phẩm</a></li>
-                          <li><a href="#">Phục vụ bàn ăn</a></li>
-                        </ul>
-                      </div>
-                      <!-- /.accordion-inner -->
-                    </div>
-                    <!-- /.accordion-body -->
-                  </div>
-                  <!-- /.accordion-group -->
-
-                  <div class="accordion-group">
-                    <div class="accordion-heading"> <a href="#collapseSix" data-toggle="collapse" class="accordion-toggle collapsed"> Tiện ích sắp xếp </a> </div>
-                    <!-- /.accordion-heading -->
-                    <div class="accordion-body collapse" id="collapseSix" style="height: 0px;">
-                      <div class="accordion-inner">
-                        <ul>
-                          <li><a href="#">Sản phẩm lưu trữ</a></li>
-                          <li><a href="#">Vật dụng phòng tắm</a></li>
-                          <li><a href="#">Thùng rác</a></li>
-                        </ul>
-                      </div>
-                      <!-- /.accordion-inner -->
-                    </div>
-                    <!-- /.accordion-body -->
-                  </div>
-                  <!-- /.accordion-group -->
-
-                </div>
-                <!-- /.accordion -->
-              </div>
-              <!-- /.sidebar-widget-body -->
-            </div>
-            <!-- /.sidebar-widget -->
-            <!-- ============================================== SIDEBAR CATEGORY : END ============================================== -->
-
-            <!-- ============================================== PRICE SILDER============================================== -->
-            <div class="sidebar-widget wow fadeInUp">
-              <div class="widget-header">
-                <h4 class="widget-title">Lọc theo giá</h4>
-              </div>
-              <div class="sidebar-widget-body m-t-10">
-                <div class="price-range-holder"> <span class="min-max"> <span class="pull-left">500.000đ</span> <span class="pull-right">15.000.000đ</span> </span>
-                  <input type="text" id="amount" style="border:0; color:#666666; font-weight:bold;text-align:center;">
-                  <input type="text" class="price-slider" value="">
-                </div>
-                <!-- /.price-range-holder -->
-                <a href="#" class="lnk btn btn-primary">Mua ngay</a> </div>
-              <!-- /.sidebar-widget-body -->
-            </div>
-            <!-- /.sidebar-widget -->
-
-
-
-            <!-- /.sidebar-widget -->
-            <!-- ============================================== Testimonials============================================== -->
-            <div class="sidebar-widget  wow fadeInUp outer-top-vs ">
-              <div id="advertisement" class="advertisement">
-                <div class="item">
-                  <div class="avatar"><img src="assets\images\testimonials\member1.png" alt="Image"></div>
-                  <div class="testimonials"><em>"</em> Sản phẩm đẹp, chất lượng, giao hàng nhanh, giống với hình, khá ưng ý, sẽ ủng hộ shop và tin tưởng shop.<em>"</em></div>
-                  <div class="clients_author">Bế Lâm Mai Trường <span>Abc Company</span> </div>
-                  <!-- /.container-fluid -->
-                </div>
-                <!-- /.item -->
-
-                <div class="item">
-                  <div class="avatar"><img src="assets\images\testimonials\member3.png" alt="Image"></div>
-                  <div class="testimonials"><em>"</em>Sản phẩm đẹp, chất lượng, giao hàng nhanh, giống với hình, khá ưng ý, sẽ ủng hộ shop và tin tưởng shop.<em>"</em></div>
-                  <div class="clients_author">Châu Vũ Minh Quân <span>Xperia Designs</span> </div>
-                </div>
-                <!-- /.item -->
-
-                <div class="item">
-                  <div class="avatar"><img src="assets\images\testimonials\member2.png" alt="Image"></div>
-                  <div class="testimonials"><em>"</em> Sản phẩm đẹp, chất lượng, giao hàng nhanh, giống với hình, khá ưng ý, sẽ ủng hộ shop và tin tưởng shop.<em>"</em></div>
-                  <div class="clients_author">Nguyễn Hoàng Minh <span>Datsun &amp; Co</span> </div>
-                  <!-- /.container-fluid -->
-                </div>
-                <!-- /.item -->
-
-              </div>
-              <!-- /.owl-carousel -->
-            </div>
-
-            <!-- ============================================== Testimonials: END ============================================== -->
-
+              <!-- /.sidebar-filter -->
           </div>
-          <!-- /.sidebar-filter -->
-        </div>
         <!-- /.sidebar-module-container -->
       </div>
       <!-- /.sidebar -->
@@ -877,6 +874,7 @@
                         <li role="presentation"><a href="Category?category=${sessionScope.category1}&maxitem=${sessionScope.maxitem1}&sort=highprice">Gía: Cao nhất</a></li>
                         <li role="presentation"><a href="Category?category=${sessionScope.category1}&maxitem=${sessionScope.maxitem1}&sort=lowalpha">Tên sản phẩm:A đến Z</a></li>
                         <li role="presentation"><a href="Category?category=${sessionScope.category1}&maxitem=${sessionScope.maxitem1}&sort=highalpha">Tên sản phẩm:Z đến A</a></li>
+                        <li role="presentation"><a href="Category?category=${sessionScope.category1}&maxitem=${sessionScope.maxitem1}&sort=none">Mặc định</a></li>
                       </ul>
                     </div>
                   </div>
@@ -929,6 +927,14 @@
           </div>
           <!-- /.row --> 
         </div>
+<%--          <div class="row">--%>
+<%--              <jsp:useBean id="Category" scope="request" type="Controller.Category"/>--%>
+<%--              <c:forEach items="${sessionScope.filtersList}" var="item">--%>
+<%--                  <div style="display: inline-block; padding: 5px 24px;margin-left: 33px;margin-right: 5px; background-color: lightgrey;border: 1px solid #000;">--%>
+<%--                      ${item} <div onclick="${Category.removeItem(item)}" style="cursor: pointer"><i class="fas fa-times"></i></div>--%>
+<%--                  </div>--%>
+<%--              </c:forEach>--%>
+<%--          </div>--%>
         <div class="search-result-container ">
           <div id="myTabContent" class="tab-content category-list">
             <div class="tab-pane active " id="grid-container">
@@ -947,7 +953,7 @@
                           <!-- /.product-image -->
 
                           <div class="product-info text-left">
-                            <h3 class="name"><a href="detail.jsp">${item.name}</a></h3>
+                            <h3 class="name"><a href="Detail?id=${item.id}">${item.name}</a></h3>
                             <div class="rating rateit-small"></div>
                             <div class="description"></div>
                             <div class="product-price"> <span class="price">${item.salePrice}đ</span> <span class="price-before-discount">${item.price}đ</span> </div>
@@ -960,7 +966,7 @@
                               <ul class="list-unstyled">
                                 <li class="add-cart-button btn-group">
                                   <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-                                  <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
+                                  <a href="CartController?id=${item.id}" class="btn btn-primary cart-btn">Add to cart</a>
                                 </li>
                                 <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
                                 <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal"></i> </a> </li>
@@ -1033,523 +1039,7 @@
                   <!-- /.products --> 
                 </div>
                 <!-- /.category-product-inner -->
-                
-                <div class="category-product-inner wow fadeInUp">
-                  <div class="products">
-                    <div class="product-list product">
-                      <div class="row product-list-row">
-                        <div class="col col-sm-4 col-lg-4">
-                          <div class="product-image">
-                            <div class="image"> <img src="assets/images/furnitures/clock/1.jpg" alt=""> </div>
-                          </div>
-                          <!-- /.product-image --> 
-                        </div>
-                        <!-- /.col -->
-                        <div class="col col-sm-8 col-lg-8">
-                          <div class="product-info">
-                            <h3 class="name"><a href="detail.html">Đồng hồ royal</a></h3>
-                            <div class="rating rateit-small"></div>
-                            <div class="product-price"> <span class="price"> 600,000đ </span> <span class="price-before-discount">650,000đ</span> </div>
-                            <!-- /.product-price -->
-                            <div class="description m-t-10">Đồng hồ hiện đại với phong cách luxury đem lại sự sang trọng cho căn phòng làm việc của bạn</div>
-                            <div class="cart clearfix animate-effect">
-                              <div class="action">
-                                <ul class="list-unstyled">
-                                  <li class="add-cart-button btn-group">
-                                    <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-                                    <button class="btn btn-primary cart-btn" type="button">Thêm cào giỏ hàng</button>
-                                  </li>
-                                  <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                                  <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal"></i> </a> </li>
-                                </ul>
-                              </div>
-                              <!-- /.action --> 
-                            </div>
-                            <!-- /.cart --> 
-                            
-                          </div>
-                          <!-- /.product-info --> 
-                        </div>
-                        <!-- /.col --> 
-                      </div>
-                      <!-- /.product-list-row -->
-                      <div class="tag new"><span>new</span></div>
-                    </div>
-                    <!-- /.product-list --> 
-                  </div>
-                  <!-- /.products --> 
-                </div>
-                <!-- /.category-product-inner -->
-                
-                <div class="category-product-inner wow fadeInUp">
-                  <div class="products">
-                    <div class="product-list product">
-                      <div class="row product-list-row">
-                        <div class="col col-sm-4 col-lg-4">
-                          <div class="product-image">
-                            <div class="image"> <img src="assets/images/furnitures/clock/1.jpg" alt=""> </div>
-                          </div>
-                          <!-- /.product-image --> 
-                        </div>
-                        <!-- /.col -->
-                        <div class="col col-sm-8 col-lg-8">
-                          <div class="product-info">
-                            <h3 class="name"><a href="detail.html">Đồng hồ royal</a></h3>
-                            <div class="rating rateit-small"></div>
-                            <div class="product-price"> <span class="price"> 600,000đ </span> <span class="price-before-discount">650,000đ</span> </div>
-                            <!-- /.product-price -->
-                            <div class="description m-t-10">Đồng hồ hiện đại với phong cách luxury đem lại sự sang trọng cho căn phòng làm việc của bạn</div>
-                            <div class="cart clearfix animate-effect">
-                              <div class="action">
-                                <ul class="list-unstyled">
-                                  <li class="add-cart-button btn-group">
-                                    <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-                                    <button class="btn btn-primary cart-btn" type="button">Thêm cào giỏ hàng</button>
-                                  </li>
-                                  <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                                  <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal"></i> </a> </li>
-                                </ul>
-                              </div>
-                              <!-- /.action --> 
-                            </div>
-                            <!-- /.cart --> 
-                            
-                          </div>
-                          <!-- /.product-info --> 
-                        </div>
-                        <!-- /.col --> 
-                      </div>
-                      <!-- /.product-list-row -->
-                      <div class="tag new"><span>new</span></div>
-                    </div>
-                    <!-- /.product-list --> 
-                  </div>
-                  <!-- /.products --> 
-                </div>
-                <!-- /.category-product-inner -->
-                
-                <div class="category-product-inner wow fadeInUp">
-                  <div class="products">
-                    <div class="product-list product">
-                      <div class="row product-list-row">
-                        <div class="col col-sm-4 col-lg-4">
-                          <div class="product-image">
-                            <div class="image"> <img src="assets/images/furnitures/clock/1.jpg" alt=""> </div>
-                          </div>
-                          <!-- /.product-image --> 
-                        </div>
-                        <!-- /.col -->
-                        <div class="col col-sm-8 col-lg-8">
-                          <div class="product-info">
-                            <h3 class="name"><a href="detail.html">Đồng hồ royal</a></h3>
-                            <div class="rating rateit-small"></div>
-                            <div class="product-price"> <span class="price"> 600,000đ </span> <span class="price-before-discount">650,000đ</span> </div>
-                            <!-- /.product-price -->
-                            <div class="description m-t-10">Đồng hồ hiện đại với phong cách luxury đem lại sự sang trọng cho căn phòng làm việc của bạn</div>
-                            <div class="cart clearfix animate-effect">
-                              <div class="action">
-                                <ul class="list-unstyled">
-                                  <li class="add-cart-button btn-group">
-                                    <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-                                    <button class="btn btn-primary cart-btn" type="button">Thêm cào giỏ hàng</button>
-                                  </li>
-                                  <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                                  <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal"></i> </a> </li>
-                                </ul>
-                              </div>
-                              <!-- /.action --> 
-                            </div>
-                            <!-- /.cart --> 
-                            
-                          </div>
-                          <!-- /.product-info --> 
-                        </div>
-                        <!-- /.col --> 
-                      </div>
-                      <!-- /.product-list-row -->
-                      <div class="tag new"><span>new</span></div>
-                    </div>
-                    <!-- /.product-list --> 
-                  </div>
-                  <!-- /.products --> 
-                </div>
-                <!-- /.category-product-inner -->
-                
-                <div class="category-product-inner wow fadeInUp">
-                  <div class="products">
-                    <div class="product-list product">
-                      <div class="row product-list-row">
-                        <div class="col col-sm-4 col-lg-4">
-                          <div class="product-image">
-                            <div class="image"> <img src="assets/images/furnitures/clock/1.jpg" alt=""> </div>
-                          </div>
-                          <!-- /.product-image --> 
-                        </div>
-                        <!-- /.col -->
-                        <div class="col col-sm-8 col-lg-8">
-                          <div class="product-info">
-                            <h3 class="name"><a href="detail.html">Đồng hồ royal</a></h3>
-                            <div class="rating rateit-small"></div>
-                            <div class="product-price"> <span class="price"> 600,000đ </span> <span class="price-before-discount">650,000đ</span> </div>
-                            <!-- /.product-price -->
-                            <div class="description m-t-10">Đồng hồ hiện đại với phong cách luxury đem lại sự sang trọng cho căn phòng làm việc của bạn</div>
-                            <div class="cart clearfix animate-effect">
-                              <div class="action">
-                                <ul class="list-unstyled">
-                                  <li class="add-cart-button btn-group">
-                                    <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-                                    <button class="btn btn-primary cart-btn" type="button">Thêm cào giỏ hàng</button>
-                                  </li>
-                                  <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                                  <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal"></i> </a> </li>
-                                </ul>
-                              </div>
-                              <!-- /.action --> 
-                            </div>
-                            <!-- /.cart --> 
-                            
-                          </div>
-                          <!-- /.product-info --> 
-                        </div>
-                        <!-- /.col --> 
-                      </div>
-                      <!-- /.product-list-row -->
-                      <div class="tag new"><span>new</span></div>
-                    </div>
-                    <!-- /.product-list --> 
-                  </div>
-                  <!-- /.products --> 
-                </div>
-                <!-- /.category-product-inner -->
-                
-                <div class="category-product-inner wow fadeInUp">
-                  <div class="products">
-                    <div class="product-list product">
-                      <div class="row product-list-row">
-                        <div class="col col-sm-4 col-lg-4">
-                          <div class="product-image">
-                            <div class="image"> <img src="assets/images/furnitures/clock/1.jpg" alt=""> </div>
-                          </div>
-                          <!-- /.product-image --> 
-                        </div>
-                        <!-- /.col -->
-                        <div class="col col-sm-8 col-lg-8">
-                          <div class="product-info">
-                            <h3 class="name"><a href="detail.html">Đồng hồ royal</a></h3>
-                            <div class="rating rateit-small"></div>
-                            <div class="product-price"> <span class="price"> 600,000đ </span> <span class="price-before-discount">650,000đ</span> </div>
-                            <!-- /.product-price -->
-                            <div class="description m-t-10">Đồng hồ hiện đại với phong cách luxury đem lại sự sang trọng cho căn phòng làm việc của bạn</div>
-                            <div class="cart clearfix animate-effect">
-                              <div class="action">
-                                <ul class="list-unstyled">
-                                  <li class="add-cart-button btn-group">
-                                    <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-                                    <button class="btn btn-primary cart-btn" type="button">Thêm cào giỏ hàng</button>
-                                  </li>
-                                  <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                                  <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal"></i> </a> </li>
-                                </ul>
-                              </div>
-                              <!-- /.action --> 
-                            </div>
-                            <!-- /.cart --> 
-                            
-                          </div>
-                          <!-- /.product-info --> 
-                        </div>
-                        <!-- /.col --> 
-                      </div>
-                      <!-- /.product-list-row -->
-                      <div class="tag new"><span>new</span></div>
-                    </div>
-                    <!-- /.product-list --> 
-                  </div>
-                  <!-- /.products --> 
-                </div>
-                <!-- /.category-product-inner -->
-                
-                <div class="category-product-inner wow fadeInUp">
-                  <div class="products">
-                    <div class="product-list product">
-                      <div class="row product-list-row">
-                        <div class="col col-sm-4 col-lg-4">
-                          <div class="product-image">
-                            <div class="image"> <img src="assets/images/furnitures/clock/1.jpg" alt=""> </div>
-                          </div>
-                          <!-- /.product-image --> 
-                        </div>
-                        <!-- /.col -->
-                        <div class="col col-sm-8 col-lg-8">
-                          <div class="product-info">
-                            <h3 class="name"><a href="detail.html">Đồng hồ royal</a></h3>
-                            <div class="rating rateit-small"></div>
-                            <div class="product-price"> <span class="price"> 600,000đ </span> <span class="price-before-discount">650,000đ</span> </div>
-                            <!-- /.product-price -->
-                            <div class="description m-t-10">Đồng hồ hiện đại với phong cách luxury đem lại sự sang trọng cho căn phòng làm việc của bạn</div>
-                            <div class="cart clearfix animate-effect">
-                              <div class="action">
-                                <ul class="list-unstyled">
-                                  <li class="add-cart-button btn-group">
-                                    <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-                                    <button class="btn btn-primary cart-btn" type="button">Thêm cào giỏ hàng</button>
-                                  </li>
-                                  <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                                  <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal"></i> </a> </li>
-                                </ul>
-                              </div>
-                              <!-- /.action --> 
-                            </div>
-                            <!-- /.cart --> 
-                            
-                          </div>
-                          <!-- /.product-info --> 
-                        </div>
-                        <!-- /.col --> 
-                      </div>
-                      <!-- /.product-list-row -->
-                      <div class="tag new"><span>new</span></div>
-                    </div>
-                    <!-- /.product-list --> 
-                  </div>
-                  <!-- /.products --> 
-                </div>
-                <!-- /.category-product-inner -->
-                
-                <div class="category-product-inner wow fadeInUp">
-                  <div class="products">
-                    <div class="product-list product">
-                      <div class="row product-list-row">
-                        <div class="col col-sm-4 col-lg-4">
-                          <div class="product-image">
-                            <div class="image"> <img src="assets/images/furnitures/clock/1.jpg" alt=""> </div>
-                          </div>
-                          <!-- /.product-image --> 
-                        </div>
-                        <!-- /.col -->
-                        <div class="col col-sm-8 col-lg-8">
-                          <div class="product-info">
-                            <h3 class="name"><a href="detail.html">Đồng hồ royal</a></h3>
-                            <div class="rating rateit-small"></div>
-                            <div class="product-price"> <span class="price"> 600,000đ </span> <span class="price-before-discount">650,000đ</span> </div>
-                            <!-- /.product-price -->
-                            <div class="description m-t-10">Đồng hồ hiện đại với phong cách luxury đem lại sự sang trọng cho căn phòng làm việc của bạn</div>
-                            <div class="cart clearfix animate-effect">
-                              <div class="action">
-                                <ul class="list-unstyled">
-                                  <li class="add-cart-button btn-group">
-                                    <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-                                    <button class="btn btn-primary cart-btn" type="button">Thêm cào giỏ hàng</button>
-                                  </li>
-                                  <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                                  <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal"></i> </a> </li>
-                                </ul>
-                              </div>
-                              <!-- /.action --> 
-                            </div>
-                            <!-- /.cart --> 
-                            
-                          </div>
-                          <!-- /.product-info --> 
-                        </div>
-                        <!-- /.col --> 
-                      </div>
-                      <!-- /.product-list-row -->
-                      <div class="tag new"><span>new</span></div>
-                    </div>
-                    <!-- /.product-list --> 
-                  </div>
-                  <!-- /.products --> 
-                </div>
-                <!-- /.category-product-inner -->
-                
-                <div class="category-product-inner wow fadeInUp">
-                  <div class="products">
-                    <div class="product-list product">
-                      <div class="row product-list-row">
-                        <div class="col col-sm-4 col-lg-4">
-                          <div class="product-image">
-                            <div class="image"> <img src="assets/images/furnitures/clock/1.jpg" alt=""> </div>
-                          </div>
-                          <!-- /.product-image --> 
-                        </div>
-                        <!-- /.col -->
-                        <div class="col col-sm-8 col-lg-8">
-                          <div class="product-info">
-                            <h3 class="name"><a href="detail.html">Đồng hồ royal</a></h3>
-                            <div class="rating rateit-small"></div>
-                            <div class="product-price"> <span class="price"> 600,000đ </span> <span class="price-before-discount">650,000đ</span> </div>
-                            <!-- /.product-price -->
-                            <div class="description m-t-10">Đồng hồ hiện đại với phong cách luxury đem lại sự sang trọng cho căn phòng làm việc của bạn</div>
-                            <div class="cart clearfix animate-effect">
-                              <div class="action">
-                                <ul class="list-unstyled">
-                                  <li class="add-cart-button btn-group">
-                                    <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-                                    <button class="btn btn-primary cart-btn" type="button">Thêm cào giỏ hàng</button>
-                                  </li>
-                                  <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                                  <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal"></i> </a> </li>
-                                </ul>
-                              </div>
-                              <!-- /.action --> 
-                            </div>
-                            <!-- /.cart --> 
-                            
-                          </div>
-                          <!-- /.product-info --> 
-                        </div>
-                        <!-- /.col --> 
-                      </div>
-                      <!-- /.product-list-row -->
-                      <div class="tag new"><span>new</span></div>
-                    </div>
-                    <!-- /.product-list --> 
-                  </div>
-                  <!-- /.products --> 
-                </div>
-                <!-- /.category-product-inner -->
-                
-                <div class="category-product-inner wow fadeInUp">
-                  <div class="products">
-                    <div class="product-list product">
-                      <div class="row product-list-row">
-                        <div class="col col-sm-4 col-lg-4">
-                          <div class="product-image">
-                            <div class="image"> <img src="assets/images/furnitures/clock/1.jpg" alt=""> </div>
-                          </div>
-                          <!-- /.product-image --> 
-                        </div>
-                        <!-- /.col -->
-                        <div class="col col-sm-8 col-lg-8">
-                          <div class="product-info">
-                            <h3 class="name"><a href="detail.html">Đồng hồ royal</a></h3>
-                            <div class="rating rateit-small"></div>
-                            <div class="product-price"> <span class="price"> 600,000đ </span> <span class="price-before-discount">650,000đ</span> </div>
-                            <!-- /.product-price -->
-                            <div class="description m-t-10">Đồng hồ hiện đại với phong cách luxury đem lại sự sang trọng cho căn phòng làm việc của bạn</div>
-                            <div class="cart clearfix animate-effect">
-                              <div class="action">
-                                <ul class="list-unstyled">
-                                  <li class="add-cart-button btn-group">
-                                    <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-                                    <button class="btn btn-primary cart-btn" type="button">Thêm cào giỏ hàng</button>
-                                  </li>
-                                  <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                                  <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal"></i> </a> </li>
-                                </ul>
-                              </div>
-                              <!-- /.action --> 
-                            </div>
-                            <!-- /.cart --> 
-                            
-                          </div>
-                          <!-- /.product-info --> 
-                        </div>
-                        <!-- /.col --> 
-                      </div>
-                      <!-- /.product-list-row -->
-                      <div class="tag new"><span>new</span></div>
-                    </div>
-                    <!-- /.product-list --> 
-                  </div>
-                  <!-- /.products --> 
-                </div>
-                <!-- /.category-product-inner -->
-                
-                <div class="category-product-inner wow fadeInUp">
-                  <div class="products">
-                    <div class="product-list product">
-                      <div class="row product-list-row">
-                        <div class="col col-sm-4 col-lg-4">
-                          <div class="product-image">
-                            <div class="image"> <img src="assets/images/furnitures/clock/1.jpg" alt=""> </div>
-                          </div>
-                          <!-- /.product-image --> 
-                        </div>
-                        <!-- /.col -->
-                        <div class="col col-sm-8 col-lg-8">
-                          <div class="product-info">
-                            <h3 class="name"><a href="detail.html">Đồng hồ royal</a></h3>
-                            <div class="rating rateit-small"></div>
-                            <div class="product-price"> <span class="price"> 600,000đ </span> <span class="price-before-discount">650,000đ</span> </div>
-                            <!-- /.product-price -->
-                            <div class="description m-t-10">Đồng hồ hiện đại với phong cách luxury đem lại sự sang trọng cho căn phòng làm việc của bạn</div>
-                            <div class="cart clearfix animate-effect">
-                              <div class="action">
-                                <ul class="list-unstyled">
-                                  <li class="add-cart-button btn-group">
-                                    <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-                                    <button class="btn btn-primary cart-btn" type="button">Thêm cào giỏ hàng</button>
-                                  </li>
-                                  <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                                  <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal"></i> </a> </li>
-                                </ul>
-                              </div>
-                              <!-- /.action --> 
-                            </div>
-                            <!-- /.cart --> 
-                            
-                          </div>
-                          <!-- /.product-info --> 
-                        </div>
-                        <!-- /.col --> 
-                      </div>
-                      <!-- /.product-list-row -->
-                      <div class="tag new"><span>new</span></div>
-                    </div>
-                    <!-- /.product-list --> 
-                  </div>
-                  <!-- /.products --> 
-                </div>
-                <!-- /.category-product-inner -->
-                
-                <div class="category-product-inner wow fadeInUp">
-                  <div class="products">
-                    <div class="product-list product">
-                      <div class="row product-list-row">
-                        <div class="col col-sm-4 col-lg-4">
-                          <div class="product-image">
-                            <div class="image"> <img src="assets/images/furnitures/clock/1.jpg" alt=""> </div>
-                          </div>
-                          <!-- /.product-image --> 
-                        </div>
-                        <!-- /.col -->
-                        <div class="col col-sm-8 col-lg-8">
-                          <div class="product-info">
-                            <h3 class="name"><a href="detail.html">Đồng hồ royal</a></h3>
-                            <div class="rating rateit-small"></div>
-                            <div class="product-price"> <span class="price"> 600,000đ </span> <span class="price-before-discount">650,000đ</span> </div>
-                            <!-- /.product-price -->
-                            <div class="description m-t-10">Đồng hồ hiện đại với phong cách luxury đem lại sự sang trọng cho căn phòng làm việc của bạn</div>
-                            <div class="cart clearfix animate-effect">
-                              <div class="action">
-                                <ul class="list-unstyled">
-                                  <li class="add-cart-button btn-group">
-                                    <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-                                    <button class="btn btn-primary cart-btn" type="button">Thêm cào giỏ hàng</button>
-                                  </li>
-                                  <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                                  <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal"></i> </a> </li>
-                                </ul>
-                              </div>
-                              <!-- /.action --> 
-                            </div>
-                            <!-- /.cart --> 
-                            
-                          </div>
-                          <!-- /.product-info --> 
-                        </div>
-                        <!-- /.col --> 
-                      </div>
-                      <!-- /.product-list-row -->
-                      <div class="tag new"><span>new</span></div>
-                    </div>
-                    <!-- /.product-list --> 
-                  </div>
-                  <!-- /.products --> 
-                </div>
-                <!-- /.category-product-inner --> 
+
                 
               </div>
               <!-- /.category-product --> 
@@ -1562,9 +1052,9 @@
               <div class="pagination-container">
                 <ul class="list-inline list-unstyled">
                 <li style="width: 30px;" class="prev"><a href="#"><i class="fa fa-angle-left"></i></a></li>
-                <c:forEach begin="1" end="${requestScope.maxPage}" step="1" var="a">
-                  <li style="width: 30px;"><a href="http://localhost:8080/ProjectJSP/PaginationProduct?pages=${a}">${a}</a></li>
-                </c:forEach>
+                    <c:forEach begin="1" end="${sessionScope.maxPage}" step="1" var="a">
+                        <li style="width: 30px;"><a href="Category?category=${sessionScope.category1}&pages=${a}">${a}</a></li>
+                    </c:forEach>
                 <li style="width: 30px;" class="next"><a href="#"><i class="fa fa-angle-right"></i></a></li>
               </ul>
                 <!-- /.list-inline --> 

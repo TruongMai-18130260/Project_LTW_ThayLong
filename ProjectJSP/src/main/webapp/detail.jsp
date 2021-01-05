@@ -278,38 +278,38 @@
 
         <div id="owl-single-product">
             <div class="single-product-gallery-item" id="slide1">
-                <a data-lightbox="image-1" data-title="Gallery" href="assets/images/furnitures/combo/2.jpg">
-                    <img class="img-responsive" alt="" src="assets\images\blank.gif" data-echo="assets/images/furnitures/combo/2.jpg">
+                <a data-lightbox="image-1" data-title="Gallery" href="${sessionScope.product.imgURL}">
+                    <img class="img-responsive" alt="" src="assets\images\blank.gif" data-echo="${sessionScope.product.imgURL}">
                 </a>
             </div><!-- /.single-product-gallery-item -->
 
             <div class="single-product-gallery-item" id="slide2">
-                <a data-lightbox="image-1" data-title="Gallery" href="assets/images/furnitures/combo/2.jpg">
-                    <img class="img-responsive" alt="" src="assets\images\blank.gif" data-echo="assets/images/furnitures/combo/2.jpg">
+                <a data-lightbox="image-1" data-title="Gallery" href="${sessionScope.product.imgURL}">
+                    <img class="img-responsive" alt="" src="assets\images\blank.gif" data-echo="${sessionScope.product.imgURL}">
                 </a>
             </div><!-- /.single-product-gallery-item -->
 
             <div class="single-product-gallery-item" id="slide3">
-                <a data-lightbox="image-1" data-title="Gallery" href="assets/images/furnitures/combo/2.jpg">
-                    <img class="img-responsive" alt="" src="assets\images\blank.gif" data-echo="assets/images/furnitures/combo/2.jpg">
+                <a data-lightbox="image-1" data-title="Gallery" href="${sessionScope.product.imgURL}">
+                    <img class="img-responsive" alt="" src="assets\images\blank.gif" data-echo="${sessionScope.product.imgURL}">
                 </a>
             </div><!-- /.single-product-gallery-item -->
 
             <div class="single-product-gallery-item" id="slide4">
-                <a data-lightbox="image-1" data-title="Gallery" href="assets/images/furnitures/combo/2.jpg">
-                    <img class="img-responsive" alt="" src="assets\images\blank.gif" data-echo="assets/images/furnitures/combo/2.jpg">
+                <a data-lightbox="image-1" data-title="Gallery" href="${sessionScope.product.imgURL}">
+                    <img class="img-responsive" alt="" src="assets\images\blank.gif" data-echo="${sessionScope.product.imgURL}">
                 </a>
             </div><!-- /.single-product-gallery-item -->
 
             <div class="single-product-gallery-item" id="slide5">
-                <a data-lightbox="image-1" data-title="Gallery" href="assets/images/furnitures/combo/2.jpg">
-                    <img class="img-responsive" alt="" src="assets\images\blank.gif" data-echo="assets/images/furnitures/combo/2.jpg">
+                <a data-lightbox="image-1" data-title="Gallery" href="${sessionScope.product.imgURL}">
+                    <img class="img-responsive" alt="" src="assets\images\blank.gif" data-echo="${sessionScope.product.imgURL}">
                 </a>
             </div><!-- /.single-product-gallery-item -->
 
             <div class="single-product-gallery-item" id="slide6">
                 <a data-lightbox="image-1" data-title="Gallery" href="assets/images/furnitures/combo/2.jpg">
-                    <img class="img-responsive" alt="" src="assets\images\blank.gif" data-echo="assets/images/furnitures/combo/2.jpg">
+                    <img class="img-responsive" alt="" src="assets\images\blank.gif" data-echo="${sessionScope.product.imgURL}">
                 </a>
             </div><!-- /.single-product-gallery-item -->
 
@@ -322,55 +322,55 @@
             <div id="owl-single-product-thumbnails">
                 <div class="item">
                     <a class="horizontal-thumb active" data-target="#owl-single-product" data-slide="1" href="#slide1">
-                        <img class="img-responsive" width="85" alt="" src="assets\images\blank.gif" data-echo="assets/images/products/p17.jpg">
+                        <img class="img-responsive" width="85" alt="" src="assets\images\blank.gif" data-echo="${sessionScope.product.imgURL}">
                     </a>
                 </div>
 
                 <div class="item">
                     <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="2" href="#slide2">
-                        <img class="img-responsive" width="85" alt="" src="assets\images\blank.gif" data-echo="assets/images/products/p18.jpg">
+                        <img class="img-responsive" width="85" alt="" src="assets\images\blank.gif" data-echo="${sessionScope.product.imgURL}">
                     </a>
                 </div>
                 <div class="item">
 
                     <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="3" href="#slide3">
-                        <img class="img-responsive" width="85" alt="" src="assets\images\blank.gif" data-echo="assets/images/products/p19.jpg">
+                        <img class="img-responsive" width="85" alt="" src="assets\images\blank.gif" data-echo="${sessionScope.product.imgURL}">
                     </a>
                 </div>
                 <div class="item">
 
                     <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="4" href="#slide4">
-                        <img class="img-responsive" width="85" alt="" src="assets\images\blank.gif" data-echo="assets/images/products/p20.jpg">
+                        <img class="img-responsive" width="85" alt="" src="assets\images\blank.gif" data-echo="${sessionScope.product.imgURL}">
                     </a>
                 </div>
                 <div class="item">
 
                     <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="5" href="#slide5">
-                        <img class="img-responsive" width="85" alt="" src="assets\images\blank.gif" data-echo="assets/images/products/p21.jpg">
+                        <img class="img-responsive" width="85" alt="" src="assets\images\blank.gif" data-echo="${sessionScope.product.imgURL}">
                     </a>
                 </div>
                 <div class="item">
 
                     <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="6" href="#slide6">
-                        <img class="img-responsive" width="85" alt="" src="assets\images\blank.gif" data-echo="assets/images/products/p22.jpg">
+                        <img class="img-responsive" width="85" alt="" src="assets\images\blank.gif" data-echo="${sessionScope.product.imgURL}g">
                     </a>
                 </div>
                 <div class="item">
 
                     <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="7" href="#slide7">
-                        <img class="img-responsive" width="85" alt="" src="assets\images\blank.gif" data-echo="assets/images/products/p23.jpg">
+                        <img class="img-responsive" width="85" alt="" src="assets\images\blank.gif" data-echo="${sessionScope.product.imgURL}">
                     </a>
                 </div>
                 <div class="item">
 
                     <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="8" href="#slide8">
-                        <img class="img-responsive" width="85" alt="" src="assets\images\blank.gif" data-echo="assets/images/products/p24.jpg">
+                        <img class="img-responsive" width="85" alt="" src="assets\images\blank.gif" data-echo="${sessionScope.product.imgURL}">
                     </a>
                 </div>
                 <div class="item">
 
                     <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="9" href="#slide9">
-                        <img class="img-responsive" width="85" alt="" src="assets\images\blank.gif" data-echo="assets/images/products/p25.jpg">
+                        <img class="img-responsive" width="85" alt="" src="assets\images\blank.gif" data-echo="${sessionScope.product.imgURL}">
                     </a>
                 </div>
             </div><!-- /#owl-single-product-thumbnails -->
@@ -477,7 +477,7 @@
 									</div>
 
 									<div class="col-sm-7">
-										<a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart inner-right-vs"></i> Thêm vào giỏ hàng</a>
+										<a href="CartController?id=${sessionScope.product.id}" class="btn btn-primary"><i class="fa fa-shopping-cart inner-right-vs"></i> Thêm vào giỏ hàng</a>
 									</div>
 
 									

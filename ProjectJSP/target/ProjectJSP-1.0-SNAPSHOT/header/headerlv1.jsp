@@ -31,7 +31,7 @@
             </c:choose>
 
             <li><a href="my-wishlist.html"><i class="icon fa fa-heart"></i>Yêu thích</a></li>
-            <li><a href="shopping-cart.html"><i class="icon fa fa-shopping-cart"></i>Giỏ hàng</a></li>
+            <li><a href="CartController"><i class="icon fa fa-shopping-cart"></i>Giỏ hàng</a></li>
             <li><a href="checkout.html"><i class="icon fa fa-check"></i>Thanh toán</a></li>
 
               <c:choose>
@@ -90,7 +90,7 @@
           <!-- /.contact-row --> 
           <!-- ============================================================= SEARCH AREA ============================================================= -->
           <div class="search-area">
-            <form>
+            <form action="Search" method="post">
               <div class="control-group">
                 <ul class="categories-filter animate-dropdown">
                   <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="category.html">Danh mục<b class="caret"></b></a>
@@ -105,8 +105,8 @@
                     </ul>
                   </li>
                 </ul>
-                <input class="search-field" placeholder="Bạn muốn tìm gì đó...">
-                <a class="search-button" href="#"></a> </div>
+                <input class="search-field" placeholder="Bạn muốn tìm gì đó..." name="search">
+                  <button type="submit" class="search-button"></button> </div>
             </form>
           </div>
           <!-- /.search-area --> 

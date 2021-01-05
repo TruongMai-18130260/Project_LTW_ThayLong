@@ -12,7 +12,7 @@ public class Product implements Serializable {
     private int status;
     private String company;
     private String tag;
-
+    private int quantity;
 
     public Product(){}
 
@@ -71,6 +71,10 @@ public class Product implements Serializable {
         return tag;
     }
 
+    public int getQuantity() {
+        return quantity;
+    }
+
     public void setId(String id) {
         this.id = id;
     }
@@ -105,5 +109,9 @@ public class Product implements Serializable {
 
     public void setTag(String tag) {
         this.tag = tag;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
 }
