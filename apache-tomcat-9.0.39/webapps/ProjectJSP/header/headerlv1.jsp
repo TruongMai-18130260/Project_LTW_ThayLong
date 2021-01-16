@@ -81,7 +81,7 @@
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-3 logo-holder"> 
           <!-- ============================================================= LOGO ============================================================= -->
-          <div class="logo"> <a href="home.html"> <img src="assets\images\logo-white.png" alt="logo" style="height: 55px;"> </a> </div>
+          <div class="logo"> <a href="home.jsp"> <img src="assets\images\logo-white.png" alt="logo" style="height: 55px;"> </a> </div>
           <!-- /.logo --> 
           <!-- ============================================================= LOGO : END ============================================================= --> </div>
         <!-- /.logo-holder -->
@@ -175,8 +175,8 @@
           <div class="navbar-collapse collapse" id="mc-horizontal-menu-collapse">
             <div class="nav-outer">
               <ul class="nav navbar-nav">
-                <li class="active dropdown yamm-fw"> <a href="home.html">Trang chủ</a> </li>
-                <li class="dropdown yamm mega-menu"> <a href="phongkhach.html" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">Phòng</a>
+                <li class="active dropdown yamm-fw"> <a href="home.jsp">Trang chủ</a> </li>
+                <li class="dropdown yamm mega-menu"> <a href='Category?category=pk' data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">Phòng</a>
                   <ul class="dropdown-menu container">
                     <li>
                       <div class="yamm-content ">
@@ -184,14 +184,14 @@
                           <div class="col-xs-12 col-sm-6 col-md-2 col-menu drop-height">
                             <h2 class="title">Phòng khách</h2>
                             <ul class="links">
-                              <li><a href="phongkhach.html">Bàn cà phê</a></li>
-                              <li><a href="phongkhach.html">Tủ kệ & giá sách </a></li>
-                              <li><a href="phongkhach.html">Ghế phòng khách</a></li>
-                              <li><a href="phongkhach.html">Sản phẩm gắn tường</a></li>
-                              <li><a href="phongkhach.html">Đèn</a></li>
-                              <li><a href="phongkhach.html">Hoa & Lọ hoa</a></li>
-                              <li><a href="phongkhach.html">Khung & tranh ảnh</a></li>
-                              <li><a href="phongkhach.html">Gối trang trí </a></li>
+                              <li><a href='Category?category=pk'>Bàn cà phê</a></li>
+                              <li><a href='Category?category=pk'>Tủ kệ & giá sách </a></li>
+                              <li><a href='Category?category=pk'>Ghế phòng khách</a></li>
+                              <li><a href='Category?category=pk'>Sản phẩm gắn tường</a></li>
+                              <li><a href='Category?category=pk'>Đèn</a></li>
+                              <li><a href='Category?category=pk'>Hoa & Lọ hoa</a></li>
+                              <li><a href='Category?category=pk'>Khung & tranh ảnh</a></li>
+                              <li><a href='Category?category=pk'>Gối trang trí </a></li>
 
                             </ul>
                           </div>
@@ -200,14 +200,14 @@
                           <div class="col-xs-12 col-sm-6 col-md-2 col-menu  drop-height">
                             <h2 class="title">Phòng ăn & bếp</h2>
                             <ul class="links">
-                              <li><a href="phongan.html">Bàn ăn</a></li>
-                              <li><a href="phongan.html">Ghế ăn</a></li>
-                              <li><a href="phongan.html">Tủ bát đĩa </a></li>
-                              <li><a href="phongan.html">Đồ dùng bàn ăn</a></li>
-                              <li><a href="phongan.html">Dụng cụ làm bếp</a></li>
-                              <li><a href="phongan.html">Bảo quản thực phẩm</a></li>
-                              <li><a href="phongan.html">Sắp xếp nhà bếp</a></li>
-                              <li><a href="phongan.html">Đồ dùng vải cho bếp</a></li>
+                              <li><a href='Category?category=pa'>Bàn ăn</a></li>
+                              <li><a href='Category?category=pa'>Ghế ăn</a></li>
+                              <li><a href='Category?category=pa'>Tủ bát đĩa </a></li>
+                              <li><a href='Category?category=pa'>Đồ dùng bàn ăn</a></li>
+                              <li><a href='Category?category=pa'>Dụng cụ làm bếp</a></li>
+                              <li><a href='Category?category=pa'>Bảo quản thực phẩm</a></li>
+                              <li><a href='Category?category=pa'>Sắp xếp nhà bếp</a></li>
+                              <li><a href='Category?category=pa'>Đồ dùng vải cho bếp</a></li>
                             </ul>
                           </div>
                           <!-- /.col -->
@@ -216,13 +216,13 @@
                             <h2 class="title">Phòng làm việc</h2>
                             <ul class="links">
                               <li><a href='Category?category=plv'> Bàn làm việc</a></li>
-                              <li><a href='http://localhost:8080/ProjectJSP/Category?category=plv'>Ghế văn phòng</a></li>
-                              <li><a href='http://localhost:8080/ProjectJSP/PaginationProduct?pages=1&category=plv'>Kệ sách</a></li>
-                              <li><a href='http://localhost:8080/ProjectJSP/PaginationProduct?pages=1&category=plv'>Đèn</a></li>
-                              <li><a href='http://localhost:8080/ProjectJSP/PaginationProduct?pages=1&category=plv'> Đồ dùng văn phòng</a></li>
-                              <li><a href='http://localhost:8080/ProjectJSP/PaginationProduct?pages=1&category=plv'> Thùng rác</a></li>
-                              <li><a href='http://localhost:8080/ProjectJSP/PaginationProduct?pages=1&category=plv'>Sản phẩm treo tường</a></li>
-                              <li><a href='http://localhost:8080/ProjectJSP/PaginationProduct?pages=1&category=plv'>Tinh dầu & túi thơm</a></li>
+                              <li><a href='Category?category=plv'>Ghế văn phòng</a></li>
+                              <li><a href='Category?category=plv'>Kệ sách</a></li>
+                              <li><a href='Category?category=plv'>Đèn</a></li>
+                              <li><a href='Category?category=plv'> Đồ dùng văn phòng</a></li>
+                              <li><a href='Category?category=plv'> Thùng rác</a></li>
+                              <li><a href='Category?category=plv'>Sản phẩm treo tường</a></li>
+                              <li><a href='Category?category=plv'>Tinh dầu & túi thơm</a></li>
 
                             </ul>
                           </div>
@@ -231,11 +231,11 @@
                           <div class="col-xs-12 col-sm-6 col-md-2 col-menu  drop-height">
                             <h2 class="title">Phòng ngủ</h2>
                             <ul class="links">
-                              <li><a href="phongngu.html">Nệm </a></li>
-                              <li><a href="phongngu.html">Chăn, ra, gối</a></li>
-                              <li><a href="phongngu.html">Tủ kệ</a></li>
-                              <li><a href="phongngu.html">Gương</a></li>
-                              <li><a href="phongngu.html">Giường ngủ</a></li>
+                              <li><a href='Category?category=pn'>Nệm </a></li>
+                              <li><a href='Category?category=pn'>Chăn, ra, gối</a></li>
+                              <li><a href='Category?category=pn'>Tủ kệ</a></li>
+                              <li><a href='Category?category=pn'>Gương</a></li>
+                              <li><a href='Category?category=pn'>Giường ngủ</a></li>
                               
                             </ul>
                           </div>
@@ -244,10 +244,10 @@
                           <div class="col-xs-12 col-sm-6 col-md-2 col-menu  drop-height">
                             <h2 class="title">Ngoài trời</h2>
                             <ul class="links">
-                              <li><a href="ngoaitroi.html">Bàn ngoài trời </a></li>
-                              <li><a href="ngoaitroi.html">Ghế ngoài trời</a></li>
-                              <li><a href="ngoaitroi.html">Dụng cụ bàn ăn</a></li>
-                              <li><a href="ngoaitroi.html">Phục vụ bàn ăn</a></li>
+                              <li><a href='Category?category=pnt'>Bàn ngoài trời </a></li>
+                              <li><a href='Category?category=pnt'>Ghế ngoài trời</a></li>
+                              <li><a href='Category?category=pnt'>Dụng cụ bàn ăn</a></li>
+                              <li><a href='Category?category=pnt'>Phục vụ bàn ăn</a></li>
                               
                             </ul>
                           </div>
@@ -255,10 +255,10 @@
                           <div class="col-xs-12 col-sm-6 col-md-2 col-menu  drop-height">
                             <h2 class="title">Phòng tắm</h2>
                             <ul class="links">
-                              <li><a href="phongtam.html">Tủ kệ phòng tắm </a></li>
-                              <li><a href="phongtam.html">Khăn tắm</a></li>
-                              <li><a href="phongtam.html">Bộ vật dụng phòng tắm</a></li>
-                              <li><a href="phongtam.html">Thảm phòng tắm</a></li>
+                              <li><a href='Category?category=pt'>Tủ kệ phòng tắm </a></li>
+                              <li><a href='Category?category=pt'>Khăn tắm</a></li>
+                              <li><a href='Category?category=pt'>Bộ vật dụng phòng tắm</a></li>
+                              <li><a href='Category?category=pt'>Thảm phòng tắm</a></li>
                               
                             </ul>
                           </div>
@@ -266,9 +266,9 @@
                           <div class="col-xs-12 col-sm-6 col-md-2 col-menu  drop-height">
                             <h2 class="title">Phòng trẻ em</h2>
                             <ul class="links">
-                              <li><a href='http://localhost:8080/ProjectJSP/PaginationProduct?pages=1&category=pte'>Ghế trẻ em </a></li>
-                              <li><a href='http://localhost:8080/ProjectJSP/PaginationProduct?pages=1&category=pte'>Bàn trẻ em</a></li>
-                              <li><a href='http://localhost:8080/ProjectJSP/PaginationProduct?pages=1&category=pte'>Thú bông </a></li>
+                              <li><a href='Category?category=pte'>Ghế trẻ em </a></li>
+                              <li><a href='Category?category=pte'>Bàn trẻ em</a></li>
+                              <li><a href='Category?category=pte'>Thú bông </a></li>
                             </ul>
                           </div>
                           <!-- /.col -->
@@ -311,7 +311,7 @@
                         <div class="row">
                           <div class="col-xs-12 col-menu">
                             <ul class="links">
-                              <li><a href="home.html">Home</a></li>
+                              <li><a href="home.jsp">Home</a></li>
                               <li><a href="category.html">Category</a></li>
                               <li><a href="detail.html">Detail</a></li>
                               <li><a href="shopping-cart.html">Shopping Cart Summary</a></li>
