@@ -31,7 +31,7 @@ public class Category extends HttpServlet {
         String category = "";
         String sort1 = "aaaaaaaaaaaaaaaaaaaaa";
         String sql = " FROM product WHERE id LIKE CONCAT(?,'%')";
-
+        session.setAttribute("statusSearch","Category");
 //        try{
 //            session.getAttribute("search");
 //            response.sendRedirect("Search?pages="+request.getParameter("pages"));

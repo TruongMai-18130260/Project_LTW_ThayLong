@@ -916,7 +916,7 @@
                 <ul class="list-inline list-unstyled">
                   <li style="width: 30px;" class="prev"><a href="#"><i class="fa fa-angle-left"></i></a></li>
                   <c:forEach begin="1" end="${sessionScope.maxPage}" step="1" var="a">
-                    <li style="width: 30px;"><a href="Category?category=${sessionScope.category1}&pages=${a}">${a}</a></li>
+                    <li style="width: 30px;"><a href="${sessionScope.statusSearch}?category=${sessionScope.category1}&pages=${a}">${a}</a></li>
                   </c:forEach>
                   <li style="width: 30px;" class="next"><a href="#"><i class="fa fa-angle-right"></i></a></li>
                 </ul>
