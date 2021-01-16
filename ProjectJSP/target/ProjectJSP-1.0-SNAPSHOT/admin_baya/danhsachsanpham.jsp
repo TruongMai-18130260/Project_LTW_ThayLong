@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="fnt" uri="http://java.sun.com/jsp/jstl/functions" %>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -402,322 +404,74 @@
                                         <div class="table-responsive">
                                             <div id="products-datatable_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer"><div class="row"><div class="col-sm-12 col-md-6"><div class="dataTables_length" id="products-datatable_length"><label>Display <select class="custom-select custom-select-sm ml-1 mr-1"><option value="10">10</option><option value="20">20</option><option value="-1">All</option></select> customers</label></div></div><div class="col-sm-12 col-md-6"><div id="products-datatable_filter" class="dataTables_filter"><label>Search:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="products-datatable"></label></div></div></div><div class="row"><div class="col-sm-12"><table class="table table-centered w-100 dt-responsive nowrap dataTable no-footer dtr-inline" id="products-datatable" style="border-collapse: collapse; border-spacing: 0px; width: 100%;" role="grid" aria-describedby="products-datatable_info">
                                                 <thead class="thead-light">
-                                                    <tr role="row">
-                                                        <th class="all dt-checkboxes-cell dt-checkboxes-select-all sorting_disabled" style="width: 28.8px;" rowspan="1" colspan="1" data-col="0" aria-label="
-                                                            
-                                                                
+                                                <tr role="row">
+                                                    <th class="all dt-checkboxes-cell dt-checkboxes-select-all sorting_disabled" style="width: 28.8px;" rowspan="1" colspan="1" data-col="0" aria-label="
+
+
                                                                 &amp;nbsp;
-                                                            
-                                                        "><div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input dt-checkboxes"><label class="custom-control-label">&nbsp;</label></div></th><th class="all sorting" tabindex="0" aria-controls="products-datatable" rowspan="1" colspan="1" style="width: 283.4px;" aria-label="Product: activate to sort column ascending">Sản phẩm</th><th class="sorting" tabindex="0" aria-controls="products-datatable" rowspan="1" colspan="1" style="width: 57.4px;" aria-label="Rating: activate to sort column ascending">Đánh giá</th><th class="sorting" tabindex="0" aria-controls="products-datatable" rowspan="1" colspan="1" style="width: 78.4px;" aria-label="Category: activate to sort column ascending">Danh mục</th><th class="sorting" tabindex="0" aria-controls="products-datatable" rowspan="1" colspan="1" style="width: 99.4px;" aria-label="Added Date: activate to sort column ascending">Ngày thêm</th><th class="sorting_asc" tabindex="0" aria-controls="products-datatable" rowspan="1" colspan="1" style="width: 45.4px;" aria-sort="ascending" aria-label="Price: activate to sort column descending">Price</th><th class="sorting" tabindex="0" aria-controls="products-datatable" rowspan="1" colspan="1" style="width: 74.4px;" aria-label="Quantity: activate to sort column ascending">Quantity</th><th class="sorting" tabindex="0" aria-controls="products-datatable" rowspan="1" colspan="1" style="width: 56.4px;" aria-label="Status: activate to sort column ascending">Trạng thái</th><th style="width: 96.8px;" class="sorting_disabled" rowspan="1" colspan="1" aria-label="Action">Tác vụ</th></tr>
+
+                                                        ">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input dt-checkboxes">
+                                                            <label class="custom-control-label">&nbsp;</label>
+                                                        </div>
+                                                    </th>
+                                                    <th class="all sorting" tabindex="0" aria-controls="products-datatable" rowspan="1" colspan="1" style="width: 283.4px;" aria-label="Product: activate to sort column ascending">Sản phẩm</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="products-datatable" rowspan="1" colspan="1" style="width: 57.4px;" aria-label="Rating: activate to sort column ascending">Đánh giá</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="products-datatable" rowspan="1" colspan="1" style="width: 78.4px;" aria-label="Category: activate to sort column ascending">Danh mục</th>
+                                                    <th class="sorting_asc" tabindex="0" aria-controls="products-datatable" rowspan="1" colspan="1" style="width: 45.4px;" aria-sort="ascending" aria-label="Price: activate to sort column descending">Price</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="products-datatable" rowspan="1" colspan="1" style="width: 74.4px;" aria-label="Quantity: activate to sort column ascending">Quantity</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="products-datatable" rowspan="1" colspan="1" style="width: 56.4px;" aria-label="Status: activate to sort column ascending">Trạng thái</th>
+                                                    <th style="width: 96.8px;" class="sorting_disabled" rowspan="1" colspan="1" aria-label="Action">Tác vụ</th>
+                                                </tr>
                                                 </thead>
                                                 <tbody>
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
-                                                <tr role="row" class="odd">
+
+                                                <c:forEach items="${requestScope.listProductsAdmin}" var="item">
+                                                    <tr role="row" class="odd">
                                                         <td tabindex="0" class="dt-checkboxes-cell"><div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input dt-checkboxes"><label class="custom-control-label">&nbsp;</label></div></td>
                                                         <td>
-                                                            <img src="assets/images/products/p1.jpg" alt="contact-img" title="contact-img" class="rounded mr-3" height="48">
-                                                            
-                                                            <h5 class="m-0 d-inline-block align-middle"><a href="#" class="text-dark">Bộ bàn ghế 4 người</a></h5>
+                                                            <img src="${item.imgURL}" alt="contact-img" title="contact-img" class="rounded mr-3" height="48">
+
+                                                            <h5 class="m-0 d-inline-block align-middle"><a href="#" class="text-dark">${item.name}</a></h5>
                                                         </td>
                                                         <td>
                                                             <span class="badge badge-success"><i class="mdi mdi-star"></i> 4.9</span>
                                                         </td>
                                                         <td>
-                                                            Nội thất gỗ
+                                                                ${item.id}
                                                         </td>
-                                                        <td>
-                                                            09 Tháng 3, 2020
-                                                        </td>
+
                                                         <td class="sorting_1">
                                                             <div>
-                                                                5.000.000đ
+                                                                    ${item.salePrice}đ
                                                             </div>
                                                         </td>
-                    
+
                                                         <td>
-                                                            112
+                                                                ${item.quantity}
                                                         </td>
                                                         <td>
-                                                            <span class="badge badge-soft-success">Active</span>
+                                                            <span class="badge badge-soft-success">${item.status}</span>
                                                         </td>
-                    
+
                                                         <td>
                                                             <ul class="list-inline table-action m-0">
-                                                                <li class="list-inline-item"> 
+                                                                <li class="list-inline-item">
                                                                     <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
                                                                 </li>
-                                                                <li class="list-inline-item"> 
+                                                                <li class="list-inline-item">
                                                                     <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
                                                                 </li>
-                                                                <li class="list-inline-item"> 
+                                                                <li class="list-inline-item">
                                                                     <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
                                                                 </li>
                                                             </ul>
                                                         </td>
-                                                    </tr><tr role="row" class="even">
-                                                        <td tabindex="0" class="dt-checkboxes-cell"><div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input dt-checkboxes"><label class="custom-control-label">&nbsp;</label></div></td>
-                                                        <td>
-                                                            <img src="assets/images/products/p10.jpg" alt="contact-img" title="contact-img" class="rounded mr-3" height="48">
-                                                            
-                                                            <h5 class="m-0 d-inline-block align-middle"><a href="#" class="text-dark">Bàn Kalios</a></h5>
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-warning"><i class="mdi mdi-star"></i> 3.1</span>
-                                                        </td>
-                                                        <td>
-                                                            Nội thất gỗ
-                                                        </td>
-                                                        <td>
-                                                            05 Tháng 2, 2020
-                                                        </td>
-                                                        <td class="sorting_1">
-                                                            <div>
-                                                                5.550.000đ
-                                                            </div>
-                                                        </td>
-                    
-                                                        <td>
-                                                            60
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-soft-success">Active</span>
-                                                        </td>
-                    
-                                                        <td>
-                                                            <ul class="list-inline table-action m-0">
-                                                                <li class="list-inline-item"> 
-                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
-                                                                </li>
-                                                                <li class="list-inline-item"> 
-                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
-                                                                </li>
-                                                                <li class="list-inline-item"> 
-                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
-                                                                </li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr><tr role="row" class="odd">
-                                                        <td tabindex="0" class="dt-checkboxes-cell"><div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input dt-checkboxes"><label class="custom-control-label">&nbsp;</label></div></td>
-                                                        <td>
-                                                            <img src="assets/images/products/p11.jpg" alt="contact-img" title="contact-img" class="rounded mr-3" height="48">
-                                                            
-                                                            <h5 class="m-0 d-inline-block align-middle"><a href="#" class="text-dark">Sofa Xám XO</a></h5>
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-success"><i class="mdi mdi-star"></i> 4.3</span>
-                                                        </td>
-                                                        <td>
-                                                            Sofa
-                                                        </td>
-                                                        <td>
-                                                            02 tháng 1, 2020
-                                                        </td>
-                                                        <td class="sorting_1">
-                                                            <div>
-                                                                12.500.000đ
-                                                            </div>
-                                                        </td>
-                    
-                                                        <td>
-                                                            58
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-soft-danger">Deactive</span>
-                                                        </td>
-                    
-                                                        <td>
-                                                            <ul class="list-inline table-action m-0">
-                                                                <li class="list-inline-item"> 
-                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
-                                                                </li>
-                                                                <li class="list-inline-item"> 
-                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
-                                                                </li>
-                                                                <li class="list-inline-item"> 
-                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
-                                                                </li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr><tr role="row" class="even">
-                                                        <td tabindex="0" class="dt-checkboxes-cell"><div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input dt-checkboxes"><label class="custom-control-label">&nbsp;</label></div></td>
-                                                        <td>
-                                                            <img src="assets/images/products/p12.jpg" alt="contact-img" title="contact-img" class="rounded mr-3" height="48">
-                                                            
-                                                            <h5 class="m-0 d-inline-block align-middle"><a href="#" class="text-dark">Sofa Trắng</a></h5>
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-success"><i class="mdi mdi-star"></i> 4.9</span>
-                                                        </td>
-                                                        <td>
-                                                            Sofa
-                                                        </td>
-                                                        <td>
-                                                            27 tháng 9, 2020
-                                                        </td>
-                                                        <td class="sorting_1">
-                                                            <div>
-                                                                13.000.000đ
-                                                            </div>
-                                                        </td>
-                    
-                                                        <td>
-                                                            98
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-soft-success">Active</span>
-                                                        </td>
-                    
-                                                        <td>
-                                                            <ul class="list-inline table-action m-0">
-                                                                <li class="list-inline-item"> 
-                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
-                                                                </li>
-                                                                <li class="list-inline-item"> 
-                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
-                                                                </li>
-                                                                <li class="list-inline-item"> 
-                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
-                                                                </li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr><tr role="row" class="odd">
-                                                        <td tabindex="0" class="dt-checkboxes-cell"><div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input dt-checkboxes"><label class="custom-control-label">&nbsp;</label></div></td>
-                                                        <td>
-                                                            <img src="assets/images/products/p13.jpg" alt="contact-img" title="contact-img" class="rounded mr-3" height="48">
-                                                            
-                                                            <h5 class="m-0 d-inline-block align-middle"><a href="#" class="text-dark">Móc đồ</a></h5>
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-danger"><i class="mdi mdi-star"></i> 2.5</span>
-                                                        </td>
-                                                        <td>
-                                                            Đồ trang trí
-                                                        </td>
-                                                        <td>
-                                                            23 tháng 6, 2020
-                                                        </td>
-                                                        <td class="sorting_1">
-                                                            <div>
-                                                                350.000đ
-                                                            </div>
-                                                        </td>
-                    
-                                                        <td>
-                                                            85
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-soft-danger">Deactive</span>
-                                                        </td>
-                    
-                                                        <td>
-                                                            <ul class="list-inline table-action m-0">
-                                                                <li class="list-inline-item"> 
-                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
-                                                                </li>
-                                                                <li class="list-inline-item"> 
-                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
-                                                                </li>
-                                                                <li class="list-inline-item"> 
-                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
-                                                                </li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr><tr role="row" class="even">
-                                                        <td tabindex="0" class="dt-checkboxes-cell"><div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input dt-checkboxes"><label class="custom-control-label">&nbsp;</label></div></td>
-                                                        <td>
-                                                            <img src="assets/images/products/p15.jpg" alt="contact-img" title="contact-img" class="rounded mr-3" height="48">
-                                                            
-                                                            <h5 class="m-0 d-inline-block align-middle"><a href="#" class="text-dark">Khăn em bé</a></h5>
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-warning"><i class="mdi mdi-star"></i> 3.4</span>
-                                                        </td>
-                                                        <td>
-                                                           Đồ trẻ em
-                                                        </td>
-                                                        <td>
-                                                            21 Tháng 4, 2020
-                                                        </td>
-                                                        <td class="sorting_1">
-                                                            <div>
-                                                                2.500.000đ
-                                                            </div>
-                                                        </td>
-                    
-                                                        <td>
-                                                            88
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-soft-success">Active</span>
-                                                        </td>
-                    
-                                                        <td>
-                                                            <ul class="list-inline table-action m-0">
-                                                                <li class="list-inline-item"> 
-                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
-                                                                </li>
-                                                                <li class="list-inline-item"> 
-                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
-                                                                </li>
-                                                                <li class="list-inline-item"> 
-                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
-                                                                </li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr><tr role="row" class="odd">
-                                                        <td tabindex="0" class="dt-checkboxes-cell"><div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input dt-checkboxes"><label class="custom-control-label">&nbsp;</label></div></td>
-                                                        <td>
-                                                            <img src="assets/images/products/p16.jpg" alt="contact-img" title="contact-img" class="rounded mr-3" height="48">
-                                                            
-                                                            <h5 class="m-0 d-inline-block align-middle"><a href="#" class="text-dark">Sofa <Var></Var></a></h5>
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-success"><i class="mdi mdi-star"></i> 4.5</span>
-                                                        </td>
-                                                        <td>
-                                                            Sofa
-                                                        </td>
-                                                        <td>
-                                                            19 Tháng 12, 2020
-                                                        </td>
-                                                        <td class="sorting_1">
-                                                            <div>
-                                                                9.550.000đ
-                                                            </div>
-                                                        </td>
-                    
-                                                        <td>
-                                                            82
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-soft-success">Active</span>
-                                                        </td>
-                    
-                                                        <td>
-                                                            <ul class="list-inline table-action m-0">
-                                                                <li class="list-inline-item"> 
-                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
-                                                                </li>
-                                                                <li class="list-inline-item"> 
-                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
-                                                                </li>
-                                                                <li class="list-inline-item"> 
-                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
-                                                                </li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr></tbody>
+                                                    </tr>
+                                                </c:forEach>
+
+                                                </tbody>
                                             </table></div></div><div class="row"><div class="col-sm-12 col-md-5"><div class="dataTables_info" id="products-datatable_info" role="status" aria-live="polite">Showing customers 1 to 10 of 12</div></div><div class="col-sm-12 col-md-7"><div class="dataTables_paginate paging_simple_numbers" id="products-datatable_paginate"><ul class="pagination pagination-rounded"><li class="paginate_button page-item previous disabled" id="products-datatable_previous"><a href="#" aria-controls="products-datatable" data-dt-idx="0" tabindex="0" class="page-link"><i class="mdi mdi-chevron-left"></i></a></li><li class="paginate_button page-item active"><a href="#" aria-controls="products-datatable" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item "><a href="#" aria-controls="products-datatable" data-dt-idx="2" tabindex="0" class="page-link">2</a></li><li class="paginate_button page-item next" id="products-datatable_next"><a href="#" aria-controls="products-datatable" data-dt-idx="3" tabindex="0" class="page-link"><i class="mdi mdi-chevron-right"></i></a></li></ul></div></div></div></div>
                                         </div>
                                     </div>

@@ -37,6 +37,7 @@ public class FindProduct {
             item.setProduct(findProduct(id));
             item.setId(id);
             item.setQuantity(quantity);
+            System.out.println(item.getProduct().getId());
             item.setPrice(item.getProduct().getSalePrice() * item.getQuantity());
             list.add(item);
         }

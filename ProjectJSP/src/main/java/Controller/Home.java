@@ -38,6 +38,11 @@ public class Home extends HttpServlet {
         ArrayList<Product> listProducts6 = new ArrayList<>();
         ArrayList<Product> listProducts7 = new ArrayList<>();
         ArrayList<Product> listProducts8 = new ArrayList<>();
+
+        HttpSession session = request.getSession();
+
+        session.setAttribute("statusSearch","Category");
+
         try {
             ConnectionDB.connect();
             PreparedStatement statement = ConnectionDB.con.prepareStatement(sql);

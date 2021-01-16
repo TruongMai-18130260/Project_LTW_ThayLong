@@ -72,7 +72,14 @@ public class CartBean implements Serializable {
     }
 
     public void remove(String id) throws SQLException, ClassNotFoundException {
+
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i).getId().equals(id)){
+                list.remove(i);
+            }
+        }
         FindProduct.remove(this.getCartId(),id);
+        calculatePrice();
     }
 
     public void calculatePrice(){

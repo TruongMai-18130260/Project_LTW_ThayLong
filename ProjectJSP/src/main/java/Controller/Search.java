@@ -189,6 +189,8 @@ public class Search extends HttpServlet {
         session.setAttribute("sort2",sort1);
         session.setAttribute("sql",sql);
 
+        session.setAttribute("statusSearch","Search");
+
         request.getRequestDispatcher("PaginationProduct").forward(request,response);
     }
 
