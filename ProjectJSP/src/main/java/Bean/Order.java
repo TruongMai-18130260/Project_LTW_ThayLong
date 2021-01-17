@@ -4,77 +4,49 @@ import java.io.Serializable;
 
 public class Order implements Serializable {
     private String orderID;
-    private String orderDetailID;
-    private String paymentID;
-    private String phone;
-    private String address;
+    private Info info;
     private int status;
-    private double totalPrice;
+    private int totalPrice;
 
-    public Order(){}
-    public Order(String orderID,String orderDetailID,String paymentID,String phone,String address,int status,double totalPrice){
+    public Order() {
+    }
+
+    public Order(String orderID, Info info, int status, int totalPrice) {
         this.orderID = orderID;
-        this.orderDetailID = orderDetailID;
-        this.paymentID = paymentID;
-        this.phone = phone;
-        this.address = address;
+        this.info = info;
         this.status = status;
         this.totalPrice = totalPrice;
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public double getTotalPrice() {
-        return totalPrice;
-    }
-
-    public int getStatus() {
-        return status;
-    }
-
-    public String getOrderDetailID() {
-        return orderDetailID;
     }
 
     public String getOrderID() {
         return orderID;
     }
 
-    public String getPaymentID() {
-        return paymentID;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public void setOrderDetailID(String orderDetailID) {
-        this.orderDetailID = orderDetailID;
-    }
-
     public void setOrderID(String orderID) {
         this.orderID = orderID;
     }
 
-    public void setPaymentID(String paymentID) {
-        this.paymentID = paymentID;
+    public Info getInfo() {
+        return info;
+    }
+
+    public void setInfo(Info info) {
+        this.info = info;
+    }
+
+    public int getStatus() {
+        return status;
     }
 
     public void setStatus(int status) {
         this.status = status;
     }
 
-    public void setTotalPrice(double totalPrice) {
+    public int getTotalPrice() {
+        return totalPrice;
+    }
+
+    public void setTotalPrice(int totalPrice) {
         this.totalPrice = totalPrice;
     }
 }

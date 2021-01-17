@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="fnt" uri="http://java.sun.com/jsp/jstl/functions" %>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -77,62 +79,64 @@
 		<div class="sign-in-page">
 			<div class="row signin-up checkout-container">
 				<!-- Sign-in -->			
-				<div class="col-md-12 col-sm-12 sign-in ">
-					<h4 class="">Thanh toán</h4>
-					<p class="">Để tiếp tục thanh toán, vui lòng đăng nhập</p>
-					<div class="social-sign-in outer-top-xs">
-						<a href="#" class="facebook-sign-in"><i class="fa fa-facebook"></i> Đăng nhập với Facebook</a>
-						<a href="#" class="twitter-sign-in"><i class="fa fa-twitter"></i> Đăng nhập với Twitter</a>
-						<!-- <a href="#" class="google-sign-in"><i class="fa fa-google"></i> Đăng nhập với Google</a> -->
+<%--				<div class="col-md-12 col-sm-12 sign-in ">--%>
+<%--					<h4 class="">Thanh toán</h4>--%>
+<%--					<p class="">Để tiếp tục thanh toán, vui lòng đăng nhập</p>--%>
+<%--					<div class="social-sign-in outer-top-xs">--%>
+<%--						<a href="#" class="facebook-sign-in"><i class="fa fa-facebook"></i> Đăng nhập với Facebook</a>--%>
+<%--						<a href="#" class="twitter-sign-in"><i class="fa fa-twitter"></i> Đăng nhập với Twitter</a>--%>
+<%--						<!-- <a href="#" class="google-sign-in"><i class="fa fa-google"></i> Đăng nhập với Google</a> -->--%>
 
-					</div>	
-					
-					<form class="register-form outer-top-xs checkout" role="form">
-						<div class="form-group">
-							<label class="info-title" for="exampleInputEmail1">Email </label>
-							<input type="email" class="form-control unicase-form-control text-input checkout-email" id="exampleInputEmail1">
-						</div>
-						<div class="form-group">
-							<label class="info-title" for="exampleInputPassword1">Mật khẩu </label>
-							<input type="password" class="form-control unicase-form-control text-input checkout-password" id="exampleInputPassword1">
-						</div>
-						<div class="radio outer-xs">
-							<label>
-								<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Lưu mật khẩu
-							</label>
-							<a href="forgotpassword.html" class="forgot-password pull-right">Quên mật khẩu</a>
-							<br />
-							<a class="forgot-password pull-right pointer" id="chooseSignUp">Đăng kí</a>
-						</div>
-						<button type="submit" class="btn-upper btn btn-primary checkout-page-button">Đăng nhâp</button>
-					</form>	
-								
-				</div>
+<%--					</div>	--%>
+<%--					--%>
+<%--					<form class="register-form outer-top-xs checkout" role="form">--%>
+<%--						<div class="form-group">--%>
+<%--							<label class="info-title" for="exampleInputEmail1">Email </label>--%>
+<%--							<input type="email" class="form-control unicase-form-control text-input checkout-email" id="exampleInputEmail1">--%>
+<%--						</div>--%>
+<%--						<div class="form-group">--%>
+<%--							<label class="info-title" for="exampleInputPassword1">Mật khẩu </label>--%>
+<%--							<input type="password" class="form-control unicase-form-control text-input checkout-password" id="exampleInputPassword1">--%>
+<%--						</div>--%>
+<%--						<div class="radio outer-xs">--%>
+<%--							<label>--%>
+<%--								<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Lưu mật khẩu--%>
+<%--							</label>--%>
+<%--							<a href="forgotpassword.html" class="forgot-password pull-right">Quên mật khẩu</a>--%>
+<%--							<br />--%>
+<%--							<a class="forgot-password pull-right pointer" id="chooseSignUp">Đăng kí</a>--%>
+<%--						</div>--%>
+<%--						<button type="submit" class="btn-upper btn btn-primary checkout-page-button">Đăng nhâp</button>--%>
+<%--					</form>	--%>
+<%--								--%>
+<%--				</div>--%>
 				<br/>
+
 				<div class="col-md-8 col-sm-8 sign-in row" style="margin-top: 20px; margin-right: 1px;">
 					<div class="col-md-12 col-sm-12 sign-in checkout-info">
 						<h4>Thông tin đơn hàng</h4>
-						<form action="" class="row a">
-							<input type="text" name="" id="" placeholder="Họ" class="col-md-12 col-sm-12">
-							<input type="text" name="" id="" placeholder="Tên" class="col-md-12 col-sm-12">
-							<input type="text" name="" id="" placeholder="Tên công ty" class="col-md-12 col-sm-12">
-							<input type="text" name="" id="" placeholder="Số điện thoại" class="col-md-12 col-sm-12">
-							<input type="text" name="" id="" placeholder="Địa chỉ mail" class="col-md-12 col-sm-12">
-							<select name="" id="" class="col-md-12 col-sm-12">
-								<option value="VietNam">Việt Nam</option>
-								<option value="ThaiLan">Thái Lan</option>
-								<option value="NhatBan">Nhật Bản</option>
-							</select>
-							<input type="text" name="" id="" placeholder="Phường" class="col-md-12 col-sm-12">
-							<input type="text" name="" id="" placeholder="Quận" class="col-md-12 col-sm-12">
-							<input type="text" name="" id="" placeholder="Tỉnh/Thành phố" class="col-md-12 col-sm-12">
-							<select name="" id="" class="col-md-12 col-sm-12">
-								<option value="Tphcm">TPHCM</option>
-								<option value="Hanoi">Hà Nội</option>
-								<option value="Dânng">Đà Nẵng</option>
-							</select>
-							<input type="text" name="" id="" placeholder="Mã đơn hàng" class="col-md-12 col-sm-12">
-							<input type="checkbox" name="optionsRadios" id="optionsRadios2" value="option2">Lưu thông tin
+
+						<form action="SaveInformation" method="post" class="row a">
+							<input type="text" name="fname" id="fname" placeholder="Họ" class="col-md-12 col-sm-12">
+							<input type="text" name="lname" id="lname" placeholder="Tên" class="col-md-12 col-sm-12">
+							<input type="text" name="company" id="company" placeholder="Tên công ty" class="col-md-12 col-sm-12">
+							<input type="text" name="phone" id="phone" placeholder="Số điện thoại" class="col-md-12 col-sm-12">
+<%--							<input type="text" name="email" id="email" placeholder="Địa chỉ mail" class="col-md-12 col-sm-12">--%>
+<%--							<select name="" id="country" class="col-md-12 col-sm-12">--%>
+<%--								<option value="VietNam">Việt Nam</option>--%>
+<%--&lt;%&ndash;								<option value="ThaiLan">Thái Lan</option>&ndash;%&gt;--%>
+<%--&lt;%&ndash;								<option value="NhatBan">Nhật Bản</option>&ndash;%&gt;--%>
+<%--							</select>--%>
+							<input type="text" name="phuong" id="phuong" placeholder="Phường" class="col-md-12 col-sm-12">
+							<input type="text" name="quan" id="quan" placeholder="Quận" class="col-md-12 col-sm-12">
+							<input type="text" name="tinh" id="tinh" placeholder="Tỉnh/Thành phố" class="col-md-12 col-sm-12">
+<%--							<select name="" id="thanhpho" class="col-md-12 col-sm-12">--%>
+<%--								<option value="Tphcm">TPHCM</option>--%>
+<%--								<option value="Hanoi">Hà Nội</option>--%>
+<%--								<option value="Dânng">Đà Nẵng</option>--%>
+<%--							</select>--%>
+<%--							<input type="text" name="" id="madonhang" placeholder="Mã đơn hàng" class="col-md-12 col-sm-12">--%>
+							<button type="submit" class="btn-upper btn btn-primary checkout-page-button" >Lưu thông tin</button>
 						</form>
 					</div>
 					<div class="col-md-12 col-sm-12 sign-in checkout-shipping">
@@ -140,43 +144,38 @@
 						<form action="">
 							<input type="checkbox" name="optionsRadios" id="optionsRadios2" value="option2"> Vận chuyển tới địa chỉ khác
 							<br/>
-							<input type="text" name="" id="" style="width: 100%; height: 150px; margin: 10px;">
+							<input type="text" name="addresstext" id="addresstext" style="width: 100%; height: 150px; margin: 10px;">
 						</form>
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-4 sign-in" style="margin-top: 20px; margin-left: 5px; margin-right: 5px; background-color:#e5ecee;">
 					<h4>Đơn hàng của bạn</h4>
-					<table>
+					<table class="checkout-table">
 						<tr>
 							<th>Sản phẩm</th>
 							<th>Tổng cộng</th>
 						</tr>
-						<tr>
-							<td>Giường Darius <span>x1</span></td>
-							<td>12,000,000</td>
-						</tr>
-						<tr>
-							<td>Giường Darius <span>x1</span></td>
-							<td>12,000,000</td>
-						</tr>
-						<tr>
-							<td>Giường Darius <span>x1</span></td>
-							<td>12,000,000</td>
-						</tr>
+						<c:forEach items="${sessionScope.cart.list}" var="item">
+							<tr>
+								<td>${item.product.name} <span> x${item.quantity}</span></td>
+								<td>${item.price}</td>
+							</tr>
+						</c:forEach>
+
 						<tr style="margin-top: 5px;">
-							<td style="font-weight: bold; font-size: 17px;">Tổng cộng <span>x1</span></td>
-							<td style="font-weight: bold; font-size: 17px;">36,000,000</td>
+							<td style="font-weight: bold; font-size: 17px;">Tổng cộng </td>
+							<td style="font-weight: bold; font-size: 17px;">${sessionScope.cart.totalPrice}đ</td>
 						</tr>
 						<tr>
-							<td style="font-weight: bold; font-size: 17px;">Vận chuyển <span>x1</span></td>
+							<td style="font-weight: bold; font-size: 17px;">Vận chuyển </td>
 							<td style="font-weight: bold; font-size: 17px;">0</td>
 						</tr>
 						<tr>
-							<td style="font-weight: bold; font-size: 17px;">Thành tiền <span>x1</span></td>
-							<td style="font-weight: bold; font-size: 17px;">36,000,000</td>
+							<td style="font-weight: bold; font-size: 17px;">Thành tiền </td>
+							<td style="font-weight: bold; font-size: 17px;">${sessionScope.cart.totalPrice}đ</td>
 						</tr>
 					</table>
-					<form action="">
+					<form action="ExcuteOrder" method="post" class="row">
 						<div class="form-group">
 							<div class="shipcode">
 								<input type="radio" id="male" name="gender" value="male">
@@ -194,9 +193,10 @@
 							</div>
 						</div>
 						<input type="checkbox" name="" id="">Tôi đã đọc và đồng ý điều khoản và quy định
-						<button type="submit" class="btn-upper btn btn-primary checkout-page-button" ><a href="confirmation.html" style="color: #fff;">Tiến hành thanh toán</a></button>
+						<button type="submit" class="btn-upper btn btn-primary checkout-page-button" >Tiến hành thanh toán</button>
 					</form>
 				</div>
+
 <!-- Sign-in -->
 <div class="col-md-3 col-sm-3"></div>
 <!-- create a new account -->			</div><!-- /.row -->

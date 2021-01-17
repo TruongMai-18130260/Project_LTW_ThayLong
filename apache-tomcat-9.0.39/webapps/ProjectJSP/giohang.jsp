@@ -145,10 +145,10 @@
 							<select class="form-control unicase-form-control selectpicker">
 								<option>--Select options--</option>
 								<option>Việt Nam</option>
-								<option>SriLanka</option>
-								<option>united kingdom</option>
-								<option>saudi arabia</option>
-								<option>united arab emirates</option>
+<%--								<option>SriLanka</option>--%>
+<%--								<option>united kingdom</option>--%>
+<%--								<option>saudi arabia</option>--%>
+<%--								<option>united arab emirates</option>--%>
 							</select>
 						</div>
 						<div class="form-group">
@@ -162,10 +162,10 @@
 								<option>Bình Dương</option>
 							</select>
 						</div>
-						<div class="form-group">
-							<label class="info-title control-label">Mã bưu điện</label>
-							<input type="text" class="form-control unicase-form-control text-input" placeholder="">
-						</div>
+<%--						<div class="form-group">--%>
+<%--							<label class="info-title control-label">Mã bưu điện</label>--%>
+<%--							<input type="text" class="form-control unicase-form-control text-input" placeholder="">--%>
+<%--						</div>--%>
 						<div class="pull-right">
 							<button type="submit" class="btn-upper btn btn-primary">Xác nhận</button>
 						</div>
@@ -218,7 +218,9 @@
 				<tr>
 					<td>
 						<div class="cart-checkout-btn pull-right">
-							<button type="submit" class="btn btn-primary checkout-btn"><a href="checkout.html">Tiến hành thanh toán</a></button>
+							<form action="Checkout" method="post">
+								<button type="submit" class="btn btn-primary checkout-btn">Tiến hành thanh toán</button>
+							</form>
 							<!-- <span class="">Checkout with multiples address!</span> -->
 						</div>
 					</td>
