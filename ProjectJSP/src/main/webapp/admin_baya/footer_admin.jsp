@@ -7,10 +7,25 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-  <head>
-    <title>$Title$</title>
-  </head>
-  <body>
-  $END$
-  </body>
+<head>
+
+</head>
+<body>
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                2020 &copy; Baya admin by <a href="">Group 14</a>
+            </div>
+            <div class="col-md-6">
+                <div class="text-md-right footer-links d-none d-sm-block">
+                    <a href="javascript:void(0);">Giới thiệu</a>
+                    <a href="javascript:void(0);">Trợ giúp</a>
+                    <a href="javascript:void(0);">Liên hệ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
 </html>
