@@ -25,325 +25,11 @@
         <div id="wrapper">
 
             <!-- Topbar Start -->
-            <div class="navbar-custom">
-                <ul class="list-unstyled topnav-menu float-right mb-0">
-
-                    <!-- <li class="d-none d-sm-block">
-                        <form class="app-search">
-                            <div class="app-search-box">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Search...">
-                                    <div class="input-group-append">
-                                        <button class="btn" type="submit">
-                                            <i class="fe-search"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </li> -->
-                    <li class="dropdown d-none d-lg-block">
-                        <a class="nav-link dropdown-toggle waves-effect waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                            Baya
-                            <i class="mdi mdi-chevron-down"></i> 
-                        </a>
-                        <div class="dropdown-menu">
-                            <!-- item-->
-                            <a href="pages-404.html" class="dropdown-item">
-                               
-                                <span>Chọn cửa hàng</span>
-                            </a>
-
-                            <!-- item-->
-                            <a href="pages-404.html" class="dropdown-item">
-                               
-                                <span>Baya</span>
-                            </a>
-
-                        </div>
-                    </li>
-        
-                    
-
-                    <li class="dropdown notification-list">
-                        <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                            <img src="assets\images\users\minh.jpg" alt="user-image" class="rounded-circle">
-                            <span class="pro-user-name ml-1">
-                                Hoàng Minh <i class="mdi mdi-chevron-down"></i> 
-                            </span>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
-                            <!-- item-->
-                            <a href="extras-profile.html" class="dropdown-item notify-item">
-                                <i class="remixicon-account-circle-line"></i>
-                                <span>Tài khoản</span>
-                            </a>
-
-                            <!-- item-->
-                            <a href="pages-404.html" class="dropdown-item notify-item">
-                                <i class="remixicon-lock-unlock-line"></i>
-                                <span>Đổi mật khẩu</span>
-                            </a>
-
-                            <!-- item-->
-                            <a href="pages-404.html" class="dropdown-item notify-item">
-                                <i class="remixicon-settings-3-line"></i>
-                                <span>Cài đặt</span>
-                            </a>
-
-                            <div class="dropdown-divider"></div>
-
-                            <!-- item-->
-                            <a href="pages-logout.html" class="dropdown-item notify-item">
-                                <i class="remixicon-logout-box-line"></i>
-                                <span>Đăng xuất</span>
-                            </a>
-
-                        </div>
-                    </li>
-        
-
-                    <!-- <li class="dropdown notification-list">
-                        <a href="pages-404.html" class="nav-link right-bar-toggle waves-effect waves-light">
-                            <i class="fe-settings noti-icon"></i>
-                        </a>
-                    </li> -->
-
-
-                </ul>
-
-                <!-- LOGO -->
-                <div class="logo-box">
-                    <a href="index.html" class="logo text-center">
-                        <span class="logo-lg">
-                            <img src="assets\images\logo-white.png" alt="" height="35">
-                            <!-- <span class="logo-lg-text-light">Xeria</span> -->
-                        </span>
-                        <span class="logo-sm">
-                            <!-- <span class="logo-sm-text-dark">X</span> -->
-                            <img src="assets\images\logo.png" alt="" height="24">
-                        </span>
-                    </a>
-                </div>
-
-                <ul class="list-unstyled topnav-menu topnav-menu-left m-0">
-                    <li>
-                        <button class="button-menu-mobile waves-effect waves-light">
-                            <i class="fe-menu"></i>
-                        </button>
-                    </li>
-        
-                    
-
-                  
-                </ul>
-            </div>
+<jsp:include page="header_admin.jsp"/>
             <!-- end Topbar -->
 
             <!-- ========== Left Sidebar Start ========== -->
-            <div class="left-side-menu">
-
-                <div class="slimscroll-menu">
-
-                    <!--- Sidemenu -->
-                    <div id="sidebar-menu">
-
-                        <ul class="metismenu" id="side-menu">
-
-                            <li class="menu-title">BAYA ADMIN</li>
-
-                            <li>
-                                <a href="index.html" class="waves-effect">
-                                    <i class="fas fa-home"></i>
-                                    <span> Trang chủ </span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="banhangthungan.html" class="waves-effect">
-                                    <i class="fas fa-shopping-bag"></i>
-                                    <span> Bán hàng/Thu ngân </span>
-                                    
-                                </a>
-                               
-                            </li>
-
-                            <li>
-                                <a href="javascript: void(0);" class="waves-effect">
-                                    <i class="fas fa-address-book"></i>
-                                    <span> Khách hàng </span>
-                                    <span class="menu-arrow"></span>
-                                </a>
-                                <ul class="nav-second-level" aria-expanded="false">
-                                    <li>
-                                        <a href="danhsachkhachhang.html">Danh sách khách hàng</a>
-                                    </li>
-                                    <li>
-                                        <a href="chatvoikhachhang.html">Chat với khách hàng</a>
-                                    </li>
-                                   
-            
-                                </ul>
-                            </li>
-                
-                            <li>
-                                <a href="danhsachdonhang.html" class="waves-effect">
-                                    <i class="fas fa-shopping-cart"></i>
-                                    <span> Đơn hàng </span>
-                                   
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="danhsachsanpham.html" class="waves-effect">
-                                    <i class="fab fa-product-hunt"></i>
-                                    <span>Sản phẩm</span>
-                                    <!-- <span class="menu-arrow"></span> -->
-                                </a>
-                                <!-- <ul class="nav-second-level" aria-expanded="false">
-                                    <li>
-                                        <a href="danhsachsanpham.html">Danh sách sản phẩm</a>
-                                    </li> -->
-                                    <!-- <li>
-                                        <a href="danhmuc.html">Danh mục</a>
-                                    </li>
-                                    <li>
-                                        <a href="nhomsanpham.html">Nhóm sản phẩm</a>
-                                    </li>
-                                    <li> -->
-                                        <!-- <a href="suachungchosanpham.html">Sửa chung cho sản phẩm</a>
-                                    </li> -->
-                                    
-                                <!-- </ul> -->
-                            </li>
-
-                            <li>
-                                <a href="javascript: void(0);" class="waves-effect">
-                                    <i class="fa fa-user-plus"></i>
-                                    <span> Cộng tác viên </span>
-                                    <span class="menu-arrow"></span>
-                                </a>
-                                <ul class="nav-second-level" aria-expanded="false">
-                                    <li>
-                                        <a href="danhsachctv.html">Danh sách CTV</a>
-                                    </li>
-                                    
-                                    <li>
-                                        <a href="baocaodoanhthuctv.html">Báo cáo doanh thu CTV</a>
-                                    </li>
-                                    
-                                   
-                                </ul>
-                            </li>
-
-                            <li>
-                                <a href="javascript: void(0);" class="waves-effect">
-                                    <i class="fa fa-cog"></i>
-                                    <span>Cấu hình </span>
-                                    <span class="menu-arrow"></span>
-                                </a>
-                                <ul class="nav-second-level" aria-expanded="false">
-                                    <li>
-                                        <a href="pages-404.html">Sửa thông tin</a>
-                                    </li>
-                                    <li>
-                                        <a href="pages-404.html">Cấu hình</a>
-                                    </li>
-                                    <li>
-                                        <a href="extras-profile.html">Tài khoản Admin</a>
-                                    </li>
-                            
-                                    
-                                    
-                                </ul>
-                            </li>
-
-                            <li>
-                                <a href="quanliblog.html" class="waves-effect">
-                                    <i class="fas fa-newspaper"></i>
-                                    
-                                    <span> Blog </span>
-                                    <!-- <span class="menu-arrow"></span> -->
-                                </a>
-                                <!-- <ul class="nav-second-level" aria-expanded="false">
-                                    <li>
-                                        <a href="pages-404.html">Quản lý chuyên mục</a>
-                                    </li>
-                                    <li>
-                                        <a href="pages-404.html">Danh sách Blog</a>
-                                    </li>
-                                    
-                                </ul> -->
-                            </li>
-                            
-                            <li>
-                                <a href="quanlidanhmuc.html" class="waves-effect">
-                                    <i class="fas fa-bullseye"></i>
-                                    <span> Quản lý Danh Mục </span>
-                                </a>
-                            </li>
-
-                            
-
-                            <!-- <li>
-                                <a href="javascript: void(0);" class="waves-effect">
-                                    <i class="fas fa-clone"></i>
-                                    <span> Quản lý Popup </span>
-                                    
-                                </a>
-                               
-                            </li> -->
-
-                            <li>
-                                <a href="javascript: void(0);" class="waves-effect">
-                                    <i class="fas fa-chart-bar"></i>
-                                    <span> Thông tin thống kê </span>
-                                    <span class="menu-arrow"></span>
-                                </a>
-                                <ul class="nav-second-level" aria-expanded="false">
-                                    <li>
-                                        <a href="pages-404.html">Bảng tổng hợp</a>
-                                    </li>
-                                    <li>
-                                        <a href="dothi.html">Đồ thị</a>
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <li>
-                                <a href="pages-404.html" class="waves-effect">
-                                    <i class="fas fa-align-center"></i>
-                                    <span> Lịch sử thay đổi </span>
-                                </a>
-                        
-                            </li>
-
-                            <li>
-                                <a href="javascript: void(0);" class="waves-effect">
-                                    <i class="fas fa-th-large"></i>
-                                    <span> Tiện ích khác </span>
-                                    <span class="menu-arrow"></span>
-                                </a>
-                                <ul class="nav-second-level" aria-expanded="false">
-                                    <li>
-                                        <a href="apps-calendar.html">Lịch</a>
-                                    </li>
-                                   
-                                </ul>
-                            </li>
-
-                          
-                        </ul>
-
-                    </div>
-                    <!-- End Sidebar -->
-
-                    <div class="clearfix"></div>
-
-                </div>
-                <!-- Sidebar -left -->
-
-            </div>
+            <jsp:include page="side-bar.jsp"/>
             <!-- Left Sidebar End -->
 
             <!-- ============================================================== -->
@@ -355,7 +41,7 @@
 
                     <!-- Start Content-->
                     <div class="container-fluid">
-                        
+
                         <!-- start page title -->
                         <div class="row">
                             <div class="col-12">
@@ -369,13 +55,13 @@
                                     <h4 class="page-title">QUẢN LÍ BÁN HÀNG</h4>
                                 </div>
                             </div>
-                        </div>     
+                        </div>
                         <!-- end page title -->
                 <div class="row">
                     <div class="col-xl-3">
                         <div class="card">
                             <div class="card-body">
-                            
+
 
                                 <div>
                                     <button type="button" class="btn btn-block btn-lg btn-primary waves-effect waves-light">ĐANG CHỜ DUYỆT</button>
@@ -385,24 +71,24 @@
                                     <button type="button" class="btn btn-block btn-lg btn-primary waves-effect waves-light">ĐÃ HOÀN THÀNH</button>
                                     <button type="button" class="btn btn-block btn-lg btn-primary waves-effect waves-light">GIỎ HÀNG/ĐANG ĐẶT HÀNG</button>
                                     <button type="button" class="btn btn-block btn-lg btn-primary waves-effect waves-light">ĐÃ HỦY</button>
-                                   
+
                                 </div>
                             </div><!-- end card-body -->
                         </div>
-                    </div> 
+                    </div>
                     <div class="col-xl-6">
                         <div class="card">
                         <div class="card-body">
                             <h4 class="header-title">Đơn hàng :</h4>
                             <p class="note-color text-center">Mặt hàng khách chọn mua được hiển thị tại đây <br> (Vui lòng chọn đơn hàng)</p>
 
-                        </div>    
                         </div>
-                     
+                        </div>
+
                             <div class="card">
                                 <div class="card-body">
-                                   
-        
+
+
                                     <ul class="nav nav-tabs nav-bordered">
                                         <li class="nav-item">
                                             <a href="#ttkh-b1" data-toggle="tab" aria-expanded="false" class="nav-link">
@@ -422,11 +108,11 @@
                                                 <span class="d-none d-sm-inline-block">Lịch sử giao dịch</span>
                                             </a>
                                         </li>
-                                        
+
                                     </ul>
                                     <div class="tab-content">
                                         <div class="tab-pane active" id="ttkh-b1">
-                                            
+
                                                 <div class="col-xs-6">
                                                     <h5>Địa chỉ giao hàng</h5>
                                                     <div class="">
@@ -438,40 +124,40 @@
                                                         <p class="sale_user_label">Thanh toán:<span class="cart_payment_method"></span></p>
                                                     </div>
                                                 </div>
-                                              
-                                            
+
+
                                         </div>
                                         <div class="tab-pane show" id="ttlh-b1">
                                             <form class="needs-validation" novalidate="">
                                                 <div class="form-group mb-3">
                                                     <label for="validationCustom01">Họ Tên</label>
                                                     <input type="text" class="form-control" id="validationCustom01" placeholder="Họ tên"  required="">
-                                                    
+
                                                 </div>
-                                                
+
                                                 <div class="form-group mb-3">
                                                     <label for="validationCustom03">Địa chỉ</label>
                                                     <input type="text" class="form-control" id="validationCustom03" placeholder="Địa chỉ" required="">
-                                                    
+
                                                 </div>
                                                 <div class="form-group mb-3">
                                                     <label for="validationCustom04">Khu vực</label>
                                                     <input type="text" class="form-control" id="validationCustom04" placeholder="Quận/Huyện" required="">
-                                                   
+
                                                 </div>
                                                 <div class="form-group mb-3">
                                                     <label for="validationCustom05">Số điện thoại</label>
                                                     <input type="text" class="form-control" id="validationCustom05" placeholder="số điện thoại" required="">
-                                                    
+
                                                 </div>
-                                              
+
                                             </form>
                                         </div>
                                         <div class="tab-pane" id="lsgd-b1">
                                             <div class="table-responsive">
                                                 <table class="table mb-0">
                                                     <thead class="thead-light">
-                                                        
+
                                                             <tr>
                                                                 <th>ID</th>
                                                                 <th>Mã</th>
@@ -482,24 +168,24 @@
                                                                 <th>Mặt hàng</th>
                                                                 <th></th>
                                                             </tr>
-                                                        
+
                                                     </thead>
                                                     <tbody>
-                                                    
+
                                                     </tbody>
                                                 </table>
                                             </div>
                                         </div>
-                                       
+
                                     </div>
                                 </div>
                             </div> <!-- end card -->
-                        
-                    </div> 
+
+                    </div>
                 <div class="col-xl-3">
                     <div class="card">
                         <div class="card-body">
-                   
+
                         <p class="sale_user_label">Giá tạm tính: <span id="total_before"></span></p>
                         <div id="promotion_fee"></div>
                         <div id="item_fee"></div>
@@ -526,11 +212,11 @@
 
                             <a id="print_invoice" class="btn btn-primary w100p mt8 display-none" data-href="/invoice/print_invoice/1924/{cart_id}" href="/invoice/print_invoice/1924/{cart_id}" target="_blank"><i class="fa fa-print"></i> In hóa đơn</a>
                         </div> -->
-                    
+
                         </div>
                     </div>
-                   
-                       
+
+
                             <div class="card">
                                 <div class="card-body py-2 px-3 border-bottom border-light">
                                     <div class="media py-1">
@@ -544,7 +230,7 @@
                                             </p>
                                         </div>
                                         <div>
-                                            
+
                                             <a href="javascript: void(0);" class="text-reset font-19 py-1 px-2 d-inline-block" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add Users">
                                                 <i class="fe-user-plus"></i>
                                             </a>
@@ -569,9 +255,9 @@
                                                     </p>
                                                 </div>
                                             </div>
-                                          
+
                                         </li>
-                                       
+
                                     </div></div></div></div><div class="simplebar-placeholder" style="width: auto; height: 900px;"></div></div><div class="simplebar-track simplebar-horizontal" style="visibility: hidden;"><div class="simplebar-scrollbar" style="width: 0px; display: none;"></div></div><div class="simplebar-track simplebar-vertical" style="visibility: visible;"><div class="simplebar-scrollbar" style="height: 235px; transform: translate3d(0px, 102px, 0px); display: block;"></div></div></ul>
 
                                     <div class="row">
@@ -593,14 +279,14 @@
                                                         </div> <!-- end col -->
                                                     </div> <!-- end row-->
                                                 </form>
-                                            </div> 
+                                            </div>
                                         </div> <!-- end col-->
                                     </div>
                                     <!-- end row -->
                                 </div> <!-- end card-body -->
                             </div> <!-- end card -->
-                        
-                    </div> 
+
+                    </div>
                 </div>
                 </div>
                     </div> <!-- container -->
@@ -608,22 +294,7 @@
                 </div> <!-- content -->
 
                 <!-- Footer Start -->
-                <footer class="footer">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-6">
-                               2020 &copy; Baya admin by <a href="">Group 14</a> 
-                            </div>
-                            <div class="col-md-6">
-                                <div class="text-md-right footer-links d-none d-sm-block">
-                                    <a href="javascript:void(0);">Giới thiệu</a>
-                                    <a href="javascript:void(0);">Trợ giúp</a>
-                                    <a href="javascript:void(0);">Liên hệ</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
+<jsp:include page="footer_admin.jsp"/>
                 <!-- end Footer -->
 
             </div>

@@ -31,7 +31,7 @@ public class PanigationProductAdmin extends HttpServlet {
                 maxitem = (int) session.getAttribute("maxitem1");
             } catch (NullPointerException e) {
                 page = 1;
-                maxitem = 1;
+                maxitem = 9;
             }
 
             String sql = "select * from product limit ?,?";
