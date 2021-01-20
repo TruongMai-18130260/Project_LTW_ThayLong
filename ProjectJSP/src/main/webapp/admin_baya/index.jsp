@@ -10,12 +10,12 @@
         <meta content="Coderthemes" name="author">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <!-- App favicon -->
-        <link rel="shortcut icon" href="assets\images\logo.png">
+        <link rel="shortcut icon" href="admin_baya/assets/images/logo.png">
 
         <!-- App css -->
-        <link href="assets\css\bootstrap.min.css" rel="stylesheet" type="text/css">
-        <link href="assets\css\icons.min.css" rel="stylesheet" type="text/css">
-        <link href="assets\css\app.min.css" rel="stylesheet" type="text/css">
+        <link href="admin_baya/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="admin_baya/assets/css/icons.min.css" rel="stylesheet" type="text/css">
+        <link href="admin_baya/assets/css/app.min.css" rel="stylesheet" type="text/css">
         
     </head>
 
@@ -48,7 +48,7 @@
                                 <div class="page-title-box">
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="index.html">Admin</a></li>
+                                            <li class="breadcrumb-item"><a href="index.jsp">Admin</a></li>
                                             <li class="breadcrumb-item active">Thông tin chung</li>
                                         </ol>
                                     </div>
@@ -130,7 +130,7 @@
                             <div class="col-xl-4">
                                 <div class="card text-center">
                                     <div class="card-body">
-                                        <img src="assets/images/companies/Capture.PNG" class="rounded-circle avatar-xl img-thumbnail" alt="profile-image">
+                                        <img src="admin_baya/assets/images/companies/Capture.PNG" class="rounded-circle avatar-xl img-thumbnail" alt="profile-image">
 
                                         <h4 class="mt-3 mb-0">Baya</h4>
                                         <p class="text-muted">Siêu thị nội thất</p>
@@ -176,13 +176,13 @@
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-right">
                                             <!-- item-->
-                                            <a href="pages-404.html" class="dropdown-item">Settings</a>
+                                            <a href="pages-404.jsp" class="dropdown-item">Settings</a>
                                             <!-- item-->
-                                            <a href="pages-404.html" class="dropdown-item">Download</a>
+                                            <a href="pages-404.jsp" class="dropdown-item">Download</a>
                                             <!-- item-->
-                                            <a href="pages-404.html" class="dropdown-item">Upload</a>
+                                            <a href="pages-404.jsp" class="dropdown-item">Upload</a>
                                             <!-- item-->
-                                            <a href="pages-404.html" class="dropdown-item">Action</a>
+                                            <a href="pages-404.jsp" class="dropdown-item">Action</a>
                                         </div>
                                     </div>
                                     <h4 class="header-title">Báo cáo thu nhập</h4>
@@ -257,7 +257,7 @@
                                  <h4 class="header-title mb-4">ADMIN GROUP 14</h4>
 
                                  <div class="media" id="cardCollpase1" class="pt-3 collapse show">
-                                     <img class="mr-3 rounded-circle" src="assets/images/users/uchiha.jpg" width="40" alt="Generic placeholder image">
+                                     <img class="mr-3 rounded-circle" src="admin_baya/assets/images/users/uchiha.jpg" width="40" alt="Generic placeholder image">
                                      <div class="media-body">
                                          
                                          
@@ -268,7 +268,7 @@
                                  </div>
 
                                  <div class="media mt-3"id="cardCollpase1" class="pt-3 collapse show">
-                                     <img class="mr-3 rounded-circle" src="assets/images/users/minh.jpg" width="40" alt="Generic placeholder image">
+                                     <img class="mr-3 rounded-circle" src="admin_baya/assets/images/users/minh.jpg" width="40" alt="Generic placeholder image">
                                      <div class="media-body">
                                         
                                          <h5 class="mt-0 mb-1">Nguyễn Hoàng Minh</h5>
@@ -277,7 +277,7 @@
                                  </div>
 
                                  <div class="media mt-3"id="cardCollpase1" class="pt-3 collapse show">
-                                     <img class="mr-3 rounded-circle" src="assets/images/users/tobu.jpg" width="40" alt="Generic placeholder image">
+                                     <img class="mr-3 rounded-circle" src="admin_baya/assets/images/users/tobu.jpg" width="40" alt="Generic placeholder image">
                                      <div class="media-body">
                                          
                                          <h5 class="mt-0 mb-1">Châu Vũ Minh Quân</h5>
@@ -398,7 +398,7 @@
         <!-- Right Sidebar -->
         <div class="right-bar">
             <div class="rightbar-title">
-                <a href="pages-404.html" class="right-bar-toggle float-right">
+                <a href="pages-404.jsp" class="right-bar-toggle float-right">
                     <i class="fe-x noti-icon"></i>
                 </a>
                 <h4 class="m-0 text-white">Settings</h4>
@@ -407,8 +407,8 @@
                 <!-- User box -->
                 <div class="user-box">
                     <div class="user-img">
-                        <img src="assets\images\users\avatar-1.jpg" alt="user-img" title="Mat Helme" class="rounded-circle img-fluid">
-                        <a href="pages-404.html" class="user-edit"><i class="mdi mdi-pencil"></i></a>
+                        <img src="admin_baya/assets/images/users/avatar-1.jpg" alt="user-img" title="Mat Helme" class="rounded-circle img-fluid">
+                        <a href="pages-404.jsp" class="user-edit"><i class="mdi mdi-pencil"></i></a>
                     </div>
             
                     <h5><a href="javascript: void(0);">Nik G. Patel</a> </h5>
@@ -501,28 +501,28 @@
                             <div class="inbox-widget">
                                 <h5 class="mt-0">Recent</h5>
                                 <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets\images\users\avatar-2.jpg" class="rounded-circle" alt=""> <i class="online user-status"></i></div>
+                                    <div class="inbox-item-img"><img src="admin_baya/assets/images/users/avatar-2.jpg" class="rounded-circle" alt=""> <i class="online user-status"></i></div>
                                     <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Tomaslau</a></p>
                                     <p class="inbox-item-text">I've finished it! See you so...</p>
                                 </div>
                                 <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets\images\users\avatar-3.jpg" class="rounded-circle" alt=""> <i class="away user-status"></i></div>
+                                    <div class="inbox-item-img"><img src="admin_baya/assets/images/users/avatar-3.jpg" class="rounded-circle" alt=""> <i class="away user-status"></i></div>
                                     <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Stillnotdavid</a></p>
                                     <p class="inbox-item-text">This theme is awesome!</p>
                                 </div>
                                 <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets\images\users\avatar-4.jpg" class="rounded-circle" alt=""> <i class="online user-status"></i></div>
+                                    <div class="inbox-item-img"><img src="admin_baya/assets/images/users/avatar-4.jpg" class="rounded-circle" alt=""> <i class="online user-status"></i></div>
                                     <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Kurafire</a></p>
                                     <p class="inbox-item-text">Nice to meet you</p>
                                 </div>
         
                                 <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets\images\users\avatar-5.jpg" class="rounded-circle" alt=""> <i class="busy user-status"></i></div>
+                                    <div class="inbox-item-img"><img src="admin_baya/assets/images/users/avatar-5.jpg" class="rounded-circle" alt=""> <i class="busy user-status"></i></div>
                                     <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Shahedk</a></p>
                                     <p class="inbox-item-text">Hey! there I'm available...</p>
                                 </div>
                                 <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets\images\users\avatar-6.jpg" class="rounded-circle" alt=""> <i class="user-status"></i></div>
+                                    <div class="inbox-item-img"><img src="admin_baya/assets/images/users/avatar-6.jpg" class="rounded-circle" alt=""> <i class="user-status"></i></div>
                                     <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Adhamdannaway</a></p>
                                     <p class="inbox-item-text">This theme is awesome!</p>
                                 </div>
@@ -531,34 +531,34 @@
                                 <h5>Favorite <span class="float-right badge badge-pill badge-danger">18</span></h5>
                                 <hr>
                                 <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets\images\users\avatar-7.jpg" class="rounded-circle" alt=""> <i class="busy user-status"></i></div>
+                                    <div class="inbox-item-img"><img src="admin_baya/assets/images/users/avatar-7.jpg" class="rounded-circle" alt=""> <i class="busy user-status"></i></div>
                                     <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Kennith</a></p>
                                     <p class="inbox-item-text">I've finished it! See you so...</p>
                                 </div>
                                 <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets\images\users\avatar-3.jpg" class="rounded-circle" alt=""> <i class="busy user-status"></i></div>
+                                    <div class="inbox-item-img"><img src="admin_baya/assets/images/users/avatar-3.jpg" class="rounded-circle" alt=""> <i class="busy user-status"></i></div>
                                     <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Stillnotdavid</a></p>
                                     <p class="inbox-item-text">This theme is awesome!</p>
                                 </div>
                                 <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets\images\users\avatar-10.jpg" class="rounded-circle" alt=""> <i class="online user-status"></i></div>
+                                    <div class="inbox-item-img"><img src="admin_baya/assets/images/users/avatar-10.jpg" class="rounded-circle" alt=""> <i class="online user-status"></i></div>
                                     <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Kimberling</a></p>
                                     <p class="inbox-item-text">Nice to meet you</p>
                                 </div>
         
                                 <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets\images\users\avatar-4.jpg" class="rounded-circle" alt=""> <i class="user-status"></i></div>
+                                    <div class="inbox-item-img"><img src="admin_baya/assets/images/users/avatar-4.jpg" class="rounded-circle" alt=""> <i class="user-status"></i></div>
                                     <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Kurafire</a></p>
                                     <p class="inbox-item-text">Hey! there I'm available...</p>
                                 </div>
                                 <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets\images\users\avatar-9.jpg" class="rounded-circle" alt=""> <i class="away user-status"></i></div>
+                                    <div class="inbox-item-img"><img src="admin_baya/assets/images/users/avatar-9.jpg" class="rounded-circle" alt=""> <i class="away user-status"></i></div>
                                     <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Leonareade</a></p>
                                     <p class="inbox-item-text">This theme is awesome!</p>
                                 </div>
 
                                 <div class="text-center mt-2">
-                                    <a href="pages-404.html" class="text-muted"><i class="mdi mdi-spin mdi-loading mr-1"></i> Load more </a>
+                                    <a href="pages-404.jsp" class="text-muted"><i class="mdi mdi-spin mdi-loading mr-1"></i> Load more </a>
                                 </div>
 
                             </div> <!-- end inbox-widget -->
@@ -574,19 +574,19 @@
         <div class="rightbar-overlay"></div>
 
         <!-- Vendor js -->
-        <script src="assets\js\vendor.min.js"></script>
+        <script src="admin_baya/assets/js/vendor.min.js"></script>
 
-        <script src="assets\libs\jquery-knob\jquery.knob.min.js"></script>
-        <script src="assets\libs\peity\jquery.peity.min.js"></script>
+        <script src="admin_baya/assets/libs/jquery-knob/jquery.knob.min.js"></script>
+        <script src="admin_baya/assets/libs/peity/jquery.peity.min.js"></script>
 
         <!-- Sparkline charts -->
-        <script src="assets\libs\jquery-sparkline\jquery.sparkline.min.js"></script>
+        <script src="admin_baya/assets/libs/jquery-sparkline/jquery.sparkline.min.js"></script>
 
         <!-- init js -->
-        <script src="assets\js\pages\dashboard-1.init.js"></script>
+        <script src="admin_baya/assets/js/pages/dashboard-1.init.js"></script>
 
         <!-- App js -->
-        <script src="assets\js\app.min.js"></script>
+        <script src="admin_baya/assets/js/app.min.js"></script>
         
     </body>
 </html>

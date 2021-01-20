@@ -12,19 +12,19 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <!-- App favicon -->
         
-        <link rel="shortcut icon" href="assets\images\logo.png">
+        <link rel="shortcut icon" href="admin_baya/assets/images/logo.png">
 
         <!-- third party css -->
-        <link href="assets\libs\datatables\dataTables.bootstrap4.css" rel="stylesheet" type="text/css">
-        <link href="assets\libs\datatables\responsive.bootstrap4.css" rel="stylesheet" type="text/css">
-        <link href="assets\libs\datatables\buttons.bootstrap4.css" rel="stylesheet" type="text/css">
-        <link href="assets\libs\datatables\select.bootstrap4.css" rel="stylesheet" type="text/css">
+        <link href="admin_baya/assets/libs/datatables/dataTables.bootstrap4.css" rel="stylesheet" type="text/css">
+        <link href="admin_baya/assets/libs/datatables/responsive.bootstrap4.css" rel="stylesheet" type="text/css">
+        <link href="admin_baya/assets/libs/datatables/buttons.bootstrap4.css" rel="stylesheet" type="text/css">
+        <link href="admin_baya/assets/libs/datatables/select.bootstrap4.css" rel="stylesheet" type="text/css">
         <!-- third party css end -->
 
         <!-- App css -->
-        <link href="assets\css\bootstrap.min.css" rel="stylesheet" type="text/css">
-        <link href="assets\css\icons.min.css" rel="stylesheet" type="text/css">
-        <link href="assets\css\app.min.css" rel="stylesheet" type="text/css">
+        <link href="admin_baya/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="admin_baya/assets/css/icons.min.css" rel="stylesheet" type="text/css">
+        <link href="admin_baya/assets/css/app.min.css" rel="stylesheet" type="text/css">
 
     </head>
 
@@ -76,7 +76,7 @@
                                     <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 512.6px;"><div class="inbox-widget slimscroll" style="max-height: 394px; overflow: hidden; width: auto; height: 512.6px;">
                                         <div class="inbox-item">
                                             <a href="#">
-                                                <div class="inbox-item-img"><img src="assets\images\users\an.jpg" class="rounded-circle" alt=""></div>
+                                                <div class="inbox-item-img"><img src="admin_baya/assets/images/users/an.jpg" class="rounded-circle" alt=""></div>
                                                 <p class="inbox-item-author">Luu Van An</p>
                                                 <p class="inbox-item-text">Hey! Shop có mẫu này không...</p>
                                                 <p class="inbox-item-date">13:40 PM</p>
@@ -84,7 +84,7 @@
                                         </div>
                                         <div class="inbox-item">
                                             <a href="#">
-                                                <div class="inbox-item-img"><img src="assets\images\users\trung.jpg" class="rounded-circle" alt=""></div>
+                                                <div class="inbox-item-img"><img src="admin_baya/assets/images/users/trung.jpg" class="rounded-circle" alt=""></div>
                                                 <p class="inbox-item-author">Hoàng Trung</p>
                                                 <p class="inbox-item-text">Tôi rất thích sản phẩm của bạn...</p>
                                                 <p class="inbox-item-date">13:34 PM</p>
@@ -92,7 +92,7 @@
                                         </div>
                                         <div class="inbox-item">
                                             <a href="#">
-                                                <div class="inbox-item-img"><img src="assets\images\users\avt.jpg" class="rounded-circle" alt=""></div>
+                                                <div class="inbox-item-img"><img src="admin_baya/assets/images/users/avt.jpg" class="rounded-circle" alt=""></div>
                                                 <p class="inbox-item-author">Hoàng Hiệp</p>
                                                 <p class="inbox-item-text">Sản phẩm rất tốt!</p>
                                                 <p class="inbox-item-date">13:17 PM</p>
@@ -113,7 +113,7 @@
                                         <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 512.6px;"><ul class="conversation-list slimscroll" style="max-height: 340px; overflow: hidden; width: auto; height: 512.6px;">
                                             <li class="clearfix">
                                                 <div class="chat-avatar">
-                                                    <img src="assets\images\users\an.jpg" alt="male">
+                                                    <img src="admin_baya/assets/images/users/an.jpg" alt="male">
                                                     <i>10:00</i>
                                                 </div>
                                                 <div class="conversation-text">
@@ -177,7 +177,7 @@
                 <!-- User box -->
                 <div class="user-box">
                     <div class="user-img">
-                        <img src="assets\images\users\avatar-1.jpg" alt="user-img" title="Mat Helme" class="rounded-circle img-fluid">
+                        <img src="admin_baya/assets/images/users/avatar-1.jpg" alt="user-img" title="Mat Helme" class="rounded-circle img-fluid">
                         <a href="javascript:void(0);" class="user-edit"><i class="mdi mdi-pencil"></i></a>
                     </div>
             
@@ -271,28 +271,28 @@
                             <div class="inbox-widget">
                                 <h5 class="mt-0">Recent</h5>
                                 <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets\images\users\avatar-2.jpg" class="rounded-circle" alt=""> <i class="online user-status"></i></div>
+                                    <div class="inbox-item-img"><img src="admin_baya/assets/images/users/avatar-2.jpg" class="rounded-circle" alt=""> <i class="online user-status"></i></div>
                                     <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Tomaslau</a></p>
                                     <p class="inbox-item-text">I've finished it! See you so...</p>
                                 </div>
                                 <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets\images\users\avatar-3.jpg" class="rounded-circle" alt=""> <i class="away user-status"></i></div>
+                                    <div class="inbox-item-img"><img src="admin_baya/assets/images/users/avatar-3.jpg" class="rounded-circle" alt=""> <i class="away user-status"></i></div>
                                     <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Stillnotdavid</a></p>
                                     <p class="inbox-item-text">This theme is awesome!</p>
                                 </div>
                                 <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets\images\users\avatar-4.jpg" class="rounded-circle" alt=""> <i class="online user-status"></i></div>
+                                    <div class="inbox-item-img"><img src="admin_baya/assets/images/users/avatar-4.jpg" class="rounded-circle" alt=""> <i class="online user-status"></i></div>
                                     <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Kurafire</a></p>
                                     <p class="inbox-item-text">Nice to meet you</p>
                                 </div>
         
                                 <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets\images\users\avatar-5.jpg" class="rounded-circle" alt=""> <i class="busy user-status"></i></div>
+                                    <div class="inbox-item-img"><img src="admin_baya/assets/images/users/avatar-5.jpg" class="rounded-circle" alt=""> <i class="busy user-status"></i></div>
                                     <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Shahedk</a></p>
                                     <p class="inbox-item-text">Hey! there I'm available...</p>
                                 </div>
                                 <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets\images\users\avatar-6.jpg" class="rounded-circle" alt=""> <i class="user-status"></i></div>
+                                    <div class="inbox-item-img"><img src="admin_baya/assets/images/users/avatar-6.jpg" class="rounded-circle" alt=""> <i class="user-status"></i></div>
                                     <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Adhamdannaway</a></p>
                                     <p class="inbox-item-text">This theme is awesome!</p>
                                 </div>
@@ -301,28 +301,28 @@
                                 <h5>Favorite <span class="float-right badge badge-pill badge-danger">18</span></h5>
                                 <hr>
                                 <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets\images\users\avatar-7.jpg" class="rounded-circle" alt=""> <i class="busy user-status"></i></div>
+                                    <div class="inbox-item-img"><img src="admin_baya/assets/images/users/avatar-7.jpg" class="rounded-circle" alt=""> <i class="busy user-status"></i></div>
                                     <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Kennith</a></p>
                                     <p class="inbox-item-text">I've finished it! See you so...</p>
                                 </div>
                                 <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets\images\users\avatar-3.jpg" class="rounded-circle" alt=""> <i class="busy user-status"></i></div>
+                                    <div class="inbox-item-img"><img src="admin_baya/assets/images/users/avatar-3.jpg" class="rounded-circle" alt=""> <i class="busy user-status"></i></div>
                                     <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Stillnotdavid</a></p>
                                     <p class="inbox-item-text">This theme is awesome!</p>
                                 </div>
                                 <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets\images\users\avatar-10.jpg" class="rounded-circle" alt=""> <i class="online user-status"></i></div>
+                                    <div class="inbox-item-img"><img src="admin_baya/assets/images/users/avatar-10.jpg" class="rounded-circle" alt=""> <i class="online user-status"></i></div>
                                     <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Kimberling</a></p>
                                     <p class="inbox-item-text">Nice to meet you</p>
                                 </div>
         
                                 <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets\images\users\avatar-4.jpg" class="rounded-circle" alt=""> <i class="user-status"></i></div>
+                                    <div class="inbox-item-img"><img src="admin_baya/assets/images/users/avatar-4.jpg" class="rounded-circle" alt=""> <i class="user-status"></i></div>
                                     <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Kurafire</a></p>
                                     <p class="inbox-item-text">Hey! there I'm available...</p>
                                 </div>
                                 <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets\images\users\avatar-9.jpg" class="rounded-circle" alt=""> <i class="away user-status"></i></div>
+                                    <div class="inbox-item-img"><img src="admin_baya/assets/images/users/avatar-9.jpg" class="rounded-circle" alt=""> <i class="away user-status"></i></div>
                                     <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Leonareade</a></p>
                                     <p class="inbox-item-text">This theme is awesome!</p>
                                 </div>
@@ -344,51 +344,51 @@
         <div class="rightbar-overlay"></div>
 
         <!-- Vendor js -->
-        <script src="assets\js\vendor.min.js"></script>
+        <script src="admin_baya/assets/js/vendor.min.js"></script>
 
         <!-- third party js -->
-        <script src="assets\libs\datatables\jquery.dataTables.min.js"></script>
-        <script src="assets\libs\datatables\dataTables.bootstrap4.js"></script>
-        <script src="assets\libs\datatables\dataTables.responsive.min.js"></script>
-        <script src="assets\libs\datatables\responsive.bootstrap4.min.js"></script>
-        <script src="assets\libs\datatables\dataTables.buttons.min.js"></script>
-        <script src="assets\libs\datatables\buttons.bootstrap4.min.js"></script>
-        <script src="assets\libs\datatables\buttons.html5.min.js"></script>
-        <script src="assets\libs\datatables\buttons.flash.min.js"></script>
-        <script src="assets\libs\datatables\buttons.print.min.js"></script>
-        <script src="assets\libs\datatables\dataTables.keyTable.min.js"></script>
-        <script src="assets\libs\datatables\dataTables.select.min.js"></script>
-        <script src="assets\libs\pdfmake\pdfmake.min.js"></script>
-        <script src="assets\libs\pdfmake\vfs_fonts.js"></script>
+        <script src="admin_baya/assets/libs/datatables/jquery.dataTables.min.js"></script>
+        <script src="admin_baya/assets/libs/datatables/dataTables.bootstrap4.js"></script>
+        <script src="admin_baya/assets/libs/datatables/dataTables.responsive.min.js"></script>
+        <script src="admin_baya/assets/libs/datatables/responsive.bootstrap4.min.js"></script>
+        <script src="admin_baya/assets/libs/datatables/dataTables.buttons.min.js"></script>
+        <script src="admin_baya/assets/libs/datatables/buttons.bootstrap4.min.js"></script>
+        <script src="admin_baya/assets/libs/datatables/buttons.html5.min.js"></script>
+        <script src="admin_baya/assets/libs/datatables/buttons.flash.min.js"></script>
+        <script src="admin_baya/assets/libs/datatables/buttons.print.min.js"></script>
+        <script src="admin_baya/assets/libs/datatables/dataTables.keyTable.min.js"></script>
+        <script src="admin_baya/assets/libs/datatables/dataTables.select.min.js"></script>
+        <script src="admin_baya/assets/libs/pdfmake/pdfmake.min.js"></script>
+        <script src="admin_baya/assets/libs/pdfmake/vfs_fonts.js"></script>
         <!-- third party js ends -->
 
         <!-- Datatables init -->
-        <script src="assets\js\pages\datatables.init.js"></script>
+        <script src="admin_baya/assets/js/pages/datatables.init.js"></script>
 
         <!-- App js -->
-        <script src="assets\js\app.min.js"></script>
+        <script src="admin_baya/assets/js/app.min.js"></script>
            <!-- Vendor js -->
-           <script src="assets\js\vendor.min.js"></script>
+           <script src="admin_baya/assets/js/vendor.min.js"></script>
 
            <!-- Moment  -->
-           <script src="assets\libs\moment\moment.min.js"></script>
-           <script src="assets\libs\jquery-scrollto\jquery.scrollTo.min.js"></script>
-           <script src="assets\libs\sweetalert2\sweetalert2.min.js"></script>
+           <script src="admin_baya/assets/libs/moment/moment.min.js"></script>
+           <script src="admin_baya/assets/libs/jquery-scrollto/jquery.scrollTo.min.js"></script>
+           <script src="admin_baya/assets/libs/sweetalert2/sweetalert2.min.js"></script>
            <!-- Sparkline charts -->
-           <script src="assets\libs\jquery-sparkline\jquery.sparkline.min.js"></script>
-           <script src="assets\libs\jquery-knob\jquery.knob.min.js"></script>
+           <script src="admin_baya/assets/libs/jquery-sparkline/jquery.sparkline.min.js"></script>
+           <script src="admin_baya/assets/libs/jquery-knob/jquery.knob.min.js"></script>
    
            <!-- Chat js -->
-           <script src="assets\js\pages\jquery.chat.js"></script>
+           <script src="admin_baya/assets/js/pages/jquery.chat.js"></script>
    
            <!-- TODO js-->
-           <script src="assets\js\pages\jquery.todo.js"></script>
+           <script src="admin_baya/assets/js/pages/jquery.todo.js"></script>
    
            <!-- widgets init js-->
-           <script src="assets\js\pages\widgets.init.js"></script>
+           <script src="admin_baya/assets/js/pages/widgets.init.js"></script>
    
            <!-- App js -->
-           <script src="assets\js\app.min.js"></script>
+           <script src="admin_baya/assets/js/app.min.js"></script>
         
     </body>
 </html>

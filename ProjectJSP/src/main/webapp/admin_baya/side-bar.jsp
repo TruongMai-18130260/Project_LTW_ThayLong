@@ -65,16 +65,16 @@
                     </a>
                     <!-- <ul class="nav-second-level" aria-expanded="false">
                         <li>
-                            <a href="danhsachsanpham.html">Danh sách sản phẩm</a>
+                            <a href="danhsachsanpham.jsp">Danh sách sản phẩm</a>
                         </li> -->
                     <!-- <li>
-                        <a href="danhmuc.html">Danh mục</a>
+                        <a href="danhmuc.jsp">Danh mục</a>
                     </li>
                     <li>
-                        <a href="nhomsanpham.html">Nhóm sản phẩm</a>
+                        <a href="nhomsanpham.jsp">Nhóm sản phẩm</a>
                     </li>
                     <li> -->
-                    <!-- <a href="suachungchosanpham.html">Sửa chung cho sản phẩm</a>
+                    <!-- <a href="suachungchosanpham.jsp">Sửa chung cho sản phẩm</a>
                 </li> -->
 
                     <!-- </ul> -->
@@ -130,10 +130,10 @@
                     </a>
                     <!-- <ul class="nav-second-level" aria-expanded="false">
                         <li>
-                            <a href="pages-404.html">Quản lý chuyên mục</a>
+                            <a href="pages-404.jsp">Quản lý chuyên mục</a>
                         </li>
                         <li>
-                            <a href="pages-404.html">Danh sách Blog</a>
+                            <a href="pages-404.jsp">Danh sách Blog</a>
                         </li>
 
                     </ul> -->
@@ -189,7 +189,7 @@
                     </a>
                     <ul class="nav-second-level" aria-expanded="false">
                         <li>
-                            <a href="apps-calendar.html">Lịch</a>
+                            <a href="apps-calendar.jsp">Lịch</a>
                         </li>
 
                     </ul>
