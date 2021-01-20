@@ -10,12 +10,12 @@
         <meta content="Coderthemes" name="author">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <!-- App favicon -->
-        <link rel="shortcut icon" href="assets\images\logo.png">
+        <link rel="shortcut icon" href="admin_baya/assets/images/logo.png">
 
         <!-- App css -->
-        <link href="assets\css\bootstrap.min.css" rel="stylesheet" type="text/css">
-        <link href="assets\css\icons.min.css" rel="stylesheet" type="text/css">
-        <link href="assets\css\app.min.css" rel="stylesheet" type="text/css">
+        <link href="admin_baya/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="admin_baya/assets/css/icons.min.css" rel="stylesheet" type="text/css">
+        <link href="admin_baya/assets/css/app.min.css" rel="stylesheet" type="text/css">
         
     </head>
 
@@ -48,7 +48,7 @@
                                 <div class="page-title-box">
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="index.html">Admin</a></li>
+                                            <li class="breadcrumb-item"><a href="index.jsp">Admin</a></li>
                                             <li class="breadcrumb-item active">Bán hàng/Thu ngân</li>
                                         </ol>
                                     </div>
@@ -220,10 +220,10 @@
                             <div class="card">
                                 <div class="card-body py-2 px-3 border-bottom border-light">
                                     <div class="media py-1">
-                                        <img src="assets/images/users/an.jpg" class="mr-2 rounded-circle" height="36" alt="Brandon Smith">
+                                        <img src="admin_baya/assets/images/users/an.jpg" class="mr-2 rounded-circle" height="36" alt="Brandon Smith">
                                         <div class="media-body">
                                             <h5 class="mt-0 mb-0 font-15">
-                                                <a href="contacts-profile.html" class="text-reset">An luu van</a>
+                                                <a href="contacts-profile.jsp" class="text-reset">An luu van</a>
                                             </h5>
                                             <p class="mt-1 mb-0 text-muted font-12">
                                                 <small class="mdi mdi-circle text-success"></small> Online
@@ -244,7 +244,7 @@
                                     <ul class="conversation-list chat-app-conversation" data-simplebar="init" style="max-height: 460px"><div class="simplebar-wrapper" style="margin: 0px -15px;"><div class="simplebar-height-auto-observer-wrapper"><div class="simplebar-height-auto-observer"></div></div><div class="simplebar-mask"><div class="simplebar-offset" style="right: 0px; bottom: 0px;"><div class="simplebar-content-wrapper"><div class="simplebar-content" style="padding: 0px 15px;">
                                         <li class="clearfix">
                                             <div class="chat-avatar">
-                                                <img src="assets/images/users/an.jpg" class="rounded" alt="James Z">
+                                                <img src="admin_baya/assets/images/users/an.jpg" class="rounded" alt="James Z">
                                                 <i>10:00</i>
                                             </div>
                                             <div class="conversation-text">
@@ -319,7 +319,7 @@
                 <!-- User box -->
                 <div class="user-box">
                     <div class="user-img">
-                        <img src="assets\images\users\avatar-1.jpg" alt="user-img" title="Mat Helme" class="rounded-circle img-fluid">
+                        <img src="admin_baya/assets/images/users/avatar-1.jpg" alt="user-img" title="Mat Helme" class="rounded-circle img-fluid">
                         <a href="javascript:void(0);" class="user-edit"><i class="mdi mdi-pencil"></i></a>
                     </div>
             
@@ -413,28 +413,28 @@
                             <div class="inbox-widget">
                                 <h5 class="mt-0">Recent</h5>
                                 <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets\images\users\avatar-2.jpg" class="rounded-circle" alt=""> <i class="online user-status"></i></div>
+                                    <div class="inbox-item-img"><img src="admin_baya/assets/images/users/avatar-2.jpg" class="rounded-circle" alt=""> <i class="online user-status"></i></div>
                                     <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Tomaslau</a></p>
                                     <p class="inbox-item-text">I've finished it! See you so...</p>
                                 </div>
                                 <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets\images\users\avatar-3.jpg" class="rounded-circle" alt=""> <i class="away user-status"></i></div>
+                                    <div class="inbox-item-img"><img src="admin_baya/assets/images/users/avatar-3.jpg" class="rounded-circle" alt=""> <i class="away user-status"></i></div>
                                     <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Stillnotdavid</a></p>
                                     <p class="inbox-item-text">This theme is awesome!</p>
                                 </div>
                                 <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets\images\users\avatar-4.jpg" class="rounded-circle" alt=""> <i class="online user-status"></i></div>
+                                    <div class="inbox-item-img"><img src="admin_baya/assets/images/users/avatar-4.jpg" class="rounded-circle" alt=""> <i class="online user-status"></i></div>
                                     <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Kurafire</a></p>
                                     <p class="inbox-item-text">Nice to meet you</p>
                                 </div>
         
                                 <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets\images\users\avatar-5.jpg" class="rounded-circle" alt=""> <i class="busy user-status"></i></div>
+                                    <div class="inbox-item-img"><img src="admin_baya/assets/images/users/avatar-5.jpg" class="rounded-circle" alt=""> <i class="busy user-status"></i></div>
                                     <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Shahedk</a></p>
                                     <p class="inbox-item-text">Hey! there I'm available...</p>
                                 </div>
                                 <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets\images\users\avatar-6.jpg" class="rounded-circle" alt=""> <i class="user-status"></i></div>
+                                    <div class="inbox-item-img"><img src="admin_baya/assets/images/users/avatar-6.jpg" class="rounded-circle" alt=""> <i class="user-status"></i></div>
                                     <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Adhamdannaway</a></p>
                                     <p class="inbox-item-text">This theme is awesome!</p>
                                 </div>
@@ -443,28 +443,28 @@
                                 <h5>Favorite <span class="float-right badge badge-pill badge-danger">18</span></h5>
                                 <hr>
                                 <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets\images\users\avatar-7.jpg" class="rounded-circle" alt=""> <i class="busy user-status"></i></div>
+                                    <div class="inbox-item-img"><img src="admin_baya/assets/images/users/avatar-7.jpg" class="rounded-circle" alt=""> <i class="busy user-status"></i></div>
                                     <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Kennith</a></p>
                                     <p class="inbox-item-text">I've finished it! See you so...</p>
                                 </div>
                                 <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets\images\users\avatar-3.jpg" class="rounded-circle" alt=""> <i class="busy user-status"></i></div>
+                                    <div class="inbox-item-img"><img src="admin_baya/assets/images/users/avatar-3.jpg" class="rounded-circle" alt=""> <i class="busy user-status"></i></div>
                                     <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Stillnotdavid</a></p>
                                     <p class="inbox-item-text">This theme is awesome!</p>
                                 </div>
                                 <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets\images\users\avatar-10.jpg" class="rounded-circle" alt=""> <i class="online user-status"></i></div>
+                                    <div class="inbox-item-img"><img src="admin_baya/assets/images/users/avatar-10.jpg" class="rounded-circle" alt=""> <i class="online user-status"></i></div>
                                     <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Kimberling</a></p>
                                     <p class="inbox-item-text">Nice to meet you</p>
                                 </div>
         
                                 <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets\images\users\avatar-4.jpg" class="rounded-circle" alt=""> <i class="user-status"></i></div>
+                                    <div class="inbox-item-img"><img src="admin_baya/assets/images/users/avatar-4.jpg" class="rounded-circle" alt=""> <i class="user-status"></i></div>
                                     <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Kurafire</a></p>
                                     <p class="inbox-item-text">Hey! there I'm available...</p>
                                 </div>
                                 <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets\images\users\avatar-9.jpg" class="rounded-circle" alt=""> <i class="away user-status"></i></div>
+                                    <div class="inbox-item-img"><img src="admin_baya/assets/images/users/avatar-9.jpg" class="rounded-circle" alt=""> <i class="away user-status"></i></div>
                                     <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Leonareade</a></p>
                                     <p class="inbox-item-text">This theme is awesome!</p>
                                 </div>
@@ -486,19 +486,19 @@
         <div class="rightbar-overlay"></div>
 
         <!-- Vendor js -->
-        <script src="assets\js\vendor.min.js"></script>
+        <script src="admin_baya/assets/js/vendor.min.js"></script>
 
-        <script src="assets\libs\jquery-knob\jquery.knob.min.js"></script>
-        <script src="assets\libs\peity\jquery.peity.min.js"></script>
+        <script src="admin_baya/assets/libs/jquery-knob/jquery.knob.min.js"></script>
+        <script src="admin_baya/assets/libs/peity/jquery.peity.min.js"></script>
 
         <!-- Sparkline charts -->
-        <script src="assets\libs\jquery-sparkline\jquery.sparkline.min.js"></script>
+        <script src="admin_baya/assets/libs/jquery-sparkline/jquery.sparkline.min.js"></script>
 
         <!-- init js -->
-        <script src="assets\js\pages\dashboard-1.init.js"></script>
+        <script src="admin_baya/assets/js/pages/dashboard-1.init.js"></script>
 
         <!-- App js -->
-        <script src="assets\js\app.min.js"></script>
+        <script src="admin_baya/assets/js/app.min.js"></script>
         
     </body>
 </html>

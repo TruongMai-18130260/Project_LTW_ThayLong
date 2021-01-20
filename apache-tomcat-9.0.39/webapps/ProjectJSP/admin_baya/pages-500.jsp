@@ -10,12 +10,12 @@
         <meta content="Coderthemes" name="author">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <!-- App favicon -->
-        <link rel="shortcut icon" href="assets\images\favicon.ico">
+        <link rel="shortcut icon" href="admin_baya/assets/images/favicon.ico">
 
         <!-- App css -->
-        <link href="assets\css\bootstrap.min.css" rel="stylesheet" type="text/css">
-        <link href="assets\css\icons.min.css" rel="stylesheet" type="text/css">
-        <link href="assets\css\app.min.css" rel="stylesheet" type="text/css">
+        <link href="admin_baya/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="admin_baya/assets/css/icons.min.css" rel="stylesheet" type="text/css">
+        <link href="admin_baya/assets/css/app.min.css" rel="stylesheet" type="text/css">
 
     </head>
 
@@ -30,8 +30,8 @@
                             <div class="card-body p-4">
                             
                                 <div class="text-center">
-                                    <a href="index.html">
-                                        <span><img src="assets\images\logo-dark.png" alt="" height="22"></span>
+                                    <a href="index.jsp">
+                                        <span><img src="admin_baya/assets/images/logo-dark.png" alt="" height="22"></span>
                                     </a>
                                 </div>
 
@@ -40,7 +40,7 @@
                                     <h3 class="mt-3 mb-2">Internal Server Error</h3>
                                     <p class="text-muted mb-3">Why not try refreshing your page? or you can contact <a href="" class="text-dark"><b>Support</b></a></p>
 
-                                    <a href="index.html" class="btn btn-success waves-effect waves-light">Back to Home</a>
+                                    <a href="index.jsp" class="btn btn-success waves-effect waves-light">Back to Home</a>
                                 </div>
 
                             </div> <!-- end card-body -->        
@@ -61,10 +61,10 @@
         </footer>
 
         <!-- Vendor js -->
-        <script src="assets\js\vendor.min.js"></script>
+        <script src="admin_baya/assets/js/vendor.min.js"></script>
 
         <!-- App js -->
-        <script src="assets\js\app.min.js"></script>
+        <script src="admin_baya/assets/js/app.min.js"></script>
         
     </body>
 </html>

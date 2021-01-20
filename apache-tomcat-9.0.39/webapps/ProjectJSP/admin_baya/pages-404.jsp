@@ -10,12 +10,12 @@
         <meta content="Coderthemes" name="author">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <!-- App favicon -->
-        <link rel="shortcut icon" href="assets\images\logo.png">
+        <link rel="shortcut icon" href="admin_baya/assets/images/logo.png">
 
         <!-- App css -->
-        <link href="assets\css\bootstrap.min.css" rel="stylesheet" type="text/css">
-        <link href="assets\css\icons.min.css" rel="stylesheet" type="text/css">
-        <link href="assets\css\app.min.css" rel="stylesheet" type="text/css">
+        <link href="admin_baya/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="admin_baya/assets/css/icons.min.css" rel="stylesheet" type="text/css">
+        <link href="admin_baya/assets/css/app.min.css" rel="stylesheet" type="text/css">
 
     </head>
 
@@ -30,7 +30,7 @@
                             <div class="card-body p-4">
 
                                 <div class="error-ghost text-center">
-                                    <img src="assets\images\error.svg" width="200" alt="error-image">
+                                    <img src="admin_baya/assets/images/error.svg" width="200" alt="error-image">
                                 </div>
 
                                 <div class="text-center">
@@ -58,10 +58,10 @@
         </footer>
 
         <!-- Vendor js -->
-        <script src="assets\js\vendor.min.js"></script>
+        <script src="admin_baya/assets/js/vendor.min.js"></script>
 
         <!-- App js -->
-        <script src="assets\js\app.min.js"></script>
+        <script src="admin_baya/assets/js/app.min.js"></script>
         
     </body>
 </html>
