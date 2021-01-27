@@ -49,11 +49,11 @@
           
           <div class="module-body">
             <ul class='list-unstyled'>
-            <li class="first"><a href="contact.html" title="Contact">Liên hệ đến BAYA</a></li>
-            <li><a href="huongdandathang.html" title="Order">Hướng dẫn đặt hàng</a></li>
-            <li><a href="faq.html" title="FAQ">Câu hỏi thường gặp</a></li>
-            <li><a href="huongdantaotaikhoan.html" title="Account">Hướng dẫn tạo tài khoản</a></li>
-            <li class="last"><a href="chinh-sach-va-dieu-khoan.html" title="Hỗ trợ">Chính sách và quy định chung</a></li>
+            <li class="first"><a href="lienhe.jsp" title="Contact">Liên hệ đến BAYA</a></li>
+            <li><a href="huongdandathang.jsp" title="Order">Hướng dẫn đặt hàng</a></li>
+            <li><a href="faq.jsp" title="FAQ">Câu hỏi thường gặp</a></li>
+<%--            <li><a href="huongdantaotaikhoan.html" title="Account">Hướng dẫn tạo tài khoản</a></li>--%>
+            <li class="last"><a href="chinh-sach-va-dieu-khoan.jsp" title="Hỗ trợ">Chính sách và quy định chung</a></li>
             </ul>
           </div>
           <!-- /.module-body --> 
@@ -68,10 +68,10 @@
           
           <div class="module-body">
             <ul class='list-unstyled'>
-              <li><a title="Bảo hành" href="guarantee.html">Chính sách bảo hành</a></li>
-              <li><a title="Chính sách đổi trả" href="returnpolicy.html">Chính sách đổi trả</a></li>
-              <li><a title="Vận chuyển" href="transport.html">Phương thức vận chuyển</a></li>
-              <li class="last"><a title="Bảo mật thông tin" href="privacy.html">Bảo mật thông tin</a></li>
+              <li><a title="Bảo hành" href="chinh-sach-bao-hanh.jsp">Chính sách bảo hành</a></li>
+              <li><a title="Chính sách đổi trả" href="chinh-sach-doi-tra.jsp">Chính sách đổi trả</a></li>
+              <li><a title="Vận chuyển" href="chinhsachvanchuyen.jsp">Phương thức vận chuyển</a></li>
+              <li class="last"><a title="Bảo mật thông tin" href="chinhsachbaomat.jsp">Bảo mật thông tin</a></li>
             </ul>
           </div>
           <!-- /.module-body --> 
@@ -86,11 +86,9 @@
           
           <div class="module-body">
             <ul class='list-unstyled'>
-              <!-- <li class="first"><a href="#" title="About us">Shopping Guide</a></li> -->
-              <li><a href="blog.html" title="Blog">Blog</a></li>
-              <!-- <li><a href="#" title="Company">Công ty</a></li> -->
-              <!-- <li><a href="#" title="Investor Relations">Investor Relations</a></li> -->
-              <li class=" last"><a href="contact-us.html" title="Suppliers">Liên hệ</a></li>
+
+              <li><a href="blog.jsp" title="Blog">Blog</a></li>
+              <li class=" last"><a href="lienhe.jsp" title="Suppliers">Liên hệ</a></li>
             </ul>
           </div>
           <!-- /.module-body --> 
