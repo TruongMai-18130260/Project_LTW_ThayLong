@@ -1,7 +1,6 @@
 package Bean;
 
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.Date;
 
 public class User implements Serializable {
@@ -16,12 +15,12 @@ public class User implements Serializable {
     private String phone;
     private String address;
     private String card;
-    private WishList wishList;
+    private WishListBean wishListBean;
     private CartBean cart;
     private Order order;
 
     public User(){}
-    public User(String id,String email,String name,String password,int role,String gender,String phone,String address,Date dob,String card,WishList wishList,CartBean cart,Order order){
+    public User(String id, String email, String name, String password, int role, String gender, String phone, String address, Date dob, String card, WishListBean wishListBean, CartBean cart, Order order){
         this.id = id;
         this.email = email;
         this.name = name;
@@ -32,7 +31,7 @@ public class User implements Serializable {
         this.address = address;
         this.dob = dob;
         this.card = card;
-        this.wishList = wishList;
+        this.wishListBean = wishListBean;
         this.cart = cart;
         this.order = order;
     }
@@ -99,8 +98,8 @@ public class User implements Serializable {
         return order;
     }
 
-    public WishList getWishList() {
-        return wishList;
+    public WishListBean getWishList() {
+        return wishListBean;
     }
 
     public void setName(String name) {
@@ -151,7 +150,7 @@ public class User implements Serializable {
         this.gender = gender;
     }
 
-    public void setWishList(WishList wishList) {
-        this.wishList = wishList;
+    public void setWishList(WishListBean wishListBean) {
+        this.wishListBean = wishListBean;
     }
 }

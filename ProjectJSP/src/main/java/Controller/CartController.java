@@ -32,6 +32,7 @@ public class CartController extends HttpServlet {
                 cartBean.add(id);
                 session.setAttribute("cart",cartBean);
                 request.getRequestDispatcher("giohang.jsp").forward(request,response);
+//                response.sendRedirect("CartController");
             } catch (SQLException | ClassNotFoundException | NullPointerException e) {
                 response.sendRedirect("dangnhap.jsp");
             }
@@ -51,7 +52,8 @@ public class CartController extends HttpServlet {
                 CartBean cartBean = user.getCart();
                 cartBean.remove(idRemove);
                 session.setAttribute("cart",cartBean);
-                request.getRequestDispatcher("CartController").forward(request,response);
+//                request.getRequestDispatcher("CartController").forward(request,response);
+                response.sendRedirect("CartController");
             } catch (SQLException | ClassNotFoundException | NullPointerException e) {
                 response.sendRedirect("dangnhap.jsp");
             }

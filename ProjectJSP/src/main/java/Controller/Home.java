@@ -1,5 +1,6 @@
 package Controller;
 
+import Bean.BannerBean;
 import Bean.Product;
 
 import javax.servlet.*;
@@ -20,6 +21,7 @@ public class Home extends HttpServlet {
     }
 
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
         String sql = "SELECT * FROM product LIMIT 55,18";
         String sql1 = "SELECT * FROM product LIMIT 1,6";
         String sql2 = "SELECT * FROM product LIMIT 36,6";
@@ -102,6 +104,17 @@ public class Home extends HttpServlet {
                 listProducts8.add( new Product(rs8.getString(1),rs8.getString(2),rs8.getString(3),rs8.getInt(4),rs8.getInt(5),rs8.getString(6),rs8.getInt(7),rs8.getString(8),rs8.getString(9)));
             }
             request.setAttribute("Data8",listProducts8);
+
+            ArrayList<BannerBean> listBanner = new ArrayList<>();
+
+            PreparedStatement ps9 = ConnectionDB.con.prepareStatement("select * from banner where id = ?");
+            ps9.setString(1,"banner01");
+            ResultSet rs9 = ps9.executeQuery();
+
+            while (rs9.next()){
+                listBanner.add(new BannerBean(rs9.getString(1),rs9.getString(2),rs9.getString(3),rs9.getString(4)));
+            }
+            session.setAttribute("listBanner",listBanner);
             request.getRequestDispatcher("home.jsp").forward(request,response);
         } catch (SQLException | ClassNotFoundException throwables) {
             throwables.printStackTrace();

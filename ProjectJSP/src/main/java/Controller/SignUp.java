@@ -17,9 +17,10 @@ public class SignUp extends HttpServlet {
     }
 
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-       String sql = "insert into user (id,email,name,phone,password,role) values (?,?,?,?,?,?)";
+       String sql = "insert into user (id,email,name,phone,password,role,cartid) values (?,?,?,?,?,?,?)";
         try {
             String id = "";
+            String cartid = "";
             int number = 0;
             if (request.getParameter("password").equals(request.getParameter("retypepassword"))){
                 ConnectionDB.connect();
@@ -44,6 +45,26 @@ public class SignUp extends HttpServlet {
                     }
                 }
 
+                PreparedStatement ps2 = ConnectionDB.con.prepareStatement("select cartid from user ORDER BY cartid desc LIMIT 1");
+                ResultSet rs2 = ps2.executeQuery();
+                while (rs2.next()){
+                    String tmp = rs2.getString(1);
+                    for (int i = 4; i < tmp.length(); i++) {
+                        if (tmp.charAt(i) != 0){
+                            cartid = tmp.substring(i);
+                            break;
+                        }
+                    }
+                    number = Integer.parseInt(cartid) + 1;
+                    cartid = String.valueOf(number);
+
+                    if (cartid.length() == 1){
+                        cartid = "00" + id;
+                    } else if (id.length() == 2){
+                        cartid = "0" + id;
+                    }
+                }
+
                 PreparedStatement ps = ConnectionDB.con.prepareStatement(sql);
                 ps.setString(1,id);
                 ps.setString(2,request.getParameter("email"));
@@ -51,6 +72,7 @@ public class SignUp extends HttpServlet {
                 ps.setString(4,request.getParameter("phone"));
                 ps.setString(5,request.getParameter("password"));
                 ps.setInt(6,2);
+                ps.setString(7,cartid);
 
                 ps.executeUpdate();
                 response.sendRedirect("dangnhap.jsp");

@@ -1,12 +1,16 @@
 package Bean;
 
 import java.io.Serializable;
+import java.util.Date;
 
 public class Order implements Serializable {
     private String orderID;
     private Info info;
     private int status;
     private int totalPrice;
+    private Date receptDate;
+    private Date deliveryDate;
+    private String email;
 
     public Order() {
     }
@@ -48,5 +52,29 @@ public class Order implements Serializable {
 
     public void setTotalPrice(int totalPrice) {
         this.totalPrice = totalPrice;
+    }
+
+    public Date getReceptDate() {
+        return receptDate;
+    }
+
+    public void setReceptDate(Date receptDate) {
+        this.receptDate = receptDate;
+    }
+
+    public Date getDeliveryDate() {
+        return deliveryDate;
+    }
+
+    public void setDeliveryDate(Date deliveryDate) {
+        this.deliveryDate = deliveryDate;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }

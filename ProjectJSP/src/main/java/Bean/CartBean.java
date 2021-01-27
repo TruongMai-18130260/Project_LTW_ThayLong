@@ -83,6 +83,7 @@ public class CartBean implements Serializable {
     }
 
     public void calculatePrice(){
+        this.totalPrice = 0;
         for (Item item : list) {
             this.totalPrice += item.getPrice();
         }

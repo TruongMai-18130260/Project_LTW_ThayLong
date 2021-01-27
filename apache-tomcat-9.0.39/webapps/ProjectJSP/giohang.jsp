@@ -81,7 +81,7 @@
 						<div class="shopping-cart-btn">
 							<span class="">
 								<a href="Home" class="btn btn-upper btn-primary outer-left-xs">Tiếp tục mua hàng</a>
-								<a href="#" class="btn btn-upper btn-primary pull-right outer-right-xs">Cập nhật giỏ hàng</a>
+<%--								<a href="#" class="btn btn-upper btn-primary pull-right outer-right-xs">Cập nhật giỏ hàng</a>--%>
 							</span>
 						</div><!-- /.shopping-cart-btn -->
 					</td>
@@ -112,11 +112,11 @@
 						</td>
 						<td class="cart-product-quantity">
 							<div class="quant-input">
-								<div class="arrows">
-									<div class="arrow plus gradient"><span class="ir"><i class="icon fa fa-sort-asc"></i></span></div>
-									<div class="arrow minus gradient"><span class="ir"><i class="icon fa fa-sort-desc"></i></span></div>
-								</div>
-								<input type="text" value="${item.quantity}">
+<%--								<div class="arrows">--%>
+<%--									<div class="arrow plus gradient"><span class="ir"><i class="icon fa fa-sort-asc"></i></span></div>--%>
+<%--									<div class="arrow minus gradient"><span class="ir"><i class="icon fa fa-sort-desc"></i></span></div>--%>
+<%--								</div>--%>
+								<input type="text" value="${item.quantity}" disabled>
 							</div>
 						</td>
 						<td class="cart-product-sub-total"><span class="cart-sub-total-price">${item.product.salePrice}đ</span></td>
