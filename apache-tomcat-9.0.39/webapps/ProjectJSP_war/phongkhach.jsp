@@ -38,7 +38,7 @@
 <jsp:include page="header/headerlv1.jsp"></jsp:include>
 </header>
 
-<!-- ============================================== HEADER : END ============================================== --> 
+<!-- ============================================== HEADER : END ============================================== -->
 
 <!-- ============================================== HEADER : END ============================================== -->
 <div class="breadcrumb">
@@ -49,15 +49,15 @@
         <li class='active' style="width: 120px;">Phòng khách</li>
       </ul>
     </div>
-    <!-- /.breadcrumb-inner --> 
+    <!-- /.breadcrumb-inner -->
   </div>
-  <!-- /.container --> 
+  <!-- /.container -->
 </div>
 <!-- /.breadcrumb -->
 <div class="body-content outer-top-xs">
   <div class='container'>
     <div class='row'>
-      <div class='col-md-3 sidebar'> 
+      <div class='col-md-3 sidebar'>
         <!-- ================================== TOP NAVIGATION ================================== -->
         <div class="side-menu animate-dropdown outer-bottom-xs">
           <div class="head"><i class="icon fa fa-align-justify fa-fw"></i> Tất cả sản phẩm </div>
@@ -96,7 +96,7 @@
                             <li><a href="#">Ghế văn phòng</a></li>
                           </ul>
                         </div>
-                        
+
                       <hr/>
                       <div class="drop-height">
                         <div class="drop-height">
@@ -107,8 +107,8 @@
                             <li><a href="#">Gương treo tường </a></li>
                           </ul>
                           </div>
-                          
-                        
+
+
                         </div>
                       </div>
                        /.col -->
@@ -144,7 +144,7 @@
                         <li><a href="#">Bàn trẻ em</a></li>
                       </ul>
                     </div>
-                    
+
                     </div>
                        /.col -->
                       <!-- <div class="col-sm-12 col-md-4 drop-height">
@@ -166,22 +166,22 @@
                               <li><a href="#">Móc treo đồ </a></li>
                               <li><a href="#">Tủ gắn tường</a></li>
                               <li><a href="#">Kệ gắn tường</a></li>
-                             
+
                             </ul>
                             </div>
                       </div>
                     </div>
                   </li>
-                </ul>  --> 
+                </ul>  -->
                 <!-- /.dropdown-menu --> </li>
               <!-- /.menu-item -->
-              
-              <li class="dropdown menu-item"> <a href="sofa.html">Sofa, ghế thư giãn & nệm</a> 
+
+              <li class="dropdown menu-item"> <a href="sofa.html">Sofa, ghế thư giãn & nệm</a>
                 <!-- ================================== MEGAMENU VERTICAL ================================== -->
                 <!-- <ul class="dropdown-menu mega-menu" style="height:175px !important;">
                   <li class="yamm-content">
                     <div class="row">
-                     
+
                       <div class="col-sm-12 col-md-4">
                         <div class="drop-height">
                           <h2 class="title">SOFA</h2>
@@ -193,7 +193,7 @@
                           </ul>
                         </div>
                     </div>
-                    
+
                      <div class="col-sm-12 col-md-4">
                       <div class="drop-height">
                         <h2 class="title">GHẾ PHÒNG KHÁCH</h2>
@@ -203,7 +203,7 @@
                         </ul>
                       </div>
                   </div>
-                   
+
                    <div class="col-sm-12 col-md-4">
                     <div class="drop-height">
                       <h2 class="title">NỆM</h2>
@@ -215,16 +215,16 @@
                       </ul>
                     </div>
                 </div>
-                     
+
                     </div>
-                   
+
                   </li>
-                
+
                 </ul> -->
-                <!-- /.dropdown-menu --> 
+                <!-- /.dropdown-menu -->
                 <!-- ================================== MEGAMENU VERTICAL ================================== --> </li>
               <!-- /.menu-item -->
-              
+
               <li class="dropdown menu-item"> <a href="dotrangtri.html">Đồ trang trí</a>
                 <!-- <ul class="dropdown-menu mega-menu" style="height:530px !important;">
                   <li class="yamm-content">
@@ -279,7 +279,7 @@
                         <li><a href="#">Đồng hồ báo thức</a></li>
                         <li><a href="#">Đồng hồ để bàn</a></li>
                         <li><a href="#">Đồng hồ treo tường </a></li>
-                    
+
                       </ul>
                         </div>
                         <hr/>
@@ -287,12 +287,12 @@
                         <h2 class="title">THÚ BÔNG</h2>
                       <ul class="links list-unstyled">
                         <li><a href="#">Thú bông</a></li>
-                        
+
                       </ul>
                     </div>
-                    
+
                     </div>
-                      
+
                       <div class="col-sm-12 col-md-4 ">
                         <div class="drop-height1">
                           <h2 class="title">KHUNG & TRANH ẢNH</h2>
@@ -310,18 +310,18 @@
                               <li><a href="#">Nến</a></li>
                               <li><a href="#">Nến trà</a></li>
                               <li><a href="#">Chân nến </a></li>
-                              
+
                             </ul>
                             </div>
                       </div>
                     </div>
 
                   </li>
-                  
+
                 </ul> -->
                 <!-- /.dropdown-menu --> </li>
               <!-- /.menu-item -->
-              
+
               <li class="dropdown menu-item"> <a href="dodungvai.html">Đồ dùng vải</a>
                 <!-- <ul class="dropdown-menu mega-menu" style="height:630px !important;">
                   <li class="yamm-content">
@@ -336,7 +336,7 @@
                           <li><a href="#">Ga chun</a></li>
                           <li><a href="#">Gối ôm</a></li>
                           <li><a href="#">Gối nằm</a></li>
-                          
+
                         </ul>
                         </div>
                         <hr/>
@@ -360,7 +360,7 @@
                           </div>
                         </div>
                       </div>
-                      
+
                       <div class="col-sm-12 col-md-4 ">
                         <div class="drop-height">
                           <h2 class="title">GỐI LƯỜI & ĐỆM SÀN</h2>
@@ -368,7 +368,7 @@
                             <li><a href="#">Gối lười</a></li>
                             <li><a href="#">Đệm sàn</a></li>
                             <li><a href="#">Đệm ngồi</a></li>
-                            
+
                           </ul>
                         </div>
                       <hr/>
@@ -387,20 +387,20 @@
                       <ul class="links list-unstyled">
                         <li><a href="#">Rèm</a></li>
                         <li><a href="#">Rèm tắm</a></li>
-                        
+
                       </ul>
                     </div>
-                    
+
                     </div>
-                      
+
                       <div class="col-sm-12 col-md-4 ">
                         <div class="drop-height">
                           <h2 class="title">GỐI TRANG TRÍ</h2>
                           <ul class="links list-unstyled">
                             <li><a href="#">Gối tựa</a></li>
                             <li><a href="#">Vỏ gối trang trí</a></li>
-                      
-                            
+
+
                           </ul>
                           </div>
                           <hr/>
@@ -410,24 +410,24 @@
                               <li><a href="#">Thảm trải sàn</a></li>
                               <li><a href="#">Thảm phòng tắm</a></li>
                               <li><a href="#">Thảm chùi chân</a></li>
-                              
+
                             </ul>
                             </div>
                       </div>
                     </div>
-                    
+
                   </li>
-                  
+
                 </ul> -->
                 <!-- /.dropdown-menu --> </li>
               <!-- /.menu-item -->
-              
+
               <li class="dropdown menu-item"> <a href="dodungbep.html">Dụng cụ nhà bếp</a>
                 <!-- <ul class="dropdown-menu mega-menu" style="height:420px !important;">
                   <li class="yamm-content">
                     <div class="row">
                       <div class="col-sm-12 col-md-4">
-                      
+
                         <div class="drop-height">
                           <h2 class="title">TIỆN ÍCH SẮP XẾP NHÀ BẾP</h2>
                           <ul class="links list-unstyled">
@@ -449,9 +449,9 @@
                           </div>
                         </div>
                       </div>
-                      
+
                       <div class="col-sm-12 col-md-4 ">
-                        
+
                       <div class="drop-height">
                         <h2 class="title">CỐC, TÁCH & ẤM TRÀ</h2>
                       <ul class="links list-unstyled">
@@ -469,12 +469,12 @@
                       <ul class="links list-unstyled">
                         <li><a href="#">Dụng cụ nấu nướng</a></li>
                         <li><a href="#">Dụng cụ sơ chế</a></li>
-                        
+
                       </ul>
                     </div>
-                    
+
                     </div>
-                   
+
                       <div class="col-sm-12 col-md-4 ">
                         <div class="drop-height">
                           <h2 class="title">ĐĨA, TÔ CHÉN VÀ MUỖNG NĨA</h2>
@@ -493,23 +493,23 @@
                               <li><a href="#">Bình đựng</a></li>
                               <li><a href="#">Khay đựng thức ăn</a></li>
                               <li><a href="#">Đĩa lớn</a></li>
-                              
+
                             </ul>
                             </div>
                       </div>
                     </div>
-                  
+
                   </li>
-                  
+
                 </ul> -->
                 <!-- /.dropdown-menu --> </li>
               <!-- /.menu-item -->
-              
-              <li class="dropdown menu-item"> <a href="tienichsapxep.html">Tiện ích sắp xếp</a> 
+
+              <li class="dropdown menu-item"> <a href="tienichsapxep.html">Tiện ích sắp xếp</a>
                 <!-- <ul class="dropdown-menu mega-menu" style="height:175px !important;">
                   <li class="yamm-content">
                     <div class="row">
-                     
+
                       <div class="col-sm-12 col-md-4">
                         <div class="drop-height">
                           <h2 class="title">SẢN PHẨM LƯU TRỮ</h2>
@@ -517,11 +517,11 @@
                             <li><a href="#">Dụng cụ văn phòng</a></li>
                             <li><a href="#">Hộp & Giỏ đựng</a></li>
                             <li><a href="#">Túi phụ kiện</a></li>
-                           
+
                           </ul>
                         </div>
                     </div>
-                    
+
                      <div class="col-sm-12 col-md-4">
                       <div class="drop-height">
                         <h2 class="title">THÙNG RÁC</h2>
@@ -531,36 +531,36 @@
                         </ul>
                       </div>
                   </div>
-                 
+
                    <div class="col-sm-12 col-md-4">
                     <div class="drop-height">
                       <h2 class="title">VẬT DỤNG PHÒNG TẮM</h2>
                       <ul class="links list-unstyled">
                         <li><a href="#">Bộ dụng cụ phòng tắm</a></li>
                         <li><a href="#">Khay</a></li>
-                     
-                    
+
+
                       </ul>
                     </div>
                 </div>
-                     
+
                     </div>
-                 
+
                   </li>
-             
+
                 </ul> -->
-                <!-- /.dropdown-menu --> 
+                <!-- /.dropdown-menu -->
               </li>
               <!-- /.menu-item -->
-              
-              
-              
-              <li class="dropdown menu-item"> <a href="bosuutap.html">Bộ sưu tập Hot</a> 
+
+
+
+              <li class="dropdown menu-item"> <a href="bosuutap.html">Bộ sưu tập Hot</a>
                 <!-- <ul class="dropdown-menu mega-menu" style="height:400px !important;">
                   <li class="yamm-content">
                     <div class="row">
                       <div class="col-sm-12 col-md-4">
-                      
+
                         <div class="drop-height">
                           <h2 class="title">SOFA</h2>
                           <ul class="links list-unstyled">
@@ -583,9 +583,9 @@
                           </div>
                         </div>
                       </div>
-                      
+
                       <div class="col-sm-12 col-md-4 ">
-                        
+
                       <div class="drop-height">
                         <h2 class="title">TIỆN ÍCH SẮP XẾP</h2>
                       <ul class="links list-unstyled">
@@ -594,7 +594,7 @@
                         <li><a href="#">EDEN </a></li>
                         <li><a href="#">CIROCCO</a></li>
                         <li><a href="#">CHEROKEE </a></li>
-                     
+
                       </ul>
                         </div>
                         <hr/>
@@ -603,12 +603,12 @@
                       <ul class="links list-unstyled">
                         <li><a href="#">Dụng cụ nấu nướng</a></li>
                         <li><a href="#">Dụng cụ sơ chế</a></li>
-                        
+
                       </ul>
                     </div>
-                    
+
                     </div>
-                     
+
                       <div class="col-sm-12 col-md-4 ">
                         <div class="drop-height">
                           <h2 class="title">ĐỒ DÙNG BÀN ĂN</h2>
@@ -620,26 +620,26 @@
                             <li><a href="#">CLIFTON</a></li>
                           </ul>
                           </div>
-                          
+
                       </div>
                     </div>
-                   
+
                   </li>
-                  
+
                 </ul> -->
-                <!-- /.dropdown-menu --> 
+                <!-- /.dropdown-menu -->
               </li>
               <!-- /.menu-item -->
-              
+
             </ul>
-            <!-- /.nav --> 
+            <!-- /.nav -->
           </nav>
-          <!-- /.megamenu-horizontal --> 
+          <!-- /.megamenu-horizontal -->
         </div>
-        <!-- /.side-menu --> 
+        <!-- /.side-menu -->
         <!-- ================================== TOP NAVIGATION : END ================================== -->
         <div class="sidebar-module-container">
-          <div class="sidebar-filter"> 
+          <div class="sidebar-filter">
             <!-- ============================================== SIDEBAR CATEGORY ============================================== -->
             <div class="sidebar-widget wow fadeInUp">
               <h3 class="section-title">Sắp xếp theo</h3>
@@ -664,12 +664,12 @@
                           <li><a href="#">Nội thất cho bé</a></li>
                         </ul>
                       </div>
-                      <!-- /.accordion-inner --> 
+                      <!-- /.accordion-inner -->
                     </div>
-                    <!-- /.accordion-body --> 
+                    <!-- /.accordion-body -->
                   </div>
                   <!-- /.accordion-group -->
-                  
+
                   <div class="accordion-group">
                     <div class="accordion-heading"> <a href="#collapseTwo" data-toggle="collapse" class="accordion-toggle collapsed"> Sofa, Ghế thư giãn & Nệm </a> </div>
                     <!-- /.accordion-heading -->
@@ -681,12 +681,12 @@
                           <li><a href="#">Nệm</a></li>
                         </ul>
                       </div>
-                      <!-- /.accordion-inner --> 
+                      <!-- /.accordion-inner -->
                     </div>
-                    <!-- /.accordion-body --> 
+                    <!-- /.accordion-body -->
                   </div>
                   <!-- /.accordion-group -->
-                  
+
                   <div class="accordion-group">
                     <div class="accordion-heading"> <a href="#collapseThree" data-toggle="collapse" class="accordion-toggle collapsed"> Đồ trang trí </a> </div>
                     <!-- /.accordion-heading -->
@@ -706,12 +706,12 @@
 
                         </ul>
                       </div>
-                      <!-- /.accordion-inner --> 
+                      <!-- /.accordion-inner -->
                     </div>
-                    <!-- /.accordion-body --> 
+                    <!-- /.accordion-body -->
                   </div>
                   <!-- /.accordion-group -->
-                  
+
                   <div class="accordion-group">
                     <div class="accordion-heading"> <a href="#collapseFour" data-toggle="collapse" class="accordion-toggle collapsed"> Đồ dùng vải </a> </div>
                     <!-- /.accordion-heading -->
@@ -728,12 +728,12 @@
                           <li><a href="#">Khăn</a></li>
                         </ul>
                       </div>
-                      <!-- /.accordion-inner --> 
+                      <!-- /.accordion-inner -->
                     </div>
-                    <!-- /.accordion-body --> 
+                    <!-- /.accordion-body -->
                   </div>
                   <!-- /.accordion-group -->
-                  
+
                   <div class="accordion-group">
                     <div class="accordion-heading"> <a href="#collapseFive" data-toggle="collapse" class="accordion-toggle collapsed"> Dụng cụ nhà bếp </a> </div>
                     <!-- /.accordion-heading -->
@@ -746,12 +746,12 @@
                           <li><a href="#">Phục vụ bàn ăn</a></li>
                         </ul>
                       </div>
-                      <!-- /.accordion-inner --> 
+                      <!-- /.accordion-inner -->
                     </div>
-                    <!-- /.accordion-body --> 
+                    <!-- /.accordion-body -->
                   </div>
                   <!-- /.accordion-group -->
-                  
+
                   <div class="accordion-group">
                     <div class="accordion-heading"> <a href="#collapseSix" data-toggle="collapse" class="accordion-toggle collapsed"> Tiện ích sắp xếp </a> </div>
                     <!-- /.accordion-heading -->
@@ -763,20 +763,20 @@
                           <li><a href="#">Thùng rác</a></li>
                         </ul>
                       </div>
-                      <!-- /.accordion-inner --> 
+                      <!-- /.accordion-inner -->
                     </div>
-                    <!-- /.accordion-body --> 
+                    <!-- /.accordion-body -->
                   </div>
-                  <!-- /.accordion-group --> 
-                  
+                  <!-- /.accordion-group -->
+
                 </div>
-                <!-- /.accordion --> 
+                <!-- /.accordion -->
               </div>
-              <!-- /.sidebar-widget-body --> 
+              <!-- /.sidebar-widget-body -->
             </div>
-            <!-- /.sidebar-widget --> 
-            <!-- ============================================== SIDEBAR CATEGORY : END ============================================== --> 
-            
+            <!-- /.sidebar-widget -->
+            <!-- ============================================== SIDEBAR CATEGORY : END ============================================== -->
+
             <!-- ============================================== PRICE SILDER============================================== -->
             <div class="sidebar-widget wow fadeInUp">
               <div class="widget-header">
@@ -787,15 +787,15 @@
                   <input type="text" id="amount" style="border:0; color:#666666; font-weight:bold;text-align:center;">
                   <input type="text" class="price-slider" value="">
                 </div>
-                <!-- /.price-range-holder --> 
+                <!-- /.price-range-holder -->
                 <a href="#" class="lnk btn btn-primary">Mua ngay</a> </div>
-              <!-- /.sidebar-widget-body --> 
+              <!-- /.sidebar-widget-body -->
             </div>
-            <!-- /.sidebar-widget --> 
-            
-            
-            
-            <!-- /.sidebar-widget --> 
+            <!-- /.sidebar-widget -->
+
+
+
+            <!-- /.sidebar-widget -->
           <!-- ============================================== Testimonials============================================== -->
         <div class="sidebar-widget  wow fadeInUp outer-top-vs ">
           <div id="advertisement" class="advertisement">
@@ -803,40 +803,40 @@
               <div class="avatar"><img src="assets\images\testimonials\member1.png" alt="Image"></div>
               <div class="testimonials"><em>"</em> Sản phẩm đẹp, chất lượng, giao hàng nhanh, giống với hình, khá ưng ý, sẽ ủng hộ shop và tin tưởng shop.<em>"</em></div>
               <div class="clients_author">Bế Lâm Mai Trường <span>Abc Company</span> </div>
-              <!-- /.container-fluid --> 
+              <!-- /.container-fluid -->
             </div>
             <!-- /.item -->
-            
+
             <div class="item">
               <div class="avatar"><img src="assets\images\testimonials\member3.png" alt="Image"></div>
               <div class="testimonials"><em>"</em>Sản phẩm đẹp, chất lượng, giao hàng nhanh, giống với hình, khá ưng ý, sẽ ủng hộ shop và tin tưởng shop.<em>"</em></div>
               <div class="clients_author">Châu Vũ Minh Quân <span>Xperia Designs</span> </div>
             </div>
             <!-- /.item -->
-            
+
             <div class="item">
               <div class="avatar"><img src="assets\images\testimonials\member2.png" alt="Image"></div>
               <div class="testimonials"><em>"</em> Sản phẩm đẹp, chất lượng, giao hàng nhanh, giống với hình, khá ưng ý, sẽ ủng hộ shop và tin tưởng shop.<em>"</em></div>
               <div class="clients_author">Nguyễn Hoàng Minh <span>Datsun &amp; Co</span> </div>
-              <!-- /.container-fluid --> 
+              <!-- /.container-fluid -->
             </div>
-            <!-- /.item --> 
-            
+            <!-- /.item -->
+
           </div>
-          <!-- /.owl-carousel --> 
+          <!-- /.owl-carousel -->
         </div>
-        
+
         <!-- ============================================== Testimonials: END ============================================== -->
-            
+
           </div>
-          <!-- /.sidebar-filter --> 
+          <!-- /.sidebar-filter -->
         </div>
-        <!-- /.sidebar-module-container --> 
+        <!-- /.sidebar-module-container -->
       </div>
       <!-- /.sidebar -->
-      <div class='col-md-9'> 
+      <div class='col-md-9'>
         <!-- ========================================== SECTION – HERO ========================================= -->
-        
+
         <div id="category" class="category-carousel hidden-xs">
           <div class="item">
             <div class="image"> <img  style="filter:brightness(50%);width: 848px;height: 358px;" src="assets/images/banners/phongkhach.jpg" alt="" class="img-responsive"> </div>
@@ -846,13 +846,13 @@
                 <div class="excerpt hidden-sm hidden-md"> Save up to 49% off </div>
                 <div class="excerpt-normal hidden-sm hidden-md"> Lorem ipsum dolor sit amet, consectetur adipiscing elit </div>
               </div>
-              <!-- /.caption --> 
+              <!-- /.caption -->
             </div>
-            <!-- /.container-fluid --> 
+            <!-- /.container-fluid -->
           </div>
         </div>
-        
-     
+
+
         <div class="clearfix filters-container m-t-10">
           <div class="row">
             <div class="col col-sm-6 col-md-2">
@@ -862,7 +862,7 @@
                   <li><a data-toggle="tab" href="#list-container"><i class="icon fa fa-th-list"></i>Danh sách</a></li>
                 </ul>
               </div>
-              <!-- /.filter-tabs --> 
+              <!-- /.filter-tabs -->
             </div>
             <!-- /.col -->
             <div class="col col-sm-12 col-md-6">
@@ -878,9 +878,9 @@
                       </ul>
                     </div>
                   </div>
-                  <!-- /.fld --> 
+                  <!-- /.fld -->
                 </div>
-                <!-- /.lbl-cnt --> 
+                <!-- /.lbl-cnt -->
               </div>
               <!-- /.col -->
               <div class="col col-sm-3 col-md-6 no-padding">
@@ -902,11 +902,11 @@
                       </ul>
                     </div>
                   </div>
-                  <!-- /.fld --> 
+                  <!-- /.fld -->
                 </div>
-                <!-- /.lbl-cnt --> 
+                <!-- /.lbl-cnt -->
               </div>
-              <!-- /.col --> 
+              <!-- /.col -->
             </div>
             <!-- /.col -->
             <div class="col col-sm-6 col-md-4 text-right">
@@ -919,12 +919,12 @@
                   <li style="width: 30px;" ><a href="#">4</a></li>
                   <li style="width: 30px;" class="next"><a href="#"><i class="fa fa-angle-right"></i></a></li>
                 </ul>
-                <!-- /.list-inline --> 
+                <!-- /.list-inline -->
               </div>
               <!-- /.pagination-container --> </div>
-            <!-- /.col --> 
+            <!-- /.col -->
           </div>
-          <!-- /.row --> 
+          <!-- /.row -->
         </div>
         <div class="search-result-container ">
           <div id="myTabContent" class="tab-content category-list">
@@ -937,18 +937,18 @@
                         <div class="product-image">
                           <div class="image"> <a href="detail.html"><img src="assets/images/furnitures/table/4.jpg" alt=""></a> </div>
                           <!-- /.image -->
-                          
+
                           <div class="tag new"><span>new</span></div>
                         </div>
                         <!-- /.product-image -->
-                        
+
                         <div class="product-info text-left">
                           <h3 class="name"><a href="detail.html">Bàn Annie</a></h3>
                           <div class="rating rateit-small"></div>
                           <div class="description"></div>
                           <div class="product-price"> <span class="price"> 2,500,000đ </span> <span class="price-before-discount">3,000,000đ</span> </div>
-                          <!-- /.product-price --> 
-                          
+                          <!-- /.product-price -->
+
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -962,35 +962,35 @@
                               <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal"></i> </a> </li>
                             </ul>
                           </div>
-                          <!-- /.action --> 
+                          <!-- /.action -->
                         </div>
-                        <!-- /.cart --> 
+                        <!-- /.cart -->
                       </div>
-                      <!-- /.product --> 
-                      
+                      <!-- /.product -->
+
                     </div>
-                    <!-- /.products --> 
+                    <!-- /.products -->
                   </div>
                   <!-- /.item -->
-                  
+
                   <div class="col-sm-6 col-md-4 wow fadeInUp">
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
                           <div class="image"> <a href="detail.html"><img src="assets/images/furnitures/chair/5.jpg" alt=""></a> </div>
                           <!-- /.image -->
-                          
+
                           <div class="tag new"><span>new</span></div>
                         </div>
                         <!-- /.product-image -->
-                        
+
                         <div class="product-info text-left">
                           <h3 class="name"><a href="detail.html">Ghế đôn Lucian</a></h3>
                           <div class="rating rateit-small"></div>
                           <div class="description"></div>
                           <div class="product-price"> <span class="price"> 500,000đ </span> <span class="price-before-discount">300,000đ</span> </div>
-                          <!-- /.product-price --> 
-                          
+                          <!-- /.product-price -->
+
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -1004,35 +1004,35 @@
                               <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal"></i> </a> </li>
                             </ul>
                           </div>
-                          <!-- /.action --> 
+                          <!-- /.action -->
                         </div>
-                        <!-- /.cart --> 
+                        <!-- /.cart -->
                       </div>
-                      <!-- /.product --> 
-                      
+                      <!-- /.product -->
+
                     </div>
-                    <!-- /.products --> 
+                    <!-- /.products -->
                   </div>
                   <!-- /.item -->
-                  
+
                   <div class="col-sm-6 col-md-4 wow fadeInUp">
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
                           <div class="image"> <a href="detail.html"><img src="assets/images/furnitures/chair/6.jpg" alt=""></a> </div>
                           <!-- /.image -->
-                          
+
                           <div class="tag new"><span>new</span></div>
                         </div>
                         <!-- /.product-image -->
-                        
+
                         <div class="product-info text-left">
                           <h3 class="name"><a href="detail.html">Ghế gia đình Syndra</a></h3>
                           <div class="rating rateit-small"></div>
                           <div class="description"></div>
                           <div class="product-price"> <span class="price"> 3,000,000đ </span> <span class="price-before-discount">3,000,000đ</span> </div>
-                          <!-- /.product-price --> 
-                          
+                          <!-- /.product-price -->
+
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -1046,35 +1046,35 @@
                               <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal"></i> </a> </li>
                             </ul>
                           </div>
-                          <!-- /.action --> 
+                          <!-- /.action -->
                         </div>
-                        <!-- /.cart --> 
+                        <!-- /.cart -->
                       </div>
-                      <!-- /.product --> 
-                      
+                      <!-- /.product -->
+
                     </div>
-                    <!-- /.products --> 
+                    <!-- /.products -->
                   </div>
                   <!-- /.item -->
-                  
+
                   <div class="col-sm-6 col-md-4 wow fadeInUp">
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
                           <div class="image"> <a href="detail.html"><img src="assets/images/furnitures/chair/7.jpg" alt=""></a> </div>
                           <!-- /.image -->
-                          
+
                           <div class="tag new"><span>new</span></div>
                         </div>
                         <!-- /.product-image -->
-                        
+
                         <div class="product-info text-left">
                           <h3 class="name"><a href="detail.html">Ghế gia đình Anivia</a></h3>
                           <div class="rating rateit-small"></div>
                           <div class="description"></div>
                           <div class="product-price"> <span class="price"> 12,500,000đ </span> <span class="price-before-discount">13,000,000đ</span> </div>
-                          <!-- /.product-price --> 
-                          
+                          <!-- /.product-price -->
+
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -1088,35 +1088,35 @@
                               <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal"></i> </a> </li>
                             </ul>
                           </div>
-                          <!-- /.action --> 
+                          <!-- /.action -->
                         </div>
-                        <!-- /.cart --> 
+                        <!-- /.cart -->
                       </div>
-                      <!-- /.product --> 
-                      
+                      <!-- /.product -->
+
                     </div>
-                    <!-- /.products --> 
+                    <!-- /.products -->
                   </div>
                   <!-- /.item -->
-                  
+
                   <div class="col-sm-6 col-md-4 wow fadeInUp">
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
                           <div class="image"> <a href="detail.html"><img src="assets/images/furnitures/chair/8.jpg" alt=""></a> </div>
                           <!-- /.image -->
-                          
+
                           <div class="tag new"><span>new</span></div>
                         </div>
                         <!-- /.product-image -->
-                        
+
                         <div class="product-info text-left">
                           <h3 class="name"><a href="detail.html">Ghế Samira</a></h3>
                           <div class="rating rateit-small"></div>
                           <div class="description"></div>
                           <div class="product-price"> <span class="price"> 2,500,000đ </span> <span class="price-before-discount">3,000,000đ</span> </div>
-                          <!-- /.product-price --> 
-                          
+                          <!-- /.product-price -->
+
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -1130,35 +1130,35 @@
                               <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal"></i> </a> </li>
                             </ul>
                           </div>
-                          <!-- /.action --> 
+                          <!-- /.action -->
                         </div>
-                        <!-- /.cart --> 
+                        <!-- /.cart -->
                       </div>
-                      <!-- /.product --> 
-                      
+                      <!-- /.product -->
+
                     </div>
-                    <!-- /.products --> 
+                    <!-- /.products -->
                   </div>
                   <!-- /.item -->
-                  
+
                   <div class="col-sm-6 col-md-4 wow fadeInUp">
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
                           <div class="image"> <a href="detail.html"><img src="assets/images/furnitures/chair/9.jpg" alt=""></a> </div>
                           <!-- /.image -->
-                          
+
                           <div class="tag new"><span>new</span></div>
                         </div>
                         <!-- /.product-image -->
-                        
+
                         <div class="product-info text-left">
                           <h3 class="name"><a href="detail.html">Ghế RekSai</a></h3>
                           <div class="rating rateit-small"></div>
                           <div class="description"></div>
                           <div class="product-price"> <span class="price"> 4,500,000đ </span> <span class="price-before-discount">5,000,000đ</span> </div>
-                          <!-- /.product-price --> 
-                          
+                          <!-- /.product-price -->
+
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -1172,35 +1172,35 @@
                               <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal"></i> </a> </li>
                             </ul>
                           </div>
-                          <!-- /.action --> 
+                          <!-- /.action -->
                         </div>
-                        <!-- /.cart --> 
+                        <!-- /.cart -->
                       </div>
-                      <!-- /.product --> 
-                      
+                      <!-- /.product -->
+
                     </div>
-                    <!-- /.products --> 
+                    <!-- /.products -->
                   </div>
                   <!-- /.item -->
-                  
+
                   <div class="col-sm-6 col-md-4 wow fadeInUp">
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
                           <div class="image"> <a href="detail.html"><img src="assets/images/furnitures/table/4.jpg" alt=""></a> </div>
                           <!-- /.image -->
-                          
+
                           <div class="tag new"><span>new</span></div>
                         </div>
                         <!-- /.product-image -->
-                        
+
                         <div class="product-info text-left">
                           <h3 class="name"><a href="detail.html">Bàn Annie</a></h3>
                           <div class="rating rateit-small"></div>
                           <div class="description"></div>
                           <div class="product-price"> <span class="price"> 2,500,000đ </span> <span class="price-before-discount">3,000,000đ</span> </div>
-                          <!-- /.product-price --> 
-                          
+                          <!-- /.product-price -->
+
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -1214,35 +1214,35 @@
                               <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal"></i> </a> </li>
                             </ul>
                           </div>
-                          <!-- /.action --> 
+                          <!-- /.action -->
                         </div>
-                        <!-- /.cart --> 
+                        <!-- /.cart -->
                       </div>
-                      <!-- /.product --> 
-                      
+                      <!-- /.product -->
+
                     </div>
-                    <!-- /.products --> 
+                    <!-- /.products -->
                   </div>
                   <!-- /.item -->
-                  
+
                   <div class="col-sm-6 col-md-4 wow fadeInUp">
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
                           <div class="image"> <a href="detail.html"><img src="assets/images/furnitures/chair/6.jpg" alt=""></a> </div>
                           <!-- /.image -->
-                          
+
                           <div class="tag new"><span>new</span></div>
                         </div>
                         <!-- /.product-image -->
-                        
+
                         <div class="product-info text-left">
                           <h3 class="name"><a href="detail.html">Ghế Syndra</a></h3>
                           <div class="rating rateit-small"></div>
                           <div class="description"></div>
                           <div class="product-price"> <span class="price"> 4,000,000đ </span> <span class="price-before-discount">5,000,000đ</span> </div>
-                          <!-- /.product-price --> 
-                          
+                          <!-- /.product-price -->
+
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -1256,35 +1256,35 @@
                               <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal"></i> </a> </li>
                             </ul>
                           </div>
-                          <!-- /.action --> 
+                          <!-- /.action -->
                         </div>
-                        <!-- /.cart --> 
+                        <!-- /.cart -->
                       </div>
-                      <!-- /.product --> 
-                      
+                      <!-- /.product -->
+
                     </div>
-                    <!-- /.products --> 
+                    <!-- /.products -->
                   </div>
                   <!-- /.item -->
-                  
+
                   <div class="col-sm-6 col-md-4 wow fadeInUp">
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
                           <div class="image"> <a href="detail.html"><img src="assets/images/furnitures/chair/2.jpg" alt=""></a> </div>
                           <!-- /.image -->
-                          
+
                           <div class="tag new"><span>new</span></div>
                         </div>
                         <!-- /.product-image -->
-                        
+
                         <div class="product-info text-left">
                           <h3 class="name"><a href="detail.html">Ghế Riven</a></h3>
                           <div class="rating rateit-small"></div>
                           <div class="description"></div>
                           <div class="product-price"> <span class="price"> 2,500,000đ </span> <span class="price-before-discount">3,000,000đ</span> </div>
-                          <!-- /.product-price --> 
-                          
+                          <!-- /.product-price -->
+
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -1298,35 +1298,35 @@
                               <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal"></i> </a> </li>
                             </ul>
                           </div>
-                          <!-- /.action --> 
+                          <!-- /.action -->
                         </div>
-                        <!-- /.cart --> 
+                        <!-- /.cart -->
                       </div>
-                      <!-- /.product --> 
-                      
+                      <!-- /.product -->
+
                     </div>
-                    <!-- /.products --> 
+                    <!-- /.products -->
                   </div>
                   <!-- /.item -->
-                  
+
                   <div class="col-sm-6 col-md-4 wow fadeInUp">
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
                           <div class="image"> <a href="detail.html"><img src="assets/images/furnitures/chair/7.jpg" alt=""></a> </div>
                           <!-- /.image -->
-                          
+
                           <div class="tag new"><span>new</span></div>
                         </div>
                         <!-- /.product-image -->
-                        
+
                         <div class="product-info text-left">
                           <h3 class="name"><a href="detail.html">Ghế salon Zac</a></h3>
                           <div class="rating rateit-small"></div>
                           <div class="description"></div>
                           <div class="product-price"> <span class="price"> 12,500,000đ </span> <span class="price-before-discount">13,000,000đ</span> </div>
-                          <!-- /.product-price --> 
-                          
+                          <!-- /.product-price -->
+
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -1340,35 +1340,35 @@
                               <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal"></i> </a> </li>
                             </ul>
                           </div>
-                          <!-- /.action --> 
+                          <!-- /.action -->
                         </div>
-                        <!-- /.cart --> 
+                        <!-- /.cart -->
                       </div>
-                      <!-- /.product --> 
-                      
+                      <!-- /.product -->
+
                     </div>
-                    <!-- /.products --> 
+                    <!-- /.products -->
                   </div>
                   <!-- /.item -->
-                  
+
                   <div class="col-sm-6 col-md-4 wow fadeInUp">
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
                           <div class="image"> <a href="detail.html"><img src="assets/images/furnitures/clock/1.jpg" alt=""></a> </div>
                           <!-- /.image -->
-                          
+
                           <div class="tag new"><span>new</span></div>
                         </div>
                         <!-- /.product-image -->
-                        
+
                         <div class="product-info text-left">
                           <h3 class="name"><a href="detail.html">Đồng hồ Annie</a></h3>
                           <div class="rating rateit-small"></div>
                           <div class="description"></div>
                           <div class="product-price"> <span class="price"> 500,000đ </span> <span class="price-before-discount">700,000đ</span> </div>
-                          <!-- /.product-price --> 
-                          
+                          <!-- /.product-price -->
+
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -1382,35 +1382,35 @@
                               <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal"></i> </a> </li>
                             </ul>
                           </div>
-                          <!-- /.action --> 
+                          <!-- /.action -->
                         </div>
-                        <!-- /.cart --> 
+                        <!-- /.cart -->
                       </div>
-                      <!-- /.product --> 
-                      
+                      <!-- /.product -->
+
                     </div>
-                    <!-- /.products --> 
+                    <!-- /.products -->
                   </div>
                   <!-- /.item -->
-                  
+
                   <div class="col-sm-6 col-md-4 wow fadeInUp">
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
                           <div class="image"> <a href="detail.html"><img src="assets/images/furnitures/table/3.jpg" alt=""></a> </div>
                           <!-- /.image -->
-                          
+
                           <div class="tag new"><span>new</span></div>
                         </div>
                         <!-- /.product-image -->
-                        
+
                         <div class="product-info text-left">
                           <h3 class="name"><a href="detail.html">Bàn Olaf</a></h3>
                           <div class="rating rateit-small"></div>
                           <div class="description"></div>
                           <div class="product-price"> <span class="price"> 2,500,000đ </span> <span class="price-before-discount">3,000,000đ</span> </div>
-                          <!-- /.product-price --> 
-                          
+                          <!-- /.product-price -->
+
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -1424,24 +1424,24 @@
                               <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal"></i> </a> </li>
                             </ul>
                           </div>
-                          <!-- /.action --> 
+                          <!-- /.action -->
                         </div>
-                        <!-- /.cart --> 
+                        <!-- /.cart -->
                       </div>
-                      <!-- /.product --> 
-                      
+                      <!-- /.product -->
+
                     </div>
-                    <!-- /.products --> 
+                    <!-- /.products -->
                   </div>
-                  <!-- /.item --> 
+                  <!-- /.item -->
                 </div>
-                <!-- /.row --> 
+                <!-- /.row -->
               </div>
-              <!-- /.category-product --> 
-              
+              <!-- /.category-product -->
+
             </div>
             <!-- /.tab-pane -->
-            
+
             <div class="tab-pane " id="list-container">
               <div class="category-product">
                 <div class="category-product-inner wow fadeInUp">
@@ -1452,7 +1452,7 @@
                           <div class="product-image">
                             <div class="image"> <img src="assets/images/furnitures/chair/2.jpg" alt=""> </div>
                           </div>
-                          <!-- /.product-image --> 
+                          <!-- /.product-image -->
                         </div>
                         <!-- /.col -->
                         <div class="col col-sm-8 col-lg-8">
@@ -1473,24 +1473,24 @@
                                   <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal"></i> </a> </li>
                                 </ul>
                               </div>
-                              <!-- /.action --> 
+                              <!-- /.action -->
                             </div>
-                            <!-- /.cart --> 
-                            
+                            <!-- /.cart -->
+
                           </div>
-                          <!-- /.product-info --> 
+                          <!-- /.product-info -->
                         </div>
-                        <!-- /.col --> 
+                        <!-- /.col -->
                       </div>
                       <!-- /.product-list-row -->
                       <div class="tag new"><span>new</span></div>
                     </div>
-                    <!-- /.product-list --> 
+                    <!-- /.product-list -->
                   </div>
-                  <!-- /.products --> 
+                  <!-- /.products -->
                 </div>
                 <!-- /.category-product-inner -->
-                
+
                 <div class="category-product-inner wow fadeInUp">
                   <div class="products">
                     <div class="product-list product">
@@ -1499,7 +1499,7 @@
                           <div class="product-image">
                             <div class="image"> <img src="assets/images/furnitures/chair/3.jpg" alt=""> </div>
                           </div>
-                          <!-- /.product-image --> 
+                          <!-- /.product-image -->
                         </div>
                         <!-- /.col -->
                         <div class="col col-sm-8 col-lg-8">
@@ -1520,24 +1520,24 @@
                                   <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal"></i> </a> </li>
                                 </ul>
                               </div>
-                              <!-- /.action --> 
+                              <!-- /.action -->
                             </div>
-                            <!-- /.cart --> 
-                            
+                            <!-- /.cart -->
+
                           </div>
-                          <!-- /.product-info --> 
+                          <!-- /.product-info -->
                         </div>
-                        <!-- /.col --> 
+                        <!-- /.col -->
                       </div>
                       <!-- /.product-list-row -->
                       <div class="tag new"><span>new</span></div>
                     </div>
-                    <!-- /.product-list --> 
+                    <!-- /.product-list -->
                   </div>
-                  <!-- /.products --> 
+                  <!-- /.products -->
                 </div>
                 <!-- /.category-product-inner -->
-                
+
                 <div class="category-product-inner wow fadeInUp">
                   <div class="products">
                     <div class="product-list product">
@@ -1546,7 +1546,7 @@
                           <div class="product-image">
                             <div class="image"> <img src="assets/images/furnitures/chair/4.jpg" alt=""> </div>
                           </div>
-                          <!-- /.product-image --> 
+                          <!-- /.product-image -->
                         </div>
                         <!-- /.col -->
                         <div class="col col-sm-8 col-lg-8">
@@ -1567,24 +1567,24 @@
                                   <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal"></i> </a> </li>
                                 </ul>
                               </div>
-                              <!-- /.action --> 
+                              <!-- /.action -->
                             </div>
-                            <!-- /.cart --> 
-                            
+                            <!-- /.cart -->
+
                           </div>
-                          <!-- /.product-info --> 
+                          <!-- /.product-info -->
                         </div>
-                        <!-- /.col --> 
+                        <!-- /.col -->
                       </div>
                       <!-- /.product-list-row -->
                       <div class="tag new"><span>new</span></div>
                     </div>
-                    <!-- /.product-list --> 
+                    <!-- /.product-list -->
                   </div>
-                  <!-- /.products --> 
+                  <!-- /.products -->
                 </div>
                 <!-- /.category-product-inner -->
-                
+
                 <div class="category-product-inner wow fadeInUp">
                   <div class="products">
                     <div class="product-list product">
@@ -1593,7 +1593,7 @@
                           <div class="product-image">
                             <div class="image"> <img src="assets/images/furnitures/chair/5.jpg" alt=""> </div>
                           </div>
-                          <!-- /.product-image --> 
+                          <!-- /.product-image -->
                         </div>
                         <!-- /.col -->
                         <div class="col col-sm-8 col-lg-8">
@@ -1614,24 +1614,24 @@
                                   <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal"></i> </a> </li>
                                 </ul>
                               </div>
-                              <!-- /.action --> 
+                              <!-- /.action -->
                             </div>
-                            <!-- /.cart --> 
-                            
+                            <!-- /.cart -->
+
                           </div>
-                          <!-- /.product-info --> 
+                          <!-- /.product-info -->
                         </div>
-                        <!-- /.col --> 
+                        <!-- /.col -->
                       </div>
                       <!-- /.product-list-row -->
                       <div class="tag new"><span>new</span></div>
                     </div>
-                    <!-- /.product-list --> 
+                    <!-- /.product-list -->
                   </div>
-                  <!-- /.products --> 
+                  <!-- /.products -->
                 </div>
                 <!-- /.category-product-inner -->
-                
+
                 <div class="category-product-inner wow fadeInUp">
                   <div class="products">
                     <div class="product-list product">
@@ -1640,7 +1640,7 @@
                           <div class="product-image">
                             <div class="image"> <img src="assets/images/furnitures/chair/6.jpg" alt=""> </div>
                           </div>
-                          <!-- /.product-image --> 
+                          <!-- /.product-image -->
                         </div>
                         <!-- /.col -->
                         <div class="col col-sm-8 col-lg-8">
@@ -1661,24 +1661,24 @@
                                   <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal"></i> </a> </li>
                                 </ul>
                               </div>
-                              <!-- /.action --> 
+                              <!-- /.action -->
                             </div>
-                            <!-- /.cart --> 
-                            
+                            <!-- /.cart -->
+
                           </div>
-                          <!-- /.product-info --> 
+                          <!-- /.product-info -->
                         </div>
-                        <!-- /.col --> 
+                        <!-- /.col -->
                       </div>
                       <!-- /.product-list-row -->
                       <div class="tag new"><span>new</span></div>
                     </div>
-                    <!-- /.product-list --> 
+                    <!-- /.product-list -->
                   </div>
-                  <!-- /.products --> 
+                  <!-- /.products -->
                 </div>
                 <!-- /.category-product-inner -->
-                
+
                 <div class="category-product-inner wow fadeInUp">
                   <div class="products">
                     <div class="product-list product">
@@ -1687,7 +1687,7 @@
                           <div class="product-image">
                             <div class="image"> <img src="assets/images/furnitures/chair/7.jpg" alt=""> </div>
                           </div>
-                          <!-- /.product-image --> 
+                          <!-- /.product-image -->
                         </div>
                         <!-- /.col -->
                         <div class="col col-sm-8 col-lg-8">
@@ -1708,24 +1708,24 @@
                                   <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal"></i> </a> </li>
                                 </ul>
                               </div>
-                              <!-- /.action --> 
+                              <!-- /.action -->
                             </div>
-                            <!-- /.cart --> 
-                            
+                            <!-- /.cart -->
+
                           </div>
-                          <!-- /.product-info --> 
+                          <!-- /.product-info -->
                         </div>
-                        <!-- /.col --> 
+                        <!-- /.col -->
                       </div>
                       <!-- /.product-list-row -->
                       <div class="tag new"><span>new</span></div>
                     </div>
-                    <!-- /.product-list --> 
+                    <!-- /.product-list -->
                   </div>
-                  <!-- /.products --> 
+                  <!-- /.products -->
                 </div>
                 <!-- /.category-product-inner -->
-                
+
                 <div class="category-product-inner wow fadeInUp">
                   <div class="products">
                     <div class="product-list product">
@@ -1734,7 +1734,7 @@
                           <div class="product-image">
                             <div class="image"> <img src="assets/images/furnitures/chair/8.jpg" alt=""> </div>
                           </div>
-                          <!-- /.product-image --> 
+                          <!-- /.product-image -->
                         </div>
                         <!-- /.col -->
                         <div class="col col-sm-8 col-lg-8">
@@ -1755,24 +1755,24 @@
                                   <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal"></i> </a> </li>
                                 </ul>
                               </div>
-                              <!-- /.action --> 
+                              <!-- /.action -->
                             </div>
-                            <!-- /.cart --> 
-                            
+                            <!-- /.cart -->
+
                           </div>
-                          <!-- /.product-info --> 
+                          <!-- /.product-info -->
                         </div>
-                        <!-- /.col --> 
+                        <!-- /.col -->
                       </div>
                       <!-- /.product-list-row -->
                       <div class="tag new"><span>new</span></div>
                     </div>
-                    <!-- /.product-list --> 
+                    <!-- /.product-list -->
                   </div>
-                  <!-- /.products --> 
+                  <!-- /.products -->
                 </div>
                 <!-- /.category-product-inner -->
-                
+
                 <div class="category-product-inner wow fadeInUp">
                   <div class="products">
                     <div class="product-list product">
@@ -1781,7 +1781,7 @@
                           <div class="product-image">
                             <div class="image"> <img src="assets/images/furnitures/chair/9.jpg" alt=""> </div>
                           </div>
-                          <!-- /.product-image --> 
+                          <!-- /.product-image -->
                         </div>
                         <!-- /.col -->
                         <div class="col col-sm-8 col-lg-8">
@@ -1802,24 +1802,24 @@
                                   <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal"></i> </a> </li>
                                 </ul>
                               </div>
-                              <!-- /.action --> 
+                              <!-- /.action -->
                             </div>
-                            <!-- /.cart --> 
-                            
+                            <!-- /.cart -->
+
                           </div>
-                          <!-- /.product-info --> 
+                          <!-- /.product-info -->
                         </div>
-                        <!-- /.col --> 
+                        <!-- /.col -->
                       </div>
                       <!-- /.product-list-row -->
                       <div class="tag new"><span>new</span></div>
                     </div>
-                    <!-- /.product-list --> 
+                    <!-- /.product-list -->
                   </div>
-                  <!-- /.products --> 
+                  <!-- /.products -->
                 </div>
                 <!-- /.category-product-inner -->
-                
+
                 <div class="category-product-inner wow fadeInUp">
                   <div class="products">
                     <div class="product-list product">
@@ -1828,7 +1828,7 @@
                           <div class="product-image">
                             <div class="image"> <img src="assets/images/furnitures/table/5.jpg" alt=""> </div>
                           </div>
-                          <!-- /.product-image --> 
+                          <!-- /.product-image -->
                         </div>
                         <!-- /.col -->
                         <div class="col col-sm-8 col-lg-8">
@@ -1849,24 +1849,24 @@
                                   <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal"></i> </a> </li>
                                 </ul>
                               </div>
-                              <!-- /.action --> 
+                              <!-- /.action -->
                             </div>
-                            <!-- /.cart --> 
-                            
+                            <!-- /.cart -->
+
                           </div>
-                          <!-- /.product-info --> 
+                          <!-- /.product-info -->
                         </div>
-                        <!-- /.col --> 
+                        <!-- /.col -->
                       </div>
                       <!-- /.product-list-row -->
                       <div class="tag new"><span>new</span></div>
                     </div>
-                    <!-- /.product-list --> 
+                    <!-- /.product-list -->
                   </div>
-                  <!-- /.products --> 
+                  <!-- /.products -->
                 </div>
                 <!-- /.category-product-inner -->
-                
+
                 <div class="category-product-inner wow fadeInUp">
                   <div class="products">
                     <div class="product-list product">
@@ -1875,7 +1875,7 @@
                           <div class="product-image">
                             <div class="image"> <img src="assets/images/furnitures/clock/1.jpg" alt=""> </div>
                           </div>
-                          <!-- /.product-image --> 
+                          <!-- /.product-image -->
                         </div>
                         <!-- /.col -->
                         <div class="col col-sm-8 col-lg-8">
@@ -1896,24 +1896,24 @@
                                   <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal"></i> </a> </li>
                                 </ul>
                               </div>
-                              <!-- /.action --> 
+                              <!-- /.action -->
                             </div>
-                            <!-- /.cart --> 
-                            
+                            <!-- /.cart -->
+
                           </div>
-                          <!-- /.product-info --> 
+                          <!-- /.product-info -->
                         </div>
-                        <!-- /.col --> 
+                        <!-- /.col -->
                       </div>
                       <!-- /.product-list-row -->
                       <div class="tag new"><span>new</span></div>
                     </div>
-                    <!-- /.product-list --> 
+                    <!-- /.product-list -->
                   </div>
-                  <!-- /.products --> 
+                  <!-- /.products -->
                 </div>
                 <!-- /.category-product-inner -->
-                
+
                 <div class="category-product-inner wow fadeInUp">
                   <div class="products">
                     <div class="product-list product">
@@ -1922,7 +1922,7 @@
                           <div class="product-image">
                             <div class="image"> <img src="assets/images/furnitures/light/4.jpg" alt=""> </div>
                           </div>
-                          <!-- /.product-image --> 
+                          <!-- /.product-image -->
                         </div>
                         <!-- /.col -->
                         <div class="col col-sm-8 col-lg-8">
@@ -1943,24 +1943,24 @@
                                   <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal"></i> </a> </li>
                                 </ul>
                               </div>
-                              <!-- /.action --> 
+                              <!-- /.action -->
                             </div>
-                            <!-- /.cart --> 
-                            
+                            <!-- /.cart -->
+
                           </div>
-                          <!-- /.product-info --> 
+                          <!-- /.product-info -->
                         </div>
-                        <!-- /.col --> 
+                        <!-- /.col -->
                       </div>
                       <!-- /.product-list-row -->
                       <div class="tag new"><span>new</span></div>
                     </div>
-                    <!-- /.product-list --> 
+                    <!-- /.product-list -->
                   </div>
-                  <!-- /.products --> 
+                  <!-- /.products -->
                 </div>
                 <!-- /.category-product-inner -->
-                
+
                 <div class="category-product-inner wow fadeInUp">
                   <div class="products">
                     <div class="product-list product">
@@ -1969,7 +1969,7 @@
                           <div class="product-image">
                             <div class="image"> <img src="assets/images/furnitures/chair/1.jpg" alt=""> </div>
                           </div>
-                          <!-- /.product-image --> 
+                          <!-- /.product-image -->
                         </div>
                         <!-- /.col -->
                         <div class="col col-sm-8 col-lg-8">
@@ -1990,28 +1990,28 @@
                                   <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal"></i> </a> </li>
                                 </ul>
                               </div>
-                              <!-- /.action --> 
+                              <!-- /.action -->
                             </div>
-                            <!-- /.cart --> 
-                            
+                            <!-- /.cart -->
+
                           </div>
-                          <!-- /.product-info --> 
+                          <!-- /.product-info -->
                         </div>
-                        <!-- /.col --> 
+                        <!-- /.col -->
                       </div>
                       <!-- /.product-list-row -->
                       <div class="tag new"><span>new</span></div>
                     </div>
-                    <!-- /.product-list --> 
+                    <!-- /.product-list -->
                   </div>
-                  <!-- /.products --> 
+                  <!-- /.products -->
                 </div>
-                <!-- /.category-product-inner --> 
-                
+                <!-- /.category-product-inner -->
+
               </div>
-              <!-- /.category-product --> 
+              <!-- /.category-product -->
             </div>
-            <!-- /.tab-pane #list-container --> 
+            <!-- /.tab-pane #list-container -->
           </div>
           <!-- /.tab-content -->
           <div class="clearfix filters-container">
@@ -2025,87 +2025,87 @@
                   <li><a href="#">4</a></li>
                   <li class="next"><a href="#"><i class="fa fa-angle-right"></i></a></li>
                 </ul>
-                <!-- /.list-inline --> 
+                <!-- /.list-inline -->
               </div>
               <!-- /.pagination-container --> </div>
-            <!-- /.text-right --> 
-            
+            <!-- /.text-right -->
+
           </div>
-          <!-- /.filters-container --> 
-          
+          <!-- /.filters-container -->
+
         </div>
-        <!-- /.search-result-container --> 
-        
+        <!-- /.search-result-container -->
+
       </div>
-      <!-- /.col --> 
+      <!-- /.col -->
     </div>
-    <!-- /.row --> 
+    <!-- /.row -->
     <!-- ============================================== BRANDS CAROUSEL ============================================== -->
     <div id="brands-carousel" class="logo-slider wow fadeInUp">
       <div class="logo-slider-inner">
         <div id="brand-slider" class="owl-carousel brand-slider custom-carousel owl-theme">
           <div class="item m-t-15"> <a href="#" class="image"> <img data-echo="assets/images/brands/brand1.png" src="assets\images\blank.gif" alt=""> </a> </div>
           <!--/.item-->
-          
+
           <div class="item m-t-10"> <a href="#" class="image"> <img data-echo="assets/images/brands/brand2.png" src="assets\images\blank.gif" alt=""> </a> </div>
           <!--/.item-->
-          
+
           <div class="item"> <a href="#" class="image"> <img data-echo="assets/images/brands/brand3.png" src="assets\images\blank.gif" alt=""> </a> </div>
           <!--/.item-->
-          
+
           <div class="item"> <a href="#" class="image"> <img data-echo="assets/images/brands/brand4.png" src="assets\images\blank.gif" alt=""> </a> </div>
           <!--/.item-->
-          
+
           <div class="item"> <a href="#" class="image"> <img data-echo="assets/images/brands/brand5.png" src="assets\images\blank.gif" alt=""> </a> </div>
           <!--/.item-->
-          
+
           <div class="item"> <a href="#" class="image"> <img data-echo="assets/images/brands/brand6.png" src="assets\images\blank.gif" alt=""> </a> </div>
           <!--/.item-->
-          
+
           <div class="item"> <a href="#" class="image"> <img data-echo="assets/images/brands/brand2.png" src="assets\images\blank.gif" alt=""> </a> </div>
           <!--/.item-->
-          
+
           <div class="item"> <a href="#" class="image"> <img data-echo="assets/images/brands/brand4.png" src="assets\images\blank.gif" alt=""> </a> </div>
           <!--/.item-->
-          
+
           <div class="item"> <a href="#" class="image"> <img data-echo="assets/images/brands/brand1.png" src="assets\images\blank.gif" alt=""> </a> </div>
           <!--/.item-->
-          
+
           <div class="item"> <a href="#" class="image"> <img data-echo="assets/images/brands/brand5.png" src="assets\images\blank.gif" alt=""> </a> </div>
-          <!--/.item--> 
+          <!--/.item-->
         </div>
-        <!-- /.owl-carousel #logo-slider --> 
+        <!-- /.owl-carousel #logo-slider -->
       </div>
-      <!-- /.logo-slider-inner --> 
-      
+      <!-- /.logo-slider-inner -->
+
     </div>
-    <!-- /.logo-slider --> 
+    <!-- /.logo-slider -->
     <!-- ============================================== BRANDS CAROUSEL : END ============================================== --> </div>
-  <!-- /.container --> 
-  
+  <!-- /.container -->
+
 </div>
-<!-- /.body-content --> 
+<!-- /.body-content -->
 <!-- ============================================================= FOOTER ============================================================= -->
 <footer>
 <jsp:include page="footer/footerlv1.jsp"></jsp:include>
 </footer>
-<!-- ============================================================= FOOTER : END============================================================= --> 
+<!-- ============================================================= FOOTER : END============================================================= -->
 
-<!-- For demo purposes – can be removed on production --> 
+<!-- For demo purposes – can be removed on production -->
 
-<!-- For demo purposes – can be removed on production : End --> 
+<!-- For demo purposes – can be removed on production : End -->
 
-<!-- JavaScripts placed at the end of the document so the pages load faster --> 
-<script src="assets\js\jquery-1.11.1.min.js"></script> 
-<script src="assets\js\bootstrap.min.js"></script> 
-<script src="assets\js\bootstrap-hover-dropdown.min.js"></script> 
-<script src="assets\js\owl.carousel.min.js"></script> 
-<script src="assets\js\echo.min.js"></script> 
-<script src="assets\js\jquery.easing-1.3.min.js"></script> 
-<script src="assets\js\bootstrap-slider.min.js"></script> 
-<script src="assets\js\jquery.rateit.min.js"></script> 
-<script src="assets\js\bootstrap-select.min.js"></script> 
-<script src="assets\js\wow.min.js"></script> 
+<!-- JavaScripts placed at the end of the document so the pages load faster -->
+<script src="assets\js\jquery-1.11.1.min.js"></script>
+<script src="assets\js\bootstrap.min.js"></script>
+<script src="assets\js\bootstrap-hover-dropdown.min.js"></script>
+<script src="assets\js\owl.carousel.min.js"></script>
+<script src="assets\js\echo.min.js"></script>
+<script src="assets\js\jquery.easing-1.3.min.js"></script>
+<script src="assets\js\bootstrap-slider.min.js"></script>
+<script src="assets\js\jquery.rateit.min.js"></script>
+<script src="assets\js\bootstrap-select.min.js"></script>
+<script src="assets\js\wow.min.js"></script>
 <script src="assets\js\scripts.js"></script>
 </body>
 </html>

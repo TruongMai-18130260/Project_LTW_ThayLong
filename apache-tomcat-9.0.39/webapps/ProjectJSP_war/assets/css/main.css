@@ -3671,6 +3671,7 @@ age-container #owl-main .owl-next {
   font-family: 'Open Sans', sans-serif, sans-serif;
   font-size: 12px;
   line-height: 24px;
+  width: 195px;
 }
 .filters-container .lbl-cnt .lbl {
   color: #666666;

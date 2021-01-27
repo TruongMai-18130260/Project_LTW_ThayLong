@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="fnt" uri="http://java.sun.com/jsp/jstl/functions" %>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -81,10 +83,10 @@
 					<h4 class="">Chi tiết đơn hàng</h4>
 					<div class="cart-infor">
 						<p class="title">Mã đơn hàng:</p>
-						<p class="content">60235</p>
+						<p class="content">${sessionScope.order.orderID}</p>
 						<br/>
 						<p class="title">Địa chỉ:</p>
-						<p class="content">đường 8, P.Linh Xuân, Q.Thủ Đức, TPHCM</p>
+						<p class="content">${sessionScope.order.info.address}</p>
 						<br/>
 						<p class="title">Hình thức thanh toán:</p>
 						<p class="content">Thanh toán khi nhận hàng</p>

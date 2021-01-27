@@ -16,6 +16,11 @@ import java.util.Date;
 public class Login extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String lang = request.getParameter("lang");
+        System.out.println(lang);
+        request.setAttribute("lang",lang);
+        request.getRequestDispatcher("dangnhap.jsp").forward(request,response);
+
         doPost(request, response);
 
     }

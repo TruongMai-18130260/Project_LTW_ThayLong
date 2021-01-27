@@ -18,10 +18,10 @@
 
     <!-- third party css -->
 <%--    <link href="admin_baya/assets/libs/datatables/dataTables.bootstrap4.css" rel="stylesheet" type="text/css">--%>
-    <link href="admin_baya/admin_baya/assets/libs/datatables/dataTables.bootstrap4.css" rel="stylesheet" type="text/css">
-    <link href="admin_baya/admin_baya/assets/libs/datatables/responsive.bootstrap4.css" rel="stylesheet" type="text/css">
-    <link href="admin_baya/admin_baya/assets/libs/datatables/buttons.bootstrap4.css" rel="stylesheet" type="text/css">
-    <link href="admin_baya/admin_baya/assets/libs/datatables/select.bootstrap4.css" rel="stylesheet" type="text/css">
+    <link href="admin_baya/assets/libs/datatables/dataTables.bootstrap4.css" rel="stylesheet" type="text/css">
+    <link href="admin_baya/assets/libs/datatables/responsive.bootstrap4.css" rel="stylesheet" type="text/css">
+    <link href="admin_baya/assets/libs/datatables/buttons.bootstrap4.css" rel="stylesheet" type="text/css">
+    <link href="admin_baya/assets/libs/datatables/select.bootstrap4.css" rel="stylesheet" type="text/css">
     <!-- third party css end -->
 
     <!-- App css -->
@@ -77,7 +77,7 @@
                             <div class="card-body">
                                 <div class="row mb-2">
                                     <div class="col-sm-6">
-                                        <a href="suachungchosanpham.html" class="btn btn-danger mb-2"><i class="mdi mdi-plus-circle mr-1"></i> Thêm sản phẩm</a>
+                                        <a href="suachungchosanpham.jsp" class="btn btn-danger mb-2"><i class="mdi mdi-plus-circle mr-1"></i> Thêm sản phẩm</a>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="float-sm-right">

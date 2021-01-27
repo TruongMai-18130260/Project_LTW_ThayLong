@@ -14,12 +14,20 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <!-- App favicon -->
         
-        <link rel="shortcut icon" href="assets\images\logo.png">
+        <link rel="shortcut icon" href="admin_baya/assets/images/logo.png">
 
+<<<<<<< HEAD
         <link href="admin_baya/admin_baya/assets/libs/datatables/dataTables.bootstrap4.css" rel="stylesheet" type="text/css">
         <link href="admin_baya/admin_baya/assets/libs/datatables/responsive.bootstrap4.css" rel="stylesheet" type="text/css">
         <link href="admin_baya/admin_baya/assets/libs/datatables/buttons.bootstrap4.css" rel="stylesheet" type="text/css">
         <link href="admin_baya/admin_baya/assets/libs/datatables/select.bootstrap4.css" rel="stylesheet" type="text/css">
+=======
+        <!-- third party css -->
+        <link href="admin_baya/assets/libs/datatables/dataTables.bootstrap4.css" rel="stylesheet" type="text/css">
+        <link href="admin_baya/assets/libs/datatables/responsive.bootstrap4.css" rel="stylesheet" type="text/css">
+        <link href="admin_baya/assets/libs/datatables/buttons.bootstrap4.css" rel="stylesheet" type="text/css">
+        <link href="admin_baya/assets/libs/datatables/select.bootstrap4.css" rel="stylesheet" type="text/css">
+>>>>>>> 331443d54a61869e4757c4dc414a9695b655e09d
         <!-- third party css end -->
 
         <!-- App css -->
@@ -123,11 +131,294 @@
                                                         <td>
                                                                 ${item.receptDate}
                                                         </td>
+<<<<<<< HEAD
+=======
+                                                        <td><a href="ecommerce-orders-detail.jsp" class="text-body font-weight-medium">#MN2048</a> </td>
+                                                        <td>James Modlin</td>
+>>>>>>> 331443d54a61869e4757c4dc414a9695b655e09d
                                                         <td>
                                                                 ${item.deliveryDate}
                                                         </td>
                                                         <td>
+<<<<<<< HEAD
                                                                 ${item.totalPrice}
+=======
+                                                            <div>
+                                                                <span class="badge badge-light-success">Paid</span>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            11.500.00đ
+                                                        </td>
+                                                        <td>
+                                                            Mastercard
+                                                        </td>
+                                                        <td>
+                                                            <div><span class="badge badge-info">Shipped</span></div>
+                                                        </td>
+                                                        <td>
+                                                            <ul class="list-inline mb-0">
+                                                                <li class="list-inline-item">
+                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
+                                                                </li>
+                                                                <li class="list-inline-item">
+                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
+                                                                </li>
+                                                                <li class="list-inline-item">
+                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                                                <label class="custom-control-label" for="customCheck3">&nbsp;</label>
+                                                            </div>
+                                                        </td>
+                                                        <td><a href="ecommerce-orders-detail.jsp" class="text-body font-weight-medium">#MN2047</a> </td>
+                                                        <td>Lessie Craig</td>
+                                                        <td>
+                                                             15 Tháng 3 2020 <small class="text-muted">09:34 AM</small>
+                                                        </td>
+                                                        <td>
+                                                            <div><span class="badge badge-light-warning">Awaiting Authorization</span></div>
+                                                        </td>
+                                                        <td>
+                                                            14.500.00đ
+                                                        </td>
+                                                        <td>
+                                                            Mastercard
+                                                        </td>
+                                                        <td>
+                                                            <div><span class="badge badge-warning">Processing</span></div>
+                                                        </td>
+                                                        <td>
+                                                            <ul class="list-inline mb-0">
+                                                                <li class="list-inline-item">
+                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
+                                                                </li>
+                                                                <li class="list-inline-item">
+                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
+                                                                </li>
+                                                                <li class="list-inline-item">
+                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                                                <label class="custom-control-label" for="customCheck4">&nbsp;</label>
+                                                            </div>
+                                                        </td>
+                                                        <td><a href="ecommerce-orders-detail.jsp" class="text-body font-weight-medium">#MN2046</a> </td>
+                                                        <td>Tia McCord</td>
+                                                        <td>
+                                                             14 Tháng 3 2020 <small class="text-muted">11:09 AM</small>
+                                                        </td>
+                                                        <td>
+                                                            <div><span class="badge badge-light-success">Paid</span></div>
+                                                        </td>
+                                                        <td>
+                                                            7.500.00đ
+                                                        </td>
+                                                        <td>
+                                                            Visa
+                                                        </td>
+                                                        <td>
+                                                            <div><span class="badge badge-warning">Processing</span></div>
+                                                        </td>
+                                                        <td>
+                                                            <ul class="list-inline mb-0">
+                                                                <li class="list-inline-item">
+                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
+                                                                </li>
+                                                                <li class="list-inline-item">
+                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
+                                                                </li>
+                                                                <li class="list-inline-item">
+                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input" id="customCheck5">
+                                                                <label class="custom-control-label" for="customCheck5">&nbsp;</label>
+                                                            </div>
+                                                        </td>
+                                                        <td><a href="ecommerce-orders-detail.jsp" class="text-body font-weight-medium">#MN2045</a> </td>
+                                                        <td>Charles Wilson</td>
+                                                        <td>
+                                                             13 Tháng 4 2020 <small class="text-muted">02:22 PM</small>
+                                                        </td>
+                                                        <td>
+                                                            <div><span class="badge badge-light-success">Paid</span></div>
+                                                        </td>
+                                                        <td>
+                                                            14.500.00đ
+                                                        </td>
+                                                        <td>
+                                                            Credit Card
+                                                        </td>
+                                                        <td>
+                                                            <div><span class="badge badge-success">Delivered</span></div>
+                                                        </td>
+                                                        <td>
+                                                            <ul class="list-inline mb-0">
+                                                                <li class="list-inline-item">
+                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
+                                                                </li>
+                                                                <li class="list-inline-item">
+                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
+                                                                </li>
+                                                                <li class="list-inline-item">
+                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input" id="customCheck6">
+                                                                <label class="custom-control-label" for="customCheck6">&nbsp;</label>
+                                                            </div>
+                                                        </td>
+                                                        <td><a href="ecommerce-orders-detail.jsp" class="text-body font-weight-medium">#MN2044</a> </td>
+                                                        <td>Kathryn McCann</td>
+                                                        <td>
+                                                            12 Tháng 3 2020 <small class="text-muted">03:04 PM</small>
+                                                        </td>
+                                                        <td>
+                                                            <div><span class="badge badge-light-danger">Payment Failed</span></div>
+                                                        </td>
+                                                        <td>
+                                                            17.500.00đ
+                                                        </td>
+                                                        <td>
+                                                            Mastercard
+                                                        </td>
+                                                        <td>
+                                                            <div><span class="badge badge-danger">Cancelled</span></div>
+                                                        </td>
+                                                        <td>
+                                                            <ul class="list-inline mb-0">
+                                                                <li class="list-inline-item">
+                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
+                                                                </li>
+                                                                <li class="list-inline-item">
+                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
+                                                                </li>
+                                                                <li class="list-inline-item">
+                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input" id="customCheck7">
+                                                                <label class="custom-control-label" for="customCheck7">&nbsp;</label>
+                                                            </div>
+                                                        </td>
+                                                        <td><a href="ecommerce-orders-detail.jsp" class="text-body font-weight-medium">#MN2043</a> </td>
+                                                        <td>William Eckert</td>
+                                                        <td>
+                                                            11 Tháng 1 2020 <small class="text-muted">10:29 PM</small>
+                                                        </td>
+                                                        <td>
+                                                            <div><span class="badge badge-light-success">Paid</span></div>
+                                                        </td>
+                                                        <td>
+                                                            10.500.264đ
+                                                        </td>
+                                                        <td>
+                                                            Mastercard
+                                                        </td>
+                                                        <td>
+                                                            <div><span class="badge badge-info">Shipped</span></div>
+                                                        </td>
+                                                        <td>
+                                                            <ul class="list-inline mb-0">
+                                                                <li class="list-inline-item">
+                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
+                                                                </li>
+                                                                <li class="list-inline-item">
+                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
+                                                                </li>
+                                                                <li class="list-inline-item">
+                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input" id="customCheck8">
+                                                                <label class="custom-control-label" for="customCheck8">&nbsp;</label>
+                                                            </div>
+                                                        </td>
+                                                        <td><a href="ecommerce-orders-detail.jsp" class="text-body font-weight-medium">#MN2042</a> </td>
+                                                        <td>Julius West</td>
+                                                        <td>
+                                                           10 Tháng 3 2020 <small class="text-muted">09:14 AM</small>
+                                                        </td>
+                                                        <td>
+                                                            <div><span class="badge badge-light-warning">Awaiting Authorization</span></div>
+                                                        </td>
+                                                        <td>
+                                                            4.900.264đ
+                                                        </td>
+                                                        <td>
+                                                            Visa
+                                                        </td>
+                                                        <td>
+                                                            <div><span class="badge badge-success">Delivered</span></div>
+                                                        </td>
+                                                        <td>
+                                                            <ul class="list-inline mb-0">
+                                                                <li class="list-inline-item">
+                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
+                                                                </li>
+                                                                <li class="list-inline-item">
+                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
+                                                                </li>
+                                                                <li class="list-inline-item">
+                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input" id="customCheck9">
+                                                                <label class="custom-control-label" for="customCheck9">&nbsp;</label>
+                                                            </div>
+                                                        </td>
+                                                        <td><a href="ecommerce-orders-detail.jsp" class="text-body font-weight-medium">#MN2041</a> </td>
+                                                        <td>Janice Louie</td>
+                                                        <td>
+                                                             09 Tháng 3 2020 <small class="text-muted">01:25 PM</small>
+                                                        </td>
+                                                        <td>
+                                                            <div><span class="badge badge-light-success">Paid</span></div>
+                                                        </td>
+                                                        <td>
+                                                            9.900.264đ
+                                                        </td>
+                                                        <td>
+                                                            Paypal
+>>>>>>> 331443d54a61869e4757c4dc414a9695b655e09d
                                                         </td>
                                                         <td>
                                                             <div><span class="badge badge-info">Shipped</span></div>
@@ -141,7 +432,93 @@
                                                                     <%--                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>--%>
                                                                     <%--                                                                </li>--%>
                                                                 <li class="list-inline-item">
+<<<<<<< HEAD
                                                                     <a href="DeleteOrder?orderid=${item.orderID}" class="action-icon"> <i class="mdi mdi-delete"></i></a>
+=======
+                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
+                                                                </li>
+                                                                <li class="list-inline-item">
+                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
+                                                                </li>
+                                                                <li class="list-inline-item">
+                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input" id="customCheck10">
+                                                                <label class="custom-control-label" for="customCheck10">&nbsp;</label>
+                                                            </div>
+                                                        </td>
+                                                        <td><a href="ecommerce-orders-detail.jsp" class="text-body font-weight-medium">#MN2040</a> </td>
+                                                        <td>Marie Harris</td>
+                                                        <td>
+                                                           08 Tháng 3 2020 <small class="text-muted">04:24 PM</small>
+                                                        </td>
+                                                        <td>
+                                                            <div><span class="badge badge-light-success">Paid</span></div>
+                                                        </td>
+                                                        <td>
+                                                            4.500.264đ
+                                                        </td>
+                                                        <td>
+                                                            Credit Card
+                                                        </td>
+                                                        <td>
+                                                            <div><span class="badge badge-warning">Processing</span></div>
+                                                        </td>
+                                                        <td>
+                                                            <ul class="list-inline mb-0">
+                                                                <li class="list-inline-item">
+                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
+                                                                </li>
+                                                                <li class="list-inline-item">
+                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
+                                                                </li>
+                                                                <li class="list-inline-item">
+                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input" id="customCheck11">
+                                                                <label class="custom-control-label" for="customCheck11">&nbsp;</label>
+                                                            </div>
+                                                        </td>
+                                                        <td><a href="ecommerce-orders-detail.jsp" class="text-body font-weight-medium">#MN2039</a> </td>
+                                                        <td>Robin Hill</td>
+                                                        <td>
+                                                           07 Tháng 8 2020 <small class="text-muted">02:24 PM</small>
+                                                        </td>
+                                                        <td>
+                                                            <div><span class="badge badge-light-danger">Payment Failed</span></div>
+                                                        </td>
+                                                        <td>
+                                                            7.500.264đ
+                                                        </td>
+                                                        <td>
+                                                            Mastercard
+                                                        </td>
+                                                        <td>
+                                                            <div><span class="badge badge-info">Shipped</span></div>
+                                                        </td>
+                                                        <td>
+                                                            <ul class="list-inline mb-0">
+                                                                <li class="list-inline-item">
+                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
+                                                                </li>
+                                                                <li class="list-inline-item">
+                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
+                                                                </li>
+                                                                <li class="list-inline-item">
+                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
+>>>>>>> 331443d54a61869e4757c4dc414a9695b655e09d
                                                                 </li>
                                                             </ul>
                                                         </td>
@@ -244,7 +621,7 @@
                 <!-- User box -->
                 <div class="user-box">
                     <div class="user-img">
-                        <img src="assets\images\users\avatar-1.jpg" alt="user-img" title="Mat Helme" class="rounded-circle img-fluid">
+                        <img src="admin_baya/assets/images/users/avatar-1.jpg" alt="user-img" title="Mat Helme" class="rounded-circle img-fluid">
                         <a href="javascript:void(0);" class="user-edit"><i class="mdi mdi-pencil"></i></a>
                     </div>
             
@@ -338,28 +715,28 @@
                             <div class="inbox-widget">
                                 <h5 class="mt-0">Recent</h5>
                                 <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets\images\users\avatar-2.jpg" class="rounded-circle" alt=""> <i class="online user-status"></i></div>
+                                    <div class="inbox-item-img"><img src="admin_baya/assets/images/users/avatar-2.jpg" class="rounded-circle" alt=""> <i class="online user-status"></i></div>
                                     <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Tomaslau</a></p>
                                     <p class="inbox-item-text">I've finished it! See you so...</p>
                                 </div>
                                 <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets\images\users\avatar-3.jpg" class="rounded-circle" alt=""> <i class="away user-status"></i></div>
+                                    <div class="inbox-item-img"><img src="admin_baya/assets/images/users/avatar-3.jpg" class="rounded-circle" alt=""> <i class="away user-status"></i></div>
                                     <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Stillnotdavid</a></p>
                                     <p class="inbox-item-text">This theme is awesome!</p>
                                 </div>
                                 <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets\images\users\avatar-4.jpg" class="rounded-circle" alt=""> <i class="online user-status"></i></div>
+                                    <div class="inbox-item-img"><img src="admin_baya/assets/images/users/avatar-4.jpg" class="rounded-circle" alt=""> <i class="online user-status"></i></div>
                                     <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Kurafire</a></p>
                                     <p class="inbox-item-text">Nice to meet you</p>
                                 </div>
         
                                 <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets\images\users\avatar-5.jpg" class="rounded-circle" alt=""> <i class="busy user-status"></i></div>
+                                    <div class="inbox-item-img"><img src="admin_baya/assets/images/users/avatar-5.jpg" class="rounded-circle" alt=""> <i class="busy user-status"></i></div>
                                     <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Shahedk</a></p>
                                     <p class="inbox-item-text">Hey! there I'm available...</p>
                                 </div>
                                 <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets\images\users\avatar-6.jpg" class="rounded-circle" alt=""> <i class="user-status"></i></div>
+                                    <div class="inbox-item-img"><img src="admin_baya/assets/images/users/avatar-6.jpg" class="rounded-circle" alt=""> <i class="user-status"></i></div>
                                     <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Adhamdannaway</a></p>
                                     <p class="inbox-item-text">This theme is awesome!</p>
                                 </div>
@@ -368,28 +745,28 @@
                                 <h5>Favorite <span class="float-right badge badge-pill badge-danger">18</span></h5>
                                 <hr>
                                 <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets\images\users\avatar-7.jpg" class="rounded-circle" alt=""> <i class="busy user-status"></i></div>
+                                    <div class="inbox-item-img"><img src="admin_baya/assets/images/users/avatar-7.jpg" class="rounded-circle" alt=""> <i class="busy user-status"></i></div>
                                     <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Kennith</a></p>
                                     <p class="inbox-item-text">I've finished it! See you so...</p>
                                 </div>
                                 <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets\images\users\avatar-3.jpg" class="rounded-circle" alt=""> <i class="busy user-status"></i></div>
+                                    <div class="inbox-item-img"><img src="admin_baya/assets/images/users/avatar-3.jpg" class="rounded-circle" alt=""> <i class="busy user-status"></i></div>
                                     <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Stillnotdavid</a></p>
                                     <p class="inbox-item-text">This theme is awesome!</p>
                                 </div>
                                 <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets\images\users\avatar-10.jpg" class="rounded-circle" alt=""> <i class="online user-status"></i></div>
+                                    <div class="inbox-item-img"><img src="admin_baya/assets/images/users/avatar-10.jpg" class="rounded-circle" alt=""> <i class="online user-status"></i></div>
                                     <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Kimberling</a></p>
                                     <p class="inbox-item-text">Nice to meet you</p>
                                 </div>
         
                                 <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets\images\users\avatar-4.jpg" class="rounded-circle" alt=""> <i class="user-status"></i></div>
+                                    <div class="inbox-item-img"><img src="admin_baya/assets/images/users/avatar-4.jpg" class="rounded-circle" alt=""> <i class="user-status"></i></div>
                                     <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Kurafire</a></p>
                                     <p class="inbox-item-text">Hey! there I'm available...</p>
                                 </div>
                                 <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets\images\users\avatar-9.jpg" class="rounded-circle" alt=""> <i class="away user-status"></i></div>
+                                    <div class="inbox-item-img"><img src="admin_baya/assets/images/users/avatar-9.jpg" class="rounded-circle" alt=""> <i class="away user-status"></i></div>
                                     <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Leonareade</a></p>
                                     <p class="inbox-item-text">This theme is awesome!</p>
                                 </div>
@@ -411,29 +788,29 @@
         <div class="rightbar-overlay"></div>
 
         <!-- Vendor js -->
-        <script src="assets\js\vendor.min.js"></script>
+        <script src="admin_baya/assets/js/vendor.min.js"></script>
 
         <!-- third party js -->
-        <script src="assets\libs\datatables\jquery.dataTables.min.js"></script>
-        <script src="assets\libs\datatables\dataTables.bootstrap4.js"></script>
-        <script src="assets\libs\datatables\dataTables.responsive.min.js"></script>
-        <script src="assets\libs\datatables\responsive.bootstrap4.min.js"></script>
-        <script src="assets\libs\datatables\dataTables.buttons.min.js"></script>
-        <script src="assets\libs\datatables\buttons.bootstrap4.min.js"></script>
-        <script src="assets\libs\datatables\buttons.html5.min.js"></script>
-        <script src="assets\libs\datatables\buttons.flash.min.js"></script>
-        <script src="assets\libs\datatables\buttons.print.min.js"></script>
-        <script src="assets\libs\datatables\dataTables.keyTable.min.js"></script>
-        <script src="assets\libs\datatables\dataTables.select.min.js"></script>
-        <script src="assets\libs\pdfmake\pdfmake.min.js"></script>
-        <script src="assets\libs\pdfmake\vfs_fonts.js"></script>
+        <script src="admin_baya/assets/libs/datatables/jquery.dataTables.min.js"></script>
+        <script src="admin_baya/assets/libs/datatables/dataTables.bootstrap4.js"></script>
+        <script src="admin_baya/assets/libs/datatables/dataTables.responsive.min.js"></script>
+        <script src="admin_baya/assets/libs/datatables/responsive.bootstrap4.min.js"></script>
+        <script src="admin_baya/assets/libs/datatables/dataTables.buttons.min.js"></script>
+        <script src="admin_baya/assets/libs/datatables/buttons.bootstrap4.min.js"></script>
+        <script src="admin_baya/assets/libs/datatables/buttons.html5.min.js"></script>
+        <script src="admin_baya/assets/libs/datatables/buttons.flash.min.js"></script>
+        <script src="admin_baya/assets/libs/datatables/buttons.print.min.js"></script>
+        <script src="admin_baya/assets/libs/datatables/dataTables.keyTable.min.js"></script>
+        <script src="admin_baya/assets/libs/datatables/dataTables.select.min.js"></script>
+        <script src="admin_baya/assets/libs/pdfmake/pdfmake.min.js"></script>
+        <script src="admin_baya/assets/libs/pdfmake/vfs_fonts.js"></script>
         <!-- third party js ends -->
 
         <!-- Datatables init -->
-        <script src="assets\js\pages\datatables.init.js"></script>
+        <script src="admin_baya/assets/js/pages/datatables.init.js"></script>
 
         <!-- App js -->
-        <script src="assets\js\app.min.js"></script>
+        <script src="admin_baya/assets/js/app.min.js"></script>
         
     </body>
 </html>

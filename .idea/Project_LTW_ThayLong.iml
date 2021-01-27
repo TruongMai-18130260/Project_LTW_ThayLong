@@ -6,5 +6,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Project_LTW_ThayLong" level="project" />
+    <orderEntry type="library" exported="" name="Maven: javax.servlet:jstl:1.2" level="project" />
   </component>
 </module>
