@@ -10,7 +10,7 @@
         <ul class="nav">
             <li class="dropdown menu-item">
                 <a href="noithatgo.jsp">
-                    <!-- <i class="icon fa fa-bed" aria-hidden="true"></i> -->
+                  
                     Nội thất gỗ
                 </a>
                 <!-- <ul class="dropdown-menu mega-menu">

@@ -57,10 +57,10 @@
   <div class='container'>
     <div class='row'>
       <div class='col-md-3 sidebar'> 
-        <!-- ================================== TOP NAVIGATION ================================== -->
-        <jsp:include page="sidebar-left.jsp"/>
-        <!-- /.side-menu --> 
-        <!-- ================================== TOP NAVIGATION : END ================================== -->
+          <!-- ================================== TOP NAVIGATION ================================== -->
+          <jsp:include page="sidebar-left.jsp"/>
+          <!-- /.side-menu --> 
+          <!-- ================================== TOP NAVIGATION : END ================================== -->
         <div class="sidebar-module-container">
           <div class="sidebar-filter"> 
             <!-- ============================================== SIDEBAR CATEGORY ============================================== -->

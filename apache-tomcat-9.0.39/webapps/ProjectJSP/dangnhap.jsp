@@ -85,9 +85,10 @@
 		  	<label>
 		    	<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Lưu mật khẩu
 		  	</label>
-			  <a href="forgotpassword.html" class="forgot-password pull-right">Quên mật khẩu</a>
-			  <br />
-			  <a class="forgot-password pull-right pointer" id="chooseSignUp">Đăng kí</a>
+			<a href="QuenMatKhau" style="line-height: 5px" class="forgot-password pull-right">Quên mật khẩu?</a>
+
+			  <br/>
+			<a class="forgot-password pull-right pointer" style="display: flex" id="chooseSignUp"><p style="font-size: 13px">Bạn chưa có tài khoản? </p>&nbsp; Đăng kí</a>
 		</div>
 	  	<button type="submit" class="btn-upper btn btn-primary checkout-page-button">Đăng nhâp</button>
 	</form>					
@@ -101,26 +102,29 @@
 	<form class="register-form outer-top-xs" role="form" action="SignUp" method="post">
 		<div class="form-group">
 	    	<label class="info-title" for="exampleInputEmail2">Email <span>*</span></label>
-	    	<input type="email" class="form-control unicase-form-control text-input" id="exampleInputEmail2" name="email">
+	    	<input type="email" class="form-control unicase-form-control text-input" id="exampleInputEmail2" name="email" placeholder="Nhập email dùng để đăng nhập">
 	  	</div>
         <div class="form-group">
 		    <label class="info-title" for="exampleInputEmail3">Họ và Tên<span>*</span></label>
-		    <input type="text" class="form-control unicase-form-control text-input" id="exampleInputEmail3" name="name">
+		    <input type="text" class="form-control unicase-form-control text-input" id="exampleInputEmail3" name="name" placeholder="Vui lòng nhập chính xác họ và tên">
 		</div>
         <div class="form-group">
 		    <label class="info-title" for="exampleInputEmail4">Số Điện Thoại <span>*</span></label>
-		    <input type="name" class="form-control unicase-form-control text-input" id="exampleInputEmail4" name="phone">
+		    <input type="name" class="form-control unicase-form-control text-input" id="exampleInputEmail4" name="phone" placeholder="Nhập số điện thoại">
 		</div>
         <div class="form-group">
 		    <label class="info-title" for="exampleInputEmail5">Mật khẩu <span>*</span></label>
-		    <input type="password" class="form-control unicase-form-control text-input" id="exampleInputEmail5" name="password">
+		    <input type="password" class="form-control unicase-form-control text-input" id="exampleInputEmail5" name="password" placeholder="Mật khẩu">
 		</div>
          <div class="form-group">
 		    <label class="info-title" for="exampleInputEmail6">Nhập lại mật khẩu <span>*</span></label>
-		    <input type="password" class="form-control unicase-form-control text-input" id="exampleInputEmail6" name="retypepassword">
+		    <input type="password" class="form-control unicase-form-control text-input" id="exampleInputEmail6" name="retypepassword" placeholder="Nhập lại mật khẩu">
 		</div>
-		<a class="forgot-password pull-right pointer" id="chooseSignIn">Đăng nhập</a>
-	  	<button type="submit" class="btn-upper btn btn-primary checkout-page-button">Đăng Kí</button>
+
+		<a class="forgot-password pull-right pointer" style="display: flex" id="chooseSignIn"><p style="font-size: 13px">Bạn đã có tài khoản? </p>&nbsp; Đăng nhập</a>
+		<input type = "checkbox" name= "thethao" value="Tôi đã đọc kĩ chính sách và điều khoản sử dụng">Tôi đã đọc kỹ và đồng ý chính sách và điều khoản sử dụng
+	  	<br/>
+		<button type="submit" style="margin-top: 10px" class="btn-upper btn btn-primary checkout-page-button">Đăng Kí</button>
 	</form>
 	
 	

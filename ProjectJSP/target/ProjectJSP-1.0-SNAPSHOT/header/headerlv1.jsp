@@ -20,7 +20,7 @@
 
             <c:choose>
               <c:when test="${sessionScope.user == null}">
-                <li><a href="dangnhap.jsp"><i class="icon fa fa-user"></i>Tài khoản của tôi</a></li>
+                <li><a href="LoginHome"><i class="icon fa fa-user"></i>Tài khoản của tôi</a></li>
               </c:when>
               <c:when test="${sessionScope.user != null}">
                 <li><a href="taikhoancuatoi.jsp"><i class="icon fa fa-user"></i>${sessionScope.user.name}</a></li>
@@ -36,7 +36,7 @@
 
               <c:choose>
                   <c:when test="${sessionScope.user == null}">
-                      <li><a href="dangnhap.jsp"><i class="icon fa fa-lock"></i>Đăng nhập</a></li>
+                      <li><a href="LoginHome"><i class="icon fa fa-lock"></i>Đăng nhập</a></li>
                   </c:when>
                   <c:when test="${sessionScope.user != null}">
                       <li><a href="Logout"><i class="icon fa fa-user"></i>Đăng xuất</a></li>
@@ -81,7 +81,7 @@
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-3 logo-holder"> 
           <!-- ============================================================= LOGO ============================================================= -->
-          <div class="logo"> <a href="home.jsp"> <img src="assets\images\logo-white.png" alt="logo" style="height: 55px;"> </a> </div>
+          <div class="logo"> <a href="Home"> <img src="assets\images\logo-white.png" alt="logo" style="height: 55px;"> </a> </div>
           <!-- /.logo --> 
           <!-- ============================================================= LOGO : END ============================================================= --> </div>
         <!-- /.logo-holder -->
@@ -175,7 +175,7 @@
           <div class="navbar-collapse collapse" id="mc-horizontal-menu-collapse">
             <div class="nav-outer">
               <ul class="nav navbar-nav">
-                <li class="active dropdown yamm-fw"> <a href="home.jsp">Trang chủ</a> </li>
+                <li class="active dropdown yamm-fw"> <a href="Home">Trang chủ</a> </li>
                 <li class="dropdown yamm mega-menu"> <a href='Category?category=pk' data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">Phòng</a>
                   <ul class="dropdown-menu container">
                     <li>

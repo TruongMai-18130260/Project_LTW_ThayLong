@@ -20,7 +20,7 @@
 
             <c:choose>
               <c:when test="${sessionScope.user == null}">
-                <li><a href="dangnhap.jsp"><i class="icon fa fa-user"></i>Tài khoản của tôi</a></li>
+                <li><a href="LoginHome"><i class="icon fa fa-user"></i>Tài khoản của tôi</a></li>
               </c:when>
               <c:when test="${sessionScope.user != null}">
                 <li><a href="taikhoancuatoi.jsp"><i class="icon fa fa-user"></i>${sessionScope.user.name}</a></li>
@@ -36,7 +36,7 @@
 
               <c:choose>
                   <c:when test="${sessionScope.user == null}">
-                      <li><a href="dangnhap.jsp"><i class="icon fa fa-lock"></i>Đăng nhập</a></li>
+                      <li><a href="LoginHome"><i class="icon fa fa-lock"></i>Đăng nhập</a></li>
                   </c:when>
                   <c:when test="${sessionScope.user != null}">
                       <li><a href="Logout"><i class="icon fa fa-user"></i>Đăng xuất</a></li>
