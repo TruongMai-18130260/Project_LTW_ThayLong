@@ -77,7 +77,7 @@
                 <!-- /.hot-deal-wrapper -->
                 
                 <div class="product-info text-left m-t-20">
-                  <h3 class="name"><a href="detail.jsp">Ghế sofa vải cao cấp LF-07</a></h3>
+                  <h3 class="name"><a href="Detail?id=${item.id}">Ghế sofa vải cao cấp LF-07</a></h3>
                   <div class="rating rateit-small"></div>
                   <div class="product-price"> <span class="price"> 14.900.000đ </span> <span class="price-before-discount">22.500.000đ</span> </div>
                   <!-- /.product-price --> 
@@ -209,7 +209,7 @@
                       <div class="row product-micro-row">
                         <div class="col col-xs-5">
                           <div class="product-image">
-                            <div class="image"> <a href="detail.jsp"> <img src="${item6.imgURL}" alt=""> </a> </div>
+                            <div class="image"> <a href="Detail?id=${item.id}"> <img src="${item6.imgURL}" alt=""> </a> </div>
                             <!-- /.image --> 
                             
                           </div>
@@ -218,7 +218,7 @@
                         <!-- /.col -->
                         <div class="col col-xs-7">
                           <div class="product-info">
-                            <h3 class="name"><a href="detail.jsp">${item6.name}</a></h3>
+                            <h3 class="name"><a href="Detail?id=${item.id}">${item6.name}</a></h3>
                             <div class="rating rateit-small"></div>
                             <div class="product-price"> <span class="price"> ${item6.salePrice}đ </span> </div>
                             <!-- /.product-price --> 
@@ -242,40 +242,7 @@
           <!-- /.sidebar-widget-body --> 
         </div>
         <!-- /.sidebar-widget --> 
-        <!-- ============================================== SPECIAL OFFER : END ============================================== --> 
-        <!-- ============================================== PRODUCT TAGS ============================================== -->
-        <div class="sidebar-widget product-tag wow fadeInUp">
-          <h3 class="section-title">Từ khóa</h3>
-          <div class="sidebar-widget-body outer-top-xs">
-            <div class="tag-list"> <a class="item" title="Phone" href="category.html">Bàn</a> <a class="item active" title="Vest" href="category.html">Ghế</a> <a class="item" title="Smartphone" href="category.html">Combo</a> <a class="item" title="Furniture" href="category.html">Đồng hồ</a> <a class="item" title="T-shirt" href="category.html">T-shirt</a> <a class="item" title="Sweatpants" href="category.html">Gương</a> <a class="item" title="Sneaker" href="category.html">Tủ</a> <a class="item" title="Toys" href="category.html">Đệm</a> <a class="item" title="Rose" href="category.html">Khăn trải bàn</a> </div>
-            <!-- /.tag-list --> 
-          </div>
-          <!-- /.sidebar-widget-body --> 
-        </div>
-        <!-- /.sidebar-widget --> 
-        <!-- ============================================== PRODUCT TAGS : END ============================================== --> 
-        <!-- ============================================== SPECIAL DEALS ============================================== -->
-        
-       
-        <!-- /.sidebar-widget --> 
-        <!-- ============================================== SPECIAL DEALS : END ============================================== --> 
-        <!-- ============================================== NEWSLETTER ============================================== -->
-        <div class="sidebar-widget newsletter wow fadeInUp outer-bottom-small">
-          <h3 class="section-title">Tin tức</h3>
-          <div class="sidebar-widget-body outer-top-xs">
-            <p>Subscribe để nhận tin</p>
-            <form>
-              <div class="form-group">
-                <label class="sr-only" for="exampleInputEmail1">Email</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Subscribe...">
-              </div>
-              <button class="btn btn-primary">Subscribe</button>
-            </form>
-          </div>
-          <!-- /.sidebar-widget-body --> 
-        </div>
-        <!-- /.sidebar-widget --> 
-        <!-- ============================================== NEWSLETTER: END ============================================== --> 
+
         
         <!-- ============================================== Testimonials============================================== -->
         <div class="sidebar-widget  wow fadeInUp outer-top-vs ">
@@ -435,7 +402,7 @@
                       <div class="products">
                         <div class="product">
                           <div class="product-image">
-                            <div class="image"> <a href="detail.jsp"><img src="${item.imgURL}" alt=""></a> </div>
+                            <div class="image"> <a href="Detail?id=${item.id}"><img src="${item.imgURL}" alt=""></a> </div>
                             <!-- /.image -->
 
                             <div class="tag sale"><span>Sale</span></div>
@@ -458,8 +425,8 @@
                                   <button data-toggle="tooltip" class="btn btn-primary icon" type="button" title="Add Cart"> <i class="fa fa-shopping-cart"></i> </button>
                                   <button class="btn btn-primary cart-btn" type="button">Thêm vào giỏ hàng</button>
                                 </li>
-                                <li class="lnk wishlist"> <a data-toggle="tooltip" class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                                <li class="lnk"> <a data-toggle="tooltip" class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
+                                <li class="lnk wishlist"> <a data-toggle="tooltip" class="add-to-cart" href="WishList?addid=${item.id}" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
+                                <li class="lnk"> <a data-toggle="tooltip" class="add-to-cart" href="" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
                               </ul>
                             </div>
                             <!-- /.action -->
@@ -491,7 +458,7 @@
                       <div class="products">
                         <div class="product">
                           <div class="product-image">
-                            <div class="image"> <a href="detail.jsp"><img src="${item1.imgURL}" alt=""></a> </div>
+                            <div class="image"> <a href="Detail?id=${item.id}"><img src="${item1.imgURL}" alt=""></a> </div>
                             <!-- /.image -->
 
                             <div class="tag sale"><span>Sale</span></div>
@@ -499,7 +466,7 @@
                           <!-- /.product-image -->
 
                           <div class="product-info text-left">
-                            <h3 class="name"><a href="detail.html">${item1.name}</a></h3>
+                            <h3 class="name"><a href="Detail?id=${item.id}">${item1.name}</a></h3>
                             <div class="rating rateit-small"></div>
                             <div class="description"></div>
                             <div class="product-price"> <span class="price"> ${item1.salePrice}đ </span> <span class="price-before-discount">${item1.price}đ</span> </div>
@@ -514,7 +481,7 @@
                                   <button data-toggle="tooltip" class="btn btn-primary icon" type="button" title="Add Cart"> <i class="fa fa-shopping-cart"></i> </button>
                                   <button class="btn btn-primary cart-btn" type="button">Thêm vào giỏ hàng</button>
                                 </li>
-                                <li class="lnk wishlist"> <a data-toggle="tooltip" class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
+                                <li class="lnk wishlist"> <a data-toggle="tooltip" class="add-to-cart" href="WishList?addid=${item.id}" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
                                 <li class="lnk"> <a data-toggle="tooltip" class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
                               </ul>
                             </div>
@@ -544,7 +511,7 @@
                       <div class="products">
                         <div class="product">
                           <div class="product-image">
-                            <div class="image"> <a href="detail.jsp"><img src="${item2.imgURL}" alt=""></a> </div>
+                            <div class="image"> <a href="Detail?id=${item.id}"><img src="${item2.imgURL}" alt=""></a> </div>
                             <!-- /.image -->
 
                             <div class="tag sale"><span>Sale</span></div>
@@ -552,7 +519,7 @@
                           <!-- /.product-image -->
 
                           <div class="product-info text-left">
-                            <h3 class="name"><a href="detail.html">${item2.name}</a></h3>
+                            <h3 class="name"><a href="Detail?id=${item.id}">${item2.name}</a></h3>
                             <div class="rating rateit-small"></div>
                             <div class="description"></div>
                             <div class="product-price"> <span class="price"> ${item2.salePrice}đ </span> <span class="price-before-discount">${item2.price}đ</span> </div>
@@ -597,7 +564,7 @@
                       <div class="products">
                         <div class="product">
                           <div class="product-image">
-                            <div class="image"> <a href="detail.jsp"><img src="${item3.imgURL}" alt=""></a> </div>
+                            <div class="image"> <a href="Detail?id=${item.id}"><img src="${item3.imgURL}" alt=""></a> </div>
                             <!-- /.image -->
 
                             <div class="tag sale"><span>Sale</span></div>
@@ -763,7 +730,7 @@
                       <div class="row product-micro-row">
                         <div class="col col-xs-5">
                           <div class="product-image">
-                            <div class="image"> <a href="detail.jsp"> <img src="${item5.imgURL}" alt=""> </a> </div>
+                            <div class="image"> <a href="Detail?id=${item.id}"> <img src="${item5.imgURL}" alt=""> </a> </div>
                             <!-- /.image --> 
                             
                           </div>
@@ -772,7 +739,7 @@
                         <!-- /.col -->
                         <div class="col2 col-xs-7">
                           <div class="product-info">
-                            <h3 class="name"><a href="detail.jsp">${item5.name}</a></h3>
+                            <h3 class="name"><a href="Detail?id=${item.id}">${item5.name}</a></h3>
                             <div class="rating rateit-small"></div>
                             <div class="product-price"> <span class="price"> ${item5.salePrice}đ </span> </div>
                             <!-- /.product-price --> 

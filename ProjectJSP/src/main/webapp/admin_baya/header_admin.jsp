@@ -62,11 +62,11 @@
             </a>
             <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
                 <!-- item-->
-<<<<<<< HEAD
+
                 <a href="ExtrasProfile" class="dropdown-item notify-item">
-=======
+
                 <a href="extras-profile.jsp" class="dropdown-item notify-item">
->>>>>>> 331443d54a61869e4757c4dc414a9695b655e09d
+
                     <i class="remixicon-account-circle-line"></i>
                     <span>Tài khoản</span>
                 </a>

@@ -103,19 +103,19 @@
           <div class="search-area">
             <form action="Search" method="post">
               <div class="control-group">
-                <ul class="categories-filter animate-dropdown">
-                  <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="category.html">Danh mục<b class="caret"></b></a>
-                    <ul class="dropdown-menu" role="menu">
-                      
-                      <li role="presentation"><a role="menuitem" tabindex="-1" href="category.html">- Nội thất gỗ</a></li>
-                      <li role="presentation"><a role="menuitem" tabindex="-1" href="category.html">- Sofa, ghế thư giãn & nệm</a></li>
-                      <li role="presentation"><a role="menuitem" tabindex="-1" href="category.html">- Đồ trang trí</a></li>
-                      <li role="presentation"><a role="menuitem" tabindex="-1" href="category.html">- Đồ dung vải</a></li>
-                      <li role="presentation"><a role="menuitem" tabindex="-1" href="category.html">- Dụng cụ nhà bếp</a></li>
-                      <li role="presentation"><a role="menuitem" tabindex="-1" href="category.html">- Tiện ích sắp xếp</a></li>
-                    </ul>
-                  </li>
-                </ul>
+<%--                <ul class="categories-filter animate-dropdown">--%>
+<%--                  <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="category.html">Danh mục<b class="caret"></b></a>--%>
+<%--                    <ul class="dropdown-menu" role="menu">--%>
+<%--                      --%>
+<%--                      <li role="presentation"><a role="menuitem" tabindex="-1" href="category.html">- Nội thất gỗ</a></li>--%>
+<%--                      <li role="presentation"><a role="menuitem" tabindex="-1" href="category.html">- Sofa, ghế thư giãn & nệm</a></li>--%>
+<%--                      <li role="presentation"><a role="menuitem" tabindex="-1" href="category.html">- Đồ trang trí</a></li>--%>
+<%--                      <li role="presentation"><a role="menuitem" tabindex="-1" href="category.html">- Đồ dung vải</a></li>--%>
+<%--                      <li role="presentation"><a role="menuitem" tabindex="-1" href="category.html">- Dụng cụ nhà bếp</a></li>--%>
+<%--                      <li role="presentation"><a role="menuitem" tabindex="-1" href="category.html">- Tiện ích sắp xếp</a></li>--%>
+<%--                    </ul>--%>
+<%--                  </li>--%>
+<%--                </ul>--%>
                 <input class="search-field" placeholder="Bạn muốn tìm gì đó..." name="search">
                   <button type="submit" class="search-button"></button> </div>
             </form>
@@ -309,12 +309,12 @@
                   </ul> -->
                 <!-- </li> --> 
                 
-                <li class="dropdown"> <a href="interiordesign.html">Tư vấn thiết kế </a> </li>
+                <li class="dropdown"> <a href="tuvanthietke.jsp">Tư vấn thiết kế </a> </li>
                 <!-- <li class="dropdown"> <a href="contact.html">blog</a> </li> -->
-                <li class="dropdown"> <a href="blog.html">blog</a>
+                <li class="dropdown"> <a href="blog.jsp">blog</a>
                 </li>
-                <li class="dropdown"> <a href="hangmoi.html">hàng mới <span class="menu-label new-menu hidden-xs">new</span></a> </li>
-                <li class="dropdown"> <a href="contact.html">Liên hệ</a> </li>
+                <li class="dropdown"> <a href="hangmoi.jsp">hàng mới <span class="menu-label new-menu hidden-xs">new</span></a> </li>
+                <li class="dropdown"> <a href="lienhe.jsp">Liên hệ</a> </li>
                 <!-- <li class="dropdown"> <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">Pages</a>
                   <ul class="dropdown-menu pages">
                     <li>

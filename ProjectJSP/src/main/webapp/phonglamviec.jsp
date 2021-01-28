@@ -47,8 +47,8 @@
   <div class="container">
     <div class="breadcrumb-inner">
       <ul class="list-inline list-unstyled">
-        <li><a href="#">Home</a></li>
-        <li class='active'>Handbags</li>
+        <li><a href="#">Trang chủ</a></li>
+        <li class='active'>Phòng làm việc</li>
       </ul>
     </div>
     <!-- /.breadcrumb-inner --> 
@@ -84,9 +84,15 @@
                                               <li><a href="Category?category=${sessionScope.category1}&filters=ghe"> Ghế </a></li>
                                               <li><a href="Category?category=${sessionScope.category1}&filters=giuong"> Giường </a></li>
                                               <li><a href="Category?category=${sessionScope.category1}&filters=tu"> Tủ </a></li>
-                                              <li><a href="Category?category=${sessionScope.category1}&filters=gantuong"> Sản phẩm gắn tường </a></li>
+                                              <li><a href="Category?category=${sessionScope.category1}&filters=tranh"> Tranh </a></li>
                                               <li><a href="Category?category=${sessionScope.category1}&filters=den"> Đèn </a></li>
-                                              <li><a href="Category?category=${sessionScope.category1}&filters=guong"> Gương </a></li>
+                                              <li><a href="Category?category=${sessionScope.category1}&filters=vogoi"> Vỏ gối </a></li>
+                                              <li><a href="Category?category=${sessionScope.category1}&filters=nem"> Nệm </a></li>
+                                              <li><a href="Category?category=${sessionScope.category1}&filters=chau"> Chậu câu </a></li>
+                                              <li><a href="Category?category=${sessionScope.category1}&filters=khay"> Khay </a></li>
+                                              <li><a href="Category?category=${sessionScope.category1}&filters=ketv"> Kệ </a></li>
+                                              <li><a href="Category?category=${sessionScope.category1}&filters=la"> Lá </a></li>
+
                                           </div>
                                           <!-- /.accordion-inner -->
                                       </div>
@@ -139,83 +145,7 @@
                   <!-- /.sidebar-widget -->
                   <!-- ============================================== SIDEBAR CATEGORY : END ============================================== -->
 
-                  <!-- ============================================== PRICE SILDER============================================== -->
-                  <div class="sidebar-widget wow fadeInUp">
-                      <div class="widget-header">
-                          <h4 class="widget-title">Price Slider</h4>
-                      </div>
-                      <div class="sidebar-widget-body m-t-10">
-                          <div class="price-range-holder"> <span class="min-max"> <span class="pull-left">$200.00</span> <span class="pull-right">$800.00</span> </span>
-                              <input type="text" id="amount" style="border:0; color:#666666; font-weight:bold;text-align:center;">
-                              <input type="text" class="price-slider" value="">
-                          </div>
-                          <!-- /.price-range-holder -->
-                          <a href="#" class="lnk btn btn-primary">Show Now</a> </div>
-                      <!-- /.sidebar-widget-body -->
-                  </div>
-                  <!-- /.sidebar-widget -->
-                  <!-- ============================================== PRICE SILDER : END ============================================== -->
-                  <!-- ============================================== MANUFACTURES============================================== -->
-                  <div class="sidebar-widget wow fadeInUp">
-                      <div class="widget-header">
-                          <h4 class="widget-title">Manufactures</h4>
-                      </div>
-                      <div class="sidebar-widget-body">
-                          <ul class="list">
-                              <li><a href="#">Forever 18</a></li>
-                              <li><a href="#">Nike</a></li>
-                              <li><a href="#">Dolce & Gabbana</a></li>
-                              <li><a href="#">Alluare</a></li>
-                              <li><a href="#">Chanel</a></li>
-                              <li><a href="#">Other Brand</a></li>
-                          </ul>
-                          <!--<a href="#" class="lnk btn btn-primary">Show Now</a>-->
-                      </div>
-                      <!-- /.sidebar-widget-body -->
-                  </div>
-                  <!-- /.sidebar-widget -->
-                  <!-- ============================================== MANUFACTURES: END ============================================== -->
-                  <!-- ============================================== COLOR============================================== -->
-                  <div class="sidebar-widget wow fadeInUp">
-                      <div class="widget-header">
-                          <h4 class="widget-title">Colors</h4>
-                      </div>
-                      <div class="sidebar-widget-body">
-                          <ul class="list">
-                              <li><a href="#">Red</a></li>
-                              <li><a href="#">Blue</a></li>
-                              <li><a href="#">Yellow</a></li>
-                              <li><a href="#">Pink</a></li>
-                              <li><a href="#">Brown</a></li>
-                              <li><a href="#">Teal</a></li>
-                          </ul>
-                      </div>
-                      <!-- /.sidebar-widget-body -->
-                  </div>
-                  <!-- /.sidebar-widget -->
-                  <!-- ============================================== COLOR: END ============================================== -->
-                  <!-- ============================================== COMPARE============================================== -->
-                  <div class="sidebar-widget wow fadeInUp outer-top-vs">
-                      <h3 class="section-title">Compare products</h3>
-                      <div class="sidebar-widget-body">
-                          <div class="compare-report">
-                              <p>You have no <span>item(s)</span> to compare</p>
-                          </div>
-                          <!-- /.compare-report -->
-                      </div>
-                      <!-- /.sidebar-widget-body -->
-                  </div>
-                  <!-- /.sidebar-widget -->
-                  <!-- ============================================== COMPARE: END ============================================== -->
                   <!-- ============================================== PRODUCT TAGS ============================================== -->
-                  <div class="sidebar-widget product-tag wow fadeInUp outer-top-vs">
-                      <h3 class="section-title">Product tags</h3>
-                      <div class="sidebar-widget-body outer-top-xs">
-                          <div class="tag-list"> <a class="item" title="Phone" href="category.html">Phone</a> <a class="item active" title="Vest" href="category.html">Vest</a> <a class="item" title="Smartphone" href="category.html">Smartphone</a> <a class="item" title="Furniture" href="category.html">Furniture</a> <a class="item" title="T-shirt" href="category.html">T-shirt</a> <a class="item" title="Sweatpants" href="category.html">Sweatpants</a> <a class="item" title="Sneaker" href="category.html">Sneaker</a> <a class="item" title="Toys" href="category.html">Toys</a> <a class="item" title="Rose" href="category.html">Rose</a> </div>
-                          <!-- /.tag-list -->
-                      </div>
-                      <!-- /.sidebar-widget-body -->
-                  </div>
                   <!-- /.sidebar-widget -->
                   <!----------- Testimonials------------->
                   <div class="sidebar-widget  wow fadeInUp outer-top-vs ">
@@ -249,7 +179,7 @@
 
                   <!-- ============================================== Testimonials: END ============================================== -->
 
-                  <div class="home-banner"> <img src="assets\images\banners\LHS-banner.jpg" alt="Image"> </div>
+
               </div>
               <!-- /.sidebar-filter -->
           </div>
@@ -259,20 +189,20 @@
       <div class='col-md-9'> 
         <!-- ========================================== SECTION – HERO ========================================= -->
         
-        <div id="category" class="category-carousel hidden-xs">
-          <div class="item">
-            <div class="image"> <img src="assets\images\banners\cat-banner-1.jpg" alt="" class="img-responsive"> </div>
-            <div class="container-fluid">
-              <div class="caption vertical-top text-left">
-                <div class="big-text"> Big Sale </div>
-                <div class="excerpt hidden-sm hidden-md"> Save up to 49% off </div>
-                <div class="excerpt-normal hidden-sm hidden-md"> Lorem ipsum dolor sit amet, consectetur adipiscing elit </div>
-              </div>
-              <!-- /.caption --> 
-            </div>
-            <!-- /.container-fluid --> 
-          </div>
-        </div>
+<%--        <div id="category" class="category-carousel hidden-xs">--%>
+<%--          <div class="item">--%>
+<%--            <div class="image"> <img src="assets\images\banners\cat-banner-1.jpg" alt="" class="img-responsive"> </div>--%>
+<%--            <div class="container-fluid">--%>
+<%--              <div class="caption vertical-top text-left">--%>
+<%--                <div class="big-text"> Big Sale </div>--%>
+<%--                <div class="excerpt hidden-sm hidden-md"> Save up to 49% off </div>--%>
+<%--                <div class="excerpt-normal hidden-sm hidden-md"> Lorem ipsum dolor sit amet, consectetur adipiscing elit </div>--%>
+<%--              </div>--%>
+<%--              <!-- /.caption --> --%>
+<%--            </div>--%>
+<%--            <!-- /.container-fluid --> --%>
+<%--          </div>--%>
+<%--        </div>--%>
         
      
         <div class="clearfix filters-container m-t-10">

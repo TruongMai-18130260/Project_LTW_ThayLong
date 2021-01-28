@@ -16,7 +16,7 @@
                 <li class="menu-title">BAYA ADMIN</li>
 
                 <li>
-                    <a href="index.jsp" class="waves-effect">
+                    <a href="admin_baya/index.jsp" class="waves-effect">
                         <i class="fas fa-home"></i>
                         <span> Trang chủ </span>
                     </a>

@@ -9,9 +9,8 @@
     <nav class="yamm megamenu-horizontal">
         <ul class="nav">
             <li class="dropdown menu-item">
-                <a href="noithatgo.jsp">
-                  
-                    Nội thất gỗ
+                <a href="Category?category=pk">
+                    Phòng khách
                 </a>
                 <!-- <ul class="dropdown-menu mega-menu">
                   <li class="yamm-content">
@@ -121,7 +120,7 @@
                 <!-- /.dropdown-menu --> </li>
             <!-- /.menu-item -->
 
-            <li class="dropdown menu-item"> <a href="sofa.jsp">Sofa, ghế thư giãn & nệm</a>
+            <li class="dropdown menu-item"> <a href="Category?category=pa">Phòng ăn & bếp </a>
                 <!-- ================================== MEGAMENU VERTICAL ================================== -->
                 <!-- <ul class="dropdown-menu mega-menu" style="height:175px !important;">
                   <li class="yamm-content">
@@ -170,7 +169,7 @@
                 <!-- ================================== MEGAMENU VERTICAL ================================== --> </li>
             <!-- /.menu-item -->
 
-            <li class="dropdown menu-item"> <a href="dotrangtri.jsp">Đồ trang trí</a>
+            <li class="dropdown menu-item"> <a href="Category?category=plv">Phòng làm việc</a>
                 <!-- <ul class="dropdown-menu mega-menu" style="height:530px !important;">
                   <li class="yamm-content">
                     <div class="row">
@@ -267,7 +266,7 @@
                 <!-- /.dropdown-menu --> </li>
             <!-- /.menu-item -->
 
-            <li class="dropdown menu-item"> <a href="dodungvai.jsp">Đồ dùng vải</a>
+            <li class="dropdown menu-item"> <a href="Category?category=pn">Phòng ngủ</a>
                 <!-- <ul class="dropdown-menu mega-menu" style="height:630px !important;">
                   <li class="yamm-content">
                     <div class="row">
@@ -367,7 +366,7 @@
                 <!-- /.dropdown-menu --> </li>
             <!-- /.menu-item -->
 
-            <li class="dropdown menu-item"> <a href="dodungbep.jsp">Dụng cụ nhà bếp</a>
+            <li class="dropdown menu-item"> <a href="Category?category=pnt">Ngoài trời</a>
                 <!-- <ul class="dropdown-menu mega-menu" style="height:420px !important;">
                   <li class="yamm-content">
                     <div class="row">
@@ -450,7 +449,7 @@
                 <!-- /.dropdown-menu --> </li>
             <!-- /.menu-item -->
 
-            <li class="dropdown menu-item"> <a href="tienichsapxep.jsp">Tiện ích sắp xếp</a>
+            <li class="dropdown menu-item"> <a href="Category?category=pt">Phòng tắm</a>
                 <!-- <ul class="dropdown-menu mega-menu" style="height:175px !important;">
                   <li class="yamm-content">
                     <div class="row">
@@ -500,7 +499,7 @@
 
 
 
-            <li class="dropdown menu-item"> <a href="bosuutap.jsp">Bộ sưu tập Hot</a>
+            <li class="dropdown menu-item"> <a href="Category?category=pte">Phòng trẻ em</a>
                 <!-- <ul class="dropdown-menu mega-menu" style="height:400px !important;">
                   <li class="yamm-content">
                     <div class="row">

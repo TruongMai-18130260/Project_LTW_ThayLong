@@ -43,8 +43,8 @@
   <div class="container">
     <div class="breadcrumb-inner">
       <ul class="list-inline list-unstyled">
-        <li><a href="#">Home</a></li>
-        <li class='active'>Handbags</li>
+        <li><a href="#">Trang chủ</a></li>
+        <li class='active'>Ngoài trời</li>
       </ul>
     </div>
     <!-- /.breadcrumb-inner --> 
