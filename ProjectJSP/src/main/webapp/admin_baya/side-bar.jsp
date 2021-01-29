@@ -140,9 +140,9 @@
                 </li>
 
                 <li>
-                    <a href="quanlidanhmuc.jsp" class="waves-effect">
+                    <a href="ManageBanner" class="waves-effect">
                         <i class="fas fa-bullseye"></i>
-                        <span> Quản lý Danh Mục </span>
+                        <span> Quản lý Banner </span>
                     </a>
                 </li>
 

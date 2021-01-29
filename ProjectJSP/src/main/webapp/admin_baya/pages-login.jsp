@@ -13,9 +13,9 @@
         <link rel="shortcut icon" href="admin_baya/assets/images/logo.png">
 
         <!-- App css -->
-        <link href="admin_baya/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-        <link href="admin_baya/assets/css/icons.min.css" rel="stylesheet" type="text/css">
-        <link href="admin_baya/assets/css/app.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css">
 
     </head>
 

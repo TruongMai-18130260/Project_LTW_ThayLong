@@ -86,7 +86,7 @@
                 <div class="dropdown-divider"></div>
 
                 <!-- item-->
-                <a href="pages-logout.jsp" class="dropdown-item notify-item">
+                <a href="Home" class="dropdown-item notify-item">
                     <i class="remixicon-logout-box-line"></i>
                     <span>Đăng xuất</span>
                 </a>

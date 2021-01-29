@@ -38,7 +38,7 @@ public class PaginationProductAdmin extends HttpServlet {
             try {
                 maxitem = (int) session.getAttribute("maxitem1");
             } catch (NullPointerException e) {
-                maxitem = 10;
+                maxitem = 20;
             }
 
             String sql = "select * from product limit ?,?";

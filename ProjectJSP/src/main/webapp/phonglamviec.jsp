@@ -48,7 +48,7 @@
     <div class="breadcrumb-inner">
       <ul class="list-inline list-unstyled">
         <li><a href="#">Trang chủ</a></li>
-        <li class='active'>Phòng làm việc</li>
+        <li class='active'>Phòng làm vi</li>
       </ul>
     </div>
     <!-- /.breadcrumb-inner --> 

@@ -310,8 +310,7 @@
                       </div>
                     </li>
                   </ul> -->
-                <!-- </li> --> 
-                
+                <!-- </li> -->
                 <li class="dropdown"> <a href="tuvanthietke.jsp">Tư vấn thiết kế </a> </li>
                 <!-- <li class="dropdown"> <a href="contact.html">blog</a> </li> -->
                 <li class="dropdown"> <a href="blog.jsp">blog</a>
@@ -354,15 +353,13 @@
             </div>
             <!-- /.nav-outer --> 
           </div>
-          <!-- /.navbar-collapse --> 
-          
+          <!-- /.navbar-collapse -->
         </div>
         <!-- /.nav-bg-class --> 
       </div>
       <!-- /.navbar-default --> 
     </div>
-    <!-- /.container-class --> 
-    
+    <!-- /.container-class -->
   </div>
   <!-- /.header-nav --> 
   <!-- ============================================== NAVBAR : END ============================================== --> 

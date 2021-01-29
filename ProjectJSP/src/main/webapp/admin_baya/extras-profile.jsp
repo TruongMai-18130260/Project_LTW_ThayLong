@@ -81,7 +81,7 @@
                         <div class="card-box text-center">
                             <img src="assets/images/users/avatar-1.jpg" class="rounded-circle avatar-xl img-thumbnail" alt="profile-image">
 
-                            <h4 class="mb-0"> ${sessionScope.user.name}</h4>
+                            <h4 class="mb-0"> ${sessionScope.useradmin.name}</h4>
                             <%--                                    <p class="text-muted">@webdesigner</p>--%>
 
                             <button type="button" class="btn btn-success btn-xs waves-effect mb-2 waves-light">Theo dõi</button>
@@ -90,15 +90,15 @@
                             <div class="text-left mt-3">
                                 <h4 class="font-13 text-uppercase">Giới thiệu :</h4>
                                 <p class="text-muted font-13 mb-3">
-                                    Chào mình là  ${sessionScope.user.name} ^_^
+                                    Chào mình là  ${sessionScope.useradmin.name} ^_^
                                 </p>
-                                <p class="text-muted mb-2 font-13"><strong>Admin :</strong> <span class="ml-2"> ${sessionScope.user.name}</span></p>
+                                <p class="text-muted mb-2 font-13"><strong>Admin :</strong> <span class="ml-2"> ${sessionScope.useradmin.name}</span></p>
 
-                                <p class="text-muted mb-2 font-13"><strong>Số điện thoại :</strong><span class="ml-2">${sessionScope.user.phone}</span></p>
+                                <p class="text-muted mb-2 font-13"><strong>Số điện thoại :</strong><span class="ml-2">${sessionScope.useradmin.phone}</span></p>
 
-                                <p class="text-muted mb-2 font-13"><strong>Email :</strong> <span class="ml-2 ">${sessionScope.user.email}</span></p>
+                                <p class="text-muted mb-2 font-13"><strong>Email :</strong> <span class="ml-2 ">${sessionScope.useradmin.email}</span></p>
 
-                                <p class="text-muted mb-1 font-13"><strong>Địa chỉ :</strong> <span class="ml-2">${sessionScope.user.address}</span></p>
+                                <p class="text-muted mb-1 font-13"><strong>Địa chỉ :</strong> <span class="ml-2">${sessionScope.useradmin.address}</span></p>
                             </div>
 
                             <ul class="social-list list-inline mt-3 mb-0">

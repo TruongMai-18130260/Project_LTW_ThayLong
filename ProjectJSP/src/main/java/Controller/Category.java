@@ -100,8 +100,8 @@ public class Category extends HttpServlet {
                                 filtersPrice = " AND price > 2000000";
                                 break;
                         }
-                    } else if (filters.substring(0, 1).equals("br")){
-                        switch (filters.substring(6,filters.length())) {
+                    } else if (filters.substring(0, 2).equals("br")){
+                        switch (filters.substring(3,filters.length())) {
                             case "baya":
                                 filtersBrand = " AND company = 'baya' ";
                                 break;
