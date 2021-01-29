@@ -10,14 +10,13 @@
         <meta content="Coderthemes" name="author">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <!-- App favicon -->
-
-        <link rel="shortcut icon" href="admin_baya/admin_baya/assets/images/logo.png">
+        <link rel="shortcut icon" href="admin_baya/assets/images/logo.png">
 
         <!-- App css -->
-        <link href="admin_baya/admin_baya/assets/libs/datatables/dataTables.bootstrap4.css" rel="stylesheet" type="text/css">
-        <link href="admin_baya/admin_baya/assets/libs/datatables/responsive.bootstrap4.css" rel="stylesheet" type="text/css">
-        <link href="admin_baya/admin_baya/assets/libs/datatables/buttons.bootstrap4.css" rel="stylesheet" type="text/css">
-        <link href="admin_baya/admin_baya/assets/libs/datatables/select.bootstrap4.css" rel="stylesheet" type="text/css">
+        <link href="admin_baya/assets/libs/datatables/dataTables.bootstrap4.css" rel="stylesheet" type="text/css">
+        <link href="admin_baya/assets/libs/datatables/responsive.bootstrap4.css" rel="stylesheet" type="text/css">
+        <link href="admin_baya/assets/libs/datatables/buttons.bootstrap4.css" rel="stylesheet" type="text/css">
+        <link href="admin_baya/assets/libs/datatables/select.bootstrap4.css" rel="stylesheet" type="text/css">
         <!-- third party css end -->
 
         <!-- App css -->
@@ -25,7 +24,6 @@
         <link rel="shortcut icon" href="admin_baya/assets/images/logo.png">
 
         <!-- App css -->
-
         <link href="admin_baya/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
         <link href="admin_baya/assets/css/icons.min.css" rel="stylesheet" type="text/css">
         <link href="admin_baya/assets/css/app.min.css" rel="stylesheet" type="text/css">
