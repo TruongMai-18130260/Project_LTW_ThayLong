@@ -1,5 +1,7 @@
 package Controller;
 
+import Helper.BCrypt;
+
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.WebServlet;
@@ -27,19 +29,35 @@ public class UpdatePassword extends HttpServlet {
             String retypePassword = request.getParameter("retypepassword");
             String userid = request.getParameter("id");
 
-            PreparedStatement ps1 = ConnectionDB.con.prepareStatement("select * from user where id = ? and password = ?");
+            PreparedStatement ps1 = ConnectionDB.con.prepareStatement("select password from user where id = ?");
             ps1.setString(1,userid);
-            ps1.setString(2,oldPassword);
             ResultSet rs1 = ps1.executeQuery();
             if (rs1.next()){
-                if (newPassword.equals(retypePassword)){
-                    PreparedStatement ps2 = ConnectionDB.con.prepareStatement("update user set password = ? where id = ?");
-                    ps2.setString(1,newPassword);
-                    ps2.setString(2,userid);
-                } else {
+                BCrypt bCrypt = new BCrypt();
+                if (bCrypt.checkpw(oldPassword,rs1.getString(1))){
+                    if (newPassword.equals(retypePassword)){
+                        PreparedStatement ps2 = ConnectionDB.con.prepareStatement("update user set password = ? where id = ?");
+                        ps2.setString(1,bCrypt.hashpw(newPassword,bCrypt.gensalt()));
+                        ps2.setString(2,userid);
 
-                }
+                        ps2.executeUpdate();
+                    } else {
+
+                    }
+                };
             }
+
+//            ps1.setString(2,oldPassword);
+//            ResultSet rs1 = ps1.executeQuery();
+//            if (rs1.next()){
+//                if (newPassword.equals(retypePassword)){
+//                    PreparedStatement ps2 = ConnectionDB.con.prepareStatement("update user set password = ? where id = ?");
+//                    ps2.setString(1,newPassword);
+//                    ps2.setString(2,userid);
+//                } else {
+//
+//                }
+//            }
 
             response.sendRedirect("taikhoancuatoi.jsp");
 

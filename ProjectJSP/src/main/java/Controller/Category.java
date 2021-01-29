@@ -17,6 +17,7 @@ public class Category extends HttpServlet {
 
     public static ArrayList<String> filtersList;
     public static String filtersPrice;
+    public static String filtersBrand;
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding ("UTF-8");
@@ -99,6 +100,21 @@ public class Category extends HttpServlet {
                                 filtersPrice = " AND price > 2000000";
                                 break;
                         }
+                    } else if (filters.substring(0, 1).equals("br")){
+                        switch (filters.substring(6,filters.length())) {
+                            case "baya":
+                                filtersBrand = " AND company = 'baya' ";
+                                break;
+                            case "oem":
+                                filtersBrand = " AND company = 'oem' ";
+                                break;
+                            case "sande":
+                                filtersBrand = " AND company = 'sande' ";
+                                break;
+                            case "yokohama":
+                                filtersBrand = " AND company = 'yokohama' ";
+                                break;
+                        }
                     } else {
                         filtersList.add(filters);
                     }
@@ -123,11 +139,13 @@ public class Category extends HttpServlet {
 
                     session.setAttribute("filtersList", filtersList);
                     session.setAttribute("filtersPrice", filtersPrice);
+                    session.setAttribute("filtersBrand", filtersBrand);
                 } else {
                     System.out.println("-@----------" + request.getParameter("filters"));
                     try {
                         filtersList = (ArrayList<String>) session.getAttribute("filtersList");
                         filtersPrice = (String) session.getAttribute("filtersPrice");
+                        filtersBrand = (String) session.getAttribute("filtersBrand");
 //                setFiltersList((ArrayList<String>) session.getAttribute("filtersList"));
                         if (!filtersList.isEmpty()) {
                             sql += "AND ( ";
@@ -146,6 +164,7 @@ public class Category extends HttpServlet {
                 try {
                     filtersList = (ArrayList<String>) session.getAttribute("filtersList");
                     filtersPrice = (String) session.getAttribute("filtersPrice");
+                    filtersBrand = (String) session.getAttribute("filtersBrand");
 //                setFiltersList((ArrayList<String>) session.getAttribute("filtersList"));
                     if (!filtersList.isEmpty()) {
                         sql += "AND ( ";
@@ -166,7 +185,11 @@ public class Category extends HttpServlet {
             if (filtersPrice == null) {
                 filtersPrice = " AND 0 = 0";
             }
+        if (filtersBrand == null) {
+            filtersBrand = " AND 0 = 0";
+        }
             sql += filtersPrice;
+            sql += filtersBrand;
             switch (sort1) {
                 case "lowprice":
                     sql += " ORDER BY price ASC ";
@@ -193,6 +216,7 @@ public class Category extends HttpServlet {
 
             sql += " LIMIT ?,?";
             System.out.println("filtersPrice: " + filtersPrice);
+            System.out.println("filtersBrand: " + filtersBrand);
             System.out.println("Category: " + category);
             System.out.println("page: " + page);
             System.out.println("maxitem: " + maxitem);
@@ -220,6 +244,7 @@ public class Category extends HttpServlet {
         HttpSession session = request.getSession();
         session.removeAttribute("filtersList");
         session.removeAttribute("filtersPrice");
+        session.removeAttribute("filtersBrand");
         doGet(request,response);
     }
 

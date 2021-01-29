@@ -10,7 +10,7 @@
         <meta content="Coderthemes" name="author">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <!-- App favicon -->
-<<<<<<< HEAD
+
         <link rel="shortcut icon" href="admin_baya/admin_baya/assets/images/logo.png">
 
         <!-- App css -->
@@ -21,11 +21,11 @@
         <!-- third party css end -->
 
         <!-- App css -->
-=======
+
         <link rel="shortcut icon" href="admin_baya/assets/images/logo.png">
 
         <!-- App css -->
->>>>>>> 331443d54a61869e4757c4dc414a9695b655e09d
+
         <link href="admin_baya/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
         <link href="admin_baya/assets/css/icons.min.css" rel="stylesheet" type="text/css">
         <link href="admin_baya/assets/css/app.min.css" rel="stylesheet" type="text/css">
@@ -200,7 +200,7 @@
                                     </div>
                                     <h4 class="header-title">Báo cáo thu nhập</h4>
                                     <p class="text-muted">Dữ liệu tính từ 1/10/2020 - 31/10/2020 </p>
-                                    <h2 class="mb-4">644.586.000 <span class=" text-primary">vnđ</span></h2>
+                                    <h2 class="mb-4">${sessionScope.totalAdmin} <span class=" text-primary">vnđ</span></h2>
 
                                     <div class="row mb-4">
                                         <div class="col-6">

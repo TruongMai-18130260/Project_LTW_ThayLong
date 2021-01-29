@@ -16,7 +16,7 @@
                 <li class="menu-title">BAYA ADMIN</li>
 
                 <li>
-                    <a href="index.jsp" class="waves-effect">
+                    <a href="http://localhost:8080/ProjectJSP/AdminHome" class="waves-effect">
                         <i class="fas fa-home"></i>
                         <span> Trang chủ </span>
                     </a>
@@ -39,7 +39,7 @@
                     </a>
                     <ul class="nav-second-level" aria-expanded="false">
                         <li>
-                            <a href="danhsachkhachhang.jsp">Danh sách khách hàng</a>
+                            <a href="ManageUser">Danh sách khách hàng</a>
                         </li>
                         <li>
                             <a href="chatvoikhachhang.jsp">Chat với khách hàng</a>
@@ -50,7 +50,7 @@
                 </li>
 
                 <li>
-                    <a href="danhsachdonhang.jsp" class="waves-effect">
+                    <a href="ManageOrder" class="waves-effect">
                         <i class="fas fa-shopping-cart"></i>
                         <span> Đơn hàng </span>
 
@@ -58,7 +58,7 @@
                 </li>
 
                 <li>
-                    <a href="danhsachsanpham.jsp" class="waves-effect">
+                    <a href="PaginationProductAdmin" class="waves-effect">
                         <i class="fab fa-product-hunt"></i>
                         <span>Sản phẩm</span>
                         <!-- <span class="menu-arrow"></span> -->
@@ -113,7 +113,7 @@
                             <a href="pages-404.jsp">Cấu hình</a>
                         </li>
                         <li>
-                            <a href="extras-profile.jsp">Tài khoản Admin</a>
+                            <a href="admin_baya/extras-profile.jsp">Tài khoản Admin</a>
                         </li>
 
 
@@ -122,7 +122,7 @@
                 </li>
 
                 <li>
-                    <a href="quanliblog.jsp" class="waves-effect">
+                    <a href="ManageBlog" class="waves-effect">
                         <i class="fas fa-newspaper"></i>
 
                         <span> Blog </span>

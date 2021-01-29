@@ -1,6 +1,7 @@
 package Bean;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Date;
 
 public class Order implements Serializable {
@@ -11,6 +12,7 @@ public class Order implements Serializable {
     private Date receptDate;
     private Date deliveryDate;
     private String email;
+    private ArrayList<Item> list;
 
     public Order() {
     }
@@ -76,5 +78,13 @@ public class Order implements Serializable {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public ArrayList<Item> getList() {
+        return list;
+    }
+
+    public void setList(ArrayList<Item> list) {
+        this.list = list;
     }
 }

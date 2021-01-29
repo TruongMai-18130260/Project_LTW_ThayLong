@@ -55,18 +55,18 @@
 
         <li class="dropdown notification-list">
             <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                <img src="assets\images\users\minh.jpg" alt="user-image" class="rounded-circle">
+                <img src="admin_baya/assets/images/users/minh.jpg" alt="user-image" class="rounded-circle">
                 <span class="pro-user-name ml-1">
                              ${sessionScope.useradmin.name}   <i class="mdi mdi-chevron-down"></i>
                             </span>
             </a>
             <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
                 <!-- item-->
-<<<<<<< HEAD
+
+                <a href="ExtrasProfile" class="dropdown-item notify-item"></a>
+
                 <a href="ExtrasProfile" class="dropdown-item notify-item">
-=======
-                <a href="extras-profile.jsp" class="dropdown-item notify-item">
->>>>>>> 331443d54a61869e4757c4dc414a9695b655e09d
+
                     <i class="remixicon-account-circle-line"></i>
                     <span>Tài khoản</span>
                 </a>
@@ -106,7 +106,7 @@
 
     <!-- LOGO -->
     <div class="logo-box">
-        <a href="index.jsp" class="logo text-center">
+        <a href="http://localhost:8080/ProjectJSP/AdminHome" class="logo text-center">
                         <span class="logo-lg">
                             <img src="assets\images\logo-white.png" alt="" height="35">
                             <!-- <span class="logo-lg-text-light">Xeria</span> -->

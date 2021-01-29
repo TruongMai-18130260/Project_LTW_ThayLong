@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fnt" uri="http://java.sun.com/jsp/jstl/functions" %>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -94,82 +96,28 @@
                                             <table class="table table-centered table-nowrap mb-0">
                                                 <thead class="thead-light">
                                                     <tr>
-                                                        <th style="width: 20px;">
-                                                            <div class="custom-control custom-checkbox">
-                                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                                                <label class="custom-control-label" for="customCheck1">&nbsp;</label>
-                                                            </div>
-                                                        </th>
                                                         <th>ID</th>
                                                         <th>Tên Blog</th>
-                                                        <th>Nội dung</th>
                                                         <th>Người đăng</th>
-                                                        <th>Ngày</th>
-                                                        
                                                         <th style="width: 125px;">Tác vụ</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                   
-                                                    <tr>
-                                                        <td>
-                                                            <div class="custom-control custom-checkbox">
-                                                                <input type="checkbox" class="custom-control-input" id="customCheck3">
-                                                                <label class="custom-control-label" for="customCheck3">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td><a href="ecommerce-orders-detail.jsp" class="text-body font-weight-medium">#DM01</a> </td>
-                                                        <td>Nội thất</td>
-                                                        <th>Nội dung</th>
-                                                        <th>Minh Romeo</th>
-                                                        <td>
-                                                             15 Tháng 3 2020 <small class="text-muted">09:34 AM</small>
-                                                        </td>
-                                                     
-                                                        <td>
-                                                            <ul class="list-inline mb-0">
-                                                                <li class="list-inline-item">
-                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
-                                                                </li>
-                                                                <li class="list-inline-item">
-                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
-                                                                </li>
-                                                                <li class="list-inline-item">
-                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
-                                                                </li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="custom-control custom-checkbox">
-                                                                <input type="checkbox" class="custom-control-input" id="customCheck4">
-                                                                <label class="custom-control-label" for="customCheck4">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td><a href="ecommerce-orders-detail.jsp" class="text-body font-weight-medium">#DM02</a> </td>
-                                                        <td>Gia Đình ấm cúng</td>
-                                                        <th>Nội dung</th>
-                                                        <th>Mai Trường</th>
-                                                        <td>
-                                                             14 Tháng 3 2020 <small class="text-muted">11:09 AM</small>
-                                                        </td>
-                                                      
-                                                        <td>
-                                                            <ul class="list-inline mb-0">
-                                                                <li class="list-inline-item">
-                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
-                                                                </li>
-                                                                <li class="list-inline-item">
-                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
-                                                                </li>
-                                                                <li class="list-inline-item">
-                                                                    <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
-                                                                </li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
-                                               
+                                                    <c:forEach items="${sessionScope.listBlogAdmin}" var="item">
+                                                        <tr>
+                                                            <td><a href="#" class="text-body font-weight-medium">${item.blogid}</a> </td>
+                                                            <td>${item.title}</td>
+                                                            <th>${item.username}</th>
+                                                            <td>
+                                                                <ul class="list-inline mb-0">
+                                                                    <li class="list-inline-item">
+                                                                        <a href="DeleteBlog?blogid=${item.blogid}" class="action-icon"> <i class="mdi mdi-delete"></i></a>
+                                                                    </li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+                                                    </c:forEach>
+
                                                 </tbody>
                                             </table>
                                         </div>

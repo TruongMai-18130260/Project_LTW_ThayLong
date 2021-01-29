@@ -48,6 +48,14 @@ Text Domain:  Flipmart
   min-height: 18rem;
 }
 
+.red-border{
+  border: 1px solid red !important;
+}
+
+.green-border{
+  border: 1px solid green !important;
+}
+
 .green-text {
   color: #abd07e !important;
 }
@@ -2623,7 +2631,7 @@ header{background:#157ed2}
   -moz-transition: all 200ms ease-out 0s;
   -o-transition: all 200ms ease-out 0s;
   transition: all 200ms ease-out 0s;
-  bottom: none;
+  /*bottom: none;*/
   bottom: 0px;
 }
 .cnt-homepage .homepage-container .btn-primary {
@@ -6002,6 +6010,8 @@ table th:nth-of-type(2), table td:nth-of-type(2){
 .cart-infor .content{
   
 }
+
+
 
 
   

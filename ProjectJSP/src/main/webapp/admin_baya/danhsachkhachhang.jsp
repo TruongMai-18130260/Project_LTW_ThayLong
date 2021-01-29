@@ -16,18 +16,17 @@
         
         <link rel="shortcut icon" href="admin_baya/assets/images/logo.png">
 
-<<<<<<< HEAD
         <link href="admin_baya/admin_baya/assets/libs/datatables/dataTables.bootstrap4.css" rel="stylesheet" type="text/css">
         <link href="admin_baya/admin_baya/assets/libs/datatables/responsive.bootstrap4.css" rel="stylesheet" type="text/css">
         <link href="admin_baya/admin_baya/assets/libs/datatables/buttons.bootstrap4.css" rel="stylesheet" type="text/css">
         <link href="admin_baya/admin_baya/assets/libs/datatables/select.bootstrap4.css" rel="stylesheet" type="text/css">
-=======
+
         <!-- third party css -->
         <link href="admin_baya/assets/libs/datatables/dataTables.bootstrap4.css" rel="stylesheet" type="text/css">
         <link href="admin_baya/assets/libs/datatables/responsive.bootstrap4.css" rel="stylesheet" type="text/css">
         <link href="admin_baya/assets/libs/datatables/buttons.bootstrap4.css" rel="stylesheet" type="text/css">
         <link href="admin_baya/assets/libs/datatables/select.bootstrap4.css" rel="stylesheet" type="text/css">
->>>>>>> 331443d54a61869e4757c4dc414a9695b655e09d
+
         <!-- third party css end -->
 
         <!-- App css -->
@@ -129,30 +128,6 @@
                             </div><!-- end col-->
                         </div>
                         <!-- end row-->
-
-
-                       
-
-
-                        
-
-
-                        
-
-                        
-
-
-                        
-
-
-                       
-
-
-                        
-
-                       
-                        
-                        
                     </div> <!-- container -->
 
                 </div> <!-- content -->

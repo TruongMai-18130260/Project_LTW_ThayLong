@@ -46,7 +46,7 @@ public class PaginationProductAdmin extends HttpServlet {
 
             ArrayList<Product> listProducts = Pagination.paginationAdmin(sql,maxitem,page);
             session.setAttribute("maxPageAdmin",Pagination.getPageAdmin(maxitem));
-            request.setAttribute("listProductsAdmin",listProducts);
+            session.setAttribute("listProductsAdmin",listProducts);
 
             request.getRequestDispatcher("admin_baya/danhsachsanpham.jsp").forward(request,response);
 

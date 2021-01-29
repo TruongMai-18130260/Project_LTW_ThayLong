@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,15 +14,15 @@
     <link rel="shortcut icon" href="../admin_baya/assets/images/logo.png">
 
     <!-- Plugins css -->
-    <link href="../admin_baya/assets/libs/quill/quill.core.css" rel="stylesheet" type="text/css">
-    <link href="../admin_baya/assets/libs/quill/quill.bubble.css" rel="stylesheet" type="text/css">
-    <link href="../admin_baya/assets/libs/quill/quill.snow.css" rel="stylesheet" type="text/css">
+    <link href="admin_baya/assets/libs/quill/quill.core.css" rel="stylesheet" type="text/css">
+    <link href="admin_baya/assets/libs/quill/quill.bubble.css" rel="stylesheet" type="text/css">
+    <link href="admin_baya/assets/libs/quill/quill.snow.css" rel="stylesheet" type="text/css">
 
     <!-- App css -->
-    <link href="../admin_baya/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="../admin_baya/assets/css/icons.min.css" rel="stylesheet" type="text/css">
-    <link href="../admin_baya/assets/css/app.min.css" rel="stylesheet" type="text/css">
-    <link href="../admin_baya/assets/libs/dropzone/dropzone.min.css" rel="stylesheet" type="text/css">
+    <link href="admin_baya/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="admin_baya/assets/css/icons.min.css" rel="stylesheet" type="text/css">
+    <link href="admin_baya/assets/css/app.min.css" rel="stylesheet" type="text/css">
+    <link href="admin_baya/assets/libs/dropzone/dropzone.min.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -31,325 +31,12 @@
 <div id="wrapper">
 
     <!-- Topbar Start -->
-    <div class="navbar-custom">
-        <ul class="list-unstyled topnav-menu float-right mb-0">
-
-            <!-- <li class="d-none d-sm-block">
-                <form class="app-search">
-                    <div class="app-search-box">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Search...">
-                            <div class="input-group-append">
-                                <button class="btn" type="submit">
-                                    <i class="fe-search"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </li> -->
-            <li class="dropdown d-none d-lg-block">
-                <a class="nav-link dropdown-toggle waves-effect waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                    Baya
-                    <i class="mdi mdi-chevron-down"></i>
-                </a>
-                <div class="dropdown-menu">
-                    <!-- item-->
-                    <a href="pages-404.html" class="dropdown-item">
-
-                        <span>Chọn cửa hàng</span>
-                    </a>
-
-                    <!-- item-->
-                    <a href="pages-404.html" class="dropdown-item">
-
-                        <span>Baya</span>
-                    </a>
-
-                </div>
-            </li>
-
-
-
-            <li class="dropdown notification-list">
-                <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                    <img src="assets\images\users\minh.jpg" alt="user-image" class="rounded-circle">
-                    <span class="pro-user-name ml-1">
-                                Hoàng Minh <i class="mdi mdi-chevron-down"></i>
-                            </span>
-                </a>
-                <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
-                    <!-- item-->
-                    <a href="extras-profile.html" class="dropdown-item notify-item">
-                        <i class="remixicon-account-circle-line"></i>
-                        <span>Tài khoản</span>
-                    </a>
-
-                    <!-- item-->
-                    <a href="pages-404.html" class="dropdown-item notify-item">
-                        <i class="remixicon-lock-unlock-line"></i>
-                        <span>Đổi mật khẩu</span>
-                    </a>
-
-                    <!-- item-->
-                    <a href="pages-404.html" class="dropdown-item notify-item">
-                        <i class="remixicon-settings-3-line"></i>
-                        <span>Cài đặt</span>
-                    </a>
-
-                    <div class="dropdown-divider"></div>
-
-                    <!-- item-->
-                    <a href="pages-logout.html" class="dropdown-item notify-item">
-                        <i class="remixicon-logout-box-line"></i>
-                        <span>Đăng xuất</span>
-                    </a>
-
-                </div>
-            </li>
-
-
-            <!-- <li class="dropdown notification-list">
-                <a href="pages-404.html" class="nav-link right-bar-toggle waves-effect waves-light">
-                    <i class="fe-settings noti-icon"></i>
-                </a>
-            </li> -->
-
-
-        </ul>
-
-        <!-- LOGO -->
-        <div class="logo-box">
-            <a href="index.html" class="logo text-center">
-                        <span class="logo-lg">
-                            <img src="assets\images\logo-white.png" alt="" height="35">
-                            <!-- <span class="logo-lg-text-light">Xeria</span> -->
-                        </span>
-                <span class="logo-sm">
-                            <!-- <span class="logo-sm-text-dark">X</span> -->
-                            <img src="assets\images\logo.png" alt="" height="24">
-                        </span>
-            </a>
-        </div>
-
-        <ul class="list-unstyled topnav-menu topnav-menu-left m-0">
-            <li>
-                <button class="button-menu-mobile waves-effect waves-light">
-                    <i class="fe-menu"></i>
-                </button>
-            </li>
-
-
-
-
-        </ul>
-    </div>
+    <jsp:include page="header_admin.jsp"/>
     <!-- end Topbar -->
 
+
     <!-- ========== Left Sidebar Start ========== -->
-    <div class="left-side-menu">
-
-        <div class="slimscroll-menu">
-
-            <!--- Sidemenu -->
-            <div id="sidebar-menu">
-
-                <ul class="metismenu" id="side-menu">
-
-                    <li class="menu-title">BAYA ADMIN</li>
-
-                    <li>
-                        <a href="index.html" class="waves-effect">
-                            <i class="fas fa-home"></i>
-                            <span> Trang chủ </span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="banhangthungan.html" class="waves-effect">
-                            <i class="fas fa-shopping-bag"></i>
-                            <span> Bán hàng/Thu ngân </span>
-
-                        </a>
-
-                    </li>
-
-                    <li>
-                        <a href="javascript: void(0);" class="waves-effect">
-                            <i class="fas fa-address-book"></i>
-                            <span> Khách hàng </span>
-                            <span class="menu-arrow"></span>
-                        </a>
-                        <ul class="nav-second-level" aria-expanded="false">
-                            <li>
-                                <a href="danhsachkhachhang.html">Danh sách khách hàng</a>
-                            </li>
-                            <li>
-                                <a href="chatvoikhachhang.html">Chat với khách hàng</a>
-                            </li>
-
-
-                        </ul>
-                    </li>
-
-                    <li>
-                        <a href="danhsachdonhang.html" class="waves-effect">
-                            <i class="fas fa-shopping-cart"></i>
-                            <span> Đơn hàng </span>
-
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="danhsachsanpham.html" class="waves-effect">
-                            <i class="fab fa-product-hunt"></i>
-                            <span>Sản phẩm</span>
-                            <!-- <span class="menu-arrow"></span> -->
-                        </a>
-                        <!-- <ul class="nav-second-level" aria-expanded="false">
-                            <li>
-                                <a href="danhsachsanpham.html">Danh sách sản phẩm</a>
-                            </li> -->
-                        <!-- <li>
-                            <a href="danhmuc.html">Danh mục</a>
-                        </li>
-                        <li>
-                            <a href="nhomsanpham.html">Nhóm sản phẩm</a>
-                        </li>
-                        <li> -->
-                        <!-- <a href="suachungchosanpham.html">Sửa chung cho sản phẩm</a>
-                    </li> -->
-
-                        <!-- </ul> -->
-                    </li>
-
-                    <li>
-                        <a href="javascript: void(0);" class="waves-effect">
-                            <i class="fa fa-user-plus"></i>
-                            <span> Cộng tác viên </span>
-                            <span class="menu-arrow"></span>
-                        </a>
-                        <ul class="nav-second-level" aria-expanded="false">
-                            <li>
-                                <a href="danhsachctv.html">Danh sách CTV</a>
-                            </li>
-
-                            <li>
-                                <a href="baocaodoanhthuctv.html">Báo cáo doanh thu CTV</a>
-                            </li>
-
-
-                        </ul>
-                    </li>
-
-                    <li>
-                        <a href="javascript: void(0);" class="waves-effect">
-                            <i class="fa fa-cog"></i>
-                            <span>Cấu hình </span>
-                            <span class="menu-arrow"></span>
-                        </a>
-                        <ul class="nav-second-level" aria-expanded="false">
-                            <li>
-                                <a href="pages-404.html">Sửa thông tin</a>
-                            </li>
-                            <li>
-                                <a href="pages-404.html">Cấu hình</a>
-                            </li>
-                            <li>
-                                <a href="extras-profile.html">Tài khoản Admin</a>
-                            </li>
-
-
-
-                        </ul>
-                    </li>
-
-                    <li>
-                        <a href="quanliblog.html" class="waves-effect">
-                            <i class="fas fa-newspaper"></i>
-
-                            <span> Blog </span>
-                            <!-- <span class="menu-arrow"></span> -->
-                        </a>
-                        <!-- <ul class="nav-second-level" aria-expanded="false">
-                            <li>
-                                <a href="pages-404.html">Quản lý chuyên mục</a>
-                            </li>
-                            <li>
-                                <a href="pages-404.html">Danh sách Blog</a>
-                            </li>
-
-                        </ul> -->
-                    </li>
-
-                    <li>
-                        <a href="quanlidanhmuc.html" class="waves-effect">
-                            <i class="fas fa-bullseye"></i>
-                            <span> Quản lý Danh Mục </span>
-                        </a>
-                    </li>
-
-
-
-                    <!-- <li>
-                        <a href="javascript: void(0);" class="waves-effect">
-                            <i class="fas fa-clone"></i>
-                            <span> Quản lý Popup </span>
-
-                        </a>
-
-                    </li> -->
-
-                    <li>
-                        <a href="javascript: void(0);" class="waves-effect">
-                            <i class="fas fa-chart-bar"></i>
-                            <span> Thông tin thống kê </span>
-                            <span class="menu-arrow"></span>
-                        </a>
-                        <ul class="nav-second-level" aria-expanded="false">
-                            <li>
-                                <a href="pages-404.html">Bảng tổng hợp</a>
-                            </li>
-                            <li>
-                                <a href="dothi.html">Đồ thị</a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li>
-                        <a href="pages-404.html" class="waves-effect">
-                            <i class="fas fa-align-center"></i>
-                            <span> Lịch sử thay đổi </span>
-                        </a>
-
-                    </li>
-
-                    <li>
-                        <a href="javascript: void(0);" class="waves-effect">
-                            <i class="fas fa-th-large"></i>
-                            <span> Tiện ích khác </span>
-                            <span class="menu-arrow"></span>
-                        </a>
-                        <ul class="nav-second-level" aria-expanded="false">
-                            <li>
-                                <a href="apps-calendar.html">Lịch</a>
-                            </li>
-
-                        </ul>
-                    </li>
-
-
-                </ul>
-
-            </div>
-            <!-- End Sidebar -->
-
-            <div class="clearfix"></div>
-
-        </div>
-        <!-- Sidebar -left -->
-
-    </div>
+    <jsp:include page="side-bar.jsp"/>
     <!-- Left Sidebar End -->
 
     <!-- ============================================================== -->
@@ -386,7 +73,7 @@
                         <div class="card">
                             <div class="card-body">
 
-                                <form method="post" action="/ABC">
+                                <form method="post" action="http://localhost:8080/ProjectJSP/AddProduct">
                                     <div id="progressbarwizard">
 
                                         <ul class="nav nav-pills nav-justified form-wizard-header mb-3">
@@ -433,14 +120,16 @@
 
                                                             </div>
                                                             <div class="form-group mb-3">
-                                                                <label for="product-description">Mô tả sản phẩm <span class="text-danger">*</span></label>
+                                                                <label>Description</label>
+                                                                <textarea class="form-control" rows="3" placeholder="Please enter description" name="description"></textarea>
+                                                                <%--                                                                <label for="product-description">Mô tả sản phẩm <span class="text-danger">*</span></label>--%>
 
 
 
-                                                                <div id="snow-editor" name="decription" style="height: 300px;" >
+                                                                <%--                                                                <div id="snow-editor" name="decription" style="height: 300px;" >--%>
 
 
-                                                                </div> <!-- end Snow-editor-->
+                                                                <%--                                                                </div> <!-- end Snow-editor-->--%>
 
                                                             </div>
 
@@ -459,33 +148,24 @@
                                                                 <div class="col-lg-6">
                                                                     <div class="form-group mb-3">
                                                                         <label for="product-category">Danh mục <span class="text-danger">*</span></label>
-                                                                        <select class="form-control select2 select2-hidden-accessible" id="product-category" data-select2-id="product-category" tabindex="-1" aria-hidden="true">
+                                                                        <select class="form-control select2 select2-hidden-accessible" id="product-category" data-select2-id="product-category" tabindex="-1" aria-hidden="true" name="keyid">
 
                                                                             <optgroup label="Phòng">
-                                                                                <option value="PK">Phòng Khách</option>
-                                                                                <option value="PA">Phòng Ăn & Bếp</option>
-                                                                                <option value="PN">Phòng Ngủ</option>
-                                                                                <option value="PLV">Phòng Làm Việc</option>
-                                                                                <option value="KGN">Không Gian Ngoài Trời</option>
-                                                                                <option value="PT">Phòng Tắm</option>
-                                                                                <option value="PTE">Phòng Trẻ Em </option>
+                                                                                <option value="pk">Phòng Khách</option>
+                                                                                <option value="pa">Phòng Ăn & Bếp</option>
+                                                                                <option value="pn">Phòng Ngủ</option>
+                                                                                <option value="plv">Phòng Làm Việc</option>
+                                                                                <option value="nt">Không Gian Ngoài Trời</option>
+                                                                                <option value="pt">Phòng Tắm</option>
+                                                                                <option value="pte">Phòng Trẻ Em </option>
 
                                                                             </optgroup>
 
                                                                         </select>
                                                                     </div>
                                                                     <div class="form-group mb-3">
-                                                                        <label class="mb-2">Trạng Thái <span class="text-danger">*</span></label>
-                                                                        <br>
-                                                                        <div class="radio form-check-inline">
-                                                                            <input type="radio" id="inlineRadio1" value="option1" name="status" >
-                                                                            <label for="inlineRadio1">Còn hàng </label>
-                                                                        </div>
-                                                                        <div class="radio form-check-inline">
-                                                                            <input type="radio" id="inlineRadio2" value="option2" name="status" >
-                                                                            <label for="inlineRadio2">Hết hàng </label>
-                                                                        </div>
-
+                                                                        <label> Số lượng <span class="text-danger">*</span></label>
+                                                                        <input type="text" class="form-control" id="product-quantity" placeholder="Điền số lượng" name="quantity">
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -526,7 +206,7 @@
                                                                             <!-- <span class="text-muted font-13">(This is just a demo dropzone. Selected files are
                                                                                 <strong>not</strong> actually uploaded.)</span> -->
                                                                         </div>
-                                                                        <button type="submit">ok</button>
+
                                                                     </form>
 
                                                                     <!-- Preview -->
@@ -590,22 +270,7 @@
         </div> <!-- content -->
 
         <!-- Footer Start -->
-        <footer class="footer">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6">
-                        2020 &copy; Baya admin by <a href="">Group 14</a>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="text-md-right footer-links d-none d-sm-block">
-                            <a href="javascript:void(0);">Giới thiệu</a>
-                            <a href="javascript:void(0);">Trợ giúp</a>
-                            <a href="javascript:void(0);">Liên hệ</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <jsp:include page="footer_admin.jsp"/>
         <!-- end Footer -->
 
     </div>
@@ -643,7 +308,6 @@
                 <a href="#home1" data-toggle="tab" aria-expanded="false" class="nav-link rounded-0">
                     General
                 </a>
-<<<<<<< HEAD
             </li>
             <li class="nav-item">
                 <a href="#messages1" data-toggle="tab" aria-expanded="false" class="nav-link rounded-0 active">
@@ -717,20 +381,6 @@
                     Upgrade to plan to get access to unlimited reports
                     <br>
                     <a href="javascript: void(0);" class="btn btn-outline-success mt-3 btn-sm">Upgrade<i class="ml-1 mdi mdi-arrow-right"></i></a>
-=======
-                <h4 class="m-0 text-white">Settings</h4>
-            </div>
-            <div class="slimscroll-menu">
-                <!-- User box -->
-                <div class="user-box">
-                    <div class="user-img">
-                        <img src="assets/images/users/avatar-1.jpg" alt="user-img" title="Mat Helme" class="rounded-circle img-fluid">
-                        <a href="javascript:void(0);" class="user-edit"><i class="mdi mdi-pencil"></i></a>
-                    </div>
-            
-                    <h5><a href="javascript: void(0);">Nik G. Patel</a> </h5>
-                    <p class="text-muted mb-0"><small>Admin Head</small></p>
->>>>>>> 331443d54a61869e4757c4dc414a9695b655e09d
                 </div>
 
             </div>
@@ -798,80 +448,6 @@
                         <div class="text-center mt-2">
                             <a href="javascript:void(0);" class="text-muted"><i class="mdi mdi-spin mdi-loading mr-1"></i> Load more </a>
                         </div>
-<<<<<<< HEAD
-=======
-                
-                    </div>
-                    <div class="tab-pane show active" id="messages1">
-                        <div>
-                            <div class="inbox-widget">
-                                <h5 class="mt-0">Recent</h5>
-                                <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets/images/users/avatar-2.jpg" class="rounded-circle" alt=""> <i class="online user-status"></i></div>
-                                    <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Tomaslau</a></p>
-                                    <p class="inbox-item-text">I've finished it! See you so...</p>
-                                </div>
-                                <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets/images/users/avatar-3.jpg" class="rounded-circle" alt=""> <i class="away user-status"></i></div>
-                                    <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Stillnotdavid</a></p>
-                                    <p class="inbox-item-text">This theme is awesome!</p>
-                                </div>
-                                <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets/images/users/avatar-4.jpg" class="rounded-circle" alt=""> <i class="online user-status"></i></div>
-                                    <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Kurafire</a></p>
-                                    <p class="inbox-item-text">Nice to meet you</p>
-                                </div>
-        
-                                <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets/images/users/avatar-5.jpg" class="rounded-circle" alt=""> <i class="busy user-status"></i></div>
-                                    <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Shahedk</a></p>
-                                    <p class="inbox-item-text">Hey! there I'm available...</p>
-                                </div>
-                                <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets/images/users/avatar-6.jpg" class="rounded-circle" alt=""> <i class="user-status"></i></div>
-                                    <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Adhamdannaway</a></p>
-                                    <p class="inbox-item-text">This theme is awesome!</p>
-                                </div>
-
-                                <hr>
-                                <h5>Favorite <span class="float-right badge badge-pill badge-danger">18</span></h5>
-                                <hr>
-                                <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets/images/users/avatar-7.jpg" class="rounded-circle" alt=""> <i class="busy user-status"></i></div>
-                                    <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Kennith</a></p>
-                                    <p class="inbox-item-text">I've finished it! See you so...</p>
-                                </div>
-                                <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets/images/users/avatar-3.jpg" class="rounded-circle" alt=""> <i class="busy user-status"></i></div>
-                                    <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Stillnotdavid</a></p>
-                                    <p class="inbox-item-text">This theme is awesome!</p>
-                                </div>
-                                <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets/images/users/avatar-10.jpg" class="rounded-circle" alt=""> <i class="online user-status"></i></div>
-                                    <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Kimberling</a></p>
-                                    <p class="inbox-item-text">Nice to meet you</p>
-                                </div>
-        
-                                <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets/images/users/avatar-4.jpg" class="rounded-circle" alt=""> <i class="user-status"></i></div>
-                                    <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Kurafire</a></p>
-                                    <p class="inbox-item-text">Hey! there I'm available...</p>
-                                </div>
-                                <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets/images/users/avatar-9.jpg" class="rounded-circle" alt=""> <i class="away user-status"></i></div>
-                                    <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Leonareade</a></p>
-                                    <p class="inbox-item-text">This theme is awesome!</p>
-                                </div>
-
-                                <div class="text-center mt-2">
-                                    <a href="javascript:void(0);" class="text-muted"><i class="mdi mdi-spin mdi-loading mr-1"></i> Load more </a>
-                                </div>
-
-                            </div> <!-- end inbox-widget -->
-                        </div> <!-- end .p-3-->
-                    </div>
-                </div>
->>>>>>> 331443d54a61869e4757c4dc414a9695b655e09d
 
                     </div> <!-- end inbox-widget -->
                 </div> <!-- end .p-3-->
@@ -886,36 +462,36 @@
 <div class="rightbar-overlay"></div>
 
 <!-- Vendor js -->
-<script src="../admin_baya/assets/js/vendor.min.js"></script>
+<script src="admin_baya/assets/js/vendor.min.js"></script>
 
 <!-- Plugins js -->
-<script src="../admin_baya/assets/libs/katex/katex.min.js"></script>
-<script src="../admin_baya/assets/libs/quill/quill.min.js"></script>
+<script src="admin_baya/assets/libs/katex/katex.min.js"></script>
+<script src="admin_baya/assets/libs/quill/quill.min.js"></script>
 
 <!-- Init js-->
-<script src="../admin_baya/assets/js/pages/form-quilljs.init.js"></script>
+<script src="admin_baya/assets/js/pages/form-quilljs.init.js"></script>
 
 <!-- App js -->
-<script src="../admin_baya/assets/js/app.min.js"></script>
+<script src="admin_baya/assets/js/app.min.js"></script>
 <!-- Right bar overlay-->
 <div class="rightbar-overlay"></div>
 
 <!-- Vendor js -->
-<script src="../admin_baya/assets/js/vendor.min.js"></script>
+<script src="admin_baya/assets/js/vendor.min.js"></script>
 
 <!-- Plugins js-->
-<script src="../admin_baya/assets/libs/twitter-bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
+<script src="admin_baya/assets/libs/twitter-bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
 
 <!-- Init js-->
-<script src="../admin_baya/assets/js/pages/form-wizard.init.js"></script>
+<script src="admin_baya/assets/js/pages/form-wizard.init.js"></script>
 <!-- Plugins js -->
-<script src="../admin_baya/assets/libs/dropzone/dropzone.min.js"></script>
+<script src="admin_baya/assets/libs/dropzone/dropzone.min.js"></script>
 
 <!-- Init js-->
-<script src="../admin_baya/assets/js/pages/form-fileuploads.init.js"></script>
+<script src="admin_baya/assets/js/pages/form-fileuploads.init.js"></script>
 <!-- App js -->
-<script src="../admin_baya/assets/js/app.min.js"></script>
-<script src="../admin_baya/assets/libs/jquery-toast/jquery.toast.min.js"></script>
-<script src="../admin_baya/assets/js/pages/toastr.init.js"></script>
+<script src="admin_baya/assets/js/app.min.js"></script>
+<script src="admin_baya/assets/libs/jquery-toast/jquery.toast.min.js"></script>
+<script src="admin_baya/assets/js/pages/toastr.init.js"></script>
 </body>
 </html>

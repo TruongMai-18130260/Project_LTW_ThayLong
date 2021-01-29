@@ -77,7 +77,7 @@
                             <div class="card-body">
                                 <div class="row mb-2">
                                     <div class="col-sm-6">
-                                        <a href="suachungchosanpham.jsp" class="btn btn-danger mb-2"><i class="mdi mdi-plus-circle mr-1"></i> Thêm sản phẩm</a>
+                                        <a href="AddProductAdmin" class="btn btn-danger mb-2"><i class="mdi mdi-plus-circle mr-1"></i> Thêm sản phẩm</a>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="float-sm-right">
@@ -103,8 +103,9 @@
                                         </tr>
                                         </thead>
                                         <tbody>
+                                        <%int a = 0;%>
+                                        <c:forEach items="${sessionScope.listProductsAdmin}" var="item">
 
-                                        <c:forEach items="${requestScope.listProductsAdmin}" var="item">
                                             <tr role="row" class="odd">
                                                 <td>
                                                     <img src="${item.imgURL}" alt="contact-img" title="contact-img" class="rounded mr-3" height="48">
@@ -134,14 +135,14 @@
                                                 <td>
                                                     <ul class="list-inline table-action m-0">
                                                         <li class="list-inline-item">
-                                                            <button type="button" class="action-icon" data-toggle="modal" data-target="#exampleModalLong" style="border: 1px solid #fff;background-color: #fff;">
+                                                            <button type="button" class="action-icon" data-toggle="modal" data-target="#exampleModal" style="border: 1px solid #fff;background-color: #fff;" data-id="${item.id}" data-name="${item.name}" data-image="${item.imgURL}" data-description="${item.description}" data-price="${item.price}" data-pricesale="${item.salePrice}" data-company="${item.company}" data-tag="${item.tag}">
                                                                 <i class="mdi mdi-square-edit-outline"></i>
                                                             </button>
                                                             <!-- Modal -->
-                                                            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                                 <div class="modal-dialog" role="document">
                                                                     <div class="modal-content">
-                                                                        <form action="UpdateProduct?id=${item.id}" method="post">
+                                                                        <form action="UpdateProduct?id=${item.id}" method="post" class="form-update">
                                                                             <div class="modal-header">
                                                                                 <h5 class="modal-title" id="exampleModalLongTitle">Sửa ${item.id}</h5>
                                                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -155,11 +156,11 @@
                                                                                 </div>
                                                                                 <div class="form-group">
                                                                                     <label class="info-title" for="image">Ảnh </label>
-                                                                                    <input type="" class="form-control unicase-form-control text-input my-account-input" id="image" name="image" value="${item.name}">
+                                                                                    <input type="" class="form-control unicase-form-control text-input my-account-input" id="image" name="image" value="${item.imgURL}">
                                                                                 </div>
                                                                                 <div class="form-group">
                                                                                     <label class="info-title" for="description">Mô tả </label>
-                                                                                    <input type="" class="form-control unicase-form-control text-input my-account-input" id="description" name="price" value="${item.description}">
+                                                                                    <input type="" class="form-control unicase-form-control text-input my-account-input" id="description" name="description" value="${item.description}">
                                                                                 </div>
                                                                                 <div class="form-group">
                                                                                     <label class="info-title" for="price">Giá </label>
@@ -167,11 +168,11 @@
                                                                                 </div>
                                                                                 <div class="form-group">
                                                                                     <label class="info-title" for="pricesale">Giá sale</label>
-                                                                                    <input type="" class="form-control unicase-form-control text-input my-account-input" id="pricesale" name="pricesale" value="${item.pricesale}">
+                                                                                    <input type="" class="form-control unicase-form-control text-input my-account-input" id="pricesale" name="pricesale" value="${item.salePrice}">
                                                                                 </div>
                                                                                 <div class="form-group">
                                                                                     <label class="info-title" for="company">Công ty </label>
-                                                                                    <input type="" class="form-control unicase-form-control text-input my-account-input" id="company" name="company" value="$${item.company}">
+                                                                                    <input type="" class="form-control unicase-form-control text-input my-account-input" id="company" name="company" value="${item.company}">
                                                                                 </div>
                                                                                 <div class="form-group">
                                                                                     <label class="info-title" for="tag">Tag </label>
@@ -196,6 +197,7 @@
                                                     </ul>
                                                 </td>
                                             </tr>
+                                            <%a +=1; %>
                                         </c:forEach>
 
                                         </tbody>

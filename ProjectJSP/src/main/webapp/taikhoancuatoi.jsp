@@ -69,12 +69,12 @@
 							<div class="option-container">
 								<div class="title">
 									<p>Tài khoản của</p>
-									<p style="font-size: 18px; font-weight: bold;">${sessionScope.user.name}</p>
+									<p style="font-size: 18px; font-weight: bold;">${sessionScope.user.name} aaaa</p>
 								</div>
 								<div class="content">
 									<ul class="nav-menu">
 										<li class="nav-item"><a href>Thông tin cá nhân</a></li>
-										<li class="nav-item"><a href>Đổi mật khẩu</a></li>
+										<li class="nav-item"><a href="doimatkhau.jsp">Đổi mật khẩu 1</a></li>
 										<li class="nav-item"><a href="track-orders.html">Theo dõi đơn hàng</a></li>
 										<li class="nav-item"><a href>Số địa chỉ</a></li>
 										<li class="nav-item"><a href>Thông tin thanh toán</a></li>

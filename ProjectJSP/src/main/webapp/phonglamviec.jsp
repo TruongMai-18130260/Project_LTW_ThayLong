@@ -118,10 +118,10 @@
                                       <div class="accordion-body collapse" id="collapseThree" style="height: 0px;">
                                           <div class="accordion-inner">
                                               <ul>
-                                                  <li><a href=Category?category=${sessionScope.category1}&filters=brand_baya">BAYA</a></li>
-                                                  <li><a href=Category?category=${sessionScope.category1}&filters=brand_oem">OEM</a></li>
-                                                  <li><a href=Category?category=${sessionScope.category1}&filters=brand_sande">SANDE</a></li>
-                                                  <li><a href=Category?category=${sessionScope.category1}&filters=brand_yokohama">YOKOHAMA</a></li>
+                                                  <li><a href="Category?category=${sessionScope.category1}&filters=br_baya">BAYA</a></li>
+                                                  <li><a href="Category?category=${sessionScope.category1}&filters=br_oem">OEM</a></li>
+                                                  <li><a href="Category?category=${sessionScope.category1}&filters=br_sande">SANDE</a></li>
+                                                  <li><a href="Category?category=${sessionScope.category1}&filters=br_yokohama">YOKOHAMA</a></li>
                                               </ul>
                                           </div>
                                           <!-- /.accordion-inner -->

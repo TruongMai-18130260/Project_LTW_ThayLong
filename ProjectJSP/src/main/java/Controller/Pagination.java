@@ -121,6 +121,14 @@ public class Pagination {
             Product product = new Product(rs1.getString(1),rs1.getString(2),rs1.getString(3)
                     ,rs1.getInt(4),rs1.getInt(5),rs1.getString(6),rs1.getInt(7)
                     ,rs1.getString(8),rs1.getString(9));
+            PreparedStatement ps2 = ConnectionDB.con.prepareStatement("select quantity from container where productid=?");
+            ps2.setString(1,rs1.getString(1));
+            ResultSet rs2 = ps2.executeQuery();
+
+            while (rs2.next()){
+                product.setQuantity(rs2.getInt(1));
+            }
+
             pagedProduct.add(product);
 
         }

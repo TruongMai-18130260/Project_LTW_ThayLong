@@ -130,31 +130,34 @@
           <div class="dropdown dropdown-cart"> <a href="#" class="dropdown-toggle lnk-cart" data-toggle="dropdown">
             <div class="items-cart-inner">
               <div class="basket"> <i class="glyphicon glyphicon-shopping-cart"></i> </div>
-              <div class="basket-item-count"><span class="count">2</span></div>
-              <div class="total-price-basket"> <span class="lbl">Giỏ -</span> <span class="total-price"> <span class="sign">600.000</span><span class="value">đ</span> </span> </div>
+              <div class="basket-item-count"><span class="count">${sessionScope.cart.quantityTotal}</span></div>
+              <div class="total-price-basket"> <span class="lbl">Giỏ -</span> <span class="total-price"> <span class="sign">${sessionScope.cart.totalPrice}</span><span class="value">đ</span> </span> </div>
             </div>
             </a>
             <ul class="dropdown-menu">
               <li>
                 <div class="cart-item product-summary">
-                  <div class="row">
-                    <div class="col-xs-4">
-                      <div class="image"> <a href="detail.html"><img src="assets\images\cart.jpg" alt=""></a> </div>
+                  <c:forEach items="${sessionScope.cart.list}" var="item">
+                    <div class="row">
+                      <div class="col-xs-4">
+                        <div class="image"> <a href="Detail?id=${item.product.id}"><img src="${item.product.imgURL}" alt=""></a> </div>
+                      </div>
+                      <div class="col-xs-7">
+                        <h3 class="name"><a href="Detail?id=${item.product.id}">${item.product.name}</a></h3>
+                        <div class="price">${item.product.salePrice}</div>
+                      </div>
+                      <div class="col-xs-1 action"> <a href="CartController?remove=${item.id}"><i class="fa fa-trash"></i></a> </div>
                     </div>
-                    <div class="col-xs-7">
-                      <h3 class="name"><a href="index.php?page-detail">Simple Product</a></h3>
-                      <div class="price">600.000đ.00</div>
-                    </div>
-                    <div class="col-xs-1 action"> <a href="#"><i class="fa fa-trash"></i></a> </div>
-                  </div>
+                  </c:forEach>
+
                 </div>
                 <!-- /.cart-item -->
                 <div class="clearfix"></div>
                 <hr>
                 <div class="clearfix cart-total">
-                  <div class="pull-right"> <span class="text">Sub Total :</span><span class='price'>600.000đ.00</span> </div>
+                  <div class="pull-right"> <span class="text">Tổng cộng :</span><span class='price'>${sessionScope.cart.totalPrice}đ</span> </div>
                   <div class="clearfix"></div>
-                  <a href="checkout.html" class="btn btn-upper btn-primary btn-block m-t-20">Thanh toán</a> </div>
+                  <a href="Checkout" class="btn btn-upper btn-primary btn-block m-t-20">Thanh toán</a> </div>
                 <!-- /.cart-total--> 
                 
               </li>

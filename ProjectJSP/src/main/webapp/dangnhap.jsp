@@ -26,7 +26,7 @@
 		<link rel="stylesheet" href="assets\css\rateit.css">
 		<link rel="stylesheet" href="assets\css\bootstrap-select.min.css">
 		<link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
-		
+		<link rel="stylesheet" href="assets/css/validate.css">
 
 		
 		<!-- Icons/Glyphs -->
@@ -39,15 +39,14 @@
 		
 		<script src="assets/js/jquery-1.11.1.min.js"></script>
 
-
 	</head>
     <body class="cnt-home">
 		<!-- ============================================== HEADER ============================================== -->
 <header>
 <jsp:include page="header/headerlv1.jsp"></jsp:include>
 </header>
-
-<!-- ============================================== HEADER : END ============================================== -->
+		<div id="fb-root"></div>
+		<!-- ============================================== HEADER : END ============================================== -->
 <div class="breadcrumb">
 	<div class="container">
 		<div class="breadcrumb-inner">
@@ -68,10 +67,7 @@
 <div class="col-md-6 col-sm-6 sign-in show">
 	<h4 class="">Đăng nhập</h4>
 	<p class="">Chào mừng bạn đế với Baya</p>
-	<div class="social-sign-in outer-top-xs">
-		<a href="#" class="facebook-sign-in"><i class="fa fa-facebook"></i> Đăng nhập với Facebook</a>
-		<a href="#" class="twitter-sign-in"><i class="fa fa-twitter"></i> Đăng nhập với Twitter</a>
-	</div>
+	<div class="fb-login-button" data-width="" data-size="large" data-button-type="login_with" data-layout="rounded" data-auto-logout-link="false" data-use-continue-as="false"></div>
 	<form class="register-form outer-top-xs" role="form" action="Login" method="post">
 		<div class="form-group">
 		    <label class="info-title" for="exampleInputEmail1">Email <span>*</span></label>
@@ -99,26 +95,26 @@
 <div class="col-md-12 col-sm-12 create-new-account hidden sign-up">
 	<h4 class="checkout-subtitle">Đăng kí</h4>
 	<p class="text title-tag-line">Tạo tài khoản cho riêng bạn.</p>
-	<form class="register-form outer-top-xs" role="form" action="SignUp" method="post">
+	<form class="register-form outer-top-xs" role="form" action="SignUp" method="post" id="formJS">
 		<div class="form-group">
-	    	<label class="info-title" for="exampleInputEmail2">Email <span>*</span></label>
-	    	<input type="email" class="form-control unicase-form-control text-input" id="exampleInputEmail2" name="email" placeholder="Nhập email dùng để đăng nhập">
+	    	<label class="info-title" for="aaa1">Email <span>*</span></label>
+	    	<input type="email" class="form-control unicase-form-control text-input" id="aaa1" name="email" placeholder="Nhập email dùng để đăng nhập">
 	  	</div>
         <div class="form-group">
-		    <label class="info-title" for="exampleInputEmail3">Họ và Tên<span>*</span></label>
-		    <input type="text" class="form-control unicase-form-control text-input" id="exampleInputEmail3" name="name" placeholder="Vui lòng nhập chính xác họ và tên">
+		    <label class="info-title" for="aaa2">Họ và Tên<span>*</span></label>
+		    <input type="text" class="form-control unicase-form-control text-input" id="aaa2" name="name" placeholder="Vui lòng nhập chính xác họ và tên">
 		</div>
         <div class="form-group">
-		    <label class="info-title" for="exampleInputEmail4">Số Điện Thoại <span>*</span></label>
-		    <input type="name" class="form-control unicase-form-control text-input" id="exampleInputEmail4" name="phone" placeholder="Nhập số điện thoại">
+		    <label class="info-title" for="aaa3">Số Điện Thoại <span>*</span></label>
+		    <input type="name" class="form-control unicase-form-control text-input" id="aaa3" name="phone" placeholder="Nhập số điện thoại">
 		</div>
         <div class="form-group">
-		    <label class="info-title" for="exampleInputEmail5">Mật khẩu <span>*</span></label>
-		    <input type="password" class="form-control unicase-form-control text-input" id="exampleInputEmail5" name="password" placeholder="Mật khẩu">
+		    <label class="info-title" for="aaa4">Mật khẩu <span>*</span></label>
+		    <input type="password" class="form-control unicase-form-control text-input" id="aaa4" name="password" placeholder="Mật khẩu">
 		</div>
          <div class="form-group">
-		    <label class="info-title" for="exampleInputEmail6">Nhập lại mật khẩu <span>*</span></label>
-		    <input type="password" class="form-control unicase-form-control text-input" id="exampleInputEmail6" name="retypepassword" placeholder="Nhập lại mật khẩu">
+		    <label class="info-title" for="aaa5">Nhập lại mật khẩu <span>*</span></label>
+		    <input type="password" class="form-control unicase-form-control text-input" id="aaa5" name="retypepassword" placeholder="Nhập lại mật khẩu">
 		</div>
 
 		<a class="forgot-password pull-right pointer" style="display: flex" id="chooseSignIn"><p style="font-size: 13px">Bạn đã có tài khoản? </p>&nbsp; Đăng nhập</a>
@@ -231,6 +227,7 @@
     <script src="assets\js\wow.min.js"></script>
 	<script src="assets\js\scripts.js"></script>
 	<script src="assets/js/signup.js"></script>
+	<script src="assets/js/test.js"></script>
 
 	<!-- For demo purposes – can be removed on production -->
 	
@@ -251,7 +248,56 @@
 	</script>
 	<!-- For demo purposes – can be removed on production : End -->
 
-	
+	${sessionScope.message}
+		<%session.removeAttribute("message");%>
 
-</body>
+		<script>
+
+			function statusChangeCallback(response) {  // Called with the results from FB.getLoginStatus().
+				console.log('statusChangeCallback');
+				console.log(response);                   // The current login status of the person.
+				if (response.status === 'connected') {   // Logged into your webpage and Facebook.
+					testAPI();
+				} else {                                 // Not logged into your webpage or we are unable to tell.
+					document.getElementById('status').innerHTML = 'Please log ' +
+							'into this webpage.';
+				}
+			}
+
+
+			function checkLoginState() {               // Called when a person is finished with the Login Button.
+				FB.getLoginStatus(function(response) {   // See the onlogin handler
+					statusChangeCallback(response);
+				});
+			}
+
+
+			window.fbAsyncInit = function() {
+				FB.init({
+					appId      : '241398037593670',
+					cookie     : true,                     // Enable cookies to allow the server to access the session.
+					xfbml      : true,                     // Parse social plugins on this webpage.
+					version    : 'v9.0'           // Use this Graph API version for this call.
+				});
+
+
+				FB.getLoginStatus(function(response) {   // Called after the JS SDK has been initialized.
+					statusChangeCallback(response);        // Returns the login status.
+				});
+			};
+
+			function testAPI() {                      // Testing Graph API after login.  See statusChangeCallback() for when this call is made.
+				console.log('Welcome!  Fetching your information.... ');
+				FB.api('/me', function(response) {
+					console.log('Successful login for: ' + response.name);
+					document.getElementById('status').innerHTML =
+							'Thanks for logging in, ' + response.name + '!';
+				});
+			}
+
+		</script>
+
+		<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v9.0&appId=241398037593670&autoLogAppEvents=1" nonce="iquB0Hdv"></script>
+
+	</body>
 </html>

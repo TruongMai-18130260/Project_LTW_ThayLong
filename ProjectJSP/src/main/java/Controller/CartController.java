@@ -30,6 +30,7 @@ public class CartController extends HttpServlet {
             try {
                 CartBean cartBean = user.getCart();
                 cartBean.add(id);
+                cartBean.setQuantityTotal(cartBean.getList().size());
                 session.setAttribute("cart",cartBean);
                 request.getRequestDispatcher("giohang.jsp").forward(request,response);
 //                response.sendRedirect("CartController");

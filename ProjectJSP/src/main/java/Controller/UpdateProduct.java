@@ -17,7 +17,9 @@ public class UpdateProduct extends HttpServlet {
 
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session =request.getSession();
-        String sql = "Update product set name=?,imgURL=?,price=?,saleprice=?,description=?,company=?,tag=? where id=?";
+        request.setCharacterEncoding ("UTF-8");
+        response.setCharacterEncoding ("UTF-8");
+        String sql = "Update product set name=?,imgURL=?,description=?,price=?,saleprice=?,company=?,tag=? where id=?";
         try {
             ConnectionDB.connect();
 

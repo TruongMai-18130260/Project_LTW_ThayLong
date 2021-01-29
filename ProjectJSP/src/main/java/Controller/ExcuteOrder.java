@@ -12,6 +12,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.time.ZoneId;
 import java.util.ArrayList;
 
 @WebServlet(name = "/ExcuteOrder", urlPatterns = "/ExcuteOrder")
@@ -26,6 +27,9 @@ public class ExcuteOrder extends HttpServlet {
         String sql = "insert into `order` (email,orderid,receptdate,deliverydate,address) values (?,?,?,?,?)";
         String id = "";
         int number = 0;
+
+        LocalDate receptDate = LocalDate.now();
+        LocalDate deliveryDate = receptDate.plusDays(7);
 
         HttpSession session = request.getSession();
 
@@ -61,8 +65,7 @@ public class ExcuteOrder extends HttpServlet {
                 }
             }
 
-            LocalDate receptDate = LocalDate.now();
-            LocalDate deliveryDate = receptDate.plusDays(7);
+
 
             info = (Info) session.getAttribute("info");
 
@@ -96,6 +99,9 @@ public class ExcuteOrder extends HttpServlet {
                 info = (Info) session.getAttribute("info");
                 Order order = new Order(id,info,0,cartBean.getTotalPrice());
                 order.setTotalPrice(cartBean.getTotalPrice());
+                order.setList(list);
+                order.setReceptDate(Date.from(receptDate.atStartOfDay(ZoneId.systemDefault()).toInstant()));
+                order.setDeliveryDate(Date.from(deliveryDate.atStartOfDay(ZoneId.systemDefault()).toInstant()));
                 session.setAttribute("order",order);
 
 

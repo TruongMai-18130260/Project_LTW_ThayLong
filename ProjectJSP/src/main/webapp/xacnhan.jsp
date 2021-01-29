@@ -76,44 +76,58 @@
 
 	<div class="container">
 		<p style="color: #28d500; font-size: 18px;font-weight: 600; text-align: center;">Cám ơn bạn, đơn hàng của bạn đã được xác nhận</p>
-		<div class="sign-in-page" style="margin-bottom: 5px;">
-			<div class="row signin-up checkout-container">
-				<!-- Sign-in -->			
-				<div class="col-md-7 col-sm-7 sign-in ">
-					<h4 class="">Chi tiết đơn hàng</h4>
+		<div class="sign-in-page" style="margin-bottom: 5px;border: 4px solid #ddd;">
+			<div class="row">
+				<!-- Sign-in -->
+				<div class="col-md-12 col-sm-12 sign-in ">
+					<h4 class=""><b>Chi tiết đơn hàng</b></h4>
 					<div class="cart-infor">
-						<p class="title">Mã đơn hàng:</p>
+						<p class="title" style="color: black;">Mã đơn hàng:</p>
 						<p class="content">${sessionScope.order.orderID}</p>
 						<br/>
-						<p class="title">Địa chỉ:</p>
+						<p class="title" style="color: black;">Địa chỉ:</p>
 						<p class="content">${sessionScope.order.info.address}</p>
 						<br/>
-						<p class="title">Hình thức thanh toán:</p>
+						<p class="title" style="color: black;">Ngày đặt:</p>
+						<p class="date">${sessionScope.order.receptDate}</p>
+						<br/>
+						<p class="title" style="color: black;">Ngày dự kiến giao hàng:</p>
+						<p class="date">${sessionScope.order.deliveryDate}</p>
+						<br/>
+						<p class="title" style="color: black;">Hình thức thanh toán:</p>
 						<p class="content">Thanh toán khi nhận hàng</p>
 					</div>
 				</div>
-				<div class="col-md-5 col-sm-5 sign-in ">
-					<h4 class="">Chi tiết sản phẩm</h4>
-					<div class="cart-infor">
-						<p class="title">Tên sản phẩm:</p>
-						<p class="content">Bàn Darius</p>
-						<br/>
-						<p class="title">Số lượng:</p>
-						<p class="content">1</p>
-						<br/>
-						<p class="title">Tổng cộng:</p>
-						<p class="content">12,000,000đ</p>
-					</div>
+			</div>
+			<div class="row" style="border-top: 4px solid #ddd;margin-top: 15px;">
+				<div class="col-md-12 col-sm-12 sign-in  " >
+					<h4 class="" style="margin-top: 15px;"><b>Chi tiết sản phẩm</b></h4>
+					<c:forEach items="${sessionScope.order.list}" var="item">
+						<div class="row cart-infor">
+							<div class="col-md-2 ">
+								<img src="${item.product.imgURL}" alt="" style="height: 150px;">
+							</div>
+							<div class="col-md-10 ">
+								<p class="title" style="color: black;">Tên sản phẩm:</p>
+								<p class="content">${item.product.name}</p>
+								<br/>
+								<p class="title" style="color: black;">Số lượng:</p>
+								<p class="content">${item.quantity}</p>
+								<br/>
+								<p class="title" style="color: black;">Giá:</p>
+								<p class="content">${item.price}đ</p>
+							</div>
+						</div>
+					</c:forEach>
 				</div>
-				
-<!-- Sign-in -->
-<div class="col-md-3 col-sm-3"></div>
-<!-- create a new account -->			</div><!-- /.row -->
-		</div>
-		<!-- ============================================== BRANDS CAROUSEL ============================================== -->
 
-<!-- ============================================== BRANDS CAROUSEL : END ============================================== -->	</div><!-- /.container -->
-</div>
+				<div class="sum cart-infor " style="margin-left :21rem; font-size:18px">
+					<p class="title" style="color: black;font-weight: bold;">Tổng cộng:</p>
+					<p class="content" style="font-weight: bold;">${sessionScope.order.totalPrice}đ</p></div>
+
+
+			</div>
+			</div>
 	<!-- ============================================== BRANDS CAROUSEL : END ============================================== -->	</div><!-- /.container -->
 </div><!-- /.body-content -->
 <!-- ============================================================= FOOTER ============================================================= -->

@@ -10,7 +10,7 @@ public class CartBean implements Serializable {
     private String cartid;
     private ArrayList<Item> list = new ArrayList<>();
     private int totalPrice;
-
+    private int quantityTotal;
     public CartBean() {
     }
 
@@ -44,6 +44,21 @@ public class CartBean implements Serializable {
         this.totalPrice = totalPrice;
     }
 
+    public String getCartid() {
+        return cartid;
+    }
+
+    public void setCartid(String cartid) {
+        this.cartid = cartid;
+    }
+
+    public int getQuantityTotal() {
+        return quantityTotal;
+    }
+
+    public void setQuantityTotal(int quantityTotal) {
+        this.quantityTotal = quantityTotal;
+    }
 
     public void add(String id) throws SQLException, ClassNotFoundException {
         boolean status = false;

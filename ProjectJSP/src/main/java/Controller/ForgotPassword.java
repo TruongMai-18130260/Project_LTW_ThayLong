@@ -10,13 +10,13 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Properties;
 
-import javax.mail.Message;
-import javax.mail.MessagingException;
-import javax.mail.PasswordAuthentication;
-import javax.mail.Session;
-import javax.mail.Transport;
-import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeMessage;
+//import javax.mail.Message;
+//import javax.mail.MessagingException;
+//import javax.mail.PasswordAuthentication;
+//import javax.mail.Session;
+//import javax.mail.Transport;
+//import javax.mail.internet.InternetAddress;
+//import javax.mail.internet.MimeMessage;
 
 @WebServlet(name = "/ForgotPassword", urlPatterns = "/ForgotPassword")
 public class ForgotPassword extends HttpServlet {
@@ -68,35 +68,35 @@ public class ForgotPassword extends HttpServlet {
 
     public void sendMail(String email,String password){
         // Get properties object
-        RECEIVE_EMAIL = email;
-        Properties props = new Properties();
-        props.put("mail.smtp.auth", "true");
-        props.put("mail.smtp.host", HOST_NAME);
-        props.put("mail.smtp.socketFactory.port", SSL_PORT);
-        props.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
-        props.put("mail.smtp.port", SSL_PORT);
-
-        // get Session
-        Session session = Session.getDefaultInstance(props, new javax.mail.Authenticator() {
-            protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication(APP_EMAIL,APP_PASSWORD);
-            }
-        });
-
-        // compose message
-        try {
-            MimeMessage message = new MimeMessage(session);
-            message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(RECEIVE_EMAIL));
-            message.setSubject("Resend password");
-            message.setText("Your password is: " + password);
-
-            // send message
-            Transport.send(message);
-
-            System.out.println("Message sent successfully");
-        } catch (MessagingException e) {
-            throw new RuntimeException(e);
-        }
+//        RECEIVE_EMAIL = email;
+//        Properties props = new Properties();
+//        props.put("mail.smtp.auth", "true");
+//        props.put("mail.smtp.host", HOST_NAME);
+//        props.put("mail.smtp.socketFactory.port", SSL_PORT);
+//        props.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
+//        props.put("mail.smtp.port", SSL_PORT);
+//
+//        // get Session
+//        Session session = Session.getDefaultInstance(props, new javax.mail.Authenticator() {
+//            protected PasswordAuthentication getPasswordAuthentication() {
+//                return new PasswordAuthentication(APP_EMAIL,APP_PASSWORD);
+//            }
+//        });
+//
+//        // compose message
+//        try {
+//            MimeMessage message = new MimeMessage(session);
+//            message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(RECEIVE_EMAIL));
+//            message.setSubject("Resend password");
+//            message.setText("Your password is: " + password);
+//
+//            // send message
+//            Transport.send(message);
+//
+//            System.out.println("Message sent successfully");
+//        } catch (MessagingException e) {
+//            throw new RuntimeException(e);
+//        }
     }
 
 }
